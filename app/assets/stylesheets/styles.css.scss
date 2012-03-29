@@ -1,0 +1,33 @@
+.pagination span:first-child {
+  float: none;
+  padding: 0 .2em;
+  line-height: 1.2em;
+  text-decoration: none;
+  border: none;
+}
+.pagination span a {
+  float: none;
+  padding: 0 .2em;
+  line-height: 1.2em;
+  text-decoration: none;
+  border: none;
+}
+
+table {
+  tr {
+    td, th {
+      padding: .5em .75em;
+      border-bottom: 1px solid #DDD;
+    }
+  }
+}
+
+dl {
+  margin-top: 2em;
+  dt {
+    margin-bottom: 1em; 
+  }
+  dd {
+    margin-bottom: 1em; 
+  }
+}

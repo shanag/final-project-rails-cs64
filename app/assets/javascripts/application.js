@@ -7,8 +7,11 @@
 //= require modernizr
 //= require jquery
 //= require jquery_ujs
-//= require jquery-ui-1.8.17.custom.min
+//= require jquery-ui.min
 //= require jquery.imagesloaded
+//= require d3.v2
+//= require colorbrewer
+//= require bootstrap
 //= require underscore
 //= require backbone
 //= require backbone.extension
