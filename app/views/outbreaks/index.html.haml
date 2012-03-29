@@ -1,5 +1,6 @@
 %h1 CDC Foodborne Illness Outbreaks 1998-2009
-%table
+%br
+%table.table-striped
   %tr
     %th Id
     %th Type
@@ -21,8 +22,8 @@
       %td= outbreak.cdc_type
       %td= outbreak.reporting_state
       %td= outbreak.reporting_county
-      %td= outbreak.first_illness
-      %td= outbreak.last_illness
+      %td= outbreak.first_illness.try(:strftime, "%_m/%-d/%Y")
+      %td= outbreak.last_illness.try(:strftime, "%_m/%-d/%Y")
       %td= outbreak.illnesses
       %td= "#{outbreak.genus}, #{outbreak.species}"
       %td= outbreak.commodity_group
@@ -44,4 +45,4 @@
             %li= l.location
 
 
-= paginate @outbreaks
+.pagination= paginate @outbreaks, :window => 2

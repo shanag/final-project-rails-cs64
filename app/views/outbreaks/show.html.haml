@@ -1,7 +1,7 @@
 %h1 
   Outbreak 
   = @outbreak.id
-%dl
+%dl.dl-horizontal
   %dt Type
   %dd= @outbreak.cdc_type
   
@@ -12,16 +12,22 @@
   %dd= @outbreak.reporting_county
   
   %dt First Illness
-  %dd= @outbreak.first_illness
+  %dd= @outbreak.first_illness.try(:strftime, "%_m/%-d/%Y")
   
   %dt Last Illness
-  %dd= @outbreak.last_illness
+  %dd= @outbreak.last_illness.try(:strftime, "%_m/%-d/%Y")
   
   %dt Illnesses
   %dd= @outbreak.illnesses
   
-  %dt Genus, Species
-  %dd= "#{@outbreak.genus}, #{@outbreak.species}"
+  %dt Hospitalizations
+  %dd= @outbreak.hospitalizations
+
+  %dt Deaths
+  %dd= @outbreak.deaths
+  
+  %dt Genus, Species, Serotype
+  %dd= "#{@outbreak.genus}, #{@outbreak.species}, #{@outbreak.serotype}" 
   
   %dt Commodity Group
   %dd= @outbreak.commodity_group
