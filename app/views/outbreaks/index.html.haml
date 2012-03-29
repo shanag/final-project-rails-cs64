@@ -1,0 +1,47 @@
+%h1 CDC Foodborne Illness Outbreaks 1998-2009
+%table
+  %tr
+    %th Id
+    %th Type
+    %th Reporting State
+    %th Reporting County
+    %th First Illness
+    %th Last Illness
+    %th Illnesses
+    %th Etiology
+    %th Commodity
+    %th Other States Involved
+    %th Other Counties Involved
+    %th Food vehicle
+    %th Where eaten
+
+  - @outbreaks.each do |outbreak|
+    %tr
+      %td= link_to outbreak.id, outbreak_path(outbreak.id)
+      %td= outbreak.cdc_type
+      %td= outbreak.reporting_state
+      %td= outbreak.reporting_county
+      %td= outbreak.first_illness
+      %td= outbreak.last_illness
+      %td= outbreak.illnesses
+      %td= "#{outbreak.genus}, #{outbreak.species}"
+      %td= outbreak.commodity_group
+      %td
+        %ul
+          - outbreak.states.each do |s|
+            %li= s.state
+      %td
+        %ul
+          - outbreak.counties.each do |c|
+            %li= c.county
+      %td
+        %ul
+          - outbreak.foods.each do |f|
+            %li= f.food
+      %td
+        %ul
+          - outbreak.locations.each do |l|
+            %li= l.location
+
+
+= paginate @outbreaks

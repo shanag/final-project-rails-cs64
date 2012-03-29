@@ -1,0 +1,53 @@
+%h1 
+  Outbreak 
+  = @outbreak.id
+%dl
+  %dt Type
+  %dd= @outbreak.cdc_type
+  
+  %dt Reporting State
+  %dd= @outbreak.reporting_state
+  
+  %dt Reporting County
+  %dd= @outbreak.reporting_county
+  
+  %dt First Illness
+  %dd= @outbreak.first_illness
+  
+  %dt Last Illness
+  %dd= @outbreak.last_illness
+  
+  %dt Illnesses
+  %dd= @outbreak.illnesses
+  
+  %dt Genus, Species
+  %dd= "#{@outbreak.genus}, #{@outbreak.species}"
+  
+  %dt Commodity Group
+  %dd= @outbreak.commodity_group
+  
+  %dt Other States Involved
+  %dd 
+    %ul
+      - @outbreak.states.each do |s|
+        %li= s.state
+  
+  %dt Other Counties Involved
+  %dd 
+    %ul
+      - @outbreak.counties.each do |c|
+        %li= c.county
+  
+  %dt Food vehicles
+  %dd 
+    %ul
+      - @outbreak.foods.each do |f|
+        %li= f.food
+
+  %dt Where Eaten
+  %dd 
+    %ul
+      - @outbreak.locations.each do |l|
+        %li= l.location
+
+
