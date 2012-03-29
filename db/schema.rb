@@ -11,9 +11,44 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120329013926) do
+ActiveRecord::Schema.define(:version => 20120329172507) do
+
+  create_table "counties", :force => true do |t|
+    t.string   "county"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "counties_outbreaks", :id => false, :force => true do |t|
+    t.integer "outbreak_id"
+    t.integer "county_id"
+  end
+
+  create_table "foods", :force => true do |t|
+    t.string   "food"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "foods_outbreaks", :id => false, :force => true do |t|
+    t.integer "outbreak_id"
+    t.integer "food_id"
+  end
+
+  create_table "locations", :force => true do |t|
+    t.string   "location"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "locations_outbreaks", :id => false, :force => true do |t|
+    t.integer "outbreak_id"
+    t.integer "location_id"
+  end
 
   create_table "outbreaks", :force => true do |t|
+    t.integer  "efors_id"
+    t.integer  "nors_id"
     t.string   "reporting_state"
     t.string   "reporting_county"
     t.datetime "first_illness"
@@ -25,8 +60,20 @@ ActiveRecord::Schema.define(:version => 20120329013926) do
     t.string   "serotype"
     t.string   "species"
     t.string   "commodity_group"
+    t.string   "cdc_type"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
+  end
+
+  create_table "outbreaks_states", :id => false, :force => true do |t|
+    t.integer "outbreak_id"
+    t.integer "state_id"
+  end
+
+  create_table "states", :force => true do |t|
+    t.string   "state"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end
