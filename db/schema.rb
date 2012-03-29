@@ -24,6 +24,9 @@ ActiveRecord::Schema.define(:version => 20120329172507) do
     t.integer "county_id"
   end
 
+  add_index "counties_outbreaks", ["county_id"], :name => "index_counties_outbreaks_on_county_id"
+  add_index "counties_outbreaks", ["outbreak_id"], :name => "index_counties_outbreaks_on_outbreak_id"
+
   create_table "foods", :force => true do |t|
     t.string   "food"
     t.datetime "created_at", :null => false
@@ -35,6 +38,9 @@ ActiveRecord::Schema.define(:version => 20120329172507) do
     t.integer "food_id"
   end
 
+  add_index "foods_outbreaks", ["food_id"], :name => "index_foods_outbreaks_on_food_id"
+  add_index "foods_outbreaks", ["outbreak_id"], :name => "index_foods_outbreaks_on_outbreak_id"
+
   create_table "locations", :force => true do |t|
     t.string   "location"
     t.datetime "created_at", :null => false
@@ -45,6 +51,9 @@ ActiveRecord::Schema.define(:version => 20120329172507) do
     t.integer "outbreak_id"
     t.integer "location_id"
   end
+
+  add_index "locations_outbreaks", ["location_id"], :name => "index_locations_outbreaks_on_location_id"
+  add_index "locations_outbreaks", ["outbreak_id"], :name => "index_locations_outbreaks_on_outbreak_id"
 
   create_table "outbreaks", :force => true do |t|
     t.integer  "efors_id"
@@ -65,10 +74,18 @@ ActiveRecord::Schema.define(:version => 20120329172507) do
     t.datetime "updated_at",       :null => false
   end
 
+  add_index "outbreaks", ["cdc_type"], :name => "index_outbreaks_on_cdc_type"
+  add_index "outbreaks", ["commodity_group"], :name => "index_outbreaks_on_commodity_group"
+  add_index "outbreaks", ["genus"], :name => "index_outbreaks_on_genus"
+  add_index "outbreaks", ["reporting_state"], :name => "index_outbreaks_on_reporting_state"
+
   create_table "outbreaks_states", :id => false, :force => true do |t|
     t.integer "outbreak_id"
     t.integer "state_id"
   end
+
+  add_index "outbreaks_states", ["outbreak_id"], :name => "index_outbreaks_states_on_outbreak_id"
+  add_index "outbreaks_states", ["state_id"], :name => "index_outbreaks_states_on_state_id"
 
   create_table "states", :force => true do |t|
     t.string   "state"

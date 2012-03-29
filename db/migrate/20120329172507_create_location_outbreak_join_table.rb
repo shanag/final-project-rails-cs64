@@ -4,6 +4,8 @@ class CreateLocationOutbreakJoinTable < ActiveRecord::Migration
       t.integer :outbreak_id
       t.integer :location_id
     end
+    add_index :locations_outbreaks, :outbreak_id
+    add_index :locations_outbreaks, :location_id
   end
 
   def down

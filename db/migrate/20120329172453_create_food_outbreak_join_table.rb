@@ -4,6 +4,8 @@ class CreateFoodOutbreakJoinTable < ActiveRecord::Migration
       t.integer :outbreak_id
       t.integer :food_id
     end
+    add_index :foods_outbreaks, :outbreak_id
+    add_index :foods_outbreaks, :food_id
   end
 
   def down

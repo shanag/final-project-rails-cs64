@@ -17,6 +17,10 @@ class CreateOutbreaks < ActiveRecord::Migration
       t.string :cdc_type
       t.timestamps
     end
+    add_index :outbreaks, :reporting_state
+    add_index :outbreaks, :genus
+    add_index :outbreaks, :commodity_group
+    add_index :outbreaks, :cdc_type
   end
 
   def down
