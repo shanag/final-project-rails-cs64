@@ -1,0 +1,7 @@
+- content_for :javascript do
+  :javascript
+    $(function() {
+      MapApp.start({
+        outbreaks: #{@outbreaks_json}, 
+      });
+    });

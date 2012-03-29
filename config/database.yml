@@ -1,0 +1,17 @@
+base: &BASE
+  adapter: postgresql
+  encoding: unicode
+  host: 127.0.0.1
+  port: 5432
+
+development:
+  <<: *BASE
+  database: map_development
+
+test:
+  <<: *BASE
+  database: map_test
+
+production:
+  <<: *BASE
+  database: map_production
