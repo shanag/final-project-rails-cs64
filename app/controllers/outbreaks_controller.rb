@@ -6,7 +6,7 @@ class OutbreaksController < ApplicationController
   protected
 
   def collection
-    @outbreaks = Outbreak.order(:first_illness).page(params[:page] || 1)
+    @outbreaks = Outbreak.order('first_illness DESC').page(params[:page] || 1)
   end
 end
 
