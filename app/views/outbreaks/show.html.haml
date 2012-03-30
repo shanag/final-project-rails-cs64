@@ -1,59 +1,71 @@
 %h1 
   Outbreak 
   = @outbreak.id
-%dl.dl-horizontal
-  %dt Type
-  %dd= @outbreak.cdc_type
-  
-  %dt Reporting State
-  %dd= @outbreak.reporting_state
-  
-  %dt Reporting County
-  %dd= @outbreak.reporting_county
-  
-  %dt First Illness
-  %dd= @outbreak.first_illness.try(:strftime, "%_m/%-d/%Y")
-  
-  %dt Last Illness
-  %dd= @outbreak.last_illness.try(:strftime, "%_m/%-d/%Y")
-  
-  %dt Illnesses
-  %dd= @outbreak.illnesses
-  
-  %dt Hospitalizations
-  %dd= @outbreak.hospitalizations
+%table.table-condensed.single-outbreak
+  %tr
+    %td Type
+    %td= @outbreak.cdc_type
+  %tr 
+    %td Reporting State
+    %td= @outbreak.reporting_state
+  %tr
+    %td Reporting County
+    %td= @outbreak.reporting_county
+    
+  %tr
+    %td First Illness
+    %td= @outbreak.first_illness.try(:strftime, "%_m/%-d/%Y")
+    
+  %tr
+    %td Last Illness
+    %td= @outbreak.last_illness.try(:strftime, "%_m/%-d/%Y")
+  %tr
+    
+    %td Illnesses
+    %td= @outbreak.illnesses
+    
+  %tr
+    %td Hospitalizations
+    %td= @outbreak.hospitalizations
 
-  %dt Deaths
-  %dd= @outbreak.deaths
-  
-  %dt Genus, Species, Serotype
-  %dd= "#{@outbreak.genus}, #{@outbreak.species}, #{@outbreak.serotype}" 
-  
-  %dt Commodity Group
-  %dd= @outbreak.commodity_group
-  
-  %dt Other States Involved
-  %dd 
-    %ul
-      - @outbreak.states.each do |s|
-        %li= s.state
-  
-  %dt Other Counties Involved
-  %dd 
-    %ul
-      - @outbreak.counties.each do |c|
-        %li= c.county
-  
-  %dt Food vehicles
-  %dd 
-    %ul
-      - @outbreak.foods.each do |f|
-        %li= f.food
+  %tr
+    %td Deaths
+    %td= @outbreak.deaths
+    
+  %tr
+    %td Genus, Species, Serotype
+    %td= "#{@outbreak.genus}, #{@outbreak.species}, #{@outbreak.serotype}" 
+    
+  %tr
+    %td Commodity Group
+    %td= @outbreak.commodity_group
+    
+  %tr
+    %td Other States Involved
+    %td 
+      %ul
+        - @outbreak.states.each do |s|
+          %li= s.state
+    
+  %tr
+    %td Other Counties Involved
+    %td 
+      %ul
+        - @outbreak.counties.each do |c|
+          %li= c.county
+    
+  %tr
+    %td Food vehicles
+    %td 
+      %ul
+        - @outbreak.foods.each do |f|
+          %li= f.food
 
-  %dt Where Eaten
-  %dd 
-    %ul
-      - @outbreak.locations.each do |l|
-        %li= l.location
+  %tr
+    %td Where Eaten
+    %td 
+      %ul
+        - @outbreak.locations.each do |l|
+          %li= l.location
 
 

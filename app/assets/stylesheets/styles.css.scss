@@ -20,14 +20,21 @@ table {
       border-bottom: 1px solid #DDD;
     }
   }
+  &.single-outbreak {
+    margin-top: 2em;
+    tr {
+      td:first-child {
+        font-weight: bold;
+        line-height: 17px; 
+        text-align: right;
+      }
+      td:last-child {
+        text-align: left;
+      }
+      td {
+        border-bottom: none;
+      }
+    }
+  }
 }
 
-dl {
-  margin-top: 2em;
-  dt {
-    margin-bottom: 1em; 
-  }
-  dd {
-    margin-bottom: 1em; 
-  }
-}
