@@ -5,7 +5,12 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
   },
 
   onShow: function() {
-    var data; // loaded asynchronously
+    this.setUpMap();
+    this.slider = this.$el.find("#slider").slider();
+  }, 
+
+  setUpMap: function() {
+    var data; 
 
     var path = d3.geo.path();
 
