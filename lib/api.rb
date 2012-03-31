@@ -20,5 +20,17 @@ module Map
       end
     end
   
+    get :counties do
+      counties = Rails.root.join("lib/data/map/us-counties.json").read
+    end
+      
+    get :states do
+      states = Rails.root.join("lib/data/map/us-states.json").read
+    end
+    
+    get :unemployments do
+      unemployments = Rails.root.join("lib/data/map/unemployment.json").read
+    end
+
   end
 end
