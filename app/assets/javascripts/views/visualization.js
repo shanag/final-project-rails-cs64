@@ -5,11 +5,12 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
   },
 
   onShow: function() {
-    this.setUpMap();
-    this.slider = this.$el.find("#slider").slider();
+    this.drawMap();
+    this.slider = $("#slider").slider();
+    this.drawFoodChart();
   }, 
 
-  setUpMap: function() {
+  drawMap: function() {
     var data; 
 
     var path = d3.geo.path();
@@ -29,7 +30,13 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
         .data(json.features)
         .enter().append("path")
         .attr("class", data ? quantize : null)
-        .attr("d", path);
+        .attr("d", path)
+        .on("mouseover", function(){
+          d3.select(this).attr("class", "q8-9");
+        })
+        .on("mouseout", function(){
+          d3.select(this).attr("class", data ? quantize : null);
+        });
     });
 
     d3.json('/api/states', function(json) {
@@ -48,5 +55,9 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
     function quantize(d) {
       return "q" + Math.min(8, ~~(data[d.id] * 9 / 12)) + "-9";
     }
+  },
+
+  drawFoodChart: function() {
+  
   }
 });
