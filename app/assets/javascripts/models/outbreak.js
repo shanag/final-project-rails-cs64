@@ -1,1 +1,1 @@
-Models.Outbreak = Backbone.RelationalModel.extend();
+Models.Outbreak = Backbone.Model.extend();

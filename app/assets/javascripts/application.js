@@ -18,7 +18,6 @@
 //= require backbone.authtokenadapter
 //= require backbone.marionette
 //= require marionette.extension
-//= require backbone.relational
 //= require date
 //= require date-sugarpack
 //
@@ -28,5 +27,6 @@
 //= require collections/outbreaks
 //= require_tree ../templates
 //= require views/header
+//= require views/visualization
 //= require routers/map_router
 //
