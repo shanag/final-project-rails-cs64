@@ -57,19 +57,25 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
     });
 
     //color counties with data
-    d3.json('/api/unemployments', function(json) {
+    d3.json('/api/unemployments', $.proxy(function(json) {
       data = json;
-      counties.selectAll("path")
-        .attr("class", quantize);
-    });
+      counties.selectAll("path").attr("class", quantize);
+      //TODO: Figure out data format
+      console.log(data);
+      this.drawLegend(d3.min(data), d3.max(data));
+    }, this));
 
     function quantize(d) {
-      return "q" + Math.min(8, ~~(data[d.id] * 9 / 12)) + "-9";
+      //TODO: Rewrite this method so it makes sense for my data! Can't just bucket everything above a max into the top category
+      console.log(~~(data[d.id]*9/12) + ", q" + Math.min(8, ~~(data[d.id] * 9 / 12)) + "-9");
+      //Double bitwise NOT to convert float to integer. Came with the d3 example code.
+      //See: http://rocha.la/JavaScript-bitwise-operators-in-practice for explanation
+      return "q" + Math.min(8, ~~(data[d.id] * 9 / 12)) + "-9"; //uses .q1-9 to .q8-9 in colorbrewer.css for color scale
     }
   },
 
 
-  drawLegend: function(min, max, median) {
+  drawLegend: function(min, max) {
     //legend
     var svg = d3.select("#chart svg");
     var width = svg.style("width").replace("px", "");
@@ -133,7 +139,7 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
       .attr("width", function() { width - max_labelWidth});
    
     
-    //maps input values (domain) to output values (range)
+    //maps input values (domain) to output values (range) for this particular chart
     var x = d3.scale.linear()
       .domain([0, d3.max(data)])
       .range([0, width-max_labelWidth]);
