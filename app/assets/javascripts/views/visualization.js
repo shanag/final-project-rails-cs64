@@ -38,14 +38,7 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
         .data(json.features)
         .enter().append("path")
         .attr("class", null)
-        .attr("d", path)
-        .on("mouseover", function(){
-          //d3.select(this).attr("class", "q8-9");
-          d3.select(this).attr("class", "county-hover" )
-        })
-        .on("mouseout", function(){
-          d3.select(this).attr("class", data ? quantize : null);
-        });
+        .attr("d", path);
     });
 
     //states
@@ -59,15 +52,32 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
     //color counties with data
     d3.json('/api/unemployments', $.proxy(function(json) {
       data = json;
-      counties.selectAll("path").attr("class", quantize);
-      //TODO: Figure out data format
-      console.log(data);
+      counties.selectAll("path")
+        .attr("class", quantize)
+        .on("mouseover", function(d){
+          d3.select(this).attr("class", "county-hover");
+          var mouse_pos = d3.mouse(this);
+          d3.select("#tooltip") //TODO: only show this if data
+            .style("left", mouse_pos[0] + "px")
+            .style("top", mouse_pos[1] + "px")
+						.style("visibility", "visible")
+	          .text("Test data: " + data[d.id]);
+        })
+        .on("mouseout", function(){
+          d3.select(this).attr("class", data ? quantize : null);
+          d3.select("#tooltip")
+            .style("visibility", "hidden")
+            .text("");
+        });
+
+      //TODO: Figure out data format - data must be ordered same as county paths
+      //console.log(data);
       this.drawLegend(d3.min(data), d3.max(data));
     }, this));
 
     function quantize(d) {
-      //TODO: Rewrite this method so it makes sense for my data! Can't just bucket everything above a max into the top category
-      console.log(~~(data[d.id]*9/12) + ", q" + Math.min(8, ~~(data[d.id] * 9 / 12)) + "-9");
+      //TODO: Rewrite this method so it makes sense for my data! Can't just bucket everything above a max into the top category; decide on discrete or continuous colormap
+      //console.log(~~(data[d.id]*9/12) + ", q" + Math.min(8, ~~(data[d.id] * 9 / 12)) + "-9");
       //Double bitwise NOT to convert float to integer. Came with the d3 example code.
       //See: http://rocha.la/JavaScript-bitwise-operators-in-practice for explanation
       return "q" + Math.min(8, ~~(data[d.id] * 9 / 12)) + "-9"; //uses .q1-9 to .q8-9 in colorbrewer.css for color scale
@@ -84,6 +94,7 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
     var legend = svg.append("g")
       .attr("id", "legend");
 
+    //not sure whether to use gradient or discrete vals
     var gradient = legend.append("svg:defs")
       .append("svg:linearGradient")
       .attr("id", "gradient");
@@ -117,7 +128,6 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
       .attr("dy", -3)
       .attr("text-anchor", "middle")
       .text(String);
-
   },
  
 
@@ -149,7 +159,11 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
       .data(data)
       .enter()
       .append("rect")
-      .style("fill", "#666666")
+      .style("fill", function() {
+        if (chart_type == "food") { return "#666666" }
+        if (chart_type == "location") { return "#333333" }
+        if (chart_type == "etiology") { return "#000000" }
+      })
       .attr("y", function(d, i) { return i * rect_height; })
       .attr("width", x)
       .attr("height", rect_height);

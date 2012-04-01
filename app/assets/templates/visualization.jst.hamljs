@@ -1,4 +1,5 @@
 #chart.map
+  #tooltip
 #food.bar-chart
   %h4 Food vehicle
 #etiology.bar-chart

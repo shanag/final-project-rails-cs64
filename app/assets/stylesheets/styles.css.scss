@@ -74,6 +74,15 @@ table {
   .county-hover {
    fill: #666; 
   }
+ 
+  #tooltip {
+    position: absolute;
+    z-index: 10;
+    background-color: #FFF;
+    font-size: 1em;
+    padding: 1em;
+    border: 1px solid #666;
+  }
   
   .bar-chart {
     float: right;
