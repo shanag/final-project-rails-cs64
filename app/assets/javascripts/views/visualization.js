@@ -21,11 +21,11 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
     var svg = d3.select("#chart").append("svg");
    
     var counties = svg.append("g")
-        .attr("id", "counties")
-        .attr("class", "OrRd");
+      .attr("id", "counties")
+      .attr("class", "OrRd");
 
     var states = svg.append("g")
-        .attr("id", "states");
+      .attr("id", "states");
         
     //counties
     d3.json('/api/counties', function(json) {
@@ -71,26 +71,42 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
     var height = svg.style("height").replace("px", "");
     
     var legend = svg.append("g")
-        .attr("id", "legend");
+      .attr("id", "legend");
 
     var gradient = legend.append("svg:defs")
-        .append("svg:linearGradient")
-        .attr("id", "gradient");
+      .append("svg:linearGradient")
+      .attr("id", "gradient");
 
     gradient.append("stop")
-        .attr("offset", "0%")
-        .attr("stop-color", "rgb(254,232,200)");
+      .attr("offset", "0%")
+      .attr("stop-color", "rgb(254,232,200)"); //.q1-9, the lighest color on scale - see quantize()
 
     gradient.append("stop")
-        .attr("offset", "100%")
-        .attr("stop-color", "rgb(127,0,0)");
+      .attr("offset", "100%")
+      .attr("stop-color", "rgb(127,0,0)"); //.q8-9, the darkest color on scale - see quantize()
 
     legend.append("rect")
-        .attr("x", width - 225)
-        .attr("y", height - 40)
-        .attr("width", 200)
-        .attr("height", 15)
-        .style("fill", "url(#gradient)"); 
+      .attr("x", width - 225)
+      .attr("y", height - 40)
+      .attr("width", 200)
+      .attr("height", 15)
+      .style("fill", "url(#gradient)"); 
+  
+    //maps input values (domain) to output values (range)
+    var x = d3.scale.linear()
+      .domain([0, max])
+      .range([0, width-max_labelWidth]);
+    
+    legend.selectAll(".rule")
+      .data(x.ticks(2))
+      .enter().append("text")
+      .attr("class", "rule")
+      .attr("x", x)
+      .attr("y", 0)
+      .attr("dy", -3)
+      .attr("text-anchor", "middle")
+      .text(String);
+
   },
  
 
