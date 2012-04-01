@@ -1,1 +1,7 @@
-#chart
+#chart.map
+#food.bar-chart
+  %h4 Food vehicle
+#etiology.bar-chart
+  %h4 Etiology
+#location.bar-chart
+  %h4 Location of Consumption

@@ -1,11 +1,20 @@
+@import "compass/css3/images";
+
+
 //padding for bootstrap nav
 body {
   padding-top: 25px;
+  min-width: 1200px;
 }
 
 .container {
   margin-bottom: 1em;
 }
+
+.page-header {
+  padding-bottom: 1em;
+}
+
 
 //styles for data page
 .container-main {
@@ -49,6 +58,44 @@ table {
         border-bottom: none;
       }
     }
+  }
+}
+
+//Visualization styles
+.viz {
+  overflow:hidden;
+  margin-top: 2em;
+
+  .map {
+    float: left;
+    position: relative;
+  }
+  
+  .county-hover {
+   fill: #666; 
+  }
+  
+  .bar-chart {
+    float: right;
+    width: 25%;
+    height: 150px;
+    margin: .5em;
+    border-bottom: 1px solid #CCC;
+    h3 {
+      text-align: center;
+    }
+    .chart {
+      rect {
+        stroke: white;
+        fill: steelblue;
+      }
+    }
+  }
+  #food {
+  }
+  #location {
+  }
+  #etiology {
   }
 }
 
