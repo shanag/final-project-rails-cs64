@@ -8,11 +8,16 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
 
   onShow: function() {
     this.drawMap();
-    this.drawLegend();
     this.slider = $("#slider").slider();
-    this.drawBarChart("food");
-    this.drawBarChart("etiology");
-    this.drawBarChart("location");
+    
+    var fake_data = [4, 8, 15, 16, 23, 30]; //placeholder data
+    this.drawBarChart("food", fake_data);
+    
+    fake_data = [2, 77, 10, 6, 33, 30]; //placeholder data
+    this.drawBarChart("etiology", fake_data);
+    
+    fake_data = [5, 2, 15, 64, 43, 3]; //placeholder data
+    this.drawBarChart("location", fake_data);
   }, 
 
   drawMap: function() {
@@ -110,8 +115,7 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
   },
  
 
-  drawBarChart: function(chart_type) {
-    var data = [4, 8, 15, 16, 23, 30];
+  drawBarChart: function(chart_type, data) {
     var labels = ["label1 is a very long label", "label2", "label3", "label4", "label5", "label6"];
     var max_labelWidth = 125; 
     var width = d3.select("#" + chart_type).style("width").replace("px", "");
