@@ -8,7 +8,10 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
 
   onShow: function() {
     this.drawMap();
-    this.slider = $("#slider").slider();
+    //this.slider = $("#slider").slider();
+    this.slider = $('select#date-slider-from, select#date-slider-to').selectToUISlider({
+				labels: 12
+			});
     
     var fake_data = [4, 8, 15, 16, 23, 30]; //placeholder data
     this.drawBarChart("food", fake_data);

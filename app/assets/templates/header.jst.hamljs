@@ -2,3 +2,62 @@
   %h2 Foodborne Illness Outbreaks in the US, 2008-2009 &nbsp; 
     %small Data: Center for Disease Control (CDC)
 #slider
+  %fieldset
+    %label{for: "date-slider-from"}From:
+    %select{name: "date-slider-from", id:"date-slider-from"}
+      %optgroup{label:"2008"}
+        %option{value:"1/1"}Jan 1
+        %option{value:"2/1"}Feb 1
+        %option{value:"3/1"}Mar 1
+        %option{value:"3/1"}Apr 1
+        %option{value:"3/1"}May 1
+        %option{value:"6/1"}Jun 1
+        %option{value:"7/1"}Jul 1
+        %option{value:"8/1", selected:"selected"}Aug 1
+        %option{value:"9/1"}Sep 1
+        %option{value:"10/1"}Oct 1
+        %option{value:"11/1"}Nov 1
+        %option{value:"12/1"}Dec 1
+      %optgroup{label:"2009"}
+        %option{value:"1/1"}Jan 1
+        %option{value:"2/1"}Feb 1
+        %option{value:"3/1"}Mar 1
+        %option{value:"4/1"}Apr 1
+        %option{value:"4/1"}May 1
+        %option{value:"6/1"}Jun 1
+        %option{value:"7/1"}Jul 1
+        %option{value:"8/1"}Aug 1
+        %option{value:"9/1"}Sep 1
+        %option{value:"10/1"}Oct 1
+        %option{value:"11/1"}Nov 1
+        %option{value:"12/1"}Dec 1
+    %label{for: "date-slider-to"}To:
+    %select{name: "date-slider-to", id:"date-slider-to"}
+      %optgroup{label: "2008"}
+        %option{value:"1/1"}Jan 1
+        %option{value:"2/1"}Feb 1
+        %option{value:"3/1"}Mar 1
+        %option{value:"3/1"}Apr 1
+        %option{value:"3/1"}May 1
+        %option{value:"6/1"}Jun 1
+        %option{value:"7/1"}Jul 1
+        %option{value:"8/1", selected:"selected"}Aug 1
+        %option{value:"9/1"}Sep 1
+        %option{value:"10/1"}Oct 1
+        %option{value:"11/1"}Nov 1
+        %option{value:"12/1"}Dec 1
+      %optgroup{label:"2009"}
+        %option{value:"1/1"}Jan 1
+        %option{value:"2/1"}Feb 1
+        %option{value:"3/1"}Mar 1
+        %option{value:"4/1"}Apr 1
+        %option{value:"4/1"}May 1
+        %option{value:"6/1"}Jun 1
+        %option{value:"7/1"}Jul 1
+        %option{value:"8/1"}Aug 1
+        %option{value:"9/1"}Sep 1
+        %option{value:"10/1"}Oct 1
+        %option{value:"11/1"}Nov 1
+        %option{value:"12/1"}Dec 1
+
+

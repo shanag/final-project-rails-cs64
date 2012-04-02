@@ -20,6 +20,7 @@
 //= require marionette.extension
 //= require date
 //= require date-sugarpack
+//= require selectToUISlider.jQuery
 //
 //= require app
 //
