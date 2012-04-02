@@ -7,12 +7,9 @@ body {
   min-width: 1200px;
 }
 
-.container {
-  margin-bottom: 1em;
-}
-
 .page-header {
-  padding-bottom: 1em;
+  padding-bottom: .5em;
+  margin: 18px 0 0;
 }
 
 
@@ -64,11 +61,44 @@ table {
 //Visualization styles
 .viz {
   overflow:hidden;
-  margin-top: 2em;
+  margin-top: .5em;
 
   .map {
     float: left;
     position: relative;
+  }
+
+  .tools {
+    font-size: .9em;
+    margin: 0 auto; 
+    margin-top: 2em;
+    margin-bottom: 1em;  
+    width: 75%;
+    ul.rule {
+      list-style: none;
+      margin: 0 0 5px 8px;
+      overflow: hidden;
+      li {
+        float: left;
+        padding-right: 1.5em;
+        &:last-child {
+          padding: 0;
+        }
+      }
+    }
+    .year-left, .year-right {
+      border-top: 1px dotted #CCC;
+      width: 48%;
+      text-align: center;
+      display: inline-block;
+      margin-left: 1em;
+    }
+    .year-left {
+      float: left;
+    }
+    .year-right: {
+      float: left;
+    }
   }
   
   .county-hover {
@@ -137,12 +167,6 @@ table {
         fill: steelblue;
       }
     }
-  }
-  #food {
-  }
-  #location {
-  }
-  #etiology {
   }
 }
 

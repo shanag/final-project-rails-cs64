@@ -7,7 +7,7 @@
 //= require modernizr
 //= require jquery
 //= require jquery_ujs
-//= require jquery-ui.min
+//= require jquery-ui-1.8.18.custom.min
 //= require jquery.imagesloaded
 //= require d3.v2
 //= require colorbrewer
@@ -20,6 +20,7 @@
 //= require marionette.extension
 //= require date
 //= require date-sugarpack
+//= require jQAllRangeSliders-min
 //
 //= require app
 //

@@ -8,9 +8,22 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
 
   onShow: function() {
     this.drawMap();
-    this.colorMap();
-    this.slider = $("#slider").slider();
-    
+    this.slider = $("#slider").dateRangeSlider({
+      bounds: {
+        min: 1199163600000,
+        max: 1262235600000
+      },
+      arrows: false,
+      valueLabels: "show"
+    });
+
+    var tick = $("#slider").width()/23;
+    var start = $("#slider").position().left;
+    $("ul.rule li").each(function(idx, elem) {
+      if (idx == 1) { $(elem).position().left = start + tick};
+      $(elem).position().left = start + (tick*idx);
+    }); 
+
     var fake_data = [4, 8, 15, 16, 23, 30]; //placeholder data
     this.drawBarChart("food", fake_data);
     

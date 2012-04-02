@@ -14,5 +14,6 @@
  *= require colorbrewer
  *= require choropleth
  *= require bootstrap.min.css
+ *= require jQRangeSlider-dev 
  *= require styles
 */
