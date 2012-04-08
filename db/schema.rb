@@ -73,8 +73,9 @@ ActiveRecord::Schema.define(:version => 20120404203129) do
     t.string   "species"
     t.string   "commodity_group"
     t.string   "cdc_type"
-    t.datetime "created_at",       :null => false
-    t.datetime "updated_at",       :null => false
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+    t.decimal  "adjusted_illnesses"
   end
 
   add_index "outbreaks", ["cdc_type"], :name => "index_outbreaks_on_cdc_type"
