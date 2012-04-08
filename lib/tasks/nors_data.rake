@@ -26,7 +26,13 @@ task :load_NORS_outbreaks => :environment do
       :commodity_group => row[29],
       :cdc_type => "NORS"
     )
+   
+    #Create state
+    s = State.find_or_create_by_state(:state => row[1])
     
+    #Create county
+    c = County.find_or_create_by_county(:county => row[2])
+
     #Where eaten data. Cleaned with Google Refine
     l = Location.find_or_create_by_location(row[26])
     o.locations << l

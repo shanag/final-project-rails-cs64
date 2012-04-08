@@ -1,3 +1,7 @@
+desc 'Load Geo Census data'
+task :load_geo_census_data => [:load_fips_codes, :load_us_pop, :load_puerto_rico_pop] do
+end
+
 desc 'Load FIPS codes'
 task :load_fips_codes => :environment do
   require 'csv'
@@ -7,13 +11,15 @@ task :load_fips_codes => :environment do
   
   CSV.foreach(csv_path, headers: true) do |row|
     
-    c = County.find_or_create_by_county(:county => row[1])
-    c.update_attributes(
-      :fips_code => row[0]
-    )
+    c = County.find_by_county(row[1])
+    if (c)
+      c.update_attributes(
+        :fips_code => row[0]
+      )
     
-    msg = (c.nil? || c.id.nil?) ? "problem adding FIPS code #{row[0].inspect}" : "#{c.id} fips code added"
-    puts msg
+      msg = (c.nil? || c.id.nil?) ? "problem adding FIPS code #{row[0].inspect}" : "#{c.id} fips code added"
+      puts msg
+    end
   end
 end
 
