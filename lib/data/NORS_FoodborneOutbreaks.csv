@@ -1,452 +1,452 @@
-"RootID","ReportingState","ReportingCounty","FirstIll","LastIll","FirstExposure","LastExposure","Illnesses","Hospitalizations","Deaths","Genus1","Genus2","Genus3","Genus4","Species1","Species2","Species3","Species4","Serotype1","Serotype2","Serotype3","Serotype4","Confirmed1","Confirmed2","Confirmed3","Confirmed4","WhereEaten1","WhereEaten2","WhereEaten3","CommodityGroup"
-19,"Minnesota","Renville","2009-01-09T00:00:00Z","2009-01-12T00:00:00Z","2009-01-07T00:00:00Z","2009-01-09T00:00:00Z",16,0,0,"Calicivirus",,,,"norovirus",,,,,,,,1,".",".",".",,,,"unknown commodity"
-22,"Minnesota","Ramsey","2009-01-27T00:00:00Z","2009-01-29T00:00:00Z","2009-01-27T00:00:00Z","2009-01-27T00:00:00Z",21,0,0,"Calicivirus",,,,"norovirus",,,,,,,,1,".",".",".","Workplace, not cafeteria",,,">1 commodity Food"
-23,"Minnesota","Polk","2009-01-18T00:00:00Z","2009-01-19T00:00:00Z","2009-01-17T00:00:00Z","2009-01-17T00:00:00Z",7,0,0,"Calicivirus",,,,"norovirus",,,,,,,,1,".",".",".","Restaurant - other or unknown type",,,">1 commodity Food"
-25,"Minnesota","Polk","2009-02-08T00:00:00Z","2009-02-10T00:00:00Z","2009-02-07T00:00:00Z","2009-02-08T00:00:00Z",22,1,0,"Calicivirus",,,,"norovirus",,,,"Genogroup II (GII),not sequenced",,,,0,".",".",".","Restaurant - other or unknown type",,,">1 commodity"
-26,"Minnesota","Ramsey","2009-02-22T00:00:00Z","2009-02-23T00:00:00Z","2009-02-21T00:00:00Z","2009-02-21T00:00:00Z",16,0,0,"Calicivirus",,,,"norovirus",,,,,,,,1,".",".",".","Restaurant - other or unknown type",,,">1 commodity Food"
-27,"Minnesota","Dakota","2009-02-11T00:00:00Z","2009-02-16T00:00:00Z","2009-02-09T00:00:00Z","2009-02-12T00:00:00Z",11,2,0,"Campylobacter",,,,"jejuni",,,,,,,,1,".",".",".","Restaurant - other or unknown type",,,"Leafy"
-28,"Minnesota","Washington","2009-02-21T00:00:00Z","2009-03-10T00:00:00Z","2009-02-19T00:00:00Z","2009-03-08T00:00:00Z",6,0,0,"Calicivirus",,,,"norovirus",,,,,,,,1,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-39,"Alaska",,"2009-02-01T00:00:00Z","2009-02-07T00:00:00Z","2009-01-31T00:00:00Z","2009-02-05T00:00:00Z",35,0,0,"Calicivirus","Calicivirus",,,"norovirus","norovirus",,,"Genogroup I (GI), not sequenced","Genogroup II (GII),not sequenced",,,1,1,".",".","Workplace, not cafeteria",,,"unknown commodity"
-43,"Alabama",,"2009-01-08T00:00:00Z","2009-01-08T00:00:00Z","2009-01-08T00:00:00Z","2009-01-08T00:00:00Z",13,0,0,"Bacillus",,,,"cereus",,,,,,,,1,".",".",".","Restaurant - Sit-down dining",,,"Grains-Beans"
-46,"Illinois","McHenry","2009-01-02T00:00:00Z","2009-01-03T00:00:00Z","2009-01-01T00:00:00Z","2009-01-02T00:00:00Z",6,0,0,"Calicivirus",,,,"norovirus",,,,"GII / undefined cluster by sequence",,,,0,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-47,"Illinois","Sangamon","2009-01-03T00:00:00Z","2009-01-05T00:00:00Z","2009-01-02T00:00:00Z","2009-01-02T00:00:00Z",23,0,0,"Calicivirus",,,,"norovirus",,,,"GII / undefined cluster by sequence",,,,0,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-50,"Illinois","Effingham","2009-01-18T00:00:00Z","2009-01-19T00:00:00Z","2009-01-17T00:00:00Z","2009-01-17T00:00:00Z",31,0,0,,,,,,,,,,,,,0,".",".",".","banquet Facility (food prepared and served on-site",,,"unknown commodity"
-51,"Illinois","Cook","2009-01-16T00:00:00Z","2009-01-18T00:00:00Z","2009-01-15T00:00:00Z","2009-01-16T00:00:00Z",26,1,0,"Calicivirus",,,,"norovirus",,,,"GII / undefined cluster by sequence",,,,1,".",".",".","Workplace, not cafeteria",,,">1 commodity Food"
-55,"Illinois","Lake","2009-01-11T00:00:00Z","2009-01-25T00:00:00Z","2009-01-10T00:00:00Z","2009-01-23T00:00:00Z",7,2,0,"Salmonella",,,,"enterica",,,,"Enteritidis",,,,1,".",".",".","Private Home","Other (describe in remarks)",,"unknown commodity"
-56,"Illinois","Winnebago","2009-01-27T00:00:00Z","2009-01-29T00:00:00Z","2009-01-26T00:00:00Z","2009-01-26T00:00:00Z",16,0,0,"Calicivirus",,,,"norovirus",,,,"GII / undefined cluster by sequence",,,,1,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-59,"Illinois","Champaign","2009-02-14T00:00:00Z","2009-02-19T00:00:00Z",,,51,0,0,"Calicivirus",,,,"norovirus",,,,"GII / undefined cluster by sequence",,,,0,".",".",".","Other (describe in remarks)",,,"unknown commodity"
-61,"Illinois","DuPage","2009-02-08T00:00:00Z","2009-02-14T00:00:00Z","2009-02-06T00:00:00Z",,10,0,0,"Calicivirus",,,,"norovirus",,,,"GII / undefined cluster by sequence",,,,1,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-65,"Illinois","Will","2009-02-21T00:00:00Z","2009-02-22T00:00:00Z","2009-02-20T00:00:00Z","2009-02-20T00:00:00Z",13,0,0,"Calicivirus",,,,"norovirus",,,,"GII / undefined cluster by sequence",,,,1,".",".",".","Restaurant - other or unknown type","Workplace, not cafeteria",,"unknown commodity"
-68,"Illinois","Ogle","2009-03-16T00:00:00Z","2009-03-17T00:00:00Z","2009-03-15T00:00:00Z","2009-03-15T00:00:00Z",22,1,0,"Calicivirus",,,,"norovirus",,,,"GII / undefined cluster by sequence",,,,1,".",".",".","banquet Facility (food prepared and served on-site",,,">1 commodity Food"
-77,"Pennsylvania","Lawrence","2009-01-23T00:00:00Z","2009-02-12T00:00:00Z",,,9,1,0,"Campylobacter",,,,"jejuni",,,,,,,,1,".",".",".",,,,"Dairy"
-79,"Tennessee","Davidson","2009-01-10T00:00:00Z","2009-01-10T00:00:00Z","2009-01-09T00:00:00Z","2009-01-09T00:00:00Z",8,1,0,"Calicivirus",,,,"norovirus",,,,"Genogroup I (GI), not sequenced",,,,1,".",".",".","Restaurant - Sit-down dining",,,">1 commodity Food"
-80,"Tennessee","Bradley","2009-03-06T00:00:00Z","2009-03-09T00:00:00Z","2009-03-05T00:00:00Z","2009-03-07T00:00:00Z",9,0,0,"Calicivirus",,,,"norovirus",,,,"Genogroup I (GI), not sequenced",,,,1,".",".",".","Restaurant - Sit-down dining",,,"Mollusk"
-81,"New York","Onondaga","2009-03-02T00:00:00Z","2009-03-24T00:00:00Z","2009-03-01T00:00:00Z","2009-03-23T00:00:00Z",96,0,0,"Shigella",,,,"sonnei",,,,,,,,1,".",".",".","Restaurant - Sit-down dining",,,"Fruits-Nuts"
-88,"Massachusetts","Worcester","2009-01-30T00:00:00Z","2009-02-01T00:00:00Z","2009-01-30T00:00:00Z","2009-01-30T00:00:00Z",32,0,0,,,,,,,,,,,,,0,".",".",".","banquet Facility (food prepared and served on-site",,,">1 commodity"
-107,"Michigan","Kalamazoo","2009-01-15T00:00:00Z","2009-01-16T00:00:00Z","2009-01-15T00:00:00Z","2009-01-15T00:00:00Z",15,0,0,,,,,,,,,,,,,0,".",".",".","Workplace, not cafeteria",,,">1 commodity Food"
-108,"New York","Niagara","2009-02-07T00:00:00Z","2009-02-09T00:00:00Z","2009-02-06T00:00:00Z","2009-02-06T00:00:00Z",24,0,0,"Calicivirus",,,,"norovirus",,,,"Unspecified",,,,1,".",".",".","Hospital","Workplace, not cafeteria",,"Leafy"
-113,"Tennessee","Hamilton","2009-01-14T00:00:00Z","2009-01-21T00:00:00Z","2009-01-12T00:00:00Z","2009-01-19T00:00:00Z",22,4,0,"Calicivirus",,,,"norovirus",,,,"Genogroup II (GII),not sequenced",,,,1,".",".",".","Restaurant - Sit-down dining",,,"Mollusk"
-114,"Tennessee","Davidson","2009-01-24T00:00:00Z","2009-01-25T00:00:00Z","2009-01-23T00:00:00Z","2009-01-23T00:00:00Z",6,0,0,"Calicivirus",,,,"norovirus",,,,"Genogroup I (GI), not sequenced",,,,1,".",".",".","Restaurant - ""Fast-food""(drive up service or pay a",,,"unknown commodity"
-115,"New York","Chautauqua","2009-01-18T00:00:00Z","2009-01-18T00:00:00Z","2009-01-17T00:00:00Z","2009-01-17T00:00:00Z",6,0,0,,,,,,,,,,,,,0,".",".",".","Restaurant - Sit-down dining",,,"Beef"
-117,"Florida","Lee","2009-01-18T00:00:00Z","2009-01-19T00:00:00Z","2009-01-17T00:00:00Z","2009-01-17T00:00:00Z",24,0,0,"Calicivirus",,,,"norovirus",,,,"GI / undefined cluster by sequence",,,,1,".",".",".","Other (describe in remarks)",,,">1 commodity Food"
-119,"New York","Kings","2009-02-16T00:00:00Z","2009-02-19T00:00:00Z","2009-02-15T00:00:00Z","2009-02-15T00:00:00Z",51,1,0,"Calicivirus",,,,"norovirus",,,,,,,,1,".",".",".","Restaurant - Sit-down dining",,,">1 commodity Food"
-120,"New York","New York","2009-02-09T00:00:00Z","2009-02-10T00:00:00Z","2009-02-08T00:00:00Z","2009-02-08T00:00:00Z",9,1,0,,,,,,,,,,,,,0,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-121,"New York","New York","2009-02-14T00:00:00Z","2009-02-17T00:00:00Z","2009-02-13T00:00:00Z","2009-02-13T00:00:00Z",12,0,0,,,,,,,,,,,,,0,".",".",".","Church, temple, religous location",,,"unknown commodity"
-125,"Florida","Palm Beach","2009-01-17T00:00:00Z","2009-01-17T00:00:00Z","2009-01-16T00:00:00Z","2009-01-16T00:00:00Z",15,0,0,,,,,,,,,,,,,0,".",".",".","Private Home",,,">1 commodity Food"
-127,"Florida","Palm Beach","2009-02-12T00:00:00Z","2009-02-13T00:00:00Z","2009-02-12T00:00:00Z","2009-02-12T00:00:00Z",13,2,0,"Calicivirus",,,,"norovirus",,,,"GII / undefined cluster by sequence",,,,1,".",".",".","Nursing home, assisted living facility, home care",,,">1 commodity Food"
-140,"New York","Jefferson","2009-03-01T00:00:00Z","2009-03-01T00:00:00Z","2009-03-01T00:00:00Z","2009-03-01T00:00:00Z",20,0,0,"Staphylococcus",,,,"aureus",,,,,,,,1,".",".",".","Church, temple, religous location",,,">1 commodity Food"
-145,"Wyoming","Natrona","2009-02-07T00:00:00Z","2009-02-19T00:00:00Z","2009-02-07T00:00:00Z","2009-02-12T00:00:00Z",13,0,0,"Calicivirus",,,,"norovirus",,,,"Genogroup II (GII),not sequenced",,,,1,".",".",".",,,,"unknown commodity"
-175,"Illinois","Wayne","2009-03-23T00:00:00Z","2009-03-25T00:00:00Z","2009-03-22T00:00:00Z","2009-03-22T00:00:00Z",189,1,0,"Calicivirus",,,,"norovirus",,,,,,,,1,".",".",".","School",,,">1 commodity"
-176,"Illinois","Cook","2009-03-03T00:00:00Z","2009-03-13T00:00:00Z","2009-02-28T00:00:00Z","2009-03-07T00:00:00Z",6,0,0,"Salmonella",,,,"enterica",,,,"Typhimurium",,,,1,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-177,"Illinois","Winnebago","2009-03-29T00:00:00Z","2009-04-04T00:00:00Z","2009-03-29T00:00:00Z","2009-03-29T00:00:00Z",6,1,0,"Campylobacter","Listeria",,,"jejuni","monocytogenes",,,,,,,1,1,".",".","Private Home",,,"unknown commodity"
-178,"Illinois","Cook","2009-03-29T00:00:00Z","2009-03-31T00:00:00Z","2009-03-28T00:00:00Z","2009-03-28T00:00:00Z",27,0,0,"Calicivirus",,,,"norovirus",,,,"GII / undefined cluster by sequence",,,,1,".",".",".","Private Home",,,"unknown commodity"
-179,"Illinois","Bureau","2009-04-02T00:00:00Z","2009-04-03T00:00:00Z","2009-04-02T00:00:00Z","2009-04-02T00:00:00Z",24,0,0,"Clostridium",,,,"perfringens",,,,,,,,1,".",".",".","Private Home","banquet Facility (food prepared and served on-site",,">1 commodity Food"
-181,"Massachusetts","Norfolk","2009-02-11T00:00:00Z","2009-02-14T00:00:00Z","2009-02-11T00:00:00Z","2009-02-11T00:00:00Z",9,0,0,,,,,,,,,,,,,0,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-182,"Michigan","Ingham","2009-03-02T00:00:00Z","2009-03-03T00:00:00Z","2009-03-01T00:00:00Z","2009-03-01T00:00:00Z",14,1,0,,,,,,,,,,,,,0,".",".",".","Restaurant - Sit-down dining",,,"Poultry"
-184,"Michigan","Oakland","2009-01-04T00:00:00Z","2009-01-06T00:00:00Z","2009-01-04T00:00:00Z","2009-01-04T00:00:00Z",18,0,0,,,,,,,,,,,,,0,".",".",".","Restaurant - other or unknown type",,,"Poultry"
-191,"Wisconsin","Outagamie","2009-01-19T00:00:00Z","2009-01-20T00:00:00Z","2009-01-18T00:00:00Z","2009-01-18T00:00:00Z",16,0,0,"Calicivirus",,,,"norovirus",,,,"Genogroup II (GII),not sequenced",,,,1,".",".",".","Restaurant - Sit-down dining",,,"Fruits-Nuts"
-203,"Wisconsin","Dane","2009-02-14T00:00:00Z","2009-02-15T00:00:00Z","2009-02-14T00:00:00Z",,90,0,0,"Clostridium",,,,"perfringens",,,,,,,,1,".",".",".","Restaurant - Sit-down dining",,,"Beef"
-228,"Ohio","Cuyahoga","2009-03-31T00:00:00Z","2009-04-02T00:00:00Z","2009-03-31T00:00:00Z","2009-03-31T00:00:00Z",20,0,0,"Calicivirus",,,,"norovirus",,,,"GII_4 New Orleans (2009)",,,,1,".",".",".","banquet Facility (food prepared and served on-site",,,"unknown commodity"
-314,"New Hampshire","Grafton","2009-01-17T00:00:00Z","2009-01-18T00:00:00Z","2009-01-16T00:00:00Z","2009-01-16T00:00:00Z",11,0,0,"Calicivirus",,,,"norovirus",,,,"Genogroup II (GII),not sequenced",,,,0,".",".",".","Workplace, not cafeteria",,,"Fruits-Nuts"
-344,"Missouri","St. Louis City","2009-02-10T00:00:00Z","2009-02-13T00:00:00Z","2009-02-09T00:00:00Z","2009-02-09T00:00:00Z",17,0,0,,,,,,,,,,,,,0,".",".",".","Restaurant - Sit-down dining","Workplace, not cafeteria",,">1 commodity Food"
-349,"Idaho","Twin Falls","2009-03-08T00:00:00Z","2009-03-09T00:00:00Z","2009-03-08T00:00:00Z","2009-03-08T00:00:00Z",8,0,0,"Clostridium",,,,"perfringens",,,,,,,,1,".",".",".","Private Home",,,"Poultry"
-353,"Minnesota","Dakota","2009-04-07T00:00:00Z","2009-04-09T00:00:00Z","2009-04-06T00:00:00Z","2009-04-07T00:00:00Z",15,0,0,"Calicivirus",,,,"norovirus",,,,,,,,1,".",".",".","Workplace, not cafeteria","Restaurant - ""Fast-food""(drive up service or pay a",,">1 commodity Food"
-400,"Wisconsin","Winnebago","2009-03-15T00:00:00Z","2009-03-15T00:00:00Z","2009-03-14T00:00:00Z","2009-03-15T00:00:00Z",23,0,0,"Calicivirus",,,,"norovirus",,,,"Genogroup II (GII),not sequenced",,,,1,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-404,"Michigan","Oakland","2009-03-03T00:00:00Z","2009-03-09T00:00:00Z","2009-03-02T00:00:00Z","2009-03-08T00:00:00Z",12,0,0,,,,,,,,,,,,,0,".",".",".","Workplace, not cafeteria","Restaurant - other or unknown type",,"unknown commodity"
-408,"Michigan","Oakland","2009-03-14T00:00:00Z","2009-03-17T00:00:00Z","2009-03-14T00:00:00Z","2009-03-16T00:00:00Z",131,2,0,"Calicivirus",,,,"norovirus",,,,"Genogroup II (GII),not sequenced",,,,1,".",".",".","Restaurant - other or unknown type","banquet Facility (food prepared and served on-site",,">1 commodity Food"
-411,"Michigan","Macomb","2009-03-20T00:00:00Z","2009-03-21T00:00:00Z","2009-03-19T00:00:00Z","2009-03-20T00:00:00Z",9,,0,,,,,,,,,,,,,0,".",".",".","Restaurant - other or unknown type",,,"unknown commodity"
-424,"Ohio","Cuyahoga","2009-02-01T00:00:00Z","2009-02-04T00:00:00Z",,,70,1,0,"Calicivirus",,,,"norovirus",,,,"GI_4",,,,1,".",".",".","Church, temple, religous location",,,">1 commodity Food"
-425,"Connecticut","Hartford","2009-01-18T00:00:00Z","2009-01-20T00:00:00Z","2009-01-17T00:00:00Z","2009-01-17T00:00:00Z",21,0,0,"Calicivirus",,,,"norovirus",,,,"GII / undefined cluster by sequence",,,,1,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-427,"Connecticut","Fairfield","2009-01-26T00:00:00Z","2009-01-30T00:00:00Z","2009-01-25T00:00:00Z","2009-01-29T00:00:00Z",7,2,0,"Salmonella",,,,"enterica",,,,"Enteritidis",,,,1,".",".",".","Private Home",,,">1 commodity Food"
-436,"Minnesota","Hennepin","2009-04-09T00:00:00Z","2009-04-11T00:00:00Z","2009-04-09T00:00:00Z","2009-04-09T00:00:00Z",10,0,0,"Calicivirus",,,,"norovirus",,,,,,,,1,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-438,"Missouri","St. Louis","2009-01-17T00:00:00Z","2009-01-21T00:00:00Z","2009-01-17T00:00:00Z","2009-01-17T00:00:00Z",40,0,0,,,,,,,,,,,,,0,".",".",".","banquet Facility (food prepared and served on-site",,,"unknown commodity"
-439,"New York","New York","2009-04-10T00:00:00Z","2009-04-15T00:00:00Z","2009-04-09T00:00:00Z","2009-04-13T00:00:00Z",13,4,0,"Salmonella",,,,"enterica",,,,"Enteritidis",,,,1,".",".",".","Restaurant - Sit-down dining",,,"Game"
-442,"Oklahoma","Oklahoma","2009-03-07T00:00:00Z","2009-03-26T00:00:00Z","2009-03-05T00:00:00Z","2009-03-25T00:00:00Z",25,4,0,"Salmonella",,,,"enterica",,,,"Enteritidis",,,,1,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-443,"Ohio","Mahoning","2009-04-13T00:00:00Z","2009-04-14T00:00:00Z","2009-04-12T00:00:00Z","2009-04-12T00:00:00Z",10,0,0,,,,,,,,,,,,,0,".",".",".","Private Home",,,"unknown commodity"
-445,"Alabama",,"2009-03-19T00:00:00Z","2009-03-24T00:00:00Z","2009-03-18T00:00:00Z","2009-03-21T00:00:00Z",35,0,0,"Calicivirus",,,,"norovirus",,,,"Genogroup II (GII),not sequenced",,,,0,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-447,"Wisconsin","La Crosse","2009-02-17T00:00:00Z","2009-02-18T00:00:00Z","2009-02-16T00:00:00Z","2009-02-16T00:00:00Z",16,0,0,"Calicivirus",,,,"norovirus",,,,"Genogroup II (GII),not sequenced",,,,1,".",".",".","Other (describe in remarks)",,,">1 commodity Food"
-455,"South Carolina",,"2009-01-21T00:00:00Z","2009-01-22T00:00:00Z","2009-01-21T00:00:00Z","2009-01-21T00:00:00Z",14,0,0,,,,,,,,,,,,,0,".",".",".","Workplace, not cafeteria",,,"unknown commodity"
-1860,"Oregon","Multnomah","2009-03-17T00:00:00Z","2009-03-20T00:00:00Z",,,12,0,0,"Calicivirus",,,,"norovirus",,,,"GII / undefined cluster by sequence",,,,1,".",".",".","Unknown","Restaurant - ""Fast-food""(drive up service or pay a",,"unknown commodity"
-1864,"Oregon","Benton","2009-03-23T00:00:00Z","2009-04-07T00:00:00Z","2009-03-23T00:00:00Z","2009-04-07T00:00:00Z",49,0,0,"Calicivirus",,,,"norovirus",,,,"GII / undefined cluster by sequence",,,,1,".",".",".","School",,,"unknown commodity"
-1865,"Hawaii","Honolulu","2009-04-10T00:00:00Z","2009-04-10T00:00:00Z","2009-04-10T00:00:00Z","2009-04-10T00:00:00Z",13,0,0,"Histamine",,,,,,,,,,,,1,".",".",".","Prison, jail",,,"Finfish"
-1868,"Connecticut","Hartford","2009-03-13T00:00:00Z","2009-03-23T00:00:00Z",,,60,5,0,"Escherichia",,,,"coli, Shiga toxin-producing",,,,"O157:H7",,,,1,".",".",".","Workplace cafeteria",,,"Poultry"
-1873,"Illinois","Cook","2009-04-22T00:00:00Z","2009-04-24T00:00:00Z","2009-04-22T00:00:00Z","2009-04-23T00:00:00Z",11,0,0,"Calicivirus",,,,"norovirus",,,,,,,,0,".",".",".","Workplace cafeteria",,,"unknown commodity"
-1876,"Ohio","Medina","2009-05-07T00:00:00Z","2009-05-08T00:00:00Z","2009-05-07T00:00:00Z","2009-05-07T00:00:00Z",23,0,0,"Clostridium",,,,"perfringens",,,,,,,,1,".",".",".","School",,,"Poultry"
-1880,"Minnesota","Ramsey","2009-04-25T00:00:00Z","2009-04-27T00:00:00Z","2009-04-24T00:00:00Z","2009-04-26T00:00:00Z",17,0,0,"Calicivirus",,,,"norovirus",,,,,,,,1,".",".",".","Restaurant - ""Fast-food""(drive up service or pay a",,,"unknown commodity"
-1885,"Mississippi","Lauderdale","2009-02-05T00:00:00Z","2009-02-06T00:00:00Z","2009-02-03T00:00:00Z","2009-02-05T00:00:00Z",66,0,0,"Calicivirus","Staphylococcus",,,"norovirus","unknown",,,"Unspecified",,,,1,1,".",".","Prison, jail",,,">1 commodity"
-1886,"Mississippi","Jackson","2009-02-04T00:00:00Z","2009-02-17T00:00:00Z","2009-02-04T00:00:00Z","2009-02-17T00:00:00Z",184,3,0,"Salmonella",,,,"enterica",,,,"Enteritidis",,,,1,".",".",".","Prison, jail",,,"unknown commodity"
-1893,"Iowa","Dubuque","2009-04-28T00:00:00Z","2009-04-30T00:00:00Z","2009-04-27T00:00:00Z","2009-04-29T00:00:00Z",27,1,0,"Calicivirus",,,,"norovirus",,,,"Genogroup II (GII),not sequenced",,,,1,".",".",".",,,,"Leafy"
-1895,"Oregon","Washington","2009-04-23T00:00:00Z","2009-04-26T00:00:00Z","2009-04-22T00:00:00Z",,11,0,0,,,,,,,,,,,,,0,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-1899,"Connecticut","Fairfield","2009-04-30T00:00:00Z","2009-04-30T00:00:00Z","2009-04-30T00:00:00Z","2009-04-30T00:00:00Z",47,0,0,"Bacillus",,,,"cereus",,,,,,,,1,".",".",".","School",,,">1 commodity Food"
-1900,"Connecticut","Fairfield","2009-05-04T00:00:00Z","2009-05-05T00:00:00Z","2009-05-03T00:00:00Z","2009-05-03T00:00:00Z",13,0,0,"Calicivirus",,,,"norovirus",,,,"GII / undefined cluster by sequence",,,,1,".",".",".","Restaurant - Sit-down dining",,,"Beef"
-1904,"Wisconsin","Dunn","2009-04-01T00:00:00Z","2009-04-02T00:00:00Z","2009-03-31T00:00:00Z","2009-04-01T00:00:00Z",8,0,0,"Clostridium",,,,"perfringens",,,,,,,,1,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-1905,"California","Placer","2009-01-29T00:00:00Z","2009-01-29T00:00:00Z","2009-01-28T00:00:00Z","2009-01-28T00:00:00Z",10,0,0,"Calicivirus",,,,"norovirus",,,,"Unspecified",,,,0,".",".",".",,,,"unknown commodity"
-1909,"Wisconsin","Washington","2009-04-30T00:00:00Z","2009-05-08T00:00:00Z","2009-04-28T00:00:00Z","2009-04-28T00:00:00Z",14,2,0,"Salmonella",,,,"enterica",,,,"Enteritidis",,,,1,".",".",".","Other (describe in remarks)",,,">1 commodity Food"
-1933,"Florida","Orange","2009-02-13T00:00:00Z","2009-02-17T00:00:00Z","2009-02-13T00:00:00Z","2009-02-14T00:00:00Z",30,0,0,"Calicivirus",,,,"norovirus",,,,,,,,1,".",".",".","banquet Facility (food prepared and served on-site",,,"Oil-Sugar"
-1938,"Illinois","Vermilion","2009-05-23T00:00:00Z","2009-05-26T00:00:00Z","2009-05-23T00:00:00Z","2009-05-23T00:00:00Z",39,0,0,"Calicivirus",,,,"norovirus",,,,"GII / undefined cluster by sequence",,,,1,".",".",".","banquet Facility (food prepared and served on-site",,,"unknown commodity"
-1940,"Illinois","McLean","2009-05-25T00:00:00Z","2009-05-27T00:00:00Z","2009-05-24T00:00:00Z","2009-05-24T00:00:00Z",32,0,0,"Calicivirus",,,,"norovirus",,,,"GI / undefined cluster by sequence",,,,0,".",".",".","Private Home",,,"unknown commodity"
-1941,"Illinois","Will","2009-05-22T00:00:00Z","2009-05-23T00:00:00Z","2009-05-22T00:00:00Z","2009-05-22T00:00:00Z",18,0,0,,,,,,,,,,,,,0,".",".",".","Private Home",,,"unknown commodity"
-1943,"California","Placer","2009-01-04T00:00:00Z","2009-01-06T00:00:00Z","2009-01-03T00:00:00Z","2009-01-03T00:00:00Z",10,0,0,"Calicivirus",,,,"norovirus",,,,"Unspecified",,,,1,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-1944,"California","Kern","2009-01-18T00:00:00Z","2009-01-25T00:00:00Z","2009-01-18T00:00:00Z","2009-01-18T00:00:00Z",7,0,0,"Calicivirus",,,,"norovirus",,,,"Unspecified",,,,0,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-1960,"California","Contra Costa","2009-02-01T00:00:00Z","2009-02-02T00:00:00Z","2009-01-31T00:00:00Z","2009-01-31T00:00:00Z",9,0,0,"Calicivirus",,,,"norovirus",,,,"Unspecified",,,,0,".",".",".",,,,"unknown commodity"
-1963,"California","Riverside","2009-03-01T00:00:00Z","2009-03-02T00:00:00Z","2009-03-01T00:00:00Z","2009-03-01T00:00:00Z",31,0,0,,,,,,,,,,,,,0,".",".",".",,,,"unknown commodity"
-1964,"California","Los Angeles","2009-03-17T00:00:00Z","2009-03-18T00:00:00Z","2009-03-17T00:00:00Z","2009-03-17T00:00:00Z",7,0,0,"Bacillus",,,,"cereus",,,,,,,,0,".",".",".","Workplace, not cafeteria",,,">1 commodity Food"
-1965,"California","Los Angeles","2009-04-12T00:00:00Z","2009-04-13T00:00:00Z","2009-04-12T00:00:00Z","2009-04-12T00:00:00Z",7,0,0,"Other bacterial",,,,,,,,,,,,0,".",".",".",,,,"unknown commodity"
-1968,"California","Los Angeles","2009-04-05T00:00:00Z","2009-04-05T00:00:00Z","2009-04-03T00:00:00Z","2009-04-03T00:00:00Z",9,0,0,"Calicivirus",,,,"norovirus",,,,"Genogroup II (GII),not sequenced",,,,1,".",".",".",,,,"unknown commodity"
-1969,"Ohio","Medina","2009-05-31T00:00:00Z","2009-06-02T00:00:00Z","2009-05-31T00:00:00Z","2009-05-31T00:00:00Z",15,0,0,"Calicivirus",,,,"norovirus",,,,"GII_4 Minerva (2006)",,,,1,".",".",".","Private Home","Restaurant - Sit-down dining",,"unknown commodity"
-1991,"New York","Cortland","2009-05-29T00:00:00Z","2009-05-29T00:00:00Z","2009-05-28T00:00:00Z","2009-05-28T00:00:00Z",20,1,0,"Bacillus",,,,"cereus",,,,,,,,0,".",".",".","banquet Facility (food prepared and served on-site",,,"Poultry"
-1992,"Virginia","Henrico","2009-05-14T00:00:00Z","2009-05-14T00:00:00Z","2009-05-14T00:00:00Z","2009-05-14T00:00:00Z",19,0,0,"Staphylococcus",,,,"aureus",,,,,,,,1,".",".",".","Church, temple, religous location",,,">1 commodity Food"
-1996,"South Carolina","Horry","2009-05-28T00:00:00Z","2009-05-29T00:00:00Z","2009-05-28T00:00:00Z","2009-05-28T00:00:00Z",350,0,0,"Clostridium",,,,"perfringens",,,,,,,,1,".",".",".","Caterer (food prepared off-site from where server)",,,">1 commodity Food"
-1997,"South Carolina","Charleston","2009-01-16T00:00:00Z","2009-01-17T00:00:00Z","2009-01-15T00:00:00Z","2009-01-15T00:00:00Z",13,0,0,"Calicivirus",,,,"norovirus",,,,"GII / undefined cluster by sequence",,,,1,".",".",".",,,,"unknown commodity"
-2007,"Arizona","Pima","2009-05-12T00:00:00Z","2009-05-13T00:00:00Z","2009-05-12T00:00:00Z","2009-05-12T00:00:00Z",13,0,0,"Enterococcus",,,,"faecalis",,,,,,,,1,".",".",".","Other (describe in remarks)",,,">1 commodity Food"
-2016,"Virginia","Accomack","2009-06-08T00:00:00Z","2009-06-08T00:00:00Z","2009-06-08T00:00:00Z","2009-06-08T00:00:00Z",12,0,0,"Staphylococcus",,,,"aureus",,,,,,,,0,".",".",".","Private Home",,,">1 commodity Food"
-2017,"Wisconsin","Sauk","2009-01-23T00:00:00Z","2009-01-26T00:00:00Z",,,62,1,0,"Calicivirus",,,,"norovirus",,,,"Genogroup II (GII),not sequenced",,,,1,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-2020,"Wisconsin",,"2009-05-02T00:00:00Z",,,,49,,,,,,,,,,,,,,,0,".",".",".",,,,"unknown commodity"
-2023,"Minnesota",,"2009-05-03T00:00:00Z","2009-06-29T00:00:00Z","2009-04-27T00:00:00Z",,7,1,0,"Escherichia",,,,"coli, Shiga toxin-producing",,,,"O157:H7",,,,1,".",".",".","Private Home",,,">1 commodity Food"
-2025,"California",,"2009-05-18T00:00:00Z","2009-05-20T00:00:00Z","2009-05-18T00:00:00Z","2009-05-18T00:00:00Z",26,0,0,"Calicivirus",,,,"norovirus",,,,"Unspecified",,,,0,".",".",".","School",,,">1 commodity"
-2031,"Wisconsin","Winnebago","2009-05-23T00:00:00Z","2009-05-28T00:00:00Z","2009-05-20T00:00:00Z","2009-05-25T00:00:00Z",8,0,0,"Escherichia",,,,"coli, Enterotoxigenic",,,,,,,,1,".",".",".",,,,"unknown commodity"
-2033,"Maryland","Anne Arundel","2009-01-05T00:00:00Z","2009-01-07T00:00:00Z","2009-01-04T00:00:00Z","2009-01-05T00:00:00Z",12,0,0,"Calicivirus",,,,"norovirus",,,,"GII / undefined cluster by sequence",,,,1,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-2034,"Massachusetts","Suffolk","2009-04-13T00:00:00Z",,"2009-04-12T00:00:00Z","2009-04-12T00:00:00Z",50,,0,"Salmonella",,,,"enterica",,,,"Typhimurium",,,,1,".",".",".","School",,,"unknown commodity"
-2035,"Maryland","Anne Arundel","2009-01-19T00:00:00Z","2009-01-22T00:00:00Z","2009-01-18T00:00:00Z","2009-01-18T00:00:00Z",13,0,0,"Calicivirus",,,,"norovirus",,,,"GII / undefined cluster by sequence",,,,1,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-2036,"California","Santa Cruz","2009-04-25T00:00:00Z","2009-05-03T00:00:00Z","2009-04-24T00:00:00Z",,18,0,0,"Calicivirus",,,,"norovirus",,,,"Unspecified",,,,1,".",".",".",,,,">1 commodity Food"
-2038,"Minnesota","Anoka","2009-05-18T00:00:00Z","2009-05-21T00:00:00Z","2009-05-17T00:00:00Z","2009-05-17T00:00:00Z",11,0,0,"Calicivirus",,,,"norovirus",,,,,,,,0,".",".",".","Private Home",,,">1 commodity Food"
-2039,"Maryland","Baltimore City","2009-04-16T00:00:00Z","2009-04-16T00:00:00Z","2009-04-14T00:00:00Z","2009-04-14T00:00:00Z",7,0,0,,,,,,,,,,,,,0,".",".",".",,,,"unknown commodity"
-2041,"Tennessee","Hamilton","2009-06-18T00:00:00Z","2009-06-21T00:00:00Z","2009-06-18T00:00:00Z","2009-06-18T00:00:00Z",11,0,0,"Calicivirus",,,,"norovirus",,,,"Genogroup II (GII),not sequenced",,,,1,".",".",".","Restaurant - Sit-down dining",,,"Dairy"
-2048,"Illinois","Cook","2009-06-14T00:00:00Z","2009-06-19T00:00:00Z","2009-06-13T00:00:00Z",,25,1,0,"Calicivirus",,,,"norovirus",,,,"GI / undefined cluster by sequence",,,,0,".",".",".","Picnic",,,"unknown commodity"
-2050,"Illinois","Effingham","2009-06-20T00:00:00Z","2009-06-23T00:00:00Z","2009-06-20T00:00:00Z","2009-06-20T00:00:00Z",43,0,0,,,,,,,,,,,,,0,".",".",".","Other (describe in remarks)",,,"unknown commodity"
-2051,"Illinois","Jo Daviess","2009-06-20T00:00:00Z","2009-06-21T00:00:00Z","2009-06-20T00:00:00Z","2009-06-20T00:00:00Z",35,0,0,,,,,,,,,,,,,0,".",".",".",,,,"Beef"
-2052,"New York","Wyoming","2009-06-14T00:00:00Z","2009-06-16T00:00:00Z","2009-06-12T00:00:00Z","2009-06-12T00:00:00Z",9,0,0,"Campylobacter",,,,"jejuni",,,,,,,,1,".",".",".","Other (describe in remarks)",,,"unknown commodity"
-2055,"Washington","Snohomish","2009-02-08T00:00:00Z","2009-02-11T00:00:00Z","2009-02-07T00:00:00Z","2009-02-07T00:00:00Z",13,3,0,"Calicivirus",,,,"norovirus",,,,,,,,0,".",".",".",,,,">1 commodity Food"
-2068,"Ohio","Union","2009-03-04T00:00:00Z",,"2009-03-03T00:00:00Z",,19,0,0,"Calicivirus",,,,"norovirus",,,,"GII / undefined cluster by sequence",,,,1,".",".",".",,,,"unknown commodity"
-2070,"Connecticut","Fairfield","2009-06-10T00:00:00Z","2009-06-10T00:00:00Z","2009-06-10T00:00:00Z","2009-06-10T00:00:00Z",100,0,0,"Bacillus",,,,"cereus",,,,,,,,1,".",".",".","School",,,">1 commodity Food"
-2071,"Connecticut","New London","2009-06-17T00:00:00Z","2009-06-19T00:00:00Z","2009-06-16T00:00:00Z","2009-06-16T00:00:00Z",10,0,0,"Calicivirus",,,,"norovirus",,,,,,,,0,".",".",".","Other (describe in remarks)",,,"Fruits-Nuts"
-2074,"Massachusetts","Hampden","2009-06-20T00:00:00Z",,"2009-06-19T00:00:00Z","2009-06-20T00:00:00Z",70,2,0,"Campylobacter",,,,"jejuni",,,,,,,,1,".",".",".",,,,"unknown commodity"
-2087,"Minnesota","Anoka","2009-06-27T00:00:00Z","2009-06-28T00:00:00Z","2009-06-27T00:00:00Z","2009-06-27T00:00:00Z",18,0,0,"Clostridium",,,,"perfringens",,,,,,,,1,".",".",".","Private Home",,,"Beef"
-2109,"Georgia","Glynn","2009-02-12T00:00:00Z","2009-02-14T00:00:00Z",,,8,0,0,"Calicivirus",,,,"norovirus",,,,"Genogroup II (GII),not sequenced",,,,0,".",".",".",,,,"unknown commodity"
-2115,"New York","Queens","2009-05-26T00:00:00Z","2009-05-27T00:00:00Z","2009-05-25T00:00:00Z","2009-05-25T00:00:00Z",19,2,0,"Salmonella",,,,"enterica",,,,"Enteritidis",,,,1,".",".",".","Private Home",,,">1 commodity Food"
-2117,"Missouri","Maries","2009-06-28T00:00:00Z","2009-06-30T00:00:00Z","2009-06-27T00:00:00Z","2009-06-27T00:00:00Z",11,0,0,,,,,,,,,,,,,0,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-2120,"California","Los Angeles","2009-05-06T00:00:00Z","2009-05-07T00:00:00Z","2009-05-05T00:00:00Z","2009-05-05T00:00:00Z",10,0,0,"Calicivirus",,,,"norovirus",,,,"Unspecified",,,,0,".",".",".","Workplace, not cafeteria",,,"unknown commodity"
-2121,"California","Los Angeles","2009-04-07T00:00:00Z","2009-04-08T00:00:00Z","2009-04-07T00:00:00Z","2009-04-07T00:00:00Z",6,0,0,"Other chemical",,,,,,,,,,,,1,".",".",".","Workplace, not cafeteria",,,">1 commodity Food"
-2132,"Ohio","Franklin","2009-06-10T00:00:00Z","2009-06-12T00:00:00Z","2009-06-10T00:00:00Z","2009-06-10T00:00:00Z",15,0,0,,,,,,,,,,,,,0,".",".",".","Unknown",,,"unknown commodity"
-2136,"Minnesota","Mower","2009-06-26T00:00:00Z","2009-06-30T00:00:00Z","2009-06-25T00:00:00Z",,16,3,0,"Escherichia",,,,"coli, Shiga toxin-producing",,,,"O157:H7",,,,1,".",".",".","Workplace, not cafeteria","Private Home",,"unknown commodity"
-2169,"Florida","Lafayette","2009-05-21T00:00:00Z","2009-05-30T00:00:00Z","2009-05-17T00:00:00Z","2009-05-17T00:00:00Z",30,0,0,"Escherichia",,,,"coli, Shiga toxin-producing",,,,"O157:H7",,,,1,".",".",".",,,,"unknown commodity"
-2174,"Florida","Alachua","2009-01-27T00:00:00Z","2009-01-28T00:00:00Z","2009-01-26T00:00:00Z","2009-01-29T00:00:00Z",24,0,0,"Calicivirus",,,,"norovirus",,,,"Genogroup II (GII),not sequenced",,,,1,".",".",".",,,,"unknown commodity"
-2176,"Louisiana","Jefferson","2009-04-24T00:00:00Z","2009-05-16T00:00:00Z",,,56,12,0,"Salmonella",,,,"enterica",,,,"Oranienburg",,,,1,".",".",".",,,,"unknown commodity"
-2183,"Oklahoma","Alfalfa","2009-05-19T00:00:00Z","2009-05-20T00:00:00Z","2009-05-19T00:00:00Z","2009-05-19T00:00:00Z",39,0,0,"Staphylococcus",,,,"aureus",,,,,,,,1,".",".",".",,,,">1 commodity Food"
-2195,"Tennessee","Hawkins","2009-06-24T00:00:00Z","2009-06-24T00:00:00Z","2009-06-24T00:00:00Z","2009-06-24T00:00:00Z",6,0,0,,,,,,,,,,,,,0,".",".",".","Workplace, not cafeteria",,,">1 commodity Food"
-2212,"Ohio","Franklin","2009-01-16T00:00:00Z","2009-01-17T00:00:00Z","2009-01-15T00:00:00Z","2009-01-15T00:00:00Z",22,0,0,"Calicivirus",,,,"norovirus",,,,"GII_12",,,,1,".",".",".","banquet Facility (food prepared and served on-site",,,">1 commodity Food"
-2225,"California","Placer","2009-05-18T00:00:00Z","2009-05-21T00:00:00Z","2009-05-17T00:00:00Z","2009-05-17T00:00:00Z",14,0,0,"Calicivirus",,,,"norovirus",,,,,,,,1,".",".",".",,,,"unknown commodity"
-2237,"California","Yolo","2009-05-29T00:00:00Z","2009-05-30T00:00:00Z","2009-05-28T00:00:00Z","2009-05-28T00:00:00Z",21,0,0,,,,,,,,,,,,,0,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-2254,"Missouri","Johnson","2009-07-07T00:00:00Z","2009-07-07T00:00:00Z","2009-07-07T00:00:00Z","2009-07-07T00:00:00Z",25,0,0,,,,,,,,,,,,,0,".",".",".","Private Home","Other (describe in remarks)","Camp","Root"
-2263,"Michigan","Ingham","2009-04-30T00:00:00Z","2009-05-01T00:00:00Z","2009-04-29T00:00:00Z",,13,0,0,,,,,,,,,,,,,0,".",".",".","Other (describe in remarks)",,,"Dairy"
-2264,"Michigan","Alpena","2009-03-30T00:00:00Z","2009-03-31T00:00:00Z","2009-03-29T00:00:00Z","2009-03-29T00:00:00Z",9,,0,,,,,,,,,,,,,0,".",".",".",,,,"unknown commodity"
-2266,"Michigan","Macomb","2009-03-08T00:00:00Z","2009-03-11T00:00:00Z",,,7,0,0,,,,,,,,,,,,,0,".",".",".","Private Home",,,"unknown commodity"
-2271,"California","San Diego","2009-05-28T00:00:00Z","2009-06-05T00:00:00Z","2009-05-28T00:00:00Z","2009-06-05T00:00:00Z",6,0,0,,,,,,,,,,,,,0,".",".",".","Restaurant - Sit-down dining",,,">1 commodity Food"
-2272,"Utah",,"2009-06-20T00:00:00Z",,"2009-06-18T00:00:00Z",,15,,0,,,,,,,,,,,,,0,".",".",".",,,,"unknown commodity"
-2274,"Utah",,"2009-05-06T00:00:00Z",,,,6,,,"Salmonella",,,,"enterica",,,,"Typhimurium",,,,1,".",".",".",,,,"unknown commodity"
-2275,"Utah",,"2009-03-24T00:00:00Z","2009-05-31T00:00:00Z",,,10,0,0,"Campylobacter",,,,"jejuni",,,,,,,,1,".",".",".","Private Home",,,"Dairy"
-2281,"Colorado","Douglas","2009-02-01T00:00:00Z","2009-02-01T00:00:00Z","2009-01-31T00:00:00Z","2009-01-31T00:00:00Z",6,0,0,"Calicivirus",,,,"norovirus",,,,,,,,0,".",".",".","Restaurant - Sit-down dining",,,">1 commodity"
-2282,"Minnesota","Todd","2009-07-09T00:00:00Z","2010-07-10T00:00:00Z","2009-07-08T00:00:00Z","2010-07-08T00:00:00Z",6,0,0,"Calicivirus",,,,"norovirus",,,,,,,,1,".",".",".","Private Home",,,"Poultry"
-2285,"Illinois","Rock Island","2009-06-11T00:00:00Z","2009-08-10T00:00:00Z",,,34,14,0,"Hepatitis",,,,"A",,,,,,,,1,".",".",".","Restaurant - ""Fast-food""(drive up service or pay a",,,"unknown commodity"
-2289,"North Carolina","Dare","2009-03-01T00:00:00Z","2009-03-16T00:00:00Z","2009-02-25T00:00:00Z","2009-03-25T00:00:00Z",10,0,0,"Salmonella",,,,"enterica",,,,"Hadar",,,,1,".",".",".","Nursing home, assisted living facility, home care",,,"unknown commodity"
-2291,"California",,"2009-05-03T00:00:00Z","2009-05-06T00:00:00Z","2009-05-02T00:00:00Z","2009-05-02T00:00:00Z",7,0,0,"Salmonella",,,,"enterica",,,,"Infantis",,,,1,".",".",".","banquet Facility (food prepared and served on-site",,,">1 commodity Food"
-2304,"Colorado","Arapahoe","2009-01-31T00:00:00Z","2009-02-04T00:00:00Z","2009-01-31T00:00:00Z","2009-01-31T00:00:00Z",10,1,0,"Calicivirus",,,,"norovirus",,,,,,,,0,".",".",".","Private Home",,,"Fungus"
-2306,"Colorado","Boulder","2009-01-10T00:00:00Z","2009-01-11T00:00:00Z","2009-01-09T00:00:00Z","2009-01-09T00:00:00Z",9,0,0,"Calicivirus",,,,"norovirus",,,,,,,,0,".",".",".","Workplace, not cafeteria",,,">1 commodity Food"
-2307,"Massachusetts",,"2009-07-09T00:00:00Z",,,,7,1,0,"Salmonella",,,,"enterica",,,,"Javiana",,,,1,".",".",".",,,,"unknown commodity"
-2321,"Tennessee","Shelby","2009-07-10T00:00:00Z","2009-07-15T00:00:00Z","2009-07-10T00:00:00Z","2009-07-11T00:00:00Z",53,7,0,"Salmonella","Salmonella",,,"enterica","enterica",,,"Heidelberg","Infantis",,,1,1,".",".","Private Home","Restaurant - Sit-down dining",,"Pork"
-2331,"Colorado","Boulder","2009-06-15T00:00:00Z","2009-06-19T00:00:00Z","2009-06-14T00:00:00Z","2009-06-16T00:00:00Z",32,0,0,"Calicivirus",,,,"norovirus",,,,,,,,0,".",".",".","Restaurant - Sit-down dining",,,">1 commodity"
-2340,"Kansas","Franklin","2009-06-21T00:00:00Z","2009-06-22T00:00:00Z","2009-06-20T00:00:00Z","2009-06-20T00:00:00Z",13,0,0,"Calicivirus",,,,"norovirus",,,,"Unspecified",,,,1,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-2345,"Nevada","Washoe","2009-06-28T00:00:00Z","2009-07-14T00:00:00Z","2009-06-27T00:00:00Z","2009-06-27T00:00:00Z",44,0,0,"Calicivirus",,,,"norovirus",,,,"Unspecified",,,,1,".",".",".","banquet Facility (food prepared and served on-site",,,"unknown commodity"
-2346,"New Hampshire","Coos","2009-04-08T00:00:00Z","2009-04-10T00:00:00Z","2009-04-07T00:00:00Z","2009-04-07T00:00:00Z",45,1,0,"Salmonella",,,,"enterica",,,,"Enteritidis",,,,1,".",".",".","Other (describe in remarks)",,,"Eggs"
-2347,"New Hampshire","Carroll","2009-04-15T00:00:00Z","2009-04-27T00:00:00Z","2009-04-15T00:00:00Z","2009-04-22T00:00:00Z",133,5,0,"Salmonella",,,,"enterica",,,,"Enteritidis",,,,1,".",".",".","Camp",,,">1 commodity Food"
-2349,"Hawaii","Honolulu","2009-05-02T00:00:00Z","2009-05-04T00:00:00Z","2009-05-02T00:00:00Z","2009-05-04T00:00:00Z",6,0,0,"Ciguatoxin",,,,,,,,,,,,1,".",".",".",,,,"unknown commodity"
-2366,"Nevada","Washoe","2009-07-17T00:00:00Z","2009-07-21T00:00:00Z","2009-07-16T00:00:00Z","2009-07-16T00:00:00Z",7,0,0,"Calicivirus",,,,"norovirus",,,,"Unspecified",,,,1,".",".",".","Workplace, not cafeteria","Other (describe in remarks)",,">1 commodity"
-2367,"North Dakota","McLean","2009-06-13T00:00:00Z","2009-06-17T00:00:00Z","2009-06-13T00:00:00Z","2009-06-13T00:00:00Z",55,8,0,"Salmonella",,,,"enterica",,,,"Montevideo",,,,1,".",".",".","banquet Facility (food prepared and served on-site",,,"unknown commodity"
-2368,"North Dakota","McLean","2009-06-13T00:00:00Z","2009-06-17T00:00:00Z","2009-06-13T00:00:00Z","2009-06-13T00:00:00Z",36,2,0,"Salmonella",,,,"enterica",,,,"Montevideo",,,,1,".",".",".","banquet Facility (food prepared and served on-site",,,"Beef"
-2369,"North Dakota","Sheridan","2009-06-20T00:00:00Z","2009-06-25T00:00:00Z","2009-06-20T00:00:00Z","2009-06-20T00:00:00Z",88,0,0,"Salmonella",,,,"enterica",,,,"Montevideo",,,,1,".",".",".","banquet Facility (food prepared and served on-site",,,"Beef"
-2372,"Maine","Penobscot","2009-06-30T00:00:00Z","2009-07-03T00:00:00Z","2009-06-28T00:00:00Z","2009-06-28T00:00:00Z",6,1,0,"Salmonella",,,,"enterica",,,,"Enteritidis",,,,1,".",".",".","Private Home",,,"unknown commodity"
-2373,"New York","Essex","2009-07-24T00:00:00Z","2009-07-25T00:00:00Z","2009-07-24T00:00:00Z","2009-07-25T00:00:00Z",24,0,0,,,,,,,,,,,,,0,".",".",".","Camp",,,">1 commodity"
-2374,"Connecticut","Fairfield","2009-06-02T00:00:00Z","2009-07-04T00:00:00Z",,,8,0,0,"Cyclospora",,,,"cayetanensis",,,,,,,,1,".",".",".","Private Home",,,"Fruits-Nuts"
-2376,"Oregon","Benton","2009-03-02T00:00:00Z","2009-12-26T00:00:00Z",,,26,8,0,"Salmonella",,,,"enterica",,,,"Heidelberg",,,,1,".",".",".","Private Home","Restaurant - Sit-down dining",,"Poultry"
-2378,"Oregon","Lincoln","2009-07-03T00:00:00Z","2009-07-05T00:00:00Z","2009-07-02T00:00:00Z","2009-07-02T00:00:00Z",31,1,0,"Calicivirus",,,,"norovirus",,,,"GII / undefined cluster by sequence",,,,1,".",".",".","Restaurant - Sit-down dining",,,">1 commodity Food"
-2380,"Oregon","Marion","2009-07-13T00:00:00Z","2009-07-18T00:00:00Z","2009-07-13T00:00:00Z","2009-07-13T00:00:00Z",17,0,0,"Calicivirus",,,,"norovirus",,,,"Genogroup II (GII),not sequenced",,,,1,".",".",".",,,,"unknown commodity"
-2381,"Oregon","Umatilla","2009-07-16T00:00:00Z","2009-07-18T00:00:00Z","2009-07-16T00:00:00Z","2009-07-16T00:00:00Z",18,0,0,"Calicivirus",,,,"norovirus",,,,"GII / undefined cluster by sequence",,,,1,".",".",".",,,,"unknown commodity"
-2382,"Oregon","Multnomah","2009-08-01T00:00:00Z","2009-08-02T00:00:00Z","2009-08-01T00:00:00Z","2009-08-01T00:00:00Z",21,0,0,,,,,,,,,,,,,0,".",".",".","Fair, festival, other temp or mobile services",,,">1 commodity Food"
-2384,"New York","Nassau","2009-05-17T00:00:00Z","2009-05-19T00:00:00Z","2009-05-17T00:00:00Z","2009-05-17T00:00:00Z",18,2,0,,,,,,,,,,,,,0,".",".",".","Restaurant - Sit-down dining",,,">1 commodity"
-2387,"New York","Suffolk","2009-02-26T00:00:00Z","2009-02-28T00:00:00Z","2009-02-25T00:00:00Z","2009-02-25T00:00:00Z",13,1,0,"Calicivirus",,,,"norovirus",,,,,,,,1,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-2388,"New York",,"2009-07-18T00:00:00Z","2009-07-20T00:00:00Z","2009-07-16T00:00:00Z","2009-07-16T00:00:00Z",23,2,0,,,,,,,,,,,,,0,".",".",".","Restaurant - Sit-down dining","banquet Facility (food prepared and served on-site",,">1 commodity"
-2390,"New York","Westchester","2009-04-16T00:00:00Z","2009-04-21T00:00:00Z","2009-04-13T00:00:00Z","2009-04-17T00:00:00Z",40,0,0,"Calicivirus",,,,"norovirus",,,,,,,,1,".",".",".","School",,,">1 commodity"
-2394,"Wisconsin","Outagamie","2009-08-04T00:00:00Z","2009-08-05T00:00:00Z","2009-08-03T00:00:00Z","2009-08-03T00:00:00Z",24,0,0,"Calicivirus",,,,"norovirus",,,,"Genogroup II (GII),not sequenced",,,,1,".",".",".",,,,"unknown commodity"
-2395,"Michigan","Kent","2009-06-28T00:00:00Z","2009-06-30T00:00:00Z","2009-06-28T00:00:00Z","2009-06-28T00:00:00Z",20,0,0,"Clostridium",,,,"perfringens",,,,,,,,1,".",".",".","Private Home",,,"Pork"
-2397,"Ohio","Mercer","2009-07-24T00:00:00Z","2009-07-26T00:00:00Z","2009-07-23T00:00:00Z","2009-07-23T00:00:00Z",36,0,0,,,,,,,,,,,,,0,".",".",".","Picnic",,,"unknown commodity"
-2410,"California","Placer","2009-06-23T00:00:00Z","2009-06-23T00:00:00Z","2009-06-22T00:00:00Z","2009-06-22T00:00:00Z",19,0,0,"Calicivirus",,,,"norovirus",,,,"GI_1",,,,1,".",".",".","Restaurant - ""Fast-food""(drive up service or pay a",,,"unknown commodity"
-2412,"New Mexico","Taos","2009-06-17T00:00:00Z","2009-06-19T00:00:00Z","2009-06-17T00:00:00Z",,12,0,0,,,,,,,,,,,,,0,".",".",".",,,,"unknown commodity"
-2413,"New Mexico","Bernalillo","2009-07-19T00:00:00Z","2009-07-30T00:00:00Z","2009-07-18T00:00:00Z","2009-07-18T00:00:00Z",48,2,0,"Salmonella",,,,"enterica",,,,"Javiana",,,,1,".",".",".",,,,"unknown commodity"
-2423,"Illinois","Coles","2009-08-05T00:00:00Z","2009-08-07T00:00:00Z","2009-08-05T00:00:00Z",,10,0,0,,,,,,,,,,,,,0,".",".",".","Restaurant - Sit-down dining",,,">1 commodity"
-2424,"South Carolina","Spartanburg","2009-07-28T00:00:00Z","2009-07-29T00:00:00Z","2009-07-28T00:00:00Z","2009-07-28T00:00:00Z",50,0,0,"Clostridium",,,,"perfringens",,,,,,,,1,".",".",".","banquet Facility (food prepared and served on-site",,,"Pork"
-2434,"Kansas","Johnson","2009-05-18T00:00:00Z","2009-05-19T00:00:00Z","2009-05-18T00:00:00Z","2009-05-18T00:00:00Z",6,0,0,,,,,,,,,,,,,0,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-2454,"New York","New York","2009-08-07T00:00:00Z","2009-08-08T00:00:00Z","2009-08-06T00:00:00Z","2009-08-06T00:00:00Z",12,2,0,"Salmonella",,,,"enterica",,,,"Enteritidis",,,,1,".",".",".","Picnic","Workplace, not cafeteria",,">1 commodity Food"
-2460,"Georgia",,"2009-07-18T00:00:00Z","2009-07-21T00:00:00Z","2009-07-17T00:00:00Z","2009-07-17T00:00:00Z",11,0,0,"Campylobacter",,,,"jejuni",,,,,,,,1,".",".",".","Workplace, not cafeteria",,,">1 commodity Food"
-2465,"New Hampshire","Sullivan","2009-07-14T00:00:00Z","2009-07-17T00:00:00Z","2009-07-13T00:00:00Z","2009-07-13T00:00:00Z",31,1,0,"Calicivirus",,,,"norovirus",,,,"Genogroup II (GII),not sequenced",,,,0,".",".",".","Camp",,,"Root"
-2467,"Georgia","Gwinnett","2009-01-09T00:00:00Z","2009-01-24T00:00:00Z","2009-01-07T00:00:00Z","2009-01-24T00:00:00Z",46,1,0,"Calicivirus",,,,"norovirus",,,,"Genogroup II (GII),not sequenced",,,,1,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-2469,"California","Tulare","2009-03-21T00:00:00Z","2009-03-22T00:00:00Z","2009-03-21T00:00:00Z","2009-03-21T00:00:00Z",6,0,0,,,,,,,,,,,,,0,".",".",".","Restaurant - ""Fast-food""(drive up service or pay a",,,"unknown commodity"
-2470,"Idaho",,"2009-01-05T00:00:00Z","2009-01-05T00:00:00Z","2009-01-04T00:00:00Z","2009-01-04T00:00:00Z",9,0,0,,,,,,,,,,,,,0,".",".",".","Restaurant - ""Fast-food""(drive up service or pay a",,,">1 commodity Food"
-2475,"Minnesota","Douglas","2009-08-12T00:00:00Z","2009-08-22T00:00:00Z",,"2009-08-07T00:00:00Z",6,1,0,"Escherichia",,,,"coli, Shiga toxin-producing",,,,"O157:H7",,,,1,".",".",".","Private Home",,,"Beef"
-2479,"Massachusetts",,"2009-07-31T00:00:00Z","2009-08-12T00:00:00Z",,,6,2,0,"Salmonella",,,,"enterica",,,,"Newport",,,,1,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-2480,"Wisconsin","Walworth","2009-08-14T00:00:00Z",,,,52,1,0,"Campylobacter",,,,"jejuni",,,,,,,,1,".",".",".","Private Home",,,"Dairy"
-2486,"Illinois","Cook","2009-08-25T00:00:00Z","2009-08-28T00:00:00Z","2009-08-24T00:00:00Z",,14,3,0,"Shigella",,,,"sonnei",,,,,,,,1,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-2487,"Illinois","Cook","2009-08-28T00:00:00Z","2009-08-30T00:00:00Z","2009-08-27T00:00:00Z","2009-08-27T00:00:00Z",9,0,0,,,,,,,,,,,,,0,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-2488,"Tennessee","Davidson","2009-07-18T00:00:00Z","2009-07-26T00:00:00Z","2009-07-18T00:00:00Z",,10,3,0,"Salmonella",,,,"enterica",,,,"Enteritidis",,,,1,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-2496,"Hawaii","Honolulu","2009-02-14T00:00:00Z","2009-02-15T00:00:00Z","2009-02-13T00:00:00Z",,21,0,0,"Calicivirus",,,,"norovirus",,,,"GII / undefined cluster by sequence",,,,1,".",".",".",,,,"unknown commodity"
-2498,"Maryland","Montgomery","2009-07-08T00:00:00Z","2009-07-09T00:00:00Z","2009-07-08T00:00:00Z","2009-07-08T00:00:00Z",26,0,0,,,,,,,,,,,,,0,".",".",".","Private Home",,,"unknown commodity"
-2501,"Maryland","Anne Arundel","2009-05-10T00:00:00Z","2009-05-11T00:00:00Z","2009-05-09T00:00:00Z","2009-05-09T00:00:00Z",6,0,0,,,,,,,,,,,,,0,".",".",".","Restaurant - Sit-down dining",,,"Mollusk"
-2502,"Arizona","Cochise","2009-06-12T00:00:00Z","2009-06-14T00:00:00Z","2009-06-12T00:00:00Z","2009-06-12T00:00:00Z",40,0,0,,,,,,,,,,,,,0,".",".",".",,,,"unknown commodity"
-2509,"Massachusetts","Hampden","2009-01-17T00:00:00Z","2009-01-19T00:00:00Z","2009-01-16T00:00:00Z","2009-01-17T00:00:00Z",91,0,0,,,,,,,,,,,,,0,".",".",".","banquet Facility (food prepared and served on-site",,,"unknown commodity"
-2514,"Michigan","Jackson","2009-08-07T00:00:00Z","2009-08-22T00:00:00Z","2009-08-06T00:00:00Z","2009-08-15T00:00:00Z",9,3,0,"Salmonella",,,,"enterica",,,,"Miami",,,,1,".",".",".","Restaurant - ""Fast-food""(drive up service or pay a",,,">1 commodity Food"
-2515,"Michigan",,"2009-05-04T00:00:00Z","2009-05-30T00:00:00Z",,,21,7,0,"Salmonella",,,,"enterica",,,,"Saintpaul",,,,1,".",".",".","Private Home","Restaurant - Sit-down dining","Restaurant - ""Fast-food""(drive up service or pay a","Vine"
-2526,"Arizona","Maricopa","2009-03-30T00:00:00Z","2009-04-02T00:00:00Z","2009-03-30T00:00:00Z","2009-03-30T00:00:00Z",9,0,0,"Calicivirus",,,,"norovirus",,,,"GII / undefined cluster by sequence",,,,1,".",".",".",,,,"unknown commodity"
-2535,"Illinois","DuPage","2009-01-23T00:00:00Z","2009-02-17T00:00:00Z","2009-01-21T00:00:00Z",,303,0,0,"Calicivirus",,,,"norovirus",,,,"GII / undefined cluster by sequence",,,,1,".",".",".","Other (describe in remarks)",,,"unknown commodity"
-2536,"Arizona","Maricopa","2009-04-04T00:00:00Z","2009-04-05T00:00:00Z","2009-04-04T00:00:00Z","2009-04-04T00:00:00Z",8,0,0,,,,,,,,,,,,,0,".",".",".",,,,"unknown commodity"
-2538,"Oregon","Marion","2009-07-20T00:00:00Z","2009-07-20T00:00:00Z","2009-07-19T00:00:00Z","2009-07-20T00:00:00Z",12,0,0,,,,,,,,,,,,,0,".",".",".","banquet Facility (food prepared and served on-site",,,"unknown commodity"
-2539,"Oregon","Wasco","2009-07-13T00:00:00Z","2009-07-22T00:00:00Z",,"2009-07-16T00:00:00Z",59,0,0,"Salmonella",,,,"enterica",,,,"Enteritidis",,,,1,".",".",".","Camp",,,"Eggs"
-2540,"Oregon","Washington","2009-07-26T00:00:00Z","2009-07-26T00:00:00Z","2009-07-25T00:00:00Z","2009-07-25T00:00:00Z",8,0,0,"Calicivirus",,,,"norovirus",,,,"GII / undefined cluster by sequence",,,,1,".",".",".","Picnic",,,"unknown commodity"
-2544,"Florida","Orange","2009-05-13T00:00:00Z","2009-05-15T00:00:00Z","2009-05-12T00:00:00Z","2009-05-12T00:00:00Z",13,0,0,"Shigella",,,,"sonnei",,,,,,,,1,".",".",".","Private Home",,,"unknown commodity"
-2547,"Ohio","Greene","2009-09-16T00:00:00Z","2009-09-17T00:00:00Z","2009-09-15T00:00:00Z","2009-09-16T00:00:00Z",6,0,0,"Calicivirus",,,,"norovirus",,,,"GII / undefined cluster by sequence",,,,0,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-2549,"Virginia","Fluvanna","2009-07-01T00:00:00Z","2009-07-02T00:00:00Z","2009-06-30T00:00:00Z","2009-06-30T00:00:00Z",19,2,0,"Salmonella",,,,"enterica",,,,"Enteritidis",,,,1,".",".",".","Private Home",,,"Eggs"
-2559,"California","Orange","2009-03-21T00:00:00Z","2009-03-22T00:00:00Z","2009-03-21T00:00:00Z","2009-03-21T00:00:00Z",10,0,0,"Calicivirus",,,,"norovirus",,,,"Unspecified",,,,0,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-2560,"Virginia","Loudoun","2009-01-30T00:00:00Z","2009-02-03T00:00:00Z","2009-01-30T00:00:00Z","2009-01-31T00:00:00Z",11,1,0,"Salmonella",,,,"enterica",,,,"Enteritidis",,,,1,".",".",".","School",,,">1 commodity Food"
-2566,"Illinois","Cook","2009-09-20T00:00:00Z","2009-09-29T00:00:00Z","2009-09-17T00:00:00Z","2009-09-26T00:00:00Z",17,6,0,"Salmonella",,,,"enterica",,,,"Infantis",,,,1,".",".",".","Private Home",,,">1 commodity Food"
-2567,"Arizona","Maricopa","2009-04-14T00:00:00Z","2009-04-14T00:00:00Z","2009-04-13T00:00:00Z","2009-04-13T00:00:00Z",9,0,0,"Calicivirus",,,,"norovirus",,,,"GII / undefined cluster by sequence",,,,1,".",".",".",,,,"unknown commodity"
-2571,"Arizona","Maricopa","2009-04-16T00:00:00Z","2009-04-18T00:00:00Z","2009-04-16T00:00:00Z","2009-04-18T00:00:00Z",7,0,0,,,,,,,,,,,,,0,".",".",".",,,,"unknown commodity"
-2573,"Arizona","Maricopa","2009-05-04T00:00:00Z","2009-05-06T00:00:00Z","2009-05-04T00:00:00Z","2009-05-04T00:00:00Z",23,0,0,"Calicivirus",,,,"norovirus",,,,"GII / undefined cluster by sequence",,,,1,".",".",".",,,,"unknown commodity"
-2574,"Arizona","Maricopa","2009-05-11T00:00:00Z","2009-05-11T00:00:00Z","2009-05-11T00:00:00Z","2009-05-11T00:00:00Z",8,0,0,,,,,,,,,,,,,0,".",".",".",,,,"unknown commodity"
-2575,"Louisiana",,"2009-09-17T00:00:00Z","2009-09-22T00:00:00Z","2009-09-17T00:00:00Z","2009-09-17T00:00:00Z",200,4,0,"Salmonella",,,,"enterica",,,,"Newport",,,,1,".",".",".",,,,"unknown commodity"
-2579,"Wisconsin","Wood","2009-08-31T00:00:00Z","2009-08-31T00:00:00Z","2009-08-29T00:00:00Z",,12,0,0,"Calicivirus",,,,"norovirus",,,,"Genogroup I (GI), not sequenced",,,,1,".",".",".",,,,"unknown commodity"
-2583,"Connecticut","New Haven","2009-09-07T00:00:00Z","2009-09-10T00:00:00Z","2009-09-06T00:00:00Z","2009-09-06T00:00:00Z",9,0,0,"Salmonella","Salmonella",,,"enterica","enterica",,,"Schwarzengrund","Typhimurium var Cope",,,1,1,".",".","Other (describe in remarks)",,,">1 commodity Food"
-2586,"Kansas","Johnson","2009-08-11T00:00:00Z","2009-08-30T00:00:00Z","2009-08-11T00:00:00Z","2009-08-30T00:00:00Z",39,1,0,"Pesticides",,,,,,,,,,,,1,".",".",".","Restaurant - Sit-down dining",,,">1 commodity Food"
-2589,"Kansas","Crawford","2009-08-29T00:00:00Z","2009-09-04T00:00:00Z","2009-08-24T00:00:00Z","2009-08-29T00:00:00Z",33,7,0,"Salmonella",,,,"enterica",,,,"Newport",,,,1,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-2590,"Kansas","Lyon","2009-06-13T00:00:00Z","2009-06-25T00:00:00Z","2009-06-12T00:00:00Z","2009-06-25T00:00:00Z",17,0,0,"Staphylococcus",,,,"aureus",,,,,,,,1,".",".",".","Restaurant - Sit-down dining",,,"Poultry"
-2594,"Kansas","Crawford","2009-05-11T00:00:00Z","2009-05-12T00:00:00Z","2009-05-10T00:00:00Z","2009-05-10T00:00:00Z",6,0,0,"Calicivirus",,,,"norovirus",,,,"Unspecified",,,,1,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-2596,"Ohio","Butler","2009-01-06T00:00:00Z","2009-01-06T00:00:00Z","2009-01-05T00:00:00Z","2009-01-05T00:00:00Z",8,,0,"Clostridium",,,,"perfringens",,,,,,,,1,".",".",".","Private Home","School",,">1 commodity Food"
-2602,"Ohio","Hocking","2009-03-07T00:00:00Z",,"2009-03-07T00:00:00Z",,10,,0,,,,,,,,,,,,,0,".",".",".","Other (describe in remarks)",,,"unknown commodity"
-2605,"Ohio","Wayne","2009-07-22T00:00:00Z","2009-07-22T00:00:00Z","2009-07-22T00:00:00Z","2009-07-22T00:00:00Z",6,0,0,,,,,,,,,,,,,0,".",".",".","Workplace, not cafeteria",,,"unknown commodity"
-2607,"Ohio","Darke","2009-08-03T00:00:00Z","2009-08-09T00:00:00Z","2009-08-02T00:00:00Z","2009-08-02T00:00:00Z",11,4,0,"Escherichia",,,,"coli, Shiga toxin-producing",,,,"O157:H7",,,,1,".",".",".","Private Home",,,">1 commodity Food"
-2611,"Michigan",,"2009-08-17T00:00:00Z","2009-10-05T00:00:00Z",,,14,2,0,"Salmonella",,,,"enterica",,,,"Typhimurium",,,,1,".",".",".",,,,"Sprout"
-2612,"Maryland","Calvert","2009-09-26T00:00:00Z","2009-09-27T00:00:00Z","2009-09-26T00:00:00Z","2009-09-26T00:00:00Z",54,0,0,"Clostridium",,,,"perfringens",,,,,,,,1,".",".",".","Caterer (food prepared off-site from where server)",,,">1 commodity Food"
-2613,"Wisconsin","Trempealeau","2009-09-17T00:00:00Z","2009-09-18T00:00:00Z",,,27,0,0,"Calicivirus",,,,"norovirus",,,,"Genogroup I (GI), not sequenced",,,,1,".",".",".",,,,"unknown commodity"
-2614,"California","San Diego","2009-05-25T00:00:00Z","2009-05-26T00:00:00Z","2009-05-25T00:00:00Z","2009-05-25T00:00:00Z",7,0,0,,,,,,,,,,,,,0,".",".",".",,,,"unknown commodity"
-2621,"Illinois","McHenry","2009-09-26T00:00:00Z","2009-10-11T00:00:00Z","2009-09-26T00:00:00Z",,15,1,0,"Salmonella",,,,"enterica",,,,"Enteritidis",,,,1,".",".",".","Picnic",,,"Pork"
-2624,"Pennsylvania","Berks","2009-09-17T00:00:00Z","2009-09-18T00:00:00Z","2009-09-16T00:00:00Z","2009-09-16T00:00:00Z",9,1,0,"Calicivirus",,,,"norovirus",,,,,,,,0,".",".",".",,,,"unknown commodity"
-2627,"West Virginia","Logan","2009-05-26T00:00:00Z","2009-07-03T00:00:00Z","2009-05-25T00:00:00Z","2009-06-11T00:00:00Z",21,9,2,"Salmonella",,,,"enterica",,,,"Enteritidis",,,,1,".",".",".",,,,"Pork"
-2628,"Pennsylvania","Lebanon","2009-06-04T00:00:00Z","2009-11-28T00:00:00Z",,,29,4,0,"Salmonella",,,,"enterica",,,,"Typhimurium var Cope",,,,1,".",".",".",,,,"unknown commodity"
-2634,"Hawaii","Honolulu","2009-08-30T00:00:00Z","2009-09-05T00:00:00Z","2009-08-29T00:00:00Z","2009-08-29T00:00:00Z",27,1,0,"Salmonella",,,,"enterica",,,,"Hadar",,,,1,".",".",".",,,,"unknown commodity"
-2635,"Hawaii","Maui","2009-08-17T00:00:00Z",,"2009-08-16T00:00:00Z","2009-08-29T00:00:00Z",26,0,0,"Salmonella",,,,"enterica",,,,"Reading",,,,1,".",".",".",,,,"unknown commodity"
-2644,"Massachusetts","Plymouth","2009-09-16T00:00:00Z","2009-09-17T00:00:00Z","2009-09-16T00:00:00Z","2009-09-16T00:00:00Z",8,0,0,,,,,,,,,,,,,0,".",".",".","Workplace, not cafeteria",,,"Pork"
-2649,"Maryland","Allegany","2009-08-29T00:00:00Z","2009-09-01T00:00:00Z","2009-08-29T00:00:00Z","2009-08-29T00:00:00Z",27,6,0,"Salmonella",,,,"enterica",,,,"Enteritidis",,,,1,".",".",".","Restaurant - other or unknown type",,,">1 commodity Food"
-2659,"Ohio","Franklin","2009-09-26T00:00:00Z","2009-09-27T00:00:00Z","2009-09-25T00:00:00Z","2009-09-25T00:00:00Z",10,0,0,"Calicivirus",,,,"norovirus",,,,"GII_12",,,,1,".",".",".","Workplace, not cafeteria","Private Home",,"unknown commodity"
-2665,"Illinois","St. Clair","2009-10-13T00:00:00Z","2009-10-14T00:00:00Z","2009-10-13T00:00:00Z","2009-10-13T00:00:00Z",19,,0,"Clostridium",,,,"perfringens",,,,,,,,0,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-2690,"Michigan","Ottawa","2009-10-07T00:00:00Z","2009-10-07T00:00:00Z","2009-10-06T00:00:00Z","2009-10-06T00:00:00Z",67,0,0,"Clostridium",,,,"perfringens",,,,,,,,1,".",".",".","School","Prison, jail",,">1 commodity Food"
-2691,"Arizona","Maricopa","2009-06-27T00:00:00Z","2009-06-27T00:00:00Z","2009-06-26T00:00:00Z","2009-06-27T00:00:00Z",40,0,0,,,,,,,,,,,,,0,".",".",".",,,,"unknown commodity"
-2696,"Tennessee","Davidson","2009-09-23T00:00:00Z","2009-10-04T00:00:00Z",,,13,6,0,"Salmonella",,,,"enterica",,,,"Newport",,,,1,".",".",".","Restaurant - Sit-down dining",,,">1 commodity"
-2698,"Illinois","Cook","2009-09-28T00:00:00Z","2009-09-28T00:00:00Z","2009-09-27T00:00:00Z","2009-09-27T00:00:00Z",9,0,0,,,,,,,,,,,,,0,".",".",".","Private Home",,,"unknown commodity"
-2703,"Minnesota","Hennepin","2009-10-07T00:00:00Z","2009-10-11T00:00:00Z","2009-10-07T00:00:00Z","2009-10-07T00:00:00Z",27,0,0,"Calicivirus",,,,"norovirus",,,,,,,,1,".",".",".","Workplace, not cafeteria",,,">1 commodity Food"
-2704,"New York","New York","2009-08-02T00:00:00Z","2009-09-13T00:00:00Z",,,10,6,0,"Salmonella",,,,"enterica",,,,"Kiambu",,,,1,".",".",".","Unknown",,,"unknown commodity"
-2705,"New York","New York","2009-10-03T00:00:00Z","2009-10-04T00:00:00Z","2009-10-02T00:00:00Z","2009-10-02T00:00:00Z",13,0,0,"Calicivirus",,,,"norovirus",,,,,,,,0,".",".",".",,,,"Fruits-Nuts"
-2706,"Missouri","Callaway","2009-10-04T00:00:00Z","2009-10-05T00:00:00Z","2009-10-04T00:00:00Z","2009-10-04T00:00:00Z",30,0,0,,,,,,,,,,,,,0,".",".",".","Church, temple, religous location",,,"Poultry"
-2707,"Florida","Brevard","2009-09-14T00:00:00Z","2009-09-15T00:00:00Z","2009-09-13T00:00:00Z","2009-09-13T00:00:00Z",10,0,0,,,,,,,,,,,,,0,".",".",".","Private Home","Picnic",,">1 commodity Food"
-2710,"New York","Suffolk","2009-10-24T00:00:00Z","2009-10-27T00:00:00Z","2009-10-23T00:00:00Z","2009-10-23T00:00:00Z",23,0,0,"Calicivirus",,,,"norovirus",,,,,,,,1,".",".",".","Restaurant - Sit-down dining","banquet Facility (food prepared and served on-site",,">1 commodity"
-2715,"California","Orange","2009-03-04T00:00:00Z","2009-03-05T00:00:00Z","2009-03-03T00:00:00Z","2009-03-03T00:00:00Z",9,0,0,"Calicivirus",,,,"norovirus",,,,"Genogroup II (GII),not sequenced",,,,0,".",".",".","Workplace, not cafeteria",,,"Vine"
-2717,"California","Monterey","2009-08-08T00:00:00Z","2009-08-10T00:00:00Z","2009-08-08T00:00:00Z","2009-08-08T00:00:00Z",14,0,0,,,,,,,,,,,,,0,".",".",".","banquet Facility (food prepared and served on-site",,,"unknown commodity"
-2861,"Illinois","Cook","2009-10-18T00:00:00Z","2009-10-25T00:00:00Z","2009-10-17T00:00:00Z","2009-10-24T00:00:00Z",7,1,0,"Salmonella",,,,"enterica",,,,"Ohio",,,,1,".",".",".",,,,"unknown commodity"
-2870,"Colorado","Larimer","2009-08-08T00:00:00Z","2009-08-10T00:00:00Z","2009-08-07T00:00:00Z","2009-08-08T00:00:00Z",15,0,0,,,,,,,,,,,,,0,".",".",".","Other (describe in remarks)","Private Home",,"unknown commodity"
-2872,"Colorado","Adams","2009-08-16T00:00:00Z","2009-08-18T00:00:00Z","2009-08-11T00:00:00Z","2009-08-11T00:00:00Z",6,0,0,,,,,,,,,,,,,0,".",".",".","Restaurant - ""Fast-food""(drive up service or pay a",,,"unknown commodity"
-2874,"Colorado","Arapahoe","2009-08-31T00:00:00Z","2009-09-04T00:00:00Z","2009-08-31T00:00:00Z","2009-09-02T00:00:00Z",28,1,0,"Rotavirus",,,,,,,,,,,,0,".",".",".","School",,,"unknown commodity"
-2875,"Wisconsin","Marathon","2009-06-28T00:00:00Z","2009-06-28T00:00:00Z","2009-06-28T00:00:00Z","2009-06-28T00:00:00Z",7,0,0,"Clostridium",,,,"perfringens",,,,,,,,1,".",".",".","Restaurant - Sit-down dining",,,">1 commodity Food"
-2876,"Ohio","Mahoning","2009-11-11T00:00:00Z","2009-11-11T00:00:00Z","2009-11-10T00:00:00Z","2009-11-10T00:00:00Z",105,0,0,,,,,,,,,,,,,0,".",".",".","Church, temple, religous location","Private Home",,">1 commodity"
-2878,"California","Orange","2009-02-15T00:00:00Z","2009-02-16T00:00:00Z","2009-02-15T00:00:00Z","2009-02-15T00:00:00Z",7,1,0,"Calicivirus",,,,"norovirus",,,,"Unspecified",,,,0,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-2879,"California","Orange","2009-02-11T00:00:00Z","2009-02-13T00:00:00Z","2009-02-11T00:00:00Z","2009-02-11T00:00:00Z",20,0,0,"Calicivirus",,,,"norovirus",,,,"Unspecified",,,,0,".",".",".","Workplace, not cafeteria",,,"unknown commodity"
-2880,"California","San Diego","2009-08-31T00:00:00Z","2009-09-04T00:00:00Z","2009-08-29T00:00:00Z","2009-08-29T00:00:00Z",16,0,0,"Salmonella",,,,"enterica",,,,"Heidelberg",,,,1,".",".",".","Other (describe in remarks)",,,"Finfish"
-2890,"Ohio","Montgomery","2009-11-01T00:00:00Z","2009-11-03T00:00:00Z","2009-10-31T00:00:00Z","2009-10-31T00:00:00Z",9,1,0,"Calicivirus",,,,"norovirus",,,,"GII_12",,,,1,".",".",".",,,,"unknown commodity"
-2892,"California","Kern","2009-09-16T00:00:00Z","2009-09-18T00:00:00Z","2009-09-15T00:00:00Z","2009-09-15T00:00:00Z",15,0,0,,,,,,,,,,,,,0,".",".",".","Restaurant - Sit-down dining",,,">1 commodity"
-2925,"Colorado","Montrose","2009-03-19T00:00:00Z","2009-04-24T00:00:00Z",,,81,1,0,"Campylobacter",,,,"jejuni",,,,,,,,1,".",".",".","Private Home",,,"Dairy"
-2933,"Colorado","El Paso","2009-01-11T00:00:00Z","2009-01-20T00:00:00Z","2009-01-11T00:00:00Z","2009-01-14T00:00:00Z",40,0,0,"Calicivirus",,,,"norovirus",,,,"Genogroup II (GII),not sequenced",,,,0,".",".",".","banquet Facility (food prepared and served on-site",,,"unknown commodity"
-2937,"Colorado","Park","2009-07-19T00:00:00Z","2009-07-24T00:00:00Z",,,45,0,0,"Calicivirus",,,,"norovirus",,,,,,,,0,".",".",".","Camp",,,"unknown commodity"
-2941,"Maine","Penobscot","2009-10-06T00:00:00Z","2009-10-07T00:00:00Z","2009-10-04T00:00:00Z","2009-10-04T00:00:00Z",44,,0,"Calicivirus",,,,"norovirus",,,,"Genogroup I (GI), not sequenced",,,,1,".",".",".",,,,"unknown commodity"
-2952,"Illinois","Cook","2009-11-16T00:00:00Z","2009-11-16T00:00:00Z","2009-11-15T00:00:00Z","2009-11-15T00:00:00Z",8,0,0,"Clostridium",,,,"perfringens",,,,,,,,1,".",".",".",,,,"unknown commodity"
-2967,"Texas","Harris","2009-02-01T00:00:00Z","2009-02-01T00:00:00Z","2009-01-31T00:00:00Z","2009-01-31T00:00:00Z",11,1,0,,,,,,,,,,,,,0,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-2987,"Texas","Harris","2009-07-24T00:00:00Z","2009-07-27T00:00:00Z","2009-07-24T00:00:00Z","2009-07-25T00:00:00Z",58,0,0,"Escherichia",,,,"coli, Enterotoxigenic",,,,"Unspecified",,,,1,".",".",".","Restaurant - Sit-down dining","Workplace, not cafeteria",,">1 commodity Food"
-2999,"Arkansas","Izard","2009-10-13T00:00:00Z","2009-10-14T00:00:00Z","2009-10-13T00:00:00Z","2009-10-13T00:00:00Z",160,0,0,,,,,,,,,,,,,0,".",".",".","Prison, jail",,,"unknown commodity"
-3006,"Pennsylvania","Philadelphia","2009-09-27T00:00:00Z","2009-10-08T00:00:00Z","2009-09-26T00:00:00Z","2009-10-04T00:00:00Z",12,0,0,"Salmonella",,,,"enterica",,,,"Enteritidis",,,,1,".",".",".","Restaurant - Sit-down dining",,,"Eggs"
-3040,"North Dakota","Walsh","2009-10-21T00:00:00Z","2009-10-22T00:00:00Z","2009-10-21T00:00:00Z","2009-10-21T00:00:00Z",36,0,0,"Clostridium",,,,"perfringens",,,,,,,,1,".",".",".","Caterer (food prepared off-site from where server)",,,"unknown commodity"
-3045,"Louisiana","West Feliciana","2009-11-26T00:00:00Z","2009-11-27T00:00:00Z","2009-11-26T00:00:00Z","2009-11-26T00:00:00Z",800,0,0,"Clostridium",,,,"perfringens",,,,,,,,0,".",".",".",,,,"unknown commodity"
-3047,"California","Los Angeles","2009-08-15T00:00:00Z","2009-08-18T00:00:00Z","2009-08-13T00:00:00Z","2009-08-13T00:00:00Z",6,0,0,"Campylobacter",,,,"jejuni",,,,,,,,0,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-3050,"Massachusetts",,"2009-09-25T00:00:00Z","2009-11-20T00:00:00Z",,,12,8,0,"Escherichia",,,,"coli, Shiga toxin-producing",,,,"O157:H7",,,,1,".",".",".",,,,"Beef"
-3053,"Maryland","Montgomery","2009-11-13T00:00:00Z","2009-11-16T00:00:00Z","2009-11-12T00:00:00Z","2009-11-13T00:00:00Z",12,0,0,"Escherichia","Escherichia","Shigella",,"coli, Enteroaggregative","coli, Enterotoxigenic","sonnei",,"Unspecified","Unspecified",,,1,1,1,".","Workplace, not cafeteria","Other (describe in remarks)",,"unknown commodity"
-3057,"Florida","Glades","2009-11-10T00:00:00Z","2009-11-11T00:00:00Z","2009-11-10T00:00:00Z","2009-11-10T00:00:00Z",13,0,0,,,,,,,,,,,,,0,".",".",".","Prison, jail",,,"Grains-Beans"
-3065,"Colorado","Broomfield","2009-07-12T00:00:00Z","2009-07-14T00:00:00Z","2009-07-11T00:00:00Z","2009-07-13T00:00:00Z",13,2,0,,,,,,,,,,,,,0,".",".",".","Restaurant - ""Fast-food""(drive up service or pay a",,,"unknown commodity"
-3070,"Minnesota","Ramsey","2009-11-25T00:00:00Z","2009-11-26T00:00:00Z","2009-11-24T00:00:00Z","2009-11-24T00:00:00Z",29,0,0,"Calicivirus",,,,"norovirus",,,,,,,,0,".",".",".","Restaurant - Sit-down dining",,,"Fruits-Nuts"
-3076,"Tennessee","Williamson","2009-11-10T00:00:00Z","2009-11-14T00:00:00Z","2009-11-09T00:00:00Z",,36,3,0,"Calicivirus",,,,"norovirus",,,,"GII_4 New Orleans (2009)",,,,1,".",".",".","Restaurant - Sit-down dining",,,">1 commodity Food"
-3079,"New York","Nassau","2009-09-15T00:00:00Z","2009-09-17T00:00:00Z","2009-09-13T00:00:00Z",,6,0,0,"Salmonella",,,,"enterica",,,,"Enteritidis",,,,1,".",".",".","Private Home",,,"unknown commodity"
-3081,"Texas","Harris","2009-07-28T00:00:00Z","2009-07-29T00:00:00Z",,,7,0,0,,,,,,,,,,,,,0,".",".",".",,,,"unknown commodity"
-3082,"Minnesota","Blue Earth","2009-11-23T00:00:00Z","2009-11-25T00:00:00Z","2009-11-23T00:00:00Z","2009-11-23T00:00:00Z",19,0,0,"Salmonella",,,,"enterica",,,,,,,,1,".",".",".","Church, temple, religous location",,,"unknown commodity"
-3083,"Texas","Harris","2009-07-21T00:00:00Z","2009-07-21T00:00:00Z","2009-07-21T00:00:00Z","2009-07-21T00:00:00Z",9,0,0,,,,,,,,,,,,,0,".",".",".",,,,"unknown commodity"
-3084,"Texas","Harris","2009-10-14T00:00:00Z","2009-10-16T00:00:00Z",,,25,0,0,,,,,,,,,,,,,0,".",".",".",,,,"unknown commodity"
-3093,"Ohio","Crawford","2009-12-03T00:00:00Z","2009-12-07T00:00:00Z","2009-12-02T00:00:00Z","2009-12-02T00:00:00Z",27,0,0,,,,,,,,,,,,,0,".",".",".","banquet Facility (food prepared and served on-site",,,"unknown commodity"
-3095,"Illinois","Tazewell","2009-12-10T00:00:00Z","2009-12-11T00:00:00Z","2009-12-10T00:00:00Z","2009-12-11T00:00:00Z",6,0,0,,,,,,,,,,,,,0,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-3115,"Kansas","Douglas","2009-08-30T00:00:00Z","2009-09-01T00:00:00Z","2009-08-29T00:00:00Z","2009-08-29T00:00:00Z",9,0,0,,,,,,,,,,,,,0,".",".",".","Other (describe in remarks)",,,"unknown commodity"
-3119,"South Dakota",,"2009-08-08T00:00:00Z","2009-08-19T00:00:00Z",,,6,0,0,"Campylobacter",,,,"jejuni",,,,,,,,1,".",".",".",,,,"unknown commodity"
-3122,"Ohio","Delaware","2009-12-10T00:00:00Z","2009-12-13T00:00:00Z","2009-12-09T00:00:00Z","2009-12-09T00:00:00Z",14,0,0,,,,,,,,,,,,,0,".",".",".","School",,,">1 commodity Food"
-3128,"New York","Ontario","2009-12-12T00:00:00Z","2009-12-13T00:00:00Z","2009-12-11T00:00:00Z","2009-12-11T00:00:00Z",10,0,0,"Clostridium",,,,"perfringens",,,,,,,,0,".",".",".","Restaurant - Sit-down dining",,,"Beef"
-3129,"New York",,"2009-12-11T00:00:00Z","2009-12-13T00:00:00Z","2009-12-10T00:00:00Z","2009-12-11T00:00:00Z",37,1,0,"Calicivirus",,,,"norovirus",,,,"Unspecified",,,,1,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-3130,"New York","Ontario","2009-12-02T00:00:00Z","2009-12-03T00:00:00Z","2009-12-01T00:00:00Z","2009-12-01T00:00:00Z",20,0,0,"Calicivirus",,,,"norovirus",,,,"Unspecified",,,,1,".",".",".","Picnic",,,"unknown commodity"
-3138,"Wisconsin","La Crosse","2009-12-03T00:00:00Z","2009-12-05T00:00:00Z","2009-12-03T00:00:00Z","2009-12-03T00:00:00Z",16,0,0,"Calicivirus",,,,"norovirus",,,,"Genogroup II (GII),not sequenced",,,,1,".",".",".","Church, temple, religous location",,,"Leafy"
-3175,"Florida","Orange","2009-04-09T00:00:00Z","2009-04-12T00:00:00Z","2009-04-08T00:00:00Z","2009-04-08T00:00:00Z",17,0,0,"Calicivirus",,,,"norovirus",,,,"GII / undefined cluster by sequence",,,,1,".",".",".","banquet Facility (food prepared and served on-site",,,"unknown commodity"
-3182,"Kansas","Butler","2009-12-23T00:00:00Z","2009-12-23T00:00:00Z","2009-12-23T00:00:00Z","2009-12-23T00:00:00Z",14,0,0,"Calicivirus",,,,"norovirus",,,,"Unspecified",,,,1,".",".",".","Private Home",,,">1 commodity Food"
-3187,"Florida","Brevard","2009-01-11T00:00:00Z","2009-01-12T00:00:00Z","2009-01-10T00:00:00Z","2009-01-10T00:00:00Z",11,0,0,"Calicivirus",,,,"norovirus",,,,"GII / undefined cluster by sequence",,,,1,".",".",".","Restaurant - ""Fast-food""(drive up service or pay a",,,"unknown commodity"
-3193,"Washington",,"2009-06-13T00:00:00Z","2009-06-18T00:00:00Z","2009-06-10T00:00:00Z",,6,1,0,"Salmonella",,,,"enterica",,,,"Newport",,,,1,".",".",".","Restaurant - ""Fast-food""(drive up service or pay a",,,">1 commodity Food"
-3199,"South Carolina","Horry","2009-11-13T00:00:00Z","2009-11-17T00:00:00Z","2009-11-13T00:00:00Z","2009-11-14T00:00:00Z",59,17,0,"Staphylococcus","Clostridium","Salmonella",,"aureus","perfringens","enterica",,,,"Montevideo",,1,1,1,".","Fair, festival, other temp or mobile services",,,"Pork"
-3200,"South Carolina","Charleston","2009-11-26T00:00:00Z","2009-11-29T00:00:00Z","2009-11-25T00:00:00Z","2009-11-27T00:00:00Z",8,0,0,"Calicivirus",,,,"norovirus",,,,"GII / undefined cluster by sequence",,,,1,".",".",".","Private Home",,,"Mollusk"
-3201,"Ohio","Cuyahoga","2009-12-14T00:00:00Z","2009-12-15T00:00:00Z","2009-12-14T00:00:00Z","2009-12-14T00:00:00Z",9,0,0,"Clostridium",,,,"perfringens",,,,,,,,1,".",".",".","Workplace, not cafeteria",,,"Beef"
-3203,"Washington",,"2009-07-14T00:00:00Z","2009-07-22T00:00:00Z",,,62,0,0,"Salmonella",,,,"enterica",,,,"Enteritidis",,,,1,".",".",".","Private Home","Restaurant - ""Fast-food""(drive up service or pay a",,"Eggs"
-3206,"South Carolina","Horry","2009-12-16T00:00:00Z","2009-12-17T00:00:00Z","2009-12-15T00:00:00Z","2009-12-15T00:00:00Z",9,0,0,"Calicivirus",,,,"norovirus",,,,"GII / undefined cluster by sequence",,,,1,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-3208,"Washington","Jefferson","2009-04-27T00:00:00Z","2009-04-28T00:00:00Z","2009-04-26T00:00:00Z","2009-04-26T00:00:00Z",10,0,0,"Calicivirus",,,,"norovirus",,,,,,,,0,".",".",".","Restaurant - ""Fast-food""(drive up service or pay a",,,"unknown commodity"
-3209,"Washington","Stevens","2009-06-04T00:00:00Z","2009-06-07T00:00:00Z","2009-06-03T00:00:00Z","2009-06-06T00:00:00Z",13,0,0,"Calicivirus",,,,"norovirus",,,,,,,,1,".",".",".",,,,">1 commodity"
-3228,"Connecticut","Hartford","2009-12-17T00:00:00Z","2009-12-17T00:00:00Z","2009-12-17T00:00:00Z","2009-12-17T00:00:00Z",6,0,0,,,,,,,,,,,,,0,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-3229,"Georgia","Clayton","2009-11-27T00:00:00Z","2009-11-30T00:00:00Z","2009-11-26T00:00:00Z","2009-11-26T00:00:00Z",17,3,0,"Salmonella",,,,"enterica",,,,"Heidelberg",,,,1,".",".",".","Private Home",,,"unknown commodity"
-3230,"Connecticut","Fairfield","2009-12-19T00:00:00Z","2009-12-19T00:00:00Z","2009-12-18T00:00:00Z","2009-12-18T00:00:00Z",6,0,0,"Calicivirus",,,,"norovirus",,,,"Genogroup II (GII),not sequenced",,,,1,".",".",".","Workplace, not cafeteria",,,">1 commodity Food"
-3231,"Missouri","Scott","2009-11-13T00:00:00Z","2009-12-04T00:00:00Z","2009-11-11T00:00:00Z",,6,1,0,"Salmonella",,,,"enterica",,,,"Typhimurium",,,,1,".",".",".","Private Home",,,">1 commodity Food"
-3234,"Missouri","St. Louis","2009-12-16T00:00:00Z","2009-12-17T00:00:00Z","2009-12-16T00:00:00Z","2009-12-16T00:00:00Z",54,0,0,,,,,,,,,,,,,0,".",".",".","Workplace, not cafeteria",,,"Beef"
-3237,"Iowa","Linn","2009-12-14T00:00:00Z","2009-12-19T00:00:00Z","2009-12-13T00:00:00Z","2009-12-16T00:00:00Z",11,4,0,"Salmonella",,,,"enterica",,,,"Newport",,,,1,".",".",".",,,,"unknown commodity"
-3240,"Michigan","Ingham","2009-02-19T00:00:00Z","2009-02-20T00:00:00Z","2009-02-19T00:00:00Z","2009-02-19T00:00:00Z",50,0,0,,,,,,,,,,,,,0,".",".",".","Workplace, not cafeteria",,,">1 commodity"
-3244,"Arizona","Maricopa","2009-11-11T00:00:00Z","2009-11-11T00:00:00Z","2009-11-10T00:00:00Z","2009-11-10T00:00:00Z",6,0,0,,,,,,,,,,,,,0,".",".",".",,,,"unknown commodity"
-3252,"Colorado","Gunnison","2009-07-29T00:00:00Z","2009-07-30T00:00:00Z","2009-07-29T00:00:00Z","2009-07-29T00:00:00Z",6,1,0,"Plant/Herbal toxins",,,,,,,,,,,,1,".",".",".","Private Home",,,"Fungus"
-3255,"Minnesota","Washington","2009-12-21T00:00:00Z","2009-12-25T00:00:00Z","2009-12-21T00:00:00Z","2009-12-23T00:00:00Z",6,0,0,"Calicivirus",,,,"norovirus",,,,,,,,0,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-3259,"Colorado",,"2009-06-13T00:00:00Z","2009-10-10T00:00:00Z",,,18,6,0,,,,,,,,,,,,,0,".",".",".","Private Home",,,"Beef"
-3264,"Maryland","Baltimore City","2009-01-13T00:00:00Z","2009-01-24T00:00:00Z","2009-01-12T00:00:00Z","2009-01-15T00:00:00Z",80,0,0,,,,,,,,,,,,,0,".",".",".","banquet Facility (food prepared and served on-site",,,"unknown commodity"
-3266,"Maryland","Baltimore County","2009-02-05T00:00:00Z","2009-02-08T00:00:00Z","2009-02-05T00:00:00Z","2009-02-05T00:00:00Z",10,0,0,,,,,,,,,,,,,0,".",".",".","Private Home",,,"unknown commodity"
-3272,"Florida","Hillsborough","2009-01-06T00:00:00Z",,"2009-01-04T00:00:00Z",,6,0,0,"Calicivirus",,,,"norovirus",,,,,,,,0,".",".",".","Restaurant - Sit-down dining",,,">1 commodity Food"
-3279,"Florida","Pinellas","2009-02-17T00:00:00Z",,"2009-02-17T00:00:00Z",,6,0,0,"Bacillus",,,,"cereus",,,,,,,,0,".",".",".","Restaurant - Sit-down dining",,,"Grains-Beans"
-3280,"Minnesota","Chisago","2009-12-25T00:00:00Z","2009-12-26T00:00:00Z","2009-12-25T00:00:00Z","2009-12-25T00:00:00Z",167,0,0,"Other bacterial",,,,,,,,,,,,0,".",".",".","Prison, jail",,,">1 commodity Food"
-3282,"Wisconsin","Walworth","2009-11-19T00:00:00Z","2009-11-20T00:00:00Z","2009-11-19T00:00:00Z","2009-11-19T00:00:00Z",49,,,"Clostridium",,,,"perfringens",,,,,,,,1,".",".",".","Workplace, not cafeteria",,,">1 commodity Food"
-3284,"Florida","Broward","2009-05-01T00:00:00Z","2009-05-09T00:00:00Z","2009-04-30T00:00:00Z","2009-04-30T00:00:00Z",29,2,0,,,,,,,,,,,,,0,".",".",".","banquet Facility (food prepared and served on-site",,,">1 commodity"
-3285,"Florida","Broward","2009-05-11T00:00:00Z","2009-05-12T00:00:00Z","2009-05-10T00:00:00Z","2009-05-10T00:00:00Z",14,1,0,"Calicivirus",,,,"norovirus",,,,"Genogroup II (GII),not sequenced",,,,0,".",".",".","Private Home",,,"unknown commodity"
-3286,"Florida","Broward","2009-05-16T00:00:00Z","2009-05-20T00:00:00Z","2009-05-15T00:00:00Z","2009-05-16T00:00:00Z",14,5,0,"Salmonella",,,,"enterica",,,,"Berta",,,,1,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-3287,"California","Monterey","2009-08-11T00:00:00Z","2009-08-15T00:00:00Z","2009-08-09T00:00:00Z","2009-08-09T00:00:00Z",12,0,0,"Campylobacter",,,,"jejuni",,,,,,,,1,".",".",".",,,,"unknown commodity"
-3288,"California","San Luis Obispo","2009-11-07T00:00:00Z","2009-11-10T00:00:00Z","2009-11-07T00:00:00Z","2009-11-08T00:00:00Z",23,0,0,"Calicivirus",,,,"norovirus",,,,"Unspecified",,,,1,".",".",".",,,,"unknown commodity"
-3289,"California","Riverside","2009-11-08T00:00:00Z","2009-11-10T00:00:00Z","2009-11-07T00:00:00Z","2009-11-07T00:00:00Z",20,0,0,,,,,,,,,,,,,0,".",".",".",,,,"unknown commodity"
-3290,"California","Butte","2009-12-15T00:00:00Z","2009-12-17T00:00:00Z","2009-12-14T00:00:00Z","2009-12-14T00:00:00Z",19,0,0,"Calicivirus",,,,"norovirus",,,,"Unspecified",,,,0,".",".",".",,,,">1 commodity"
-3292,"California","San Diego","2009-09-24T00:00:00Z","2009-09-25T00:00:00Z","2009-09-23T00:00:00Z","2009-09-23T00:00:00Z",10,0,0,"Calicivirus",,,,"norovirus",,,,,,,,0,".",".",".",,,,">1 commodity Food"
-3298,"North Dakota","Grand Forks","2009-12-11T00:00:00Z","2009-12-16T00:00:00Z","2009-12-11T00:00:00Z","2009-12-11T00:00:00Z",24,0,0,"Calicivirus",,,,"norovirus",,,,"Genogroup II (GII),not sequenced",,,,1,".",".",".","banquet Facility (food prepared and served on-site",,,"unknown commodity"
-3306,"Massachusetts","Essex","2009-11-30T00:00:00Z","2009-12-10T00:00:00Z",,,39,1,0,"Salmonella",,,,"enterica",,,,"Montevideo",,,,1,".",".",".",,,,"unknown commodity"
-3307,"Florida","Nassau","2009-01-07T00:00:00Z","2009-01-11T00:00:00Z","2009-01-05T00:00:00Z","2009-01-05T00:00:00Z",31,,,"Calicivirus",,,,"norovirus",,,,"GII / undefined cluster by sequence",,,,1,".",".",".",,,,"unknown commodity"
-3308,"Colorado","El Paso","2009-12-22T00:00:00Z","2009-12-23T00:00:00Z","2009-12-22T00:00:00Z","2009-12-22T00:00:00Z",118,0,0,"Clostridium",,,,"perfringens",,,,,,,,1,".",".",".","Prison, jail",,,"Grains-Beans"
-3309,"Florida","Duval","2009-05-08T00:00:00Z","2009-05-09T00:00:00Z","2009-05-08T00:00:00Z","2009-05-08T00:00:00Z",30,0,0,,,,,,,,,,,,,0,".",".",".",,,,
-3310,"Colorado","Douglas","2009-11-24T00:00:00Z","2009-12-01T00:00:00Z",,"2009-11-30T00:00:00Z",34,1,0,"Calicivirus",,,,"norovirus",,,,,,,,1,".",".",".","Restaurant - Sit-down dining",,,">1 commodity"
-3312,"Colorado","Weld","2009-08-08T00:00:00Z","2009-08-14T00:00:00Z","2009-08-08T00:00:00Z","2009-08-08T00:00:00Z",27,1,0,"Salmonella",,,,"enterica",,,,"Typhimurium",,,,1,".",".",".","Picnic",,,"Leafy"
-3323,"Florida","Bay","2009-04-24T00:00:00Z","2009-04-27T00:00:00Z","2009-04-23T00:00:00Z","2009-04-26T00:00:00Z",53,0,0,"Calicivirus",,,,"norovirus",,,,"Genogroup II (GII),not sequenced",,,,1,".",".",".","Workplace, not cafeteria","Restaurant - Sit-down dining","Caterer (food prepared off-site from where server)",">1 commodity Food"
-3325,"Nevada","Eureka","2009-10-20T00:00:00Z","2009-10-25T00:00:00Z","2009-10-20T00:00:00Z","2009-10-24T00:00:00Z",17,0,0,"Clostridium",,,,"perfringens",,,,,,,,1,".",".",".","Restaurant - Sit-down dining",,,">1 commodity Food"
-3331,"Nevada","Nye","2009-02-13T00:00:00Z","2009-06-19T00:00:00Z",,,11,0,0,"Salmonella",,,,"enterica",,,,"Braenderup",,,,1,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-3349,"South Carolina","Charleston","2009-11-29T00:00:00Z","2009-11-29T00:00:00Z","2009-11-28T00:00:00Z","2009-11-28T00:00:00Z",6,0,0,"Calicivirus",,,,"norovirus",,,,"GII / undefined cluster by sequence",,,,1,".",".",".","Private Home",,,"Mollusk"
-3384,"Florida","Broward","2009-12-15T00:00:00Z","2009-12-16T00:00:00Z","2009-12-15T00:00:00Z","2009-12-15T00:00:00Z",47,0,0,,,,,,,,,,,,,0,".",".",".","Workplace, not cafeteria",,,">1 commodity Food"
-3386,"Texas","Harris","2009-12-20T00:00:00Z","2009-12-23T00:00:00Z","2009-12-19T00:00:00Z","2009-12-19T00:00:00Z",11,0,0,,,,,,,,,,,,,0,".",".",".",,,,"unknown commodity"
-3387,"Maryland","Baltimore City","2009-06-30T00:00:00Z","2009-07-05T00:00:00Z","2009-06-30T00:00:00Z","2009-06-30T00:00:00Z",9,1,0,"Salmonella","Clostridium",,,"enterica","other",,,"Enteritidis",,,,1,1,".",".","Private Home",,,"unknown commodity"
-3421,"West Virginia","Wood","2009-04-16T00:00:00Z",,,,12,0,0,,,,,,,,,,,,,0,".",".",".",,,,"unknown commodity"
-3457,"Arizona","Maricopa","2009-04-04T00:00:00Z","2009-04-08T00:00:00Z","2009-04-04T00:00:00Z","2009-04-04T00:00:00Z",30,0,0,"Calicivirus",,,,"norovirus",,,,"GII / undefined cluster by sequence",,,,1,".",".",".","banquet Facility (food prepared and served on-site",,,"unknown commodity"
-3464,"Ohio","Cuyahoga","2009-12-24T00:00:00Z","2009-12-25T00:00:00Z","2009-12-23T00:00:00Z",,21,0,0,"Calicivirus",,,,"norovirus",,,,"GII_12",,,,1,".",".",".","Workplace, not cafeteria",,,"unknown commodity"
-3471,"California","Marin","2009-12-25T00:00:00Z","2009-12-28T00:00:00Z","2009-12-24T00:00:00Z","2009-12-27T00:00:00Z",10,0,0,,,,,,,,,,,,,0,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-3481,"Michigan","Monroe","2009-08-02T00:00:00Z","2009-08-04T00:00:00Z","2009-08-01T00:00:00Z","2009-08-01T00:00:00Z",33,0,0,,,,,,,,,,,,,0,".",".",".","Camp",,,"Pork"
-3485,"California","Monterey","2009-10-22T00:00:00Z","2009-10-23T00:00:00Z",,,45,0,0,,,,,,,,,,,,,0,".",".",".","School",,,"unknown commodity"
-3572,"Alabama","Walker","2009-12-18T00:00:00Z","2009-12-20T00:00:00Z","2009-12-17T00:00:00Z",,10,2,0,"Calicivirus",,,,"norovirus",,,,"GII / undefined cluster by sequence",,,,0,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-3600,"West Virginia","Cabell","2009-12-25T00:00:00Z","2009-12-28T00:00:00Z",,,6,1,0,"Salmonella",,,,"enterica",,,,"Enteritidis",,,,1,".",".",".","Private Home",,,"unknown commodity"
-3609,"Arizona","Maricopa","2009-08-03T00:00:00Z","2009-08-10T00:00:00Z","2009-07-30T00:00:00Z","2009-08-08T00:00:00Z",20,4,0,"Salmonella",,,,"enterica",,,,"Heidelberg",,,,1,".",".",".",,,,"unknown commodity"
-3623,"California","San Francisco","2009-07-10T00:00:00Z","2009-07-10T00:00:00Z","2009-07-09T00:00:00Z","2009-07-09T00:00:00Z",44,0,0,"Bacillus","Clostridium",,,"cereus","perfringens",,,,,,,0,0,".",".","School",,,">1 commodity"
-3624,"California","San Francisco","2009-11-24T00:00:00Z","2009-11-24T00:00:00Z","2009-11-23T00:00:00Z","2009-11-23T00:00:00Z",20,1,0,"Clostridium","Bacillus",,,"perfringens","cereus",,,,,,,0,0,".",".","Workplace, not cafeteria",,,"unknown commodity"
-3626,"California","Los Angeles","2009-12-16T00:00:00Z","2009-12-17T00:00:00Z","2009-12-15T00:00:00Z","2009-12-15T00:00:00Z",14,0,0,"Calicivirus",,,,"norovirus",,,,"Unspecified",,,,1,".",".",".","Workplace, not cafeteria",,,">1 commodity Food"
-3627,"California","Los Angeles","2009-12-09T00:00:00Z","2009-12-11T00:00:00Z","2009-12-09T00:00:00Z","2009-12-09T00:00:00Z",14,0,0,"Calicivirus",,,,"norovirus",,,,,,,,0,".",".",".","banquet Facility (food prepared and served on-site",,,"unknown commodity"
-3634,"Washington","King","2009-07-25T00:00:00Z","2009-07-26T00:00:00Z","2009-07-24T00:00:00Z","2009-07-24T00:00:00Z",15,0,0,"Bacillus",,,,"cereus",,,,,,,,1,".",".",".","banquet Facility (food prepared and served on-site",,,"Grains-Beans"
-3653,"Washington","Chelan","2009-07-22T00:00:00Z","2009-07-24T00:00:00Z","2009-07-21T00:00:00Z","2009-07-21T00:00:00Z",7,0,0,"Calicivirus",,,,"norovirus",,,,,,,,1,".",".",".",,,,"unknown commodity"
-3654,"Washington","Clallam","2009-06-08T00:00:00Z","2009-06-11T00:00:00Z","2009-06-07T00:00:00Z","2009-06-07T00:00:00Z",56,0,0,"Calicivirus",,,,"norovirus",,,,"Unspecified",,,,0,".",".",".","Private Home",,,">1 commodity Food"
-3659,"Rhode Island",,"2009-01-11T00:00:00Z","2009-01-12T00:00:00Z","2009-01-10T00:00:00Z","2009-01-10T00:00:00Z",9,0,0,"Calicivirus",,,,"norovirus",,,,"Genogroup II (GII),not sequenced",,,,1,".",".",".",,,,"unknown commodity"
-3661,"Rhode Island",,"2009-03-14T00:00:00Z","2009-03-15T00:00:00Z","2009-03-13T00:00:00Z","2009-03-13T00:00:00Z",30,0,0,"Calicivirus",,,,"norovirus",,,,"Genogroup I (GI), not sequenced",,,,1,".",".",".",,,,"unknown commodity"
-3682,"Puerto Rico","Mayag-ez","2009-06-07T00:00:00Z","2009-06-09T00:00:00Z","2009-06-07T00:00:00Z","2009-06-07T00:00:00Z",9,4,0,,,,,,,,,,,,,0,".",".",".","Picnic",,,"Poultry"
-3684,"Puerto Rico","Ponce","2009-06-17T00:00:00Z","2009-06-17T00:00:00Z","2009-06-17T00:00:00Z","2009-06-17T00:00:00Z",18,0,0,"Staphylococcus","Bacillus","Enterobacter",,"aureus","cereus","other",,,,,,1,1,0,".","Caterer (food prepared off-site from where server)",,,"Pork"
-3685,"Washington","King","2009-07-30T00:00:00Z","2009-09-18T00:00:00Z","2009-07-30T00:00:00Z","2009-09-11T00:00:00Z",17,3,0,"Salmonella","Salmonella","Salmonella","Salmonella","enterica","enterica","enterica","enterica","Potsdam","Typhimurium","Hvittingfoss","Anfo",1,1,0,1,"Restaurant - Sit-down dining",,,"unknown commodity"
-3688,"Washington","King","2009-03-01T00:00:00Z","2009-03-12T00:00:00Z","2009-02-04T00:00:00Z","2009-02-24T00:00:00Z",6,0,0,"Hepatitis",,,,"A",,,,,,,,1,".",".",".","Restaurant - ""Fast-food""(drive up service or pay a",,,"unknown commodity"
-3701,"Washington","King","2009-11-15T00:00:00Z","2009-11-15T00:00:00Z","2009-11-14T00:00:00Z","2009-11-14T00:00:00Z",10,0,0,"Calicivirus",,,,"norovirus",,,,,,,,0,".",".",".","Restaurant - ""Fast-food""(drive up service or pay a",,,"unknown commodity"
-3718,"Virginia","Henrico","2009-08-09T00:00:00Z","2009-08-14T00:00:00Z","2009-08-07T00:00:00Z","2009-08-09T00:00:00Z",17,3,0,"Campylobacter",,,,"jejuni",,,,,,,,1,".",".",".","Restaurant - Sit-down dining","Private Home",,"unknown commodity"
-3764,"California","Contra Costa","2009-06-07T00:00:00Z","2009-06-09T00:00:00Z","2009-06-06T00:00:00Z","2009-06-06T00:00:00Z",19,0,0,"Calicivirus",,,,"norovirus",,,,"Genogroup II (GII),not sequenced",,,,0,".",".",".","Church, temple, religous location",,,"unknown commodity"
-3765,"California","Alameda","2009-04-16T00:00:00Z","2009-04-17T00:00:00Z","2009-04-15T00:00:00Z","2009-04-15T00:00:00Z",39,0,0,"Calicivirus",,,,"norovirus",,,,"Unspecified",,,,0,".",".",".","Church, temple, religous location",,,"Poultry"
-3780,"California","Alameda","2009-04-03T00:00:00Z","2009-04-03T00:00:00Z","2009-04-03T00:00:00Z","2009-04-03T00:00:00Z",7,0,0,"Scombroid toxin",,,,,,,,,,,,1,".",".",".","Workplace, not cafeteria",,,"Finfish"
-3781,"California","Alameda","2009-02-26T00:00:00Z","2009-03-01T00:00:00Z","2009-02-26T00:00:00Z","2009-02-26T00:00:00Z",16,0,0,"Calicivirus",,,,"norovirus",,,,"Unspecified",,,,0,".",".",".","School",,,">1 commodity Food"
-3782,"California","Alameda","2009-05-29T00:00:00Z","2009-06-01T00:00:00Z","2009-05-29T00:00:00Z","2009-05-29T00:00:00Z",20,0,0,,,,,,,,,,,,,0,".",".",".","Restaurant - other or unknown type",,,">1 commodity"
-3821,"Missouri","Greene","2009-09-19T00:00:00Z","2009-10-07T00:00:00Z","2009-09-19T00:00:00Z","2009-09-20T00:00:00Z",135,0,0,,,,,,,,,,,,,0,".",".",".","Fair, festival, other temp or mobile services","Private Home",,"unknown commodity"
-3848,"Arizona","Maricopa","2009-07-19T00:00:00Z","2009-08-13T00:00:00Z",,,6,1,0,"Salmonella",,,,"enterica",,,,"Heidelberg",,,,1,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-3868,"Florida","Bay","2009-08-05T00:00:00Z","2009-08-11T00:00:00Z","2009-08-04T00:00:00Z",,20,1,0,"Salmonella",,,,"unknown",,,,,,,,1,".",".",".",,,,"unknown commodity"
-3869,"Florida","Leon","2009-04-11T00:00:00Z","2009-04-18T00:00:00Z","2009-04-11T00:00:00Z","2009-04-12T00:00:00Z",27,,,,,,,,,,,,,,,0,".",".",".",,,,"unknown commodity"
-3875,"Ohio","Lake","2009-09-30T00:00:00Z","2009-10-01T00:00:00Z","2009-09-29T00:00:00Z","2009-09-29T00:00:00Z",22,1,0,"Salmonella",,,,"enterica",,,,"Enteritidis",,,,1,".",".",".","School",,,">1 commodity Food"
-3899,"California","San Diego","2009-12-16T00:00:00Z","2009-12-29T00:00:00Z","2009-12-16T00:00:00Z","2009-12-21T00:00:00Z",22,4,0,"Salmonella",,,,"enterica",,,,"Heidelberg",,,,1,".",".",".","Church, temple, religous location","Restaurant - other or unknown type","Workplace, not cafeteria","unknown commodity"
-3915,"Florida","Miami-Dade","2009-10-19T00:00:00Z","2009-10-20T00:00:00Z","2009-10-19T00:00:00Z","2009-10-19T00:00:00Z",41,0,0,,,,,,,,,,,,,0,".",".",".","School",,,"Beef"
-3918,"Florida","Leon","2009-07-23T00:00:00Z","2009-07-23T00:00:00Z","2009-07-22T00:00:00Z","2009-07-22T00:00:00Z",8,0,0,"Salmonella",,,,"unknown",,,,,,,,1,".",".",".",,,,"unknown commodity"
-3936,"Florida","Miami-Dade","2009-05-16T00:00:00Z","2009-05-17T00:00:00Z","2009-05-16T00:00:00Z","2009-05-16T00:00:00Z",9,,,,,,,,,,,,,,,0,".",".",".","Private Home",,,"Finfish"
-3961,"Ohio","Fayette","2009-12-27T00:00:00Z",,"2009-12-26T00:00:00Z",,20,,0,,,,,,,,,,,,,0,".",".",".",,,,"unknown commodity"
-3965,"Rhode Island","Providence","2009-10-17T00:00:00Z","2009-10-30T00:00:00Z","2009-10-14T00:00:00Z","2009-10-15T00:00:00Z",36,2,0,"Escherichia",,,,"coli, Shiga toxin-producing",,,,"O157:H7",,,,1,".",".",".",,,,"unknown commodity"
-4019,"California","Orange","2009-12-17T00:00:00Z","2009-12-18T00:00:00Z","2009-12-17T00:00:00Z","2009-12-17T00:00:00Z",23,0,0,"Calicivirus",,,,"norovirus",,,,"Unspecified",,,,0,".",".",".","Prison, jail",,,">1 commodity Food"
-4023,"California","Orange","2009-09-13T00:00:00Z","2009-09-16T00:00:00Z","2009-09-12T00:00:00Z","2009-09-12T00:00:00Z",7,0,0,"Salmonella",,,,"enterica",,,,"Enteritidis",,,,0,".",".",".","Private Home",,,"unknown commodity"
-4078,"Michigan","Wayne","2009-12-15T00:00:00Z","2009-12-17T00:00:00Z","2009-12-15T00:00:00Z","2009-12-15T00:00:00Z",37,0,0,,,,,,,,,,,,,0,".",".",".","Workplace, not cafeteria",,,">1 commodity"
-4082,"Illinois","Lake","2009-08-16T00:00:00Z","2009-08-16T00:00:00Z","2009-08-15T00:00:00Z","2009-08-15T00:00:00Z",130,0,0,,,,,,,,,,,,,0,".",".",".","banquet Facility (food prepared and served on-site",,,"Beef"
-4097,"Florida","Broward","2009-08-15T00:00:00Z","2009-08-16T00:00:00Z","2009-08-15T00:00:00Z","2009-08-15T00:00:00Z",7,6,0,"Salmonella",,,,"unknown",,,,,,,,1,".",".",".","Picnic",,,"Finfish"
-4129,"California","Orange","2009-12-13T00:00:00Z","2009-12-14T00:00:00Z","2009-12-12T00:00:00Z","2009-12-12T00:00:00Z",9,0,0,,,,,,,,,,,,,0,".",".",".","Private Home",,,"unknown commodity"
-4264,"California","Orange","2009-12-28T00:00:00Z","2009-12-29T00:00:00Z","2009-12-27T00:00:00Z","2009-12-27T00:00:00Z",8,0,0,"Calicivirus",,,,"norovirus",,,,"Unspecified",,,,0,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-4274,"Arizona","Maricopa","2009-08-01T00:00:00Z","2009-10-24T00:00:00Z",,,7,2,0,"Salmonella",,,,"enterica",,,,"Newport",,,,1,".",".",".",,,,"Vine"
-4345,"Wyoming","Albany","2009-09-08T00:00:00Z","2009-09-16T00:00:00Z",,,22,0,0,"Calicivirus",,,,"norovirus",,,,"Genogroup II (GII),not sequenced",,,,1,".",".",".","Other (describe in remarks)",,,">1 commodity"
-4348,"Wyoming","Laramie","2009-12-12T00:00:00Z","2009-12-13T00:00:00Z","2009-12-12T00:00:00Z","2009-12-12T00:00:00Z",25,0,0,"Clostridium",,,,"perfringens",,,,,,,,0,".",".",".","Other (describe in remarks)",,,"Poultry"
-4400,"Idaho",,"2009-03-26T00:00:00Z","2009-03-31T00:00:00Z",,,13,0,0,"Calicivirus",,,,"norovirus",,,,"GII / undefined cluster by sequence",,,,1,".",".",".",,,,"unknown commodity"
-4401,"Idaho","Ada","2009-05-30T00:00:00Z","2009-05-30T00:00:00Z","2009-05-29T00:00:00Z","2009-05-29T00:00:00Z",10,0,0,"Calicivirus",,,,"norovirus",,,,"GII / undefined cluster by sequence",,,,1,".",".",".","Restaurant - ""Fast-food""(drive up service or pay a",,,">1 commodity"
-4430,"Ohio","Montgomery","2009-01-05T00:00:00Z","2009-01-06T00:00:00Z","2009-01-03T00:00:00Z","2009-01-04T00:00:00Z",6,0,0,"Calicivirus",,,,"norovirus",,,,"GII_4 Minerva (2006)",,,,0,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-4452,"California","Orange","2009-05-21T00:00:00Z","2009-05-26T00:00:00Z","2009-05-21T00:00:00Z","2009-05-25T00:00:00Z",23,0,0,"Calicivirus",,,,"norovirus",,,,"Genogroup II (GII),not sequenced",,,,1,".",".",".","School",,,">1 commodity Food"
-4477,"Colorado",,"2009-03-07T00:00:00Z","2009-03-24T00:00:00Z",,,43,10,0,"Salmonella",,,,"enterica",,,,"Newport",,,,1,".",".",".","Church, temple, religous location",,,"Vine"
-4597,"California","San Mateo","2009-12-05T00:00:00Z","2009-12-06T00:00:00Z","2009-12-05T00:00:00Z","2009-12-05T00:00:00Z",7,0,0,"Salmonella",,,,"enterica",,,,"Enteritidis",,,,1,".",".",".","Private Home",,,">1 commodity Food"
-4603,"California","Los Angeles","2009-12-27T00:00:00Z","2009-12-30T00:00:00Z","2009-12-26T00:00:00Z","2009-12-26T00:00:00Z",34,0,0,"Calicivirus",,,,"norovirus",,,,"Unspecified",,,,0,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-4730,"North Dakota","Grand Forks","2009-07-19T00:00:00Z","2009-07-19T00:00:00Z",,,12,0,0,,,,,,,,,,,,,0,".",".",".","Private Home","banquet Facility (food prepared and served on-site",,"unknown commodity"
-4732,"North Dakota","Morton","2009-08-23T00:00:00Z","2009-08-24T00:00:00Z","2009-08-22T00:00:00Z","2009-08-22T00:00:00Z",13,0,0,"Calicivirus",,,,"norovirus",,,,"Genogroup II (GII),not sequenced",,,,1,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-4759,"California","Orange","2009-12-06T00:00:00Z","2009-12-07T00:00:00Z","2009-12-05T00:00:00Z","2009-12-05T00:00:00Z",23,0,0,,,,,,,,,,,,,0,".",".",".","banquet Facility (food prepared and served on-site",,,"unknown commodity"
-4954,"California",,"2009-08-15T00:00:00Z","2010-03-27T00:00:00Z",,"2010-03-25T00:00:00Z",9,5,0,"Salmonella",,,,"enterica",,,,"IIIa",,,,1,".",".",".","Other (describe in remarks)",,,"Poultry"
-5005,"Massachusetts","Hampshire","2009-11-15T00:00:00Z",,,,27,0,0,,,,,,,,,,,,,0,".",".",".","School",,,"Root"
-5056,"Wisconsin","Dane","2009-11-18T00:00:00Z","2010-01-09T00:00:00Z","2009-11-11T00:00:00Z",,11,,0,"Salmonella",,,,"enterica",,,,"Heidelberg",,,,1,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-5087,"California",,"2009-06-30T00:00:00Z","2009-08-09T00:00:00Z","2009-06-29T00:00:00Z","2009-08-07T00:00:00Z",15,1,0,"Vibrio",,,,"parahaemolyticus",,,,,,,,1,".",".",".","Restaurant - Sit-down dining",,,"Mollusk"
-5217,"California","Los Angeles","2009-08-17T00:00:00Z","2009-08-19T00:00:00Z","2009-08-16T00:00:00Z","2009-08-16T00:00:00Z",19,0,0,"Salmonella",,,,"enterica",,,,"Typhimurium",,,,1,".",".",".","Church, temple, religous location",,,"unknown commodity"
-5232,"California","Los Angeles","2009-07-27T00:00:00Z","2009-08-03T00:00:00Z","2009-07-24T00:00:00Z","2009-07-30T00:00:00Z",6,0,0,"Salmonella",,,,"enterica",,,,"Typhimurium",,,,1,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-5351,"Virginia","Wise","2009-04-12T00:00:00Z","2009-05-04T00:00:00Z","2009-04-10T00:00:00Z","2009-04-28T00:00:00Z",8,5,0,"Salmonella",,,,"enterica",,,,"Enteritidis",,,,1,".",".",".","Restaurant - ""Fast-food""(drive up service or pay a",,,"unknown commodity"
-5789,"Minnesota","Otter Tail","2009-12-13T00:00:00Z","2010-01-05T00:00:00Z","2009-12-12T00:00:00Z","2010-01-03T00:00:00Z",20,0,0,"Calicivirus",,,,"norovirus",,,,,,,,1,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-5909,"New Jersey","Mercer","2009-01-19T00:00:00Z","2009-01-20T00:00:00Z","2009-01-17T00:00:00Z","2009-01-18T00:00:00Z",9,0,0,"Calicivirus",,,,"norovirus",,,,,,,,1,".",".",".",,,,"unknown commodity"
-5910,"New Jersey",,"2009-03-28T00:00:00Z","2009-04-01T00:00:00Z","2009-03-28T00:00:00Z","2009-03-28T00:00:00Z",18,1,0,,,,,,,,,,,,,0,".",".",".","Restaurant - Sit-down dining",,,">1 commodity"
-5912,"New Jersey",,"2009-03-15T00:00:00Z","2009-03-17T00:00:00Z","2009-03-14T00:00:00Z","2009-03-14T00:00:00Z",27,,0,,,,,,,,,,,,,0,".",".",".",,,,"unknown commodity"
-5914,"New Jersey",,"2009-01-02T00:00:00Z","2009-01-07T00:00:00Z","2009-01-02T00:00:00Z","2009-01-07T00:00:00Z",9,,0,,,,,,,,,,,,,0,".",".",".",,,,"unknown commodity"
-6238,"New Jersey","Essex","2009-11-08T00:00:00Z","2009-11-09T00:00:00Z","2009-11-07T00:00:00Z","2009-11-07T00:00:00Z",31,,0,"Calicivirus",,,,"norovirus",,,,,,,,1,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-6240,"New Jersey","Burlington","2009-07-26T00:00:00Z","2009-07-27T00:00:00Z","2009-07-26T00:00:00Z","2009-07-26T00:00:00Z",9,,0,,,,,,,,,,,,,0,".",".",".","banquet Facility (food prepared and served on-site",,,"Finfish"
-6243,"New Jersey","Monmouth","2009-03-29T00:00:00Z","2009-03-29T00:00:00Z","2009-03-28T00:00:00Z","2009-03-28T00:00:00Z",8,,0,,,,,,,,,,,,,0,".",".",".","Restaurant - Sit-down dining","Private Home",,"unknown commodity"
-6385,"New Jersey","Essex","2009-12-20T00:00:00Z","2010-01-02T00:00:00Z","2009-12-20T00:00:00Z","2009-12-31T00:00:00Z",39,5,0,"Salmonella",,,,"enterica",,,,"Enteritidis",,,,1,".",".",".",,,,">1 commodity"
-6387,"New Jersey","Bergen","2009-04-30T00:00:00Z","2009-05-09T00:00:00Z","2009-04-28T00:00:00Z","2009-05-02T00:00:00Z",155,1,0,"Calicivirus",,,,"norovirus",,,,,,,,1,".",".",".","Restaurant - Sit-down dining","Private Home",,">1 commodity Food"
-6585,"California","San Diego","2009-12-16T00:00:00Z","2009-12-17T00:00:00Z","2009-12-16T00:00:00Z","2009-12-16T00:00:00Z",9,0,0,"Calicivirus",,,,"norovirus",,,,"Genogroup II (GII),not sequenced",,,,0,".",".",".","Workplace, not cafeteria",,,">1 commodity"
-6875,"CDC",,"2009-04-23T00:00:00Z","2009-05-02T00:00:00Z",,,16,,0,"Escherichia",,,,"coli, Shiga toxin-producing",,,,"O157:H7",,,,1,".",".",".","Restaurant - ""Fast-food""(drive up service or pay a",,,"Leafy"
-6876,"CDC",,"2009-04-01T00:00:00Z","2009-06-25T00:00:00Z",,,20,,0,"Escherichia",,,,"coli, Shiga toxin-producing",,,,"O157:H7",,,,1,".",".",".","Private Home",,,"Beef"
-6889,"New Mexico","Bernalillo","2009-01-28T00:00:00Z","2009-02-02T00:00:00Z",,,26,0,0,,,,,,,,,,,,,0,".",".",".",,,,"unknown commodity"
-6890,"CDC",,"2009-06-14T00:00:00Z","2009-07-05T00:00:00Z",,,14,,0,"Salmonella",,,,"enterica",,,,"Muenchen",,,,1,".",".",".","Private Home",,,"Fruits-Nuts"
-6921,"CDC",,"2009-03-16T00:00:00Z","2009-07-08T00:00:00Z",,,77,35,,"Escherichia",,,,"coli, Shiga toxin-producing",,,,"O157:H7",,,,1,".",".",".","Private Home",,,">1 commodity Food"
-6942,"Massachusetts",,"2009-06-02T00:00:00Z","2010-03-17T00:00:00Z",,,19,4,0,"Salmonella",,,,"enterica",,,,"Montevideo",,,,0,".",".",".",,,,"unknown commodity"
-6997,"Ohio","Franklin","2009-11-30T00:00:00Z","2009-12-09T00:00:00Z","2009-11-26T00:00:00Z","2009-11-26T00:00:00Z",6,1,0,"Salmonella",,,,"enterica",,,,"Enteritidis",,,,1,".",".",".","Church, temple, religous location",,,"unknown commodity"
-7075,"CDC",,"2009-02-02T00:00:00Z","2009-04-24T00:00:00Z",,,256,8,,"Salmonella",,,,"enterica",,,,"Saintpaul",,,,1,".",".",".","Unknown",,,"Sprout"
-7078,"CDC",,"2009-02-10T00:00:00Z","2009-04-07T00:00:00Z",,,53,4,1,"Salmonella",,,,"enterica",,,,"Carrau",,,,1,".",".",".","Private Home",,,"Fruits-Nuts"
-7085,"CDC",,"2009-09-03T00:00:00Z","2009-09-08T00:00:00Z",,,22,,,"Escherichia",,,,"coli, Shiga toxin-producing",,,,"O157:H7",,,,1,".",".",".","Restaurant - ""Fast-food""(drive up service or pay a",,,"Leafy"
-7088,"CDC",,"2009-08-18T00:00:00Z","2009-11-02T00:00:00Z",,,32,19,2,"Escherichia",,,,"coli, Shiga toxin-producing",,,,"O157:H7",,,,1,".",".",".","Private Home",,,"Beef"
-7106,"CDC",,"2009-07-04T00:00:00Z","2010-02-18T00:00:00Z",,,272,52,0,"Salmonella",,,,"enterica",,,,"Montevideo",,,,1,".",".",".","Private Home","banquet Facility (food prepared and served on-site",,"Vine"
-7112,"CDC",,"2009-02-18T00:00:00Z","2009-04-27T00:00:00Z",,,25,,,"Salmonella",,,,"enterica",,,,"Oranienburg",,,,1,".",".",".","Private Home",,,"Sprout"
-7113,"CDC",,"2009-03-08T00:00:00Z","2009-05-06T00:00:00Z",,,23,6,0,"Escherichia",,,,"coli, Shiga toxin-producing",,,,"O157:H7",,,,1,".",".",".","Private Home",,,"Beef"
-7119,"CDC",,"2009-05-22T00:00:00Z","2009-10-23T00:00:00Z",,,68,4,0,"Salmonella",,,,"enterica",,,,"Newport",,,,1,".",".",".","Private Home",,,"Beef"
-7222,"California","Orange","2009-08-02T00:00:00Z","2009-08-04T00:00:00Z","2009-08-01T00:00:00Z","2009-08-01T00:00:00Z",17,0,0,"Calicivirus",,,,"norovirus",,,,"Genogroup II (GII),not sequenced",,,,0,".",".",".","Restaurant - Sit-down dining",,,"unknown commodity"
-7610,"CDC",,"2009-07-17T00:00:00Z","2009-09-16T00:00:00Z",,,145,1,,"Salmonella",,,,"enterica",,,,"Typhimurium",,,,1,".",".",".",,,,"Leafy"
-7678,"CDC",,"2009-10-03T00:00:00Z","2009-12-14T00:00:00Z","2009-09-28T00:00:00Z","2009-11-14T00:00:00Z",25,9,1,"Escherichia",,,,"coli, Shiga toxin-producing",,,,"O157:H7",,,,0,".",".",".",,,,"Beef"
-8094,"California","San Francisco","2009-12-11T00:00:00Z","2009-12-12T00:00:00Z","2009-12-10T00:00:00Z","2009-12-10T00:00:00Z",8,0,0,"Calicivirus",,,,"norovirus",,,,"Genogroup II (GII),not sequenced",,,,1,".",".",".","Restaurant - other or unknown type",,,"unknown commodity"
-8115,"CDC",,"2009-06-23T00:00:00Z","2009-11-20T00:00:00Z",,,8,3,0,"Listeria",,,,"monocytogenes",,,,,,,,1,".",".",".","Private Home",,,"Dairy"
-8908,"Nebraska",,"2009-02-01T00:00:00Z",,,,113,,,,,,,,,,,,,,,0,".",".",".",,,,"unknown commodity"
-10356,"CDC",,"2009-11-29T00:00:00Z","2010-04-21T00:00:00Z",,,35,,,"Salmonella",,,,"enterica",,,,"Heidelberg",,,,1,".",".",".","Private Home",,,"Poultry"
+RootID,ReportingState,ReportingCounty,FirstIll,LastIll,FirstExposure,LastExposure,Illnesses,Hospitalizations,Deaths,Genus1,Genus2,Genus3,Genus4,Species1,Species2,Species3,Species4,Serotype1,Serotype2,Serotype3,Serotype4,Confirmed1,Confirmed2,Confirmed3,Confirmed4,WhereEaten1,WhereEaten2,WhereEaten3,CommodityGroup
+19,Minnesota,Renville,2009-01-09T00:00:00Z,2009-01-12T00:00:00Z,2009-01-07T00:00:00Z,2009-01-09T00:00:00Z,16,0,0,Calicivirus,,,,norovirus,,,,,,,,1,.,.,.,Unknown,,,Unknown
+22,Minnesota,Ramsey,2009-01-27T00:00:00Z,2009-01-29T00:00:00Z,2009-01-27T00:00:00Z,2009-01-27T00:00:00Z,21,0,0,Calicivirus,,,,norovirus,,,,,,,,1,.,.,.,"Workplace, not cafeteria",,,>1 commodity
+23,Minnesota,Polk,2009-01-18T00:00:00Z,2009-01-19T00:00:00Z,2009-01-17T00:00:00Z,2009-01-17T00:00:00Z,7,0,0,Calicivirus,,,,norovirus,,,,,,,,1,.,.,.,Restaurant (unknown type),,,>1 commodity
+25,Minnesota,Polk,2009-02-08T00:00:00Z,2009-02-10T00:00:00Z,2009-02-07T00:00:00Z,2009-02-08T00:00:00Z,22,1,0,Calicivirus,,,,norovirus,,,,"Genogroup II (GII),not sequenced",,,,0,.,.,.,Restaurant (unknown type),,,>1 commodity
+26,Minnesota,Ramsey,2009-02-22T00:00:00Z,2009-02-23T00:00:00Z,2009-02-21T00:00:00Z,2009-02-21T00:00:00Z,16,0,0,Calicivirus,,,,norovirus,,,,,,,,1,.,.,.,Restaurant (unknown type),,,>1 commodity
+27,Minnesota,Dakota,2009-02-11T00:00:00Z,2009-02-16T00:00:00Z,2009-02-09T00:00:00Z,2009-02-12T00:00:00Z,11,2,0,Campylobacter,,,,jejuni,,,,,,,,1,.,.,.,Restaurant (unknown type),,,Leafy
+28,Minnesota,Washington,2009-02-21T00:00:00Z,2009-03-10T00:00:00Z,2009-02-19T00:00:00Z,2009-03-08T00:00:00Z,6,0,0,Calicivirus,,,,norovirus,,,,,,,,1,.,.,.,Restaurant (sit-down),,,Unknown
+39,Alaska,,2009-02-01T00:00:00Z,2009-02-07T00:00:00Z,2009-01-31T00:00:00Z,2009-02-05T00:00:00Z,35,0,0,Calicivirus,Calicivirus,,,norovirus,norovirus,,,"Genogroup I (GI), not sequenced","Genogroup II (GII),not sequenced",,,1,1,.,.,"Workplace, not cafeteria",,,Unknown
+43,Alabama,,2009-01-08T00:00:00Z,2009-01-08T00:00:00Z,2009-01-08T00:00:00Z,2009-01-08T00:00:00Z,13,0,0,Bacillus,,,,cereus,,,,,,,,1,.,.,.,Restaurant (sit-down),,,Grains-Beans
+46,Illinois,McHenry,2009-01-02T00:00:00Z,2009-01-03T00:00:00Z,2009-01-01T00:00:00Z,2009-01-02T00:00:00Z,6,0,0,Calicivirus,,,,norovirus,,,,GII / undefined cluster by sequence,,,,0,.,.,.,Restaurant (sit-down),,,Unknown
+47,Illinois,Sangamon,2009-01-03T00:00:00Z,2009-01-05T00:00:00Z,2009-01-02T00:00:00Z,2009-01-02T00:00:00Z,23,0,0,Calicivirus,,,,norovirus,,,,GII / undefined cluster by sequence,,,,0,.,.,.,Restaurant (sit-down),,,Unknown
+50,Illinois,Effingham,2009-01-18T00:00:00Z,2009-01-19T00:00:00Z,2009-01-17T00:00:00Z,2009-01-17T00:00:00Z,31,0,0,,,,,,,,,,,,,0,.,.,.,Banquet Facility (on-site),,,Unknown
+51,Illinois,Cook,2009-01-16T00:00:00Z,2009-01-18T00:00:00Z,2009-01-15T00:00:00Z,2009-01-16T00:00:00Z,26,1,0,Calicivirus,,,,norovirus,,,,GII / undefined cluster by sequence,,,,1,.,.,.,"Workplace, not cafeteria",,,>1 commodity
+55,Illinois,Lake,2009-01-11T00:00:00Z,2009-01-25T00:00:00Z,2009-01-10T00:00:00Z,2009-01-23T00:00:00Z,7,2,0,Salmonella,,,,enterica,,,,Enteritidis,,,,1,.,.,.,Private Home,Other,,Unknown
+56,Illinois,Winnebago,2009-01-27T00:00:00Z,2009-01-29T00:00:00Z,2009-01-26T00:00:00Z,2009-01-26T00:00:00Z,16,0,0,Calicivirus,,,,norovirus,,,,GII / undefined cluster by sequence,,,,1,.,.,.,Restaurant (sit-down),,,Unknown
+59,Illinois,Champaign,2009-02-14T00:00:00Z,2009-02-19T00:00:00Z,,,51,0,0,Calicivirus,,,,norovirus,,,,GII / undefined cluster by sequence,,,,0,.,.,.,Other,,,Unknown
+61,Illinois,DuPage,2009-02-08T00:00:00Z,2009-02-14T00:00:00Z,2009-02-06T00:00:00Z,,10,0,0,Calicivirus,,,,norovirus,,,,GII / undefined cluster by sequence,,,,1,.,.,.,Restaurant (sit-down),,,Unknown
+65,Illinois,Will,2009-02-21T00:00:00Z,2009-02-22T00:00:00Z,2009-02-20T00:00:00Z,2009-02-20T00:00:00Z,13,0,0,Calicivirus,,,,norovirus,,,,GII / undefined cluster by sequence,,,,1,.,.,.,Restaurant (unknown type),"Workplace, not cafeteria",,Unknown
+68,Illinois,Ogle,2009-03-16T00:00:00Z,2009-03-17T00:00:00Z,2009-03-15T00:00:00Z,2009-03-15T00:00:00Z,22,1,0,Calicivirus,,,,norovirus,,,,GII / undefined cluster by sequence,,,,1,.,.,.,Banquet Facility (on-site),,,>1 commodity
+77,Pennsylvania,Lawrence,2009-01-23T00:00:00Z,2009-02-12T00:00:00Z,,,9,1,0,Campylobacter,,,,jejuni,,,,,,,,1,.,.,.,Unknown,,,Dairy
+79,Tennessee,Davidson,2009-01-10T00:00:00Z,2009-01-10T00:00:00Z,2009-01-09T00:00:00Z,2009-01-09T00:00:00Z,8,1,0,Calicivirus,,,,norovirus,,,,"Genogroup I (GI), not sequenced",,,,1,.,.,.,Restaurant (sit-down),,,>1 commodity
+80,Tennessee,Bradley,2009-03-06T00:00:00Z,2009-03-09T00:00:00Z,2009-03-05T00:00:00Z,2009-03-07T00:00:00Z,9,0,0,Calicivirus,,,,norovirus,,,,"Genogroup I (GI), not sequenced",,,,1,.,.,.,Restaurant (sit-down),,,Mollusk
+81,New York,Onondaga,2009-03-02T00:00:00Z,2009-03-24T00:00:00Z,2009-03-01T00:00:00Z,2009-03-23T00:00:00Z,96,0,0,Shigella,,,,sonnei,,,,,,,,1,.,.,.,Restaurant (sit-down),,,Fruits-Nuts
+88,Massachusetts,Worcester,2009-01-30T00:00:00Z,2009-02-01T00:00:00Z,2009-01-30T00:00:00Z,2009-01-30T00:00:00Z,32,0,0,,,,,,,,,,,,,0,.,.,.,Banquet Facility (on-site),,,>1 commodity
+107,Michigan,Kalamazoo,2009-01-15T00:00:00Z,2009-01-16T00:00:00Z,2009-01-15T00:00:00Z,2009-01-15T00:00:00Z,15,0,0,,,,,,,,,,,,,0,.,.,.,"Workplace, not cafeteria",,,>1 commodity
+108,New York,Niagara,2009-02-07T00:00:00Z,2009-02-09T00:00:00Z,2009-02-06T00:00:00Z,2009-02-06T00:00:00Z,24,0,0,Calicivirus,,,,norovirus,,,,Unspecified,,,,1,.,.,.,Hospital,"Workplace, not cafeteria",,Leafy
+113,Tennessee,Hamilton,2009-01-14T00:00:00Z,2009-01-21T00:00:00Z,2009-01-12T00:00:00Z,2009-01-19T00:00:00Z,22,4,0,Calicivirus,,,,norovirus,,,,"Genogroup II (GII),not sequenced",,,,1,.,.,.,Restaurant (sit-down),,,Mollusk
+114,Tennessee,Davidson,2009-01-24T00:00:00Z,2009-01-25T00:00:00Z,2009-01-23T00:00:00Z,2009-01-23T00:00:00Z,6,0,0,Calicivirus,,,,norovirus,,,,"Genogroup I (GI), not sequenced",,,,1,.,.,.,Restaurant (fast-food),,,Unknown
+115,New York,Chautauqua,2009-01-18T00:00:00Z,2009-01-18T00:00:00Z,2009-01-17T00:00:00Z,2009-01-17T00:00:00Z,6,0,0,,,,,,,,,,,,,0,.,.,.,Restaurant (sit-down),,,Beef
+117,Florida,Lee,2009-01-18T00:00:00Z,2009-01-19T00:00:00Z,2009-01-17T00:00:00Z,2009-01-17T00:00:00Z,24,0,0,Calicivirus,,,,norovirus,,,,GI / undefined cluster by sequence,,,,1,.,.,.,Other,,,>1 commodity
+119,New York,Kings,2009-02-16T00:00:00Z,2009-02-19T00:00:00Z,2009-02-15T00:00:00Z,2009-02-15T00:00:00Z,51,1,0,Calicivirus,,,,norovirus,,,,,,,,1,.,.,.,Restaurant (sit-down),,,>1 commodity
+120,New York,New York,2009-02-09T00:00:00Z,2009-02-10T00:00:00Z,2009-02-08T00:00:00Z,2009-02-08T00:00:00Z,9,1,0,,,,,,,,,,,,,0,.,.,.,Restaurant (sit-down),,,Unknown
+121,New York,New York,2009-02-14T00:00:00Z,2009-02-17T00:00:00Z,2009-02-13T00:00:00Z,2009-02-13T00:00:00Z,12,0,0,,,,,,,,,,,,,0,.,.,.,Religous location (church/temple),,,Unknown
+125,Florida,Palm Beach,2009-01-17T00:00:00Z,2009-01-17T00:00:00Z,2009-01-16T00:00:00Z,2009-01-16T00:00:00Z,15,0,0,,,,,,,,,,,,,0,.,.,.,Private Home,,,>1 commodity
+127,Florida,Palm Beach,2009-02-12T00:00:00Z,2009-02-13T00:00:00Z,2009-02-12T00:00:00Z,2009-02-12T00:00:00Z,13,2,0,Calicivirus,,,,norovirus,,,,GII / undefined cluster by sequence,,,,1,.,.,.,Nursing home,,,>1 commodity
+140,New York,Jefferson,2009-03-01T00:00:00Z,2009-03-01T00:00:00Z,2009-03-01T00:00:00Z,2009-03-01T00:00:00Z,20,0,0,Staphylococcus,,,,aureus,,,,,,,,1,.,.,.,Religous location (church/temple),,,>1 commodity
+145,Wyoming,Natrona,2009-02-07T00:00:00Z,2009-02-19T00:00:00Z,2009-02-07T00:00:00Z,2009-02-12T00:00:00Z,13,0,0,Calicivirus,,,,norovirus,,,,"Genogroup II (GII),not sequenced",,,,1,.,.,.,Unknown,,,Unknown
+175,Illinois,Wayne,2009-03-23T00:00:00Z,2009-03-25T00:00:00Z,2009-03-22T00:00:00Z,2009-03-22T00:00:00Z,189,1,0,Calicivirus,,,,norovirus,,,,,,,,1,.,.,.,School,,,>1 commodity
+176,Illinois,Cook,2009-03-03T00:00:00Z,2009-03-13T00:00:00Z,2009-02-28T00:00:00Z,2009-03-07T00:00:00Z,6,0,0,Salmonella,,,,enterica,,,,Typhimurium,,,,1,.,.,.,Restaurant (sit-down),,,Unknown
+177,Illinois,Winnebago,2009-03-29T00:00:00Z,2009-04-04T00:00:00Z,2009-03-29T00:00:00Z,2009-03-29T00:00:00Z,6,1,0,Campylobacter,Listeria,,,jejuni,monocytogenes,,,,,,,1,1,.,.,Private Home,,,Unknown
+178,Illinois,Cook,2009-03-29T00:00:00Z,2009-03-31T00:00:00Z,2009-03-28T00:00:00Z,2009-03-28T00:00:00Z,27,0,0,Calicivirus,,,,norovirus,,,,GII / undefined cluster by sequence,,,,1,.,.,.,Private Home,,,Unknown
+179,Illinois,Bureau,2009-04-02T00:00:00Z,2009-04-03T00:00:00Z,2009-04-02T00:00:00Z,2009-04-02T00:00:00Z,24,0,0,Clostridium,,,,perfringens,,,,,,,,1,.,.,.,Private Home,Banquet Facility (on-site),,>1 commodity
+181,Massachusetts,Norfolk,2009-02-11T00:00:00Z,2009-02-14T00:00:00Z,2009-02-11T00:00:00Z,2009-02-11T00:00:00Z,9,0,0,,,,,,,,,,,,,0,.,.,.,Restaurant (sit-down),,,Unknown
+182,Michigan,Ingham,2009-03-02T00:00:00Z,2009-03-03T00:00:00Z,2009-03-01T00:00:00Z,2009-03-01T00:00:00Z,14,1,0,,,,,,,,,,,,,0,.,.,.,Restaurant (sit-down),,,Poultry
+184,Michigan,Oakland,2009-01-04T00:00:00Z,2009-01-06T00:00:00Z,2009-01-04T00:00:00Z,2009-01-04T00:00:00Z,18,0,0,,,,,,,,,,,,,0,.,.,.,Restaurant (unknown type),,,Poultry
+191,Wisconsin,Outagamie,2009-01-19T00:00:00Z,2009-01-20T00:00:00Z,2009-01-18T00:00:00Z,2009-01-18T00:00:00Z,16,0,0,Calicivirus,,,,norovirus,,,,"Genogroup II (GII),not sequenced",,,,1,.,.,.,Restaurant (sit-down),,,Fruits-Nuts
+203,Wisconsin,Dane,2009-02-14T00:00:00Z,2009-02-15T00:00:00Z,2009-02-14T00:00:00Z,,90,0,0,Clostridium,,,,perfringens,,,,,,,,1,.,.,.,Restaurant (sit-down),,,Beef
+228,Ohio,Cuyahoga,2009-03-31T00:00:00Z,2009-04-02T00:00:00Z,2009-03-31T00:00:00Z,2009-03-31T00:00:00Z,20,0,0,Calicivirus,,,,norovirus,,,,GII_4 New Orleans (2009),,,,1,.,.,.,Banquet Facility (on-site),,,Unknown
+314,New Hampshire,Grafton,2009-01-17T00:00:00Z,2009-01-18T00:00:00Z,2009-01-16T00:00:00Z,2009-01-16T00:00:00Z,11,0,0,Calicivirus,,,,norovirus,,,,"Genogroup II (GII),not sequenced",,,,0,.,.,.,"Workplace, not cafeteria",,,Fruits-Nuts
+344,Missouri,St. Louis City,2009-02-10T00:00:00Z,2009-02-13T00:00:00Z,2009-02-09T00:00:00Z,2009-02-09T00:00:00Z,17,0,0,,,,,,,,,,,,,0,.,.,.,Restaurant (sit-down),"Workplace, not cafeteria",,>1 commodity
+349,Idaho,Twin Falls,2009-03-08T00:00:00Z,2009-03-09T00:00:00Z,2009-03-08T00:00:00Z,2009-03-08T00:00:00Z,8,0,0,Clostridium,,,,perfringens,,,,,,,,1,.,.,.,Private Home,,,Poultry
+353,Minnesota,Dakota,2009-04-07T00:00:00Z,2009-04-09T00:00:00Z,2009-04-06T00:00:00Z,2009-04-07T00:00:00Z,15,0,0,Calicivirus,,,,norovirus,,,,,,,,1,.,.,.,"Workplace, not cafeteria",Restaurant (fast-food),,>1 commodity
+400,Wisconsin,Winnebago,2009-03-15T00:00:00Z,2009-03-15T00:00:00Z,2009-03-14T00:00:00Z,2009-03-15T00:00:00Z,23,0,0,Calicivirus,,,,norovirus,,,,"Genogroup II (GII),not sequenced",,,,1,.,.,.,Restaurant (sit-down),,,Unknown
+404,Michigan,Oakland,2009-03-03T00:00:00Z,2009-03-09T00:00:00Z,2009-03-02T00:00:00Z,2009-03-08T00:00:00Z,12,0,0,,,,,,,,,,,,,0,.,.,.,"Workplace, not cafeteria",Restaurant (unknown type),,Unknown
+408,Michigan,Oakland,2009-03-14T00:00:00Z,2009-03-17T00:00:00Z,2009-03-14T00:00:00Z,2009-03-16T00:00:00Z,131,2,0,Calicivirus,,,,norovirus,,,,"Genogroup II (GII),not sequenced",,,,1,.,.,.,Restaurant (unknown type),Banquet Facility (on-site),,>1 commodity
+411,Michigan,Macomb,2009-03-20T00:00:00Z,2009-03-21T00:00:00Z,2009-03-19T00:00:00Z,2009-03-20T00:00:00Z,9,,0,,,,,,,,,,,,,0,.,.,.,Restaurant (unknown type),,,Unknown
+424,Ohio,Cuyahoga,2009-02-01T00:00:00Z,2009-02-04T00:00:00Z,,,70,1,0,Calicivirus,,,,norovirus,,,,GI_4,,,,1,.,.,.,Religous location (church/temple),,,>1 commodity
+425,Connecticut,Hartford,2009-01-18T00:00:00Z,2009-01-20T00:00:00Z,2009-01-17T00:00:00Z,2009-01-17T00:00:00Z,21,0,0,Calicivirus,,,,norovirus,,,,GII / undefined cluster by sequence,,,,1,.,.,.,Restaurant (sit-down),,,Unknown
+427,Connecticut,Fairfield,2009-01-26T00:00:00Z,2009-01-30T00:00:00Z,2009-01-25T00:00:00Z,2009-01-29T00:00:00Z,7,2,0,Salmonella,,,,enterica,,,,Enteritidis,,,,1,.,.,.,Private Home,,,>1 commodity
+436,Minnesota,Hennepin,2009-04-09T00:00:00Z,2009-04-11T00:00:00Z,2009-04-09T00:00:00Z,2009-04-09T00:00:00Z,10,0,0,Calicivirus,,,,norovirus,,,,,,,,1,.,.,.,Restaurant (sit-down),,,Unknown
+438,Missouri,St. Louis,2009-01-17T00:00:00Z,2009-01-21T00:00:00Z,2009-01-17T00:00:00Z,2009-01-17T00:00:00Z,40,0,0,,,,,,,,,,,,,0,.,.,.,Banquet Facility (on-site),,,Unknown
+439,New York,New York,2009-04-10T00:00:00Z,2009-04-15T00:00:00Z,2009-04-09T00:00:00Z,2009-04-13T00:00:00Z,13,4,0,Salmonella,,,,enterica,,,,Enteritidis,,,,1,.,.,.,Restaurant (sit-down),,,Game
+442,Oklahoma,Oklahoma,2009-03-07T00:00:00Z,2009-03-26T00:00:00Z,2009-03-05T00:00:00Z,2009-03-25T00:00:00Z,25,4,0,Salmonella,,,,enterica,,,,Enteritidis,,,,1,.,.,.,Restaurant (sit-down),,,Unknown
+443,Ohio,Mahoning,2009-04-13T00:00:00Z,2009-04-14T00:00:00Z,2009-04-12T00:00:00Z,2009-04-12T00:00:00Z,10,0,0,,,,,,,,,,,,,0,.,.,.,Private Home,,,Unknown
+445,Alabama,,2009-03-19T00:00:00Z,2009-03-24T00:00:00Z,2009-03-18T00:00:00Z,2009-03-21T00:00:00Z,35,0,0,Calicivirus,,,,norovirus,,,,"Genogroup II (GII),not sequenced",,,,0,.,.,.,Restaurant (sit-down),,,Unknown
+447,Wisconsin,La Crosse,2009-02-17T00:00:00Z,2009-02-18T00:00:00Z,2009-02-16T00:00:00Z,2009-02-16T00:00:00Z,16,0,0,Calicivirus,,,,norovirus,,,,"Genogroup II (GII),not sequenced",,,,1,.,.,.,Other,,,>1 commodity
+455,South Carolina,,2009-01-21T00:00:00Z,2009-01-22T00:00:00Z,2009-01-21T00:00:00Z,2009-01-21T00:00:00Z,14,0,0,,,,,,,,,,,,,0,.,.,.,"Workplace, not cafeteria",,,Unknown
+1860,Oregon,Multnomah,2009-03-17T00:00:00Z,2009-03-20T00:00:00Z,,,12,0,0,Calicivirus,,,,norovirus,,,,GII / undefined cluster by sequence,,,,1,.,.,.,Unknown,Restaurant (fast-food),,Unknown
+1864,Oregon,Benton,2009-03-23T00:00:00Z,2009-04-07T00:00:00Z,2009-03-23T00:00:00Z,2009-04-07T00:00:00Z,49,0,0,Calicivirus,,,,norovirus,,,,GII / undefined cluster by sequence,,,,1,.,.,.,School,,,Unknown
+1865,Hawaii,Honolulu,2009-04-10T00:00:00Z,2009-04-10T00:00:00Z,2009-04-10T00:00:00Z,2009-04-10T00:00:00Z,13,0,0,Histamine,,,,,,,,,,,,1,.,.,.,Prison,,,Finfish
+1868,Connecticut,Hartford,2009-03-13T00:00:00Z,2009-03-23T00:00:00Z,,,60,5,0,Escherichia,,,,"coli, Shiga toxin-producing",,,,O157:H7,,,,1,.,.,.,Workplace cafeteria,,,Poultry
+1873,Illinois,Cook,2009-04-22T00:00:00Z,2009-04-24T00:00:00Z,2009-04-22T00:00:00Z,2009-04-23T00:00:00Z,11,0,0,Calicivirus,,,,norovirus,,,,,,,,0,.,.,.,Workplace cafeteria,,,Unknown
+1876,Ohio,Medina,2009-05-07T00:00:00Z,2009-05-08T00:00:00Z,2009-05-07T00:00:00Z,2009-05-07T00:00:00Z,23,0,0,Clostridium,,,,perfringens,,,,,,,,1,.,.,.,School,,,Poultry
+1880,Minnesota,Ramsey,2009-04-25T00:00:00Z,2009-04-27T00:00:00Z,2009-04-24T00:00:00Z,2009-04-26T00:00:00Z,17,0,0,Calicivirus,,,,norovirus,,,,,,,,1,.,.,.,Restaurant (fast-food),,,Unknown
+1885,Mississippi,Lauderdale,2009-02-05T00:00:00Z,2009-02-06T00:00:00Z,2009-02-03T00:00:00Z,2009-02-05T00:00:00Z,66,0,0,Calicivirus,Staphylococcus,,,norovirus,unknown,,,Unspecified,,,,1,1,.,.,Prison,,,>1 commodity
+1886,Mississippi,Jackson,2009-02-04T00:00:00Z,2009-02-17T00:00:00Z,2009-02-04T00:00:00Z,2009-02-17T00:00:00Z,184,3,0,Salmonella,,,,enterica,,,,Enteritidis,,,,1,.,.,.,Prison,,,Unknown
+1893,Iowa,Dubuque,2009-04-28T00:00:00Z,2009-04-30T00:00:00Z,2009-04-27T00:00:00Z,2009-04-29T00:00:00Z,27,1,0,Calicivirus,,,,norovirus,,,,"Genogroup II (GII),not sequenced",,,,1,.,.,.,Unknown,,,Leafy
+1895,Oregon,Washington,2009-04-23T00:00:00Z,2009-04-26T00:00:00Z,2009-04-22T00:00:00Z,,11,0,0,,,,,,,,,,,,,0,.,.,.,Restaurant (sit-down),,,Unknown
+1899,Connecticut,Fairfield,2009-04-30T00:00:00Z,2009-04-30T00:00:00Z,2009-04-30T00:00:00Z,2009-04-30T00:00:00Z,47,0,0,Bacillus,,,,cereus,,,,,,,,1,.,.,.,School,,,>1 commodity
+1900,Connecticut,Fairfield,2009-05-04T00:00:00Z,2009-05-05T00:00:00Z,2009-05-03T00:00:00Z,2009-05-03T00:00:00Z,13,0,0,Calicivirus,,,,norovirus,,,,GII / undefined cluster by sequence,,,,1,.,.,.,Restaurant (sit-down),,,Beef
+1904,Wisconsin,Dunn,2009-04-01T00:00:00Z,2009-04-02T00:00:00Z,2009-03-31T00:00:00Z,2009-04-01T00:00:00Z,8,0,0,Clostridium,,,,perfringens,,,,,,,,1,.,.,.,Restaurant (sit-down),,,Unknown
+1905,California,Placer,2009-01-29T00:00:00Z,2009-01-29T00:00:00Z,2009-01-28T00:00:00Z,2009-01-28T00:00:00Z,10,0,0,Calicivirus,,,,norovirus,,,,Unspecified,,,,0,.,.,.,Unknown,,,Unknown
+1909,Wisconsin,Washington,2009-04-30T00:00:00Z,2009-05-08T00:00:00Z,2009-04-28T00:00:00Z,2009-04-28T00:00:00Z,14,2,0,Salmonella,,,,enterica,,,,Enteritidis,,,,1,.,.,.,Other,,,>1 commodity
+1933,Florida,Orange,2009-02-13T00:00:00Z,2009-02-17T00:00:00Z,2009-02-13T00:00:00Z,2009-02-14T00:00:00Z,30,0,0,Calicivirus,,,,norovirus,,,,,,,,1,.,.,.,Banquet Facility (on-site),,,Oil-Sugar
+1938,Illinois,Vermilion,2009-05-23T00:00:00Z,2009-05-26T00:00:00Z,2009-05-23T00:00:00Z,2009-05-23T00:00:00Z,39,0,0,Calicivirus,,,,norovirus,,,,GII / undefined cluster by sequence,,,,1,.,.,.,Banquet Facility (on-site),,,Unknown
+1940,Illinois,McLean,2009-05-25T00:00:00Z,2009-05-27T00:00:00Z,2009-05-24T00:00:00Z,2009-05-24T00:00:00Z,32,0,0,Calicivirus,,,,norovirus,,,,GI / undefined cluster by sequence,,,,0,.,.,.,Private Home,,,Unknown
+1941,Illinois,Will,2009-05-22T00:00:00Z,2009-05-23T00:00:00Z,2009-05-22T00:00:00Z,2009-05-22T00:00:00Z,18,0,0,,,,,,,,,,,,,0,.,.,.,Private Home,,,Unknown
+1943,California,Placer,2009-01-04T00:00:00Z,2009-01-06T00:00:00Z,2009-01-03T00:00:00Z,2009-01-03T00:00:00Z,10,0,0,Calicivirus,,,,norovirus,,,,Unspecified,,,,1,.,.,.,Restaurant (sit-down),,,Unknown
+1944,California,Kern,2009-01-18T00:00:00Z,2009-01-25T00:00:00Z,2009-01-18T00:00:00Z,2009-01-18T00:00:00Z,7,0,0,Calicivirus,,,,norovirus,,,,Unspecified,,,,0,.,.,.,Restaurant (sit-down),,,Unknown
+1960,California,Contra Costa,2009-02-01T00:00:00Z,2009-02-02T00:00:00Z,2009-01-31T00:00:00Z,2009-01-31T00:00:00Z,9,0,0,Calicivirus,,,,norovirus,,,,Unspecified,,,,0,.,.,.,Unknown,,,Unknown
+1963,California,Riverside,2009-03-01T00:00:00Z,2009-03-02T00:00:00Z,2009-03-01T00:00:00Z,2009-03-01T00:00:00Z,31,0,0,,,,,,,,,,,,,0,.,.,.,Unknown,,,Unknown
+1964,California,Los Angeles,2009-03-17T00:00:00Z,2009-03-18T00:00:00Z,2009-03-17T00:00:00Z,2009-03-17T00:00:00Z,7,0,0,Bacillus,,,,cereus,,,,,,,,0,.,.,.,"Workplace, not cafeteria",,,>1 commodity
+1965,California,Los Angeles,2009-04-12T00:00:00Z,2009-04-13T00:00:00Z,2009-04-12T00:00:00Z,2009-04-12T00:00:00Z,7,0,0,Other bacterial,,,,,,,,,,,,0,.,.,.,Unknown,,,Unknown
+1968,California,Los Angeles,2009-04-05T00:00:00Z,2009-04-05T00:00:00Z,2009-04-03T00:00:00Z,2009-04-03T00:00:00Z,9,0,0,Calicivirus,,,,norovirus,,,,"Genogroup II (GII),not sequenced",,,,1,.,.,.,Unknown,,,Unknown
+1969,Ohio,Medina,2009-05-31T00:00:00Z,2009-06-02T00:00:00Z,2009-05-31T00:00:00Z,2009-05-31T00:00:00Z,15,0,0,Calicivirus,,,,norovirus,,,,GII_4 Minerva (2006),,,,1,.,.,.,Private Home,Restaurant (sit-down),,Unknown
+1991,New York,Cortland,2009-05-29T00:00:00Z,2009-05-29T00:00:00Z,2009-05-28T00:00:00Z,2009-05-28T00:00:00Z,20,1,0,Bacillus,,,,cereus,,,,,,,,0,.,.,.,Banquet Facility (on-site),,,Poultry
+1992,Virginia,Henrico,2009-05-14T00:00:00Z,2009-05-14T00:00:00Z,2009-05-14T00:00:00Z,2009-05-14T00:00:00Z,19,0,0,Staphylococcus,,,,aureus,,,,,,,,1,.,.,.,Religous location (church/temple),,,>1 commodity
+1996,South Carolina,Horry,2009-05-28T00:00:00Z,2009-05-29T00:00:00Z,2009-05-28T00:00:00Z,2009-05-28T00:00:00Z,350,0,0,Clostridium,,,,perfringens,,,,,,,,1,.,.,.,Caterer (off-site),,,>1 commodity
+1997,South Carolina,Charleston,2009-01-16T00:00:00Z,2009-01-17T00:00:00Z,2009-01-15T00:00:00Z,2009-01-15T00:00:00Z,13,0,0,Calicivirus,,,,norovirus,,,,GII / undefined cluster by sequence,,,,1,.,.,.,Unknown,,,Unknown
+2007,Arizona,Pima,2009-05-12T00:00:00Z,2009-05-13T00:00:00Z,2009-05-12T00:00:00Z,2009-05-12T00:00:00Z,13,0,0,Enterococcus,,,,faecalis,,,,,,,,1,.,.,.,Other,,,>1 commodity
+2016,Virginia,Accomack,2009-06-08T00:00:00Z,2009-06-08T00:00:00Z,2009-06-08T00:00:00Z,2009-06-08T00:00:00Z,12,0,0,Staphylococcus,,,,aureus,,,,,,,,0,.,.,.,Private Home,,,>1 commodity
+2017,Wisconsin,Sauk,2009-01-23T00:00:00Z,2009-01-26T00:00:00Z,,,62,1,0,Calicivirus,,,,norovirus,,,,"Genogroup II (GII),not sequenced",,,,1,.,.,.,Restaurant (sit-down),,,Unknown
+2020,Wisconsin,,2009-05-02T00:00:00Z,,,,49,,,,,,,,,,,,,,,0,.,.,.,Unknown,,,Unknown
+2023,Minnesota,,2009-05-03T00:00:00Z,2009-06-29T00:00:00Z,2009-04-27T00:00:00Z,,7,1,0,Escherichia,,,,"coli, Shiga toxin-producing",,,,O157:H7,,,,1,.,.,.,Private Home,,,>1 commodity
+2025,California,,2009-05-18T00:00:00Z,2009-05-20T00:00:00Z,2009-05-18T00:00:00Z,2009-05-18T00:00:00Z,26,0,0,Calicivirus,,,,norovirus,,,,Unspecified,,,,0,.,.,.,School,,,>1 commodity
+2031,Wisconsin,Winnebago,2009-05-23T00:00:00Z,2009-05-28T00:00:00Z,2009-05-20T00:00:00Z,2009-05-25T00:00:00Z,8,0,0,Escherichia,,,,"coli, Enterotoxigenic",,,,,,,,1,.,.,.,Unknown,,,Unknown
+2033,Maryland,Anne Arundel,2009-01-05T00:00:00Z,2009-01-07T00:00:00Z,2009-01-04T00:00:00Z,2009-01-05T00:00:00Z,12,0,0,Calicivirus,,,,norovirus,,,,GII / undefined cluster by sequence,,,,1,.,.,.,Restaurant (sit-down),,,Unknown
+2034,Massachusetts,Suffolk,2009-04-13T00:00:00Z,,2009-04-12T00:00:00Z,2009-04-12T00:00:00Z,50,,0,Salmonella,,,,enterica,,,,Typhimurium,,,,1,.,.,.,School,,,Unknown
+2035,Maryland,Anne Arundel,2009-01-19T00:00:00Z,2009-01-22T00:00:00Z,2009-01-18T00:00:00Z,2009-01-18T00:00:00Z,13,0,0,Calicivirus,,,,norovirus,,,,GII / undefined cluster by sequence,,,,1,.,.,.,Restaurant (sit-down),,,Unknown
+2036,California,Santa Cruz,2009-04-25T00:00:00Z,2009-05-03T00:00:00Z,2009-04-24T00:00:00Z,,18,0,0,Calicivirus,,,,norovirus,,,,Unspecified,,,,1,.,.,.,Unknown,,,>1 commodity
+2038,Minnesota,Anoka,2009-05-18T00:00:00Z,2009-05-21T00:00:00Z,2009-05-17T00:00:00Z,2009-05-17T00:00:00Z,11,0,0,Calicivirus,,,,norovirus,,,,,,,,0,.,.,.,Private Home,,,>1 commodity
+2039,Maryland,Baltimore City,2009-04-16T00:00:00Z,2009-04-16T00:00:00Z,2009-04-14T00:00:00Z,2009-04-14T00:00:00Z,7,0,0,,,,,,,,,,,,,0,.,.,.,Unknown,,,Unknown
+2041,Tennessee,Hamilton,2009-06-18T00:00:00Z,2009-06-21T00:00:00Z,2009-06-18T00:00:00Z,2009-06-18T00:00:00Z,11,0,0,Calicivirus,,,,norovirus,,,,"Genogroup II (GII),not sequenced",,,,1,.,.,.,Restaurant (sit-down),,,Dairy
+2048,Illinois,Cook,2009-06-14T00:00:00Z,2009-06-19T00:00:00Z,2009-06-13T00:00:00Z,,25,1,0,Calicivirus,,,,norovirus,,,,GI / undefined cluster by sequence,,,,0,.,.,.,Picnic,,,Unknown
+2050,Illinois,Effingham,2009-06-20T00:00:00Z,2009-06-23T00:00:00Z,2009-06-20T00:00:00Z,2009-06-20T00:00:00Z,43,0,0,,,,,,,,,,,,,0,.,.,.,Other,,,Unknown
+2051,Illinois,Jo Daviess,2009-06-20T00:00:00Z,2009-06-21T00:00:00Z,2009-06-20T00:00:00Z,2009-06-20T00:00:00Z,35,0,0,,,,,,,,,,,,,0,.,.,.,Unknown,,,Beef
+2052,New York,Wyoming,2009-06-14T00:00:00Z,2009-06-16T00:00:00Z,2009-06-12T00:00:00Z,2009-06-12T00:00:00Z,9,0,0,Campylobacter,,,,jejuni,,,,,,,,1,.,.,.,Other,,,Unknown
+2055,Washington,Snohomish,2009-02-08T00:00:00Z,2009-02-11T00:00:00Z,2009-02-07T00:00:00Z,2009-02-07T00:00:00Z,13,3,0,Calicivirus,,,,norovirus,,,,,,,,0,.,.,.,Unknown,,,>1 commodity
+2068,Ohio,Union,2009-03-04T00:00:00Z,,2009-03-03T00:00:00Z,,19,0,0,Calicivirus,,,,norovirus,,,,GII / undefined cluster by sequence,,,,1,.,.,.,Unknown,,,Unknown
+2070,Connecticut,Fairfield,2009-06-10T00:00:00Z,2009-06-10T00:00:00Z,2009-06-10T00:00:00Z,2009-06-10T00:00:00Z,100,0,0,Bacillus,,,,cereus,,,,,,,,1,.,.,.,School,,,>1 commodity
+2071,Connecticut,New London,2009-06-17T00:00:00Z,2009-06-19T00:00:00Z,2009-06-16T00:00:00Z,2009-06-16T00:00:00Z,10,0,0,Calicivirus,,,,norovirus,,,,,,,,0,.,.,.,Other,,,Fruits-Nuts
+2074,Massachusetts,Hampden,2009-06-20T00:00:00Z,,2009-06-19T00:00:00Z,2009-06-20T00:00:00Z,70,2,0,Campylobacter,,,,jejuni,,,,,,,,1,.,.,.,Unknown,,,Unknown
+2087,Minnesota,Anoka,2009-06-27T00:00:00Z,2009-06-28T00:00:00Z,2009-06-27T00:00:00Z,2009-06-27T00:00:00Z,18,0,0,Clostridium,,,,perfringens,,,,,,,,1,.,.,.,Private Home,,,Beef
+2109,Georgia,Glynn,2009-02-12T00:00:00Z,2009-02-14T00:00:00Z,,,8,0,0,Calicivirus,,,,norovirus,,,,"Genogroup II (GII),not sequenced",,,,0,.,.,.,Unknown,,,Unknown
+2115,New York,Queens,2009-05-26T00:00:00Z,2009-05-27T00:00:00Z,2009-05-25T00:00:00Z,2009-05-25T00:00:00Z,19,2,0,Salmonella,,,,enterica,,,,Enteritidis,,,,1,.,.,.,Private Home,,,>1 commodity
+2117,Missouri,Maries,2009-06-28T00:00:00Z,2009-06-30T00:00:00Z,2009-06-27T00:00:00Z,2009-06-27T00:00:00Z,11,0,0,,,,,,,,,,,,,0,.,.,.,Restaurant (sit-down),,,Unknown
+2120,California,Los Angeles,2009-05-06T00:00:00Z,2009-05-07T00:00:00Z,2009-05-05T00:00:00Z,2009-05-05T00:00:00Z,10,0,0,Calicivirus,,,,norovirus,,,,Unspecified,,,,0,.,.,.,"Workplace, not cafeteria",,,Unknown
+2121,California,Los Angeles,2009-04-07T00:00:00Z,2009-04-08T00:00:00Z,2009-04-07T00:00:00Z,2009-04-07T00:00:00Z,6,0,0,Other chemical,,,,,,,,,,,,1,.,.,.,"Workplace, not cafeteria",,,>1 commodity
+2132,Ohio,Franklin,2009-06-10T00:00:00Z,2009-06-12T00:00:00Z,2009-06-10T00:00:00Z,2009-06-10T00:00:00Z,15,0,0,,,,,,,,,,,,,0,.,.,.,Unknown,,,Unknown
+2136,Minnesota,Mower,2009-06-26T00:00:00Z,2009-06-30T00:00:00Z,2009-06-25T00:00:00Z,,16,3,0,Escherichia,,,,"coli, Shiga toxin-producing",,,,O157:H7,,,,1,.,.,.,"Workplace, not cafeteria",Private Home,,Unknown
+2169,Florida,Lafayette,2009-05-21T00:00:00Z,2009-05-30T00:00:00Z,2009-05-17T00:00:00Z,2009-05-17T00:00:00Z,30,0,0,Escherichia,,,,"coli, Shiga toxin-producing",,,,O157:H7,,,,1,.,.,.,Unknown,,,Unknown
+2174,Florida,Alachua,2009-01-27T00:00:00Z,2009-01-28T00:00:00Z,2009-01-26T00:00:00Z,2009-01-29T00:00:00Z,24,0,0,Calicivirus,,,,norovirus,,,,"Genogroup II (GII),not sequenced",,,,1,.,.,.,Unknown,,,Unknown
+2176,Louisiana,Jefferson,2009-04-24T00:00:00Z,2009-05-16T00:00:00Z,,,56,12,0,Salmonella,,,,enterica,,,,Oranienburg,,,,1,.,.,.,Unknown,,,Unknown
+2183,Oklahoma,Alfalfa,2009-05-19T00:00:00Z,2009-05-20T00:00:00Z,2009-05-19T00:00:00Z,2009-05-19T00:00:00Z,39,0,0,Staphylococcus,,,,aureus,,,,,,,,1,.,.,.,Unknown,,,>1 commodity
+2195,Tennessee,Hawkins,2009-06-24T00:00:00Z,2009-06-24T00:00:00Z,2009-06-24T00:00:00Z,2009-06-24T00:00:00Z,6,0,0,,,,,,,,,,,,,0,.,.,.,"Workplace, not cafeteria",,,>1 commodity
+2212,Ohio,Franklin,2009-01-16T00:00:00Z,2009-01-17T00:00:00Z,2009-01-15T00:00:00Z,2009-01-15T00:00:00Z,22,0,0,Calicivirus,,,,norovirus,,,,GII_12,,,,1,.,.,.,Banquet Facility (on-site),,,>1 commodity
+2225,California,Placer,2009-05-18T00:00:00Z,2009-05-21T00:00:00Z,2009-05-17T00:00:00Z,2009-05-17T00:00:00Z,14,0,0,Calicivirus,,,,norovirus,,,,,,,,1,.,.,.,Unknown,,,Unknown
+2237,California,Yolo,2009-05-29T00:00:00Z,2009-05-30T00:00:00Z,2009-05-28T00:00:00Z,2009-05-28T00:00:00Z,21,0,0,,,,,,,,,,,,,0,.,.,.,Restaurant (sit-down),,,Unknown
+2254,Missouri,Johnson,2009-07-07T00:00:00Z,2009-07-07T00:00:00Z,2009-07-07T00:00:00Z,2009-07-07T00:00:00Z,25,0,0,,,,,,,,,,,,,0,.,.,.,Private Home,Other,Camp,Root
+2263,Michigan,Ingham,2009-04-30T00:00:00Z,2009-05-01T00:00:00Z,2009-04-29T00:00:00Z,,13,0,0,,,,,,,,,,,,,0,.,.,.,Other,,,Dairy
+2264,Michigan,Alpena,2009-03-30T00:00:00Z,2009-03-31T00:00:00Z,2009-03-29T00:00:00Z,2009-03-29T00:00:00Z,9,,0,,,,,,,,,,,,,0,.,.,.,Unknown,,,Unknown
+2266,Michigan,Macomb,2009-03-08T00:00:00Z,2009-03-11T00:00:00Z,,,7,0,0,,,,,,,,,,,,,0,.,.,.,Private Home,,,Unknown
+2271,California,San Diego,2009-05-28T00:00:00Z,2009-06-05T00:00:00Z,2009-05-28T00:00:00Z,2009-06-05T00:00:00Z,6,0,0,,,,,,,,,,,,,0,.,.,.,Restaurant (sit-down),,,>1 commodity
+2272,Utah,,2009-06-20T00:00:00Z,,2009-06-18T00:00:00Z,,15,,0,,,,,,,,,,,,,0,.,.,.,Unknown,,,Unknown
+2274,Utah,,2009-05-06T00:00:00Z,,,,6,,,Salmonella,,,,enterica,,,,Typhimurium,,,,1,.,.,.,Unknown,,,Unknown
+2275,Utah,,2009-03-24T00:00:00Z,2009-05-31T00:00:00Z,,,10,0,0,Campylobacter,,,,jejuni,,,,,,,,1,.,.,.,Private Home,,,Dairy
+2281,Colorado,Douglas,2009-02-01T00:00:00Z,2009-02-01T00:00:00Z,2009-01-31T00:00:00Z,2009-01-31T00:00:00Z,6,0,0,Calicivirus,,,,norovirus,,,,,,,,0,.,.,.,Restaurant (sit-down),,,>1 commodity
+2282,Minnesota,Todd,2009-07-09T00:00:00Z,2010-07-10T00:00:00Z,2009-07-08T00:00:00Z,2010-07-08T00:00:00Z,6,0,0,Calicivirus,,,,norovirus,,,,,,,,1,.,.,.,Private Home,,,Poultry
+2285,Illinois,Rock Island,2009-06-11T00:00:00Z,2009-08-10T00:00:00Z,,,34,14,0,Hepatitis,,,,A,,,,,,,,1,.,.,.,Restaurant (fast-food),,,Unknown
+2289,North Carolina,Dare,2009-03-01T00:00:00Z,2009-03-16T00:00:00Z,2009-02-25T00:00:00Z,2009-03-25T00:00:00Z,10,0,0,Salmonella,,,,enterica,,,,Hadar,,,,1,.,.,.,Nursing home,,,Unknown
+2291,California,,2009-05-03T00:00:00Z,2009-05-06T00:00:00Z,2009-05-02T00:00:00Z,2009-05-02T00:00:00Z,7,0,0,Salmonella,,,,enterica,,,,Infantis,,,,1,.,.,.,Banquet Facility (on-site),,,>1 commodity
+2304,Colorado,Arapahoe,2009-01-31T00:00:00Z,2009-02-04T00:00:00Z,2009-01-31T00:00:00Z,2009-01-31T00:00:00Z,10,1,0,Calicivirus,,,,norovirus,,,,,,,,0,.,.,.,Private Home,,,Fungus
+2306,Colorado,Boulder,2009-01-10T00:00:00Z,2009-01-11T00:00:00Z,2009-01-09T00:00:00Z,2009-01-09T00:00:00Z,9,0,0,Calicivirus,,,,norovirus,,,,,,,,0,.,.,.,"Workplace, not cafeteria",,,>1 commodity
+2307,Massachusetts,,2009-07-09T00:00:00Z,,,,7,1,0,Salmonella,,,,enterica,,,,Javiana,,,,1,.,.,.,Unknown,,,Unknown
+2321,Tennessee,Shelby,2009-07-10T00:00:00Z,2009-07-15T00:00:00Z,2009-07-10T00:00:00Z,2009-07-11T00:00:00Z,53,7,0,Salmonella,Salmonella,,,enterica,enterica,,,Heidelberg,Infantis,,,1,1,.,.,Private Home,Restaurant (sit-down),,Pork
+2331,Colorado,Boulder,2009-06-15T00:00:00Z,2009-06-19T00:00:00Z,2009-06-14T00:00:00Z,2009-06-16T00:00:00Z,32,0,0,Calicivirus,,,,norovirus,,,,,,,,0,.,.,.,Restaurant (sit-down),,,>1 commodity
+2340,Kansas,Franklin,2009-06-21T00:00:00Z,2009-06-22T00:00:00Z,2009-06-20T00:00:00Z,2009-06-20T00:00:00Z,13,0,0,Calicivirus,,,,norovirus,,,,Unspecified,,,,1,.,.,.,Restaurant (sit-down),,,Unknown
+2345,Nevada,Washoe,2009-06-28T00:00:00Z,2009-07-14T00:00:00Z,2009-06-27T00:00:00Z,2009-06-27T00:00:00Z,44,0,0,Calicivirus,,,,norovirus,,,,Unspecified,,,,1,.,.,.,Banquet Facility (on-site),,,Unknown
+2346,New Hampshire,Coos,2009-04-08T00:00:00Z,2009-04-10T00:00:00Z,2009-04-07T00:00:00Z,2009-04-07T00:00:00Z,45,1,0,Salmonella,,,,enterica,,,,Enteritidis,,,,1,.,.,.,Other,,,Eggs
+2347,New Hampshire,Carroll,2009-04-15T00:00:00Z,2009-04-27T00:00:00Z,2009-04-15T00:00:00Z,2009-04-22T00:00:00Z,133,5,0,Salmonella,,,,enterica,,,,Enteritidis,,,,1,.,.,.,Camp,,,>1 commodity
+2349,Hawaii,Honolulu,2009-05-02T00:00:00Z,2009-05-04T00:00:00Z,2009-05-02T00:00:00Z,2009-05-04T00:00:00Z,6,0,0,Ciguatoxin,,,,,,,,,,,,1,.,.,.,Unknown,,,Unknown
+2366,Nevada,Washoe,2009-07-17T00:00:00Z,2009-07-21T00:00:00Z,2009-07-16T00:00:00Z,2009-07-16T00:00:00Z,7,0,0,Calicivirus,,,,norovirus,,,,Unspecified,,,,1,.,.,.,"Workplace, not cafeteria",Other,,>1 commodity
+2367,North Dakota,McLean,2009-06-13T00:00:00Z,2009-06-17T00:00:00Z,2009-06-13T00:00:00Z,2009-06-13T00:00:00Z,55,8,0,Salmonella,,,,enterica,,,,Montevideo,,,,1,.,.,.,Banquet Facility (on-site),,,Unknown
+2368,North Dakota,McLean,2009-06-13T00:00:00Z,2009-06-17T00:00:00Z,2009-06-13T00:00:00Z,2009-06-13T00:00:00Z,36,2,0,Salmonella,,,,enterica,,,,Montevideo,,,,1,.,.,.,Banquet Facility (on-site),,,Beef
+2369,North Dakota,Sheridan,2009-06-20T00:00:00Z,2009-06-25T00:00:00Z,2009-06-20T00:00:00Z,2009-06-20T00:00:00Z,88,0,0,Salmonella,,,,enterica,,,,Montevideo,,,,1,.,.,.,Banquet Facility (on-site),,,Beef
+2372,Maine,Penobscot,2009-06-30T00:00:00Z,2009-07-03T00:00:00Z,2009-06-28T00:00:00Z,2009-06-28T00:00:00Z,6,1,0,Salmonella,,,,enterica,,,,Enteritidis,,,,1,.,.,.,Private Home,,,Unknown
+2373,New York,Essex,2009-07-24T00:00:00Z,2009-07-25T00:00:00Z,2009-07-24T00:00:00Z,2009-07-25T00:00:00Z,24,0,0,,,,,,,,,,,,,0,.,.,.,Camp,,,>1 commodity
+2374,Connecticut,Fairfield,2009-06-02T00:00:00Z,2009-07-04T00:00:00Z,,,8,0,0,Cyclospora,,,,cayetanensis,,,,,,,,1,.,.,.,Private Home,,,Fruits-Nuts
+2376,Oregon,Benton,2009-03-02T00:00:00Z,2009-12-26T00:00:00Z,,,26,8,0,Salmonella,,,,enterica,,,,Heidelberg,,,,1,.,.,.,Private Home,Restaurant (sit-down),,Poultry
+2378,Oregon,Lincoln,2009-07-03T00:00:00Z,2009-07-05T00:00:00Z,2009-07-02T00:00:00Z,2009-07-02T00:00:00Z,31,1,0,Calicivirus,,,,norovirus,,,,GII / undefined cluster by sequence,,,,1,.,.,.,Restaurant (sit-down),,,>1 commodity
+2380,Oregon,Marion,2009-07-13T00:00:00Z,2009-07-18T00:00:00Z,2009-07-13T00:00:00Z,2009-07-13T00:00:00Z,17,0,0,Calicivirus,,,,norovirus,,,,"Genogroup II (GII),not sequenced",,,,1,.,.,.,Unknown,,,Unknown
+2381,Oregon,Umatilla,2009-07-16T00:00:00Z,2009-07-18T00:00:00Z,2009-07-16T00:00:00Z,2009-07-16T00:00:00Z,18,0,0,Calicivirus,,,,norovirus,,,,GII / undefined cluster by sequence,,,,1,.,.,.,Unknown,,,Unknown
+2382,Oregon,Multnomah,2009-08-01T00:00:00Z,2009-08-02T00:00:00Z,2009-08-01T00:00:00Z,2009-08-01T00:00:00Z,21,0,0,,,,,,,,,,,,,0,.,.,.,"Fair, festival, other mobile services",,,>1 commodity
+2384,New York,Nassau,2009-05-17T00:00:00Z,2009-05-19T00:00:00Z,2009-05-17T00:00:00Z,2009-05-17T00:00:00Z,18,2,0,,,,,,,,,,,,,0,.,.,.,Restaurant (sit-down),,,>1 commodity
+2387,New York,Suffolk,2009-02-26T00:00:00Z,2009-02-28T00:00:00Z,2009-02-25T00:00:00Z,2009-02-25T00:00:00Z,13,1,0,Calicivirus,,,,norovirus,,,,,,,,1,.,.,.,Restaurant (sit-down),,,Unknown
+2388,New York,,2009-07-18T00:00:00Z,2009-07-20T00:00:00Z,2009-07-16T00:00:00Z,2009-07-16T00:00:00Z,23,2,0,,,,,,,,,,,,,0,.,.,.,Restaurant (sit-down),Banquet Facility (on-site),,>1 commodity
+2390,New York,Westchester,2009-04-16T00:00:00Z,2009-04-21T00:00:00Z,2009-04-13T00:00:00Z,2009-04-17T00:00:00Z,40,0,0,Calicivirus,,,,norovirus,,,,,,,,1,.,.,.,School,,,>1 commodity
+2394,Wisconsin,Outagamie,2009-08-04T00:00:00Z,2009-08-05T00:00:00Z,2009-08-03T00:00:00Z,2009-08-03T00:00:00Z,24,0,0,Calicivirus,,,,norovirus,,,,"Genogroup II (GII),not sequenced",,,,1,.,.,.,Unknown,,,Unknown
+2395,Michigan,Kent,2009-06-28T00:00:00Z,2009-06-30T00:00:00Z,2009-06-28T00:00:00Z,2009-06-28T00:00:00Z,20,0,0,Clostridium,,,,perfringens,,,,,,,,1,.,.,.,Private Home,,,Pork
+2397,Ohio,Mercer,2009-07-24T00:00:00Z,2009-07-26T00:00:00Z,2009-07-23T00:00:00Z,2009-07-23T00:00:00Z,36,0,0,,,,,,,,,,,,,0,.,.,.,Picnic,,,Unknown
+2410,California,Placer,2009-06-23T00:00:00Z,2009-06-23T00:00:00Z,2009-06-22T00:00:00Z,2009-06-22T00:00:00Z,19,0,0,Calicivirus,,,,norovirus,,,,GI_1,,,,1,.,.,.,Restaurant (fast-food),,,Unknown
+2412,New Mexico,Taos,2009-06-17T00:00:00Z,2009-06-19T00:00:00Z,2009-06-17T00:00:00Z,,12,0,0,,,,,,,,,,,,,0,.,.,.,Unknown,,,Unknown
+2413,New Mexico,Bernalillo,2009-07-19T00:00:00Z,2009-07-30T00:00:00Z,2009-07-18T00:00:00Z,2009-07-18T00:00:00Z,48,2,0,Salmonella,,,,enterica,,,,Javiana,,,,1,.,.,.,Unknown,,,Unknown
+2423,Illinois,Coles,2009-08-05T00:00:00Z,2009-08-07T00:00:00Z,2009-08-05T00:00:00Z,,10,0,0,,,,,,,,,,,,,0,.,.,.,Restaurant (sit-down),,,>1 commodity
+2424,South Carolina,Spartanburg,2009-07-28T00:00:00Z,2009-07-29T00:00:00Z,2009-07-28T00:00:00Z,2009-07-28T00:00:00Z,50,0,0,Clostridium,,,,perfringens,,,,,,,,1,.,.,.,Banquet Facility (on-site),,,Pork
+2434,Kansas,Johnson,2009-05-18T00:00:00Z,2009-05-19T00:00:00Z,2009-05-18T00:00:00Z,2009-05-18T00:00:00Z,6,0,0,,,,,,,,,,,,,0,.,.,.,Restaurant (sit-down),,,Unknown
+2454,New York,New York,2009-08-07T00:00:00Z,2009-08-08T00:00:00Z,2009-08-06T00:00:00Z,2009-08-06T00:00:00Z,12,2,0,Salmonella,,,,enterica,,,,Enteritidis,,,,1,.,.,.,Picnic,"Workplace, not cafeteria",,>1 commodity
+2460,Georgia,,2009-07-18T00:00:00Z,2009-07-21T00:00:00Z,2009-07-17T00:00:00Z,2009-07-17T00:00:00Z,11,0,0,Campylobacter,,,,jejuni,,,,,,,,1,.,.,.,"Workplace, not cafeteria",,,>1 commodity
+2465,New Hampshire,Sullivan,2009-07-14T00:00:00Z,2009-07-17T00:00:00Z,2009-07-13T00:00:00Z,2009-07-13T00:00:00Z,31,1,0,Calicivirus,,,,norovirus,,,,"Genogroup II (GII),not sequenced",,,,0,.,.,.,Camp,,,Root
+2467,Georgia,Gwinnett,2009-01-09T00:00:00Z,2009-01-24T00:00:00Z,2009-01-07T00:00:00Z,2009-01-24T00:00:00Z,46,1,0,Calicivirus,,,,norovirus,,,,"Genogroup II (GII),not sequenced",,,,1,.,.,.,Restaurant (sit-down),,,Unknown
+2469,California,Tulare,2009-03-21T00:00:00Z,2009-03-22T00:00:00Z,2009-03-21T00:00:00Z,2009-03-21T00:00:00Z,6,0,0,,,,,,,,,,,,,0,.,.,.,Restaurant (fast-food),,,Unknown
+2470,Idaho,,2009-01-05T00:00:00Z,2009-01-05T00:00:00Z,2009-01-04T00:00:00Z,2009-01-04T00:00:00Z,9,0,0,,,,,,,,,,,,,0,.,.,.,Restaurant (fast-food),,,>1 commodity
+2475,Minnesota,Douglas,2009-08-12T00:00:00Z,2009-08-22T00:00:00Z,,2009-08-07T00:00:00Z,6,1,0,Escherichia,,,,"coli, Shiga toxin-producing",,,,O157:H7,,,,1,.,.,.,Private Home,,,Beef
+2479,Massachusetts,,2009-07-31T00:00:00Z,2009-08-12T00:00:00Z,,,6,2,0,Salmonella,,,,enterica,,,,Newport,,,,1,.,.,.,Restaurant (sit-down),,,Unknown
+2480,Wisconsin,Walworth,2009-08-14T00:00:00Z,,,,52,1,0,Campylobacter,,,,jejuni,,,,,,,,1,.,.,.,Private Home,,,Dairy
+2486,Illinois,Cook,2009-08-25T00:00:00Z,2009-08-28T00:00:00Z,2009-08-24T00:00:00Z,,14,3,0,Shigella,,,,sonnei,,,,,,,,1,.,.,.,Restaurant (sit-down),,,Unknown
+2487,Illinois,Cook,2009-08-28T00:00:00Z,2009-08-30T00:00:00Z,2009-08-27T00:00:00Z,2009-08-27T00:00:00Z,9,0,0,,,,,,,,,,,,,0,.,.,.,Restaurant (sit-down),,,Unknown
+2488,Tennessee,Davidson,2009-07-18T00:00:00Z,2009-07-26T00:00:00Z,2009-07-18T00:00:00Z,,10,3,0,Salmonella,,,,enterica,,,,Enteritidis,,,,1,.,.,.,Restaurant (sit-down),,,Unknown
+2496,Hawaii,Honolulu,2009-02-14T00:00:00Z,2009-02-15T00:00:00Z,2009-02-13T00:00:00Z,,21,0,0,Calicivirus,,,,norovirus,,,,GII / undefined cluster by sequence,,,,1,.,.,.,Unknown,,,Unknown
+2498,Maryland,Montgomery,2009-07-08T00:00:00Z,2009-07-09T00:00:00Z,2009-07-08T00:00:00Z,2009-07-08T00:00:00Z,26,0,0,,,,,,,,,,,,,0,.,.,.,Private Home,,,Unknown
+2501,Maryland,Anne Arundel,2009-05-10T00:00:00Z,2009-05-11T00:00:00Z,2009-05-09T00:00:00Z,2009-05-09T00:00:00Z,6,0,0,,,,,,,,,,,,,0,.,.,.,Restaurant (sit-down),,,Mollusk
+2502,Arizona,Cochise,2009-06-12T00:00:00Z,2009-06-14T00:00:00Z,2009-06-12T00:00:00Z,2009-06-12T00:00:00Z,40,0,0,,,,,,,,,,,,,0,.,.,.,Unknown,,,Unknown
+2509,Massachusetts,Hampden,2009-01-17T00:00:00Z,2009-01-19T00:00:00Z,2009-01-16T00:00:00Z,2009-01-17T00:00:00Z,91,0,0,,,,,,,,,,,,,0,.,.,.,Banquet Facility (on-site),,,Unknown
+2514,Michigan,Jackson,2009-08-07T00:00:00Z,2009-08-22T00:00:00Z,2009-08-06T00:00:00Z,2009-08-15T00:00:00Z,9,3,0,Salmonella,,,,enterica,,,,Miami,,,,1,.,.,.,Restaurant (fast-food),,,>1 commodity
+2515,Michigan,,2009-05-04T00:00:00Z,2009-05-30T00:00:00Z,,,21,7,0,Salmonella,,,,enterica,,,,Saintpaul,,,,1,.,.,.,Private Home,Restaurant (sit-down),Restaurant (fast-food),Vine
+2526,Arizona,Maricopa,2009-03-30T00:00:00Z,2009-04-02T00:00:00Z,2009-03-30T00:00:00Z,2009-03-30T00:00:00Z,9,0,0,Calicivirus,,,,norovirus,,,,GII / undefined cluster by sequence,,,,1,.,.,.,Unknown,,,Unknown
+2535,Illinois,DuPage,2009-01-23T00:00:00Z,2009-02-17T00:00:00Z,2009-01-21T00:00:00Z,,303,0,0,Calicivirus,,,,norovirus,,,,GII / undefined cluster by sequence,,,,1,.,.,.,Other,,,Unknown
+2536,Arizona,Maricopa,2009-04-04T00:00:00Z,2009-04-05T00:00:00Z,2009-04-04T00:00:00Z,2009-04-04T00:00:00Z,8,0,0,,,,,,,,,,,,,0,.,.,.,Unknown,,,Unknown
+2538,Oregon,Marion,2009-07-20T00:00:00Z,2009-07-20T00:00:00Z,2009-07-19T00:00:00Z,2009-07-20T00:00:00Z,12,0,0,,,,,,,,,,,,,0,.,.,.,Banquet Facility (on-site),,,Unknown
+2539,Oregon,Wasco,2009-07-13T00:00:00Z,2009-07-22T00:00:00Z,,2009-07-16T00:00:00Z,59,0,0,Salmonella,,,,enterica,,,,Enteritidis,,,,1,.,.,.,Camp,,,Eggs
+2540,Oregon,Washington,2009-07-26T00:00:00Z,2009-07-26T00:00:00Z,2009-07-25T00:00:00Z,2009-07-25T00:00:00Z,8,0,0,Calicivirus,,,,norovirus,,,,GII / undefined cluster by sequence,,,,1,.,.,.,Picnic,,,Unknown
+2544,Florida,Orange,2009-05-13T00:00:00Z,2009-05-15T00:00:00Z,2009-05-12T00:00:00Z,2009-05-12T00:00:00Z,13,0,0,Shigella,,,,sonnei,,,,,,,,1,.,.,.,Private Home,,,Unknown
+2547,Ohio,Greene,2009-09-16T00:00:00Z,2009-09-17T00:00:00Z,2009-09-15T00:00:00Z,2009-09-16T00:00:00Z,6,0,0,Calicivirus,,,,norovirus,,,,GII / undefined cluster by sequence,,,,0,.,.,.,Restaurant (sit-down),,,Unknown
+2549,Virginia,Fluvanna,2009-07-01T00:00:00Z,2009-07-02T00:00:00Z,2009-06-30T00:00:00Z,2009-06-30T00:00:00Z,19,2,0,Salmonella,,,,enterica,,,,Enteritidis,,,,1,.,.,.,Private Home,,,Eggs
+2559,California,Orange,2009-03-21T00:00:00Z,2009-03-22T00:00:00Z,2009-03-21T00:00:00Z,2009-03-21T00:00:00Z,10,0,0,Calicivirus,,,,norovirus,,,,Unspecified,,,,0,.,.,.,Restaurant (sit-down),,,Unknown
+2560,Virginia,Loudoun,2009-01-30T00:00:00Z,2009-02-03T00:00:00Z,2009-01-30T00:00:00Z,2009-01-31T00:00:00Z,11,1,0,Salmonella,,,,enterica,,,,Enteritidis,,,,1,.,.,.,School,,,>1 commodity
+2566,Illinois,Cook,2009-09-20T00:00:00Z,2009-09-29T00:00:00Z,2009-09-17T00:00:00Z,2009-09-26T00:00:00Z,17,6,0,Salmonella,,,,enterica,,,,Infantis,,,,1,.,.,.,Private Home,,,>1 commodity
+2567,Arizona,Maricopa,2009-04-14T00:00:00Z,2009-04-14T00:00:00Z,2009-04-13T00:00:00Z,2009-04-13T00:00:00Z,9,0,0,Calicivirus,,,,norovirus,,,,GII / undefined cluster by sequence,,,,1,.,.,.,Unknown,,,Unknown
+2571,Arizona,Maricopa,2009-04-16T00:00:00Z,2009-04-18T00:00:00Z,2009-04-16T00:00:00Z,2009-04-18T00:00:00Z,7,0,0,,,,,,,,,,,,,0,.,.,.,Unknown,,,Unknown
+2573,Arizona,Maricopa,2009-05-04T00:00:00Z,2009-05-06T00:00:00Z,2009-05-04T00:00:00Z,2009-05-04T00:00:00Z,23,0,0,Calicivirus,,,,norovirus,,,,GII / undefined cluster by sequence,,,,1,.,.,.,Unknown,,,Unknown
+2574,Arizona,Maricopa,2009-05-11T00:00:00Z,2009-05-11T00:00:00Z,2009-05-11T00:00:00Z,2009-05-11T00:00:00Z,8,0,0,,,,,,,,,,,,,0,.,.,.,Unknown,,,Unknown
+2575,Louisiana,,2009-09-17T00:00:00Z,2009-09-22T00:00:00Z,2009-09-17T00:00:00Z,2009-09-17T00:00:00Z,200,4,0,Salmonella,,,,enterica,,,,Newport,,,,1,.,.,.,Unknown,,,Unknown
+2579,Wisconsin,Wood,2009-08-31T00:00:00Z,2009-08-31T00:00:00Z,2009-08-29T00:00:00Z,,12,0,0,Calicivirus,,,,norovirus,,,,"Genogroup I (GI), not sequenced",,,,1,.,.,.,Unknown,,,Unknown
+2583,Connecticut,New Haven,2009-09-07T00:00:00Z,2009-09-10T00:00:00Z,2009-09-06T00:00:00Z,2009-09-06T00:00:00Z,9,0,0,Salmonella,Salmonella,,,enterica,enterica,,,Schwarzengrund,Typhimurium var Cope,,,1,1,.,.,Other,,,>1 commodity
+2586,Kansas,Johnson,2009-08-11T00:00:00Z,2009-08-30T00:00:00Z,2009-08-11T00:00:00Z,2009-08-30T00:00:00Z,39,1,0,Pesticides,,,,,,,,,,,,1,.,.,.,Restaurant (sit-down),,,>1 commodity
+2589,Kansas,Crawford,2009-08-29T00:00:00Z,2009-09-04T00:00:00Z,2009-08-24T00:00:00Z,2009-08-29T00:00:00Z,33,7,0,Salmonella,,,,enterica,,,,Newport,,,,1,.,.,.,Restaurant (sit-down),,,Unknown
+2590,Kansas,Lyon,2009-06-13T00:00:00Z,2009-06-25T00:00:00Z,2009-06-12T00:00:00Z,2009-06-25T00:00:00Z,17,0,0,Staphylococcus,,,,aureus,,,,,,,,1,.,.,.,Restaurant (sit-down),,,Poultry
+2594,Kansas,Crawford,2009-05-11T00:00:00Z,2009-05-12T00:00:00Z,2009-05-10T00:00:00Z,2009-05-10T00:00:00Z,6,0,0,Calicivirus,,,,norovirus,,,,Unspecified,,,,1,.,.,.,Restaurant (sit-down),,,Unknown
+2596,Ohio,Butler,2009-01-06T00:00:00Z,2009-01-06T00:00:00Z,2009-01-05T00:00:00Z,2009-01-05T00:00:00Z,8,,0,Clostridium,,,,perfringens,,,,,,,,1,.,.,.,Private Home,School,,>1 commodity
+2602,Ohio,Hocking,2009-03-07T00:00:00Z,,2009-03-07T00:00:00Z,,10,,0,,,,,,,,,,,,,0,.,.,.,Other,,,Unknown
+2605,Ohio,Wayne,2009-07-22T00:00:00Z,2009-07-22T00:00:00Z,2009-07-22T00:00:00Z,2009-07-22T00:00:00Z,6,0,0,,,,,,,,,,,,,0,.,.,.,"Workplace, not cafeteria",,,Unknown
+2607,Ohio,Darke,2009-08-03T00:00:00Z,2009-08-09T00:00:00Z,2009-08-02T00:00:00Z,2009-08-02T00:00:00Z,11,4,0,Escherichia,,,,"coli, Shiga toxin-producing",,,,O157:H7,,,,1,.,.,.,Private Home,,,>1 commodity
+2611,Michigan,,2009-08-17T00:00:00Z,2009-10-05T00:00:00Z,,,14,2,0,Salmonella,,,,enterica,,,,Typhimurium,,,,1,.,.,.,Unknown,,,Sprout
+2612,Maryland,Calvert,2009-09-26T00:00:00Z,2009-09-27T00:00:00Z,2009-09-26T00:00:00Z,2009-09-26T00:00:00Z,54,0,0,Clostridium,,,,perfringens,,,,,,,,1,.,.,.,Caterer (off-site),,,>1 commodity
+2613,Wisconsin,Trempealeau,2009-09-17T00:00:00Z,2009-09-18T00:00:00Z,,,27,0,0,Calicivirus,,,,norovirus,,,,"Genogroup I (GI), not sequenced",,,,1,.,.,.,Unknown,,,Unknown
+2614,California,San Diego,2009-05-25T00:00:00Z,2009-05-26T00:00:00Z,2009-05-25T00:00:00Z,2009-05-25T00:00:00Z,7,0,0,,,,,,,,,,,,,0,.,.,.,Unknown,,,Unknown
+2621,Illinois,McHenry,2009-09-26T00:00:00Z,2009-10-11T00:00:00Z,2009-09-26T00:00:00Z,,15,1,0,Salmonella,,,,enterica,,,,Enteritidis,,,,1,.,.,.,Picnic,,,Pork
+2624,Pennsylvania,Berks,2009-09-17T00:00:00Z,2009-09-18T00:00:00Z,2009-09-16T00:00:00Z,2009-09-16T00:00:00Z,9,1,0,Calicivirus,,,,norovirus,,,,,,,,0,.,.,.,Unknown,,,Unknown
+2627,West Virginia,Logan,2009-05-26T00:00:00Z,2009-07-03T00:00:00Z,2009-05-25T00:00:00Z,2009-06-11T00:00:00Z,21,9,2,Salmonella,,,,enterica,,,,Enteritidis,,,,1,.,.,.,Unknown,,,Pork
+2628,Pennsylvania,Lebanon,2009-06-04T00:00:00Z,2009-11-28T00:00:00Z,,,29,4,0,Salmonella,,,,enterica,,,,Typhimurium var Cope,,,,1,.,.,.,Unknown,,,Unknown
+2634,Hawaii,Honolulu,2009-08-30T00:00:00Z,2009-09-05T00:00:00Z,2009-08-29T00:00:00Z,2009-08-29T00:00:00Z,27,1,0,Salmonella,,,,enterica,,,,Hadar,,,,1,.,.,.,Unknown,,,Unknown
+2635,Hawaii,Maui,2009-08-17T00:00:00Z,,2009-08-16T00:00:00Z,2009-08-29T00:00:00Z,26,0,0,Salmonella,,,,enterica,,,,Reading,,,,1,.,.,.,Unknown,,,Unknown
+2644,Massachusetts,Plymouth,2009-09-16T00:00:00Z,2009-09-17T00:00:00Z,2009-09-16T00:00:00Z,2009-09-16T00:00:00Z,8,0,0,,,,,,,,,,,,,0,.,.,.,"Workplace, not cafeteria",,,Pork
+2649,Maryland,Allegany,2009-08-29T00:00:00Z,2009-09-01T00:00:00Z,2009-08-29T00:00:00Z,2009-08-29T00:00:00Z,27,6,0,Salmonella,,,,enterica,,,,Enteritidis,,,,1,.,.,.,Restaurant (unknown type),,,>1 commodity
+2659,Ohio,Franklin,2009-09-26T00:00:00Z,2009-09-27T00:00:00Z,2009-09-25T00:00:00Z,2009-09-25T00:00:00Z,10,0,0,Calicivirus,,,,norovirus,,,,GII_12,,,,1,.,.,.,"Workplace, not cafeteria",Private Home,,Unknown
+2665,Illinois,St. Clair,2009-10-13T00:00:00Z,2009-10-14T00:00:00Z,2009-10-13T00:00:00Z,2009-10-13T00:00:00Z,19,,0,Clostridium,,,,perfringens,,,,,,,,0,.,.,.,Restaurant (sit-down),,,Unknown
+2690,Michigan,Ottawa,2009-10-07T00:00:00Z,2009-10-07T00:00:00Z,2009-10-06T00:00:00Z,2009-10-06T00:00:00Z,67,0,0,Clostridium,,,,perfringens,,,,,,,,1,.,.,.,School,Prison,,>1 commodity
+2691,Arizona,Maricopa,2009-06-27T00:00:00Z,2009-06-27T00:00:00Z,2009-06-26T00:00:00Z,2009-06-27T00:00:00Z,40,0,0,,,,,,,,,,,,,0,.,.,.,Unknown,,,Unknown
+2696,Tennessee,Davidson,2009-09-23T00:00:00Z,2009-10-04T00:00:00Z,,,13,6,0,Salmonella,,,,enterica,,,,Newport,,,,1,.,.,.,Restaurant (sit-down),,,>1 commodity
+2698,Illinois,Cook,2009-09-28T00:00:00Z,2009-09-28T00:00:00Z,2009-09-27T00:00:00Z,2009-09-27T00:00:00Z,9,0,0,,,,,,,,,,,,,0,.,.,.,Private Home,,,Unknown
+2703,Minnesota,Hennepin,2009-10-07T00:00:00Z,2009-10-11T00:00:00Z,2009-10-07T00:00:00Z,2009-10-07T00:00:00Z,27,0,0,Calicivirus,,,,norovirus,,,,,,,,1,.,.,.,"Workplace, not cafeteria",,,>1 commodity
+2704,New York,New York,2009-08-02T00:00:00Z,2009-09-13T00:00:00Z,,,10,6,0,Salmonella,,,,enterica,,,,Kiambu,,,,1,.,.,.,Unknown,,,Unknown
+2705,New York,New York,2009-10-03T00:00:00Z,2009-10-04T00:00:00Z,2009-10-02T00:00:00Z,2009-10-02T00:00:00Z,13,0,0,Calicivirus,,,,norovirus,,,,,,,,0,.,.,.,Unknown,,,Fruits-Nuts
+2706,Missouri,Callaway,2009-10-04T00:00:00Z,2009-10-05T00:00:00Z,2009-10-04T00:00:00Z,2009-10-04T00:00:00Z,30,0,0,,,,,,,,,,,,,0,.,.,.,Religous location (church/temple),,,Poultry
+2707,Florida,Brevard,2009-09-14T00:00:00Z,2009-09-15T00:00:00Z,2009-09-13T00:00:00Z,2009-09-13T00:00:00Z,10,0,0,,,,,,,,,,,,,0,.,.,.,Private Home,Picnic,,>1 commodity
+2710,New York,Suffolk,2009-10-24T00:00:00Z,2009-10-27T00:00:00Z,2009-10-23T00:00:00Z,2009-10-23T00:00:00Z,23,0,0,Calicivirus,,,,norovirus,,,,,,,,1,.,.,.,Restaurant (sit-down),Banquet Facility (on-site),,>1 commodity
+2715,California,Orange,2009-03-04T00:00:00Z,2009-03-05T00:00:00Z,2009-03-03T00:00:00Z,2009-03-03T00:00:00Z,9,0,0,Calicivirus,,,,norovirus,,,,"Genogroup II (GII),not sequenced",,,,0,.,.,.,"Workplace, not cafeteria",,,Vine
+2717,California,Monterey,2009-08-08T00:00:00Z,2009-08-10T00:00:00Z,2009-08-08T00:00:00Z,2009-08-08T00:00:00Z,14,0,0,,,,,,,,,,,,,0,.,.,.,Banquet Facility (on-site),,,Unknown
+2861,Illinois,Cook,2009-10-18T00:00:00Z,2009-10-25T00:00:00Z,2009-10-17T00:00:00Z,2009-10-24T00:00:00Z,7,1,0,Salmonella,,,,enterica,,,,Ohio,,,,1,.,.,.,Unknown,,,Unknown
+2870,Colorado,Larimer,2009-08-08T00:00:00Z,2009-08-10T00:00:00Z,2009-08-07T00:00:00Z,2009-08-08T00:00:00Z,15,0,0,,,,,,,,,,,,,0,.,.,.,Other,Private Home,,Unknown
+2872,Colorado,Adams,2009-08-16T00:00:00Z,2009-08-18T00:00:00Z,2009-08-11T00:00:00Z,2009-08-11T00:00:00Z,6,0,0,,,,,,,,,,,,,0,.,.,.,Restaurant (fast-food),,,Unknown
+2874,Colorado,Arapahoe,2009-08-31T00:00:00Z,2009-09-04T00:00:00Z,2009-08-31T00:00:00Z,2009-09-02T00:00:00Z,28,1,0,Rotavirus,,,,,,,,,,,,0,.,.,.,School,,,Unknown
+2875,Wisconsin,Marathon,2009-06-28T00:00:00Z,2009-06-28T00:00:00Z,2009-06-28T00:00:00Z,2009-06-28T00:00:00Z,7,0,0,Clostridium,,,,perfringens,,,,,,,,1,.,.,.,Restaurant (sit-down),,,>1 commodity
+2876,Ohio,Mahoning,2009-11-11T00:00:00Z,2009-11-11T00:00:00Z,2009-11-10T00:00:00Z,2009-11-10T00:00:00Z,105,0,0,,,,,,,,,,,,,0,.,.,.,Religous location (church/temple),Private Home,,>1 commodity
+2878,California,Orange,2009-02-15T00:00:00Z,2009-02-16T00:00:00Z,2009-02-15T00:00:00Z,2009-02-15T00:00:00Z,7,1,0,Calicivirus,,,,norovirus,,,,Unspecified,,,,0,.,.,.,Restaurant (sit-down),,,Unknown
+2879,California,Orange,2009-02-11T00:00:00Z,2009-02-13T00:00:00Z,2009-02-11T00:00:00Z,2009-02-11T00:00:00Z,20,0,0,Calicivirus,,,,norovirus,,,,Unspecified,,,,0,.,.,.,"Workplace, not cafeteria",,,Unknown
+2880,California,San Diego,2009-08-31T00:00:00Z,2009-09-04T00:00:00Z,2009-08-29T00:00:00Z,2009-08-29T00:00:00Z,16,0,0,Salmonella,,,,enterica,,,,Heidelberg,,,,1,.,.,.,Other,,,Finfish
+2890,Ohio,Montgomery,2009-11-01T00:00:00Z,2009-11-03T00:00:00Z,2009-10-31T00:00:00Z,2009-10-31T00:00:00Z,9,1,0,Calicivirus,,,,norovirus,,,,GII_12,,,,1,.,.,.,Unknown,,,Unknown
+2892,California,Kern,2009-09-16T00:00:00Z,2009-09-18T00:00:00Z,2009-09-15T00:00:00Z,2009-09-15T00:00:00Z,15,0,0,,,,,,,,,,,,,0,.,.,.,Restaurant (sit-down),,,>1 commodity
+2925,Colorado,Montrose,2009-03-19T00:00:00Z,2009-04-24T00:00:00Z,,,81,1,0,Campylobacter,,,,jejuni,,,,,,,,1,.,.,.,Private Home,,,Dairy
+2933,Colorado,El Paso,2009-01-11T00:00:00Z,2009-01-20T00:00:00Z,2009-01-11T00:00:00Z,2009-01-14T00:00:00Z,40,0,0,Calicivirus,,,,norovirus,,,,"Genogroup II (GII),not sequenced",,,,0,.,.,.,Banquet Facility (on-site),,,Unknown
+2937,Colorado,Park,2009-07-19T00:00:00Z,2009-07-24T00:00:00Z,,,45,0,0,Calicivirus,,,,norovirus,,,,,,,,0,.,.,.,Camp,,,Unknown
+2941,Maine,Penobscot,2009-10-06T00:00:00Z,2009-10-07T00:00:00Z,2009-10-04T00:00:00Z,2009-10-04T00:00:00Z,44,,0,Calicivirus,,,,norovirus,,,,"Genogroup I (GI), not sequenced",,,,1,.,.,.,Unknown,,,Unknown
+2952,Illinois,Cook,2009-11-16T00:00:00Z,2009-11-16T00:00:00Z,2009-11-15T00:00:00Z,2009-11-15T00:00:00Z,8,0,0,Clostridium,,,,perfringens,,,,,,,,1,.,.,.,Unknown,,,Unknown
+2967,Texas,Harris,2009-02-01T00:00:00Z,2009-02-01T00:00:00Z,2009-01-31T00:00:00Z,2009-01-31T00:00:00Z,11,1,0,,,,,,,,,,,,,0,.,.,.,Restaurant (sit-down),,,Unknown
+2987,Texas,Harris,2009-07-24T00:00:00Z,2009-07-27T00:00:00Z,2009-07-24T00:00:00Z,2009-07-25T00:00:00Z,58,0,0,Escherichia,,,,"coli, Enterotoxigenic",,,,Unspecified,,,,1,.,.,.,Restaurant (sit-down),"Workplace, not cafeteria",,>1 commodity
+2999,Arkansas,Izard,2009-10-13T00:00:00Z,2009-10-14T00:00:00Z,2009-10-13T00:00:00Z,2009-10-13T00:00:00Z,160,0,0,,,,,,,,,,,,,0,.,.,.,Prison,,,Unknown
+3006,Pennsylvania,Philadelphia,2009-09-27T00:00:00Z,2009-10-08T00:00:00Z,2009-09-26T00:00:00Z,2009-10-04T00:00:00Z,12,0,0,Salmonella,,,,enterica,,,,Enteritidis,,,,1,.,.,.,Restaurant (sit-down),,,Eggs
+3040,North Dakota,Walsh,2009-10-21T00:00:00Z,2009-10-22T00:00:00Z,2009-10-21T00:00:00Z,2009-10-21T00:00:00Z,36,0,0,Clostridium,,,,perfringens,,,,,,,,1,.,.,.,Caterer (off-site),,,Unknown
+3045,Louisiana,West Feliciana,2009-11-26T00:00:00Z,2009-11-27T00:00:00Z,2009-11-26T00:00:00Z,2009-11-26T00:00:00Z,800,0,0,Clostridium,,,,perfringens,,,,,,,,0,.,.,.,Unknown,,,Unknown
+3047,California,Los Angeles,2009-08-15T00:00:00Z,2009-08-18T00:00:00Z,2009-08-13T00:00:00Z,2009-08-13T00:00:00Z,6,0,0,Campylobacter,,,,jejuni,,,,,,,,0,.,.,.,Restaurant (sit-down),,,Unknown
+3050,Massachusetts,,2009-09-25T00:00:00Z,2009-11-20T00:00:00Z,,,12,8,0,Escherichia,,,,"coli, Shiga toxin-producing",,,,O157:H7,,,,1,.,.,.,Unknown,,,Beef
+3053,Maryland,Montgomery,2009-11-13T00:00:00Z,2009-11-16T00:00:00Z,2009-11-12T00:00:00Z,2009-11-13T00:00:00Z,12,0,0,Escherichia,Escherichia,Shigella,,"coli, Enteroaggregative","coli, Enterotoxigenic",sonnei,,Unspecified,Unspecified,,,1,1,1,.,"Workplace, not cafeteria",Other,,Unknown
+3057,Florida,Glades,2009-11-10T00:00:00Z,2009-11-11T00:00:00Z,2009-11-10T00:00:00Z,2009-11-10T00:00:00Z,13,0,0,,,,,,,,,,,,,0,.,.,.,Prison,,,Grains-Beans
+3065,Colorado,Broomfield,2009-07-12T00:00:00Z,2009-07-14T00:00:00Z,2009-07-11T00:00:00Z,2009-07-13T00:00:00Z,13,2,0,,,,,,,,,,,,,0,.,.,.,Restaurant (fast-food),,,Unknown
+3070,Minnesota,Ramsey,2009-11-25T00:00:00Z,2009-11-26T00:00:00Z,2009-11-24T00:00:00Z,2009-11-24T00:00:00Z,29,0,0,Calicivirus,,,,norovirus,,,,,,,,0,.,.,.,Restaurant (sit-down),,,Fruits-Nuts
+3076,Tennessee,Williamson,2009-11-10T00:00:00Z,2009-11-14T00:00:00Z,2009-11-09T00:00:00Z,,36,3,0,Calicivirus,,,,norovirus,,,,GII_4 New Orleans (2009),,,,1,.,.,.,Restaurant (sit-down),,,>1 commodity
+3079,New York,Nassau,2009-09-15T00:00:00Z,2009-09-17T00:00:00Z,2009-09-13T00:00:00Z,,6,0,0,Salmonella,,,,enterica,,,,Enteritidis,,,,1,.,.,.,Private Home,,,Unknown
+3081,Texas,Harris,2009-07-28T00:00:00Z,2009-07-29T00:00:00Z,,,7,0,0,,,,,,,,,,,,,0,.,.,.,Unknown,,,Unknown
+3082,Minnesota,Blue Earth,2009-11-23T00:00:00Z,2009-11-25T00:00:00Z,2009-11-23T00:00:00Z,2009-11-23T00:00:00Z,19,0,0,Salmonella,,,,enterica,,,,,,,,1,.,.,.,Religous location (church/temple),,,Unknown
+3083,Texas,Harris,2009-07-21T00:00:00Z,2009-07-21T00:00:00Z,2009-07-21T00:00:00Z,2009-07-21T00:00:00Z,9,0,0,,,,,,,,,,,,,0,.,.,.,Unknown,,,Unknown
+3084,Texas,Harris,2009-10-14T00:00:00Z,2009-10-16T00:00:00Z,,,25,0,0,,,,,,,,,,,,,0,.,.,.,Unknown,,,Unknown
+3093,Ohio,Crawford,2009-12-03T00:00:00Z,2009-12-07T00:00:00Z,2009-12-02T00:00:00Z,2009-12-02T00:00:00Z,27,0,0,,,,,,,,,,,,,0,.,.,.,Banquet Facility (on-site),,,Unknown
+3095,Illinois,Tazewell,2009-12-10T00:00:00Z,2009-12-11T00:00:00Z,2009-12-10T00:00:00Z,2009-12-11T00:00:00Z,6,0,0,,,,,,,,,,,,,0,.,.,.,Restaurant (sit-down),,,Unknown
+3115,Kansas,Douglas,2009-08-30T00:00:00Z,2009-09-01T00:00:00Z,2009-08-29T00:00:00Z,2009-08-29T00:00:00Z,9,0,0,,,,,,,,,,,,,0,.,.,.,Other,,,Unknown
+3119,South Dakota,,2009-08-08T00:00:00Z,2009-08-19T00:00:00Z,,,6,0,0,Campylobacter,,,,jejuni,,,,,,,,1,.,.,.,Unknown,,,Unknown
+3122,Ohio,Delaware,2009-12-10T00:00:00Z,2009-12-13T00:00:00Z,2009-12-09T00:00:00Z,2009-12-09T00:00:00Z,14,0,0,,,,,,,,,,,,,0,.,.,.,School,,,>1 commodity
+3128,New York,Ontario,2009-12-12T00:00:00Z,2009-12-13T00:00:00Z,2009-12-11T00:00:00Z,2009-12-11T00:00:00Z,10,0,0,Clostridium,,,,perfringens,,,,,,,,0,.,.,.,Restaurant (sit-down),,,Beef
+3129,New York,,2009-12-11T00:00:00Z,2009-12-13T00:00:00Z,2009-12-10T00:00:00Z,2009-12-11T00:00:00Z,37,1,0,Calicivirus,,,,norovirus,,,,Unspecified,,,,1,.,.,.,Restaurant (sit-down),,,Unknown
+3130,New York,Ontario,2009-12-02T00:00:00Z,2009-12-03T00:00:00Z,2009-12-01T00:00:00Z,2009-12-01T00:00:00Z,20,0,0,Calicivirus,,,,norovirus,,,,Unspecified,,,,1,.,.,.,Picnic,,,Unknown
+3138,Wisconsin,La Crosse,2009-12-03T00:00:00Z,2009-12-05T00:00:00Z,2009-12-03T00:00:00Z,2009-12-03T00:00:00Z,16,0,0,Calicivirus,,,,norovirus,,,,"Genogroup II (GII),not sequenced",,,,1,.,.,.,Religous location (church/temple),,,Leafy
+3175,Florida,Orange,2009-04-09T00:00:00Z,2009-04-12T00:00:00Z,2009-04-08T00:00:00Z,2009-04-08T00:00:00Z,17,0,0,Calicivirus,,,,norovirus,,,,GII / undefined cluster by sequence,,,,1,.,.,.,Banquet Facility (on-site),,,Unknown
+3182,Kansas,Butler,2009-12-23T00:00:00Z,2009-12-23T00:00:00Z,2009-12-23T00:00:00Z,2009-12-23T00:00:00Z,14,0,0,Calicivirus,,,,norovirus,,,,Unspecified,,,,1,.,.,.,Private Home,,,>1 commodity
+3187,Florida,Brevard,2009-01-11T00:00:00Z,2009-01-12T00:00:00Z,2009-01-10T00:00:00Z,2009-01-10T00:00:00Z,11,0,0,Calicivirus,,,,norovirus,,,,GII / undefined cluster by sequence,,,,1,.,.,.,Restaurant (fast-food),,,Unknown
+3193,Washington,,2009-06-13T00:00:00Z,2009-06-18T00:00:00Z,2009-06-10T00:00:00Z,,6,1,0,Salmonella,,,,enterica,,,,Newport,,,,1,.,.,.,Restaurant (fast-food),,,>1 commodity
+3199,South Carolina,Horry,2009-11-13T00:00:00Z,2009-11-17T00:00:00Z,2009-11-13T00:00:00Z,2009-11-14T00:00:00Z,59,17,0,Staphylococcus,Clostridium,Salmonella,,aureus,perfringens,enterica,,,,Montevideo,,1,1,1,.,"Fair, festival, other mobile services",,,Pork
+3200,South Carolina,Charleston,2009-11-26T00:00:00Z,2009-11-29T00:00:00Z,2009-11-25T00:00:00Z,2009-11-27T00:00:00Z,8,0,0,Calicivirus,,,,norovirus,,,,GII / undefined cluster by sequence,,,,1,.,.,.,Private Home,,,Mollusk
+3201,Ohio,Cuyahoga,2009-12-14T00:00:00Z,2009-12-15T00:00:00Z,2009-12-14T00:00:00Z,2009-12-14T00:00:00Z,9,0,0,Clostridium,,,,perfringens,,,,,,,,1,.,.,.,"Workplace, not cafeteria",,,Beef
+3203,Washington,,2009-07-14T00:00:00Z,2009-07-22T00:00:00Z,,,62,0,0,Salmonella,,,,enterica,,,,Enteritidis,,,,1,.,.,.,Private Home,Restaurant (fast-food),,Eggs
+3206,South Carolina,Horry,2009-12-16T00:00:00Z,2009-12-17T00:00:00Z,2009-12-15T00:00:00Z,2009-12-15T00:00:00Z,9,0,0,Calicivirus,,,,norovirus,,,,GII / undefined cluster by sequence,,,,1,.,.,.,Restaurant (sit-down),,,Unknown
+3208,Washington,Jefferson,2009-04-27T00:00:00Z,2009-04-28T00:00:00Z,2009-04-26T00:00:00Z,2009-04-26T00:00:00Z,10,0,0,Calicivirus,,,,norovirus,,,,,,,,0,.,.,.,Restaurant (fast-food),,,Unknown
+3209,Washington,Stevens,2009-06-04T00:00:00Z,2009-06-07T00:00:00Z,2009-06-03T00:00:00Z,2009-06-06T00:00:00Z,13,0,0,Calicivirus,,,,norovirus,,,,,,,,1,.,.,.,Unknown,,,>1 commodity
+3228,Connecticut,Hartford,2009-12-17T00:00:00Z,2009-12-17T00:00:00Z,2009-12-17T00:00:00Z,2009-12-17T00:00:00Z,6,0,0,,,,,,,,,,,,,0,.,.,.,Restaurant (sit-down),,,Unknown
+3229,Georgia,Clayton,2009-11-27T00:00:00Z,2009-11-30T00:00:00Z,2009-11-26T00:00:00Z,2009-11-26T00:00:00Z,17,3,0,Salmonella,,,,enterica,,,,Heidelberg,,,,1,.,.,.,Private Home,,,Unknown
+3230,Connecticut,Fairfield,2009-12-19T00:00:00Z,2009-12-19T00:00:00Z,2009-12-18T00:00:00Z,2009-12-18T00:00:00Z,6,0,0,Calicivirus,,,,norovirus,,,,"Genogroup II (GII),not sequenced",,,,1,.,.,.,"Workplace, not cafeteria",,,>1 commodity
+3231,Missouri,Scott,2009-11-13T00:00:00Z,2009-12-04T00:00:00Z,2009-11-11T00:00:00Z,,6,1,0,Salmonella,,,,enterica,,,,Typhimurium,,,,1,.,.,.,Private Home,,,>1 commodity
+3234,Missouri,St. Louis,2009-12-16T00:00:00Z,2009-12-17T00:00:00Z,2009-12-16T00:00:00Z,2009-12-16T00:00:00Z,54,0,0,,,,,,,,,,,,,0,.,.,.,"Workplace, not cafeteria",,,Beef
+3237,Iowa,Linn,2009-12-14T00:00:00Z,2009-12-19T00:00:00Z,2009-12-13T00:00:00Z,2009-12-16T00:00:00Z,11,4,0,Salmonella,,,,enterica,,,,Newport,,,,1,.,.,.,Unknown,,,Unknown
+3240,Michigan,Ingham,2009-02-19T00:00:00Z,2009-02-20T00:00:00Z,2009-02-19T00:00:00Z,2009-02-19T00:00:00Z,50,0,0,,,,,,,,,,,,,0,.,.,.,"Workplace, not cafeteria",,,>1 commodity
+3244,Arizona,Maricopa,2009-11-11T00:00:00Z,2009-11-11T00:00:00Z,2009-11-10T00:00:00Z,2009-11-10T00:00:00Z,6,0,0,,,,,,,,,,,,,0,.,.,.,Unknown,,,Unknown
+3252,Colorado,Gunnison,2009-07-29T00:00:00Z,2009-07-30T00:00:00Z,2009-07-29T00:00:00Z,2009-07-29T00:00:00Z,6,1,0,Plant/Herbal toxins,,,,,,,,,,,,1,.,.,.,Private Home,,,Fungus
+3255,Minnesota,Washington,2009-12-21T00:00:00Z,2009-12-25T00:00:00Z,2009-12-21T00:00:00Z,2009-12-23T00:00:00Z,6,0,0,Calicivirus,,,,norovirus,,,,,,,,0,.,.,.,Restaurant (sit-down),,,Unknown
+3259,Colorado,,2009-06-13T00:00:00Z,2009-10-10T00:00:00Z,,,18,6,0,,,,,,,,,,,,,0,.,.,.,Private Home,,,Beef
+3264,Maryland,Baltimore City,2009-01-13T00:00:00Z,2009-01-24T00:00:00Z,2009-01-12T00:00:00Z,2009-01-15T00:00:00Z,80,0,0,,,,,,,,,,,,,0,.,.,.,Banquet Facility (on-site),,,Unknown
+3266,Maryland,Baltimore County,2009-02-05T00:00:00Z,2009-02-08T00:00:00Z,2009-02-05T00:00:00Z,2009-02-05T00:00:00Z,10,0,0,,,,,,,,,,,,,0,.,.,.,Private Home,,,Unknown
+3272,Florida,Hillsborough,2009-01-06T00:00:00Z,,2009-01-04T00:00:00Z,,6,0,0,Calicivirus,,,,norovirus,,,,,,,,0,.,.,.,Restaurant (sit-down),,,>1 commodity
+3279,Florida,Pinellas,2009-02-17T00:00:00Z,,2009-02-17T00:00:00Z,,6,0,0,Bacillus,,,,cereus,,,,,,,,0,.,.,.,Restaurant (sit-down),,,Grains-Beans
+3280,Minnesota,Chisago,2009-12-25T00:00:00Z,2009-12-26T00:00:00Z,2009-12-25T00:00:00Z,2009-12-25T00:00:00Z,167,0,0,Other bacterial,,,,,,,,,,,,0,.,.,.,Prison,,,>1 commodity
+3282,Wisconsin,Walworth,2009-11-19T00:00:00Z,2009-11-20T00:00:00Z,2009-11-19T00:00:00Z,2009-11-19T00:00:00Z,49,,,Clostridium,,,,perfringens,,,,,,,,1,.,.,.,"Workplace, not cafeteria",,,>1 commodity
+3284,Florida,Broward,2009-05-01T00:00:00Z,2009-05-09T00:00:00Z,2009-04-30T00:00:00Z,2009-04-30T00:00:00Z,29,2,0,,,,,,,,,,,,,0,.,.,.,Banquet Facility (on-site),,,>1 commodity
+3285,Florida,Broward,2009-05-11T00:00:00Z,2009-05-12T00:00:00Z,2009-05-10T00:00:00Z,2009-05-10T00:00:00Z,14,1,0,Calicivirus,,,,norovirus,,,,"Genogroup II (GII),not sequenced",,,,0,.,.,.,Private Home,,,Unknown
+3286,Florida,Broward,2009-05-16T00:00:00Z,2009-05-20T00:00:00Z,2009-05-15T00:00:00Z,2009-05-16T00:00:00Z,14,5,0,Salmonella,,,,enterica,,,,Berta,,,,1,.,.,.,Restaurant (sit-down),,,Unknown
+3287,California,Monterey,2009-08-11T00:00:00Z,2009-08-15T00:00:00Z,2009-08-09T00:00:00Z,2009-08-09T00:00:00Z,12,0,0,Campylobacter,,,,jejuni,,,,,,,,1,.,.,.,Unknown,,,Unknown
+3288,California,San Luis Obispo,2009-11-07T00:00:00Z,2009-11-10T00:00:00Z,2009-11-07T00:00:00Z,2009-11-08T00:00:00Z,23,0,0,Calicivirus,,,,norovirus,,,,Unspecified,,,,1,.,.,.,Unknown,,,Unknown
+3289,California,Riverside,2009-11-08T00:00:00Z,2009-11-10T00:00:00Z,2009-11-07T00:00:00Z,2009-11-07T00:00:00Z,20,0,0,,,,,,,,,,,,,0,.,.,.,Unknown,,,Unknown
+3290,California,Butte,2009-12-15T00:00:00Z,2009-12-17T00:00:00Z,2009-12-14T00:00:00Z,2009-12-14T00:00:00Z,19,0,0,Calicivirus,,,,norovirus,,,,Unspecified,,,,0,.,.,.,Unknown,,,>1 commodity
+3292,California,San Diego,2009-09-24T00:00:00Z,2009-09-25T00:00:00Z,2009-09-23T00:00:00Z,2009-09-23T00:00:00Z,10,0,0,Calicivirus,,,,norovirus,,,,,,,,0,.,.,.,Unknown,,,>1 commodity
+3298,North Dakota,Grand Forks,2009-12-11T00:00:00Z,2009-12-16T00:00:00Z,2009-12-11T00:00:00Z,2009-12-11T00:00:00Z,24,0,0,Calicivirus,,,,norovirus,,,,"Genogroup II (GII),not sequenced",,,,1,.,.,.,Banquet Facility (on-site),,,Unknown
+3306,Massachusetts,Essex,2009-11-30T00:00:00Z,2009-12-10T00:00:00Z,,,39,1,0,Salmonella,,,,enterica,,,,Montevideo,,,,1,.,.,.,Unknown,,,Unknown
+3307,Florida,Nassau,2009-01-07T00:00:00Z,2009-01-11T00:00:00Z,2009-01-05T00:00:00Z,2009-01-05T00:00:00Z,31,,,Calicivirus,,,,norovirus,,,,GII / undefined cluster by sequence,,,,1,.,.,.,Unknown,,,Unknown
+3308,Colorado,El Paso,2009-12-22T00:00:00Z,2009-12-23T00:00:00Z,2009-12-22T00:00:00Z,2009-12-22T00:00:00Z,118,0,0,Clostridium,,,,perfringens,,,,,,,,1,.,.,.,Prison,,,Grains-Beans
+3309,Florida,Duval,2009-05-08T00:00:00Z,2009-05-09T00:00:00Z,2009-05-08T00:00:00Z,2009-05-08T00:00:00Z,30,0,0,,,,,,,,,,,,,0,.,.,.,Unknown,,,Unknown
+3310,Colorado,Douglas,2009-11-24T00:00:00Z,2009-12-01T00:00:00Z,,2009-11-30T00:00:00Z,34,1,0,Calicivirus,,,,norovirus,,,,,,,,1,.,.,.,Restaurant (sit-down),,,>1 commodity
+3312,Colorado,Weld,2009-08-08T00:00:00Z,2009-08-14T00:00:00Z,2009-08-08T00:00:00Z,2009-08-08T00:00:00Z,27,1,0,Salmonella,,,,enterica,,,,Typhimurium,,,,1,.,.,.,Picnic,,,Leafy
+3323,Florida,Bay,2009-04-24T00:00:00Z,2009-04-27T00:00:00Z,2009-04-23T00:00:00Z,2009-04-26T00:00:00Z,53,0,0,Calicivirus,,,,norovirus,,,,"Genogroup II (GII),not sequenced",,,,1,.,.,.,"Workplace, not cafeteria",Restaurant (sit-down),Caterer (off-site),>1 commodity
+3325,Nevada,Eureka,2009-10-20T00:00:00Z,2009-10-25T00:00:00Z,2009-10-20T00:00:00Z,2009-10-24T00:00:00Z,17,0,0,Clostridium,,,,perfringens,,,,,,,,1,.,.,.,Restaurant (sit-down),,,>1 commodity
+3331,Nevada,Nye,2009-02-13T00:00:00Z,2009-06-19T00:00:00Z,,,11,0,0,Salmonella,,,,enterica,,,,Braenderup,,,,1,.,.,.,Restaurant (sit-down),,,Unknown
+3349,South Carolina,Charleston,2009-11-29T00:00:00Z,2009-11-29T00:00:00Z,2009-11-28T00:00:00Z,2009-11-28T00:00:00Z,6,0,0,Calicivirus,,,,norovirus,,,,GII / undefined cluster by sequence,,,,1,.,.,.,Private Home,,,Mollusk
+3384,Florida,Broward,2009-12-15T00:00:00Z,2009-12-16T00:00:00Z,2009-12-15T00:00:00Z,2009-12-15T00:00:00Z,47,0,0,,,,,,,,,,,,,0,.,.,.,"Workplace, not cafeteria",,,>1 commodity
+3386,Texas,Harris,2009-12-20T00:00:00Z,2009-12-23T00:00:00Z,2009-12-19T00:00:00Z,2009-12-19T00:00:00Z,11,0,0,,,,,,,,,,,,,0,.,.,.,Unknown,,,Unknown
+3387,Maryland,Baltimore City,2009-06-30T00:00:00Z,2009-07-05T00:00:00Z,2009-06-30T00:00:00Z,2009-06-30T00:00:00Z,9,1,0,Salmonella,Clostridium,,,enterica,other,,,Enteritidis,,,,1,1,.,.,Private Home,,,Unknown
+3421,West Virginia,Wood,2009-04-16T00:00:00Z,,,,12,0,0,,,,,,,,,,,,,0,.,.,.,Unknown,,,Unknown
+3457,Arizona,Maricopa,2009-04-04T00:00:00Z,2009-04-08T00:00:00Z,2009-04-04T00:00:00Z,2009-04-04T00:00:00Z,30,0,0,Calicivirus,,,,norovirus,,,,GII / undefined cluster by sequence,,,,1,.,.,.,Banquet Facility (on-site),,,Unknown
+3464,Ohio,Cuyahoga,2009-12-24T00:00:00Z,2009-12-25T00:00:00Z,2009-12-23T00:00:00Z,,21,0,0,Calicivirus,,,,norovirus,,,,GII_12,,,,1,.,.,.,"Workplace, not cafeteria",,,Unknown
+3471,California,Marin,2009-12-25T00:00:00Z,2009-12-28T00:00:00Z,2009-12-24T00:00:00Z,2009-12-27T00:00:00Z,10,0,0,,,,,,,,,,,,,0,.,.,.,Restaurant (sit-down),,,Unknown
+3481,Michigan,Monroe,2009-08-02T00:00:00Z,2009-08-04T00:00:00Z,2009-08-01T00:00:00Z,2009-08-01T00:00:00Z,33,0,0,,,,,,,,,,,,,0,.,.,.,Camp,,,Pork
+3485,California,Monterey,2009-10-22T00:00:00Z,2009-10-23T00:00:00Z,,,45,0,0,,,,,,,,,,,,,0,.,.,.,School,,,Unknown
+3572,Alabama,Walker,2009-12-18T00:00:00Z,2009-12-20T00:00:00Z,2009-12-17T00:00:00Z,,10,2,0,Calicivirus,,,,norovirus,,,,GII / undefined cluster by sequence,,,,0,.,.,.,Restaurant (sit-down),,,Unknown
+3600,West Virginia,Cabell,2009-12-25T00:00:00Z,2009-12-28T00:00:00Z,,,6,1,0,Salmonella,,,,enterica,,,,Enteritidis,,,,1,.,.,.,Private Home,,,Unknown
+3609,Arizona,Maricopa,2009-08-03T00:00:00Z,2009-08-10T00:00:00Z,2009-07-30T00:00:00Z,2009-08-08T00:00:00Z,20,4,0,Salmonella,,,,enterica,,,,Heidelberg,,,,1,.,.,.,Unknown,,,Unknown
+3623,California,San Francisco,2009-07-10T00:00:00Z,2009-07-10T00:00:00Z,2009-07-09T00:00:00Z,2009-07-09T00:00:00Z,44,0,0,Bacillus,Clostridium,,,cereus,perfringens,,,,,,,0,0,.,.,School,,,>1 commodity
+3624,California,San Francisco,2009-11-24T00:00:00Z,2009-11-24T00:00:00Z,2009-11-23T00:00:00Z,2009-11-23T00:00:00Z,20,1,0,Clostridium,Bacillus,,,perfringens,cereus,,,,,,,0,0,.,.,"Workplace, not cafeteria",,,Unknown
+3626,California,Los Angeles,2009-12-16T00:00:00Z,2009-12-17T00:00:00Z,2009-12-15T00:00:00Z,2009-12-15T00:00:00Z,14,0,0,Calicivirus,,,,norovirus,,,,Unspecified,,,,1,.,.,.,"Workplace, not cafeteria",,,>1 commodity
+3627,California,Los Angeles,2009-12-09T00:00:00Z,2009-12-11T00:00:00Z,2009-12-09T00:00:00Z,2009-12-09T00:00:00Z,14,0,0,Calicivirus,,,,norovirus,,,,,,,,0,.,.,.,Banquet Facility (on-site),,,Unknown
+3634,Washington,King,2009-07-25T00:00:00Z,2009-07-26T00:00:00Z,2009-07-24T00:00:00Z,2009-07-24T00:00:00Z,15,0,0,Bacillus,,,,cereus,,,,,,,,1,.,.,.,Banquet Facility (on-site),,,Grains-Beans
+3653,Washington,Chelan,2009-07-22T00:00:00Z,2009-07-24T00:00:00Z,2009-07-21T00:00:00Z,2009-07-21T00:00:00Z,7,0,0,Calicivirus,,,,norovirus,,,,,,,,1,.,.,.,Unknown,,,Unknown
+3654,Washington,Clallam,2009-06-08T00:00:00Z,2009-06-11T00:00:00Z,2009-06-07T00:00:00Z,2009-06-07T00:00:00Z,56,0,0,Calicivirus,,,,norovirus,,,,Unspecified,,,,0,.,.,.,Private Home,,,>1 commodity
+3659,Rhode Island,,2009-01-11T00:00:00Z,2009-01-12T00:00:00Z,2009-01-10T00:00:00Z,2009-01-10T00:00:00Z,9,0,0,Calicivirus,,,,norovirus,,,,"Genogroup II (GII),not sequenced",,,,1,.,.,.,Unknown,,,Unknown
+3661,Rhode Island,,2009-03-14T00:00:00Z,2009-03-15T00:00:00Z,2009-03-13T00:00:00Z,2009-03-13T00:00:00Z,30,0,0,Calicivirus,,,,norovirus,,,,"Genogroup I (GI), not sequenced",,,,1,.,.,.,Unknown,,,Unknown
+3682,Puerto Rico,Mayag-ez,2009-06-07T00:00:00Z,2009-06-09T00:00:00Z,2009-06-07T00:00:00Z,2009-06-07T00:00:00Z,9,4,0,,,,,,,,,,,,,0,.,.,.,Picnic,,,Poultry
+3684,Puerto Rico,Ponce,2009-06-17T00:00:00Z,2009-06-17T00:00:00Z,2009-06-17T00:00:00Z,2009-06-17T00:00:00Z,18,0,0,Staphylococcus,Bacillus,Enterobacter,,aureus,cereus,other,,,,,,1,1,0,.,Caterer (off-site),,,Pork
+3685,Washington,King,2009-07-30T00:00:00Z,2009-09-18T00:00:00Z,2009-07-30T00:00:00Z,2009-09-11T00:00:00Z,17,3,0,Salmonella,Salmonella,Salmonella,Salmonella,enterica,enterica,enterica,enterica,Potsdam,Typhimurium,Hvittingfoss,Anfo,1,1,0,1,Restaurant (sit-down),,,Unknown
+3688,Washington,King,2009-03-01T00:00:00Z,2009-03-12T00:00:00Z,2009-02-04T00:00:00Z,2009-02-24T00:00:00Z,6,0,0,Hepatitis,,,,A,,,,,,,,1,.,.,.,Restaurant (fast-food),,,Unknown
+3701,Washington,King,2009-11-15T00:00:00Z,2009-11-15T00:00:00Z,2009-11-14T00:00:00Z,2009-11-14T00:00:00Z,10,0,0,Calicivirus,,,,norovirus,,,,,,,,0,.,.,.,Restaurant (fast-food),,,Unknown
+3718,Virginia,Henrico,2009-08-09T00:00:00Z,2009-08-14T00:00:00Z,2009-08-07T00:00:00Z,2009-08-09T00:00:00Z,17,3,0,Campylobacter,,,,jejuni,,,,,,,,1,.,.,.,Restaurant (sit-down),Private Home,,Unknown
+3764,California,Contra Costa,2009-06-07T00:00:00Z,2009-06-09T00:00:00Z,2009-06-06T00:00:00Z,2009-06-06T00:00:00Z,19,0,0,Calicivirus,,,,norovirus,,,,"Genogroup II (GII),not sequenced",,,,0,.,.,.,Religous location (church/temple),,,Unknown
+3765,California,Alameda,2009-04-16T00:00:00Z,2009-04-17T00:00:00Z,2009-04-15T00:00:00Z,2009-04-15T00:00:00Z,39,0,0,Calicivirus,,,,norovirus,,,,Unspecified,,,,0,.,.,.,Religous location (church/temple),,,Poultry
+3780,California,Alameda,2009-04-03T00:00:00Z,2009-04-03T00:00:00Z,2009-04-03T00:00:00Z,2009-04-03T00:00:00Z,7,0,0,Scombroid toxin,,,,,,,,,,,,1,.,.,.,"Workplace, not cafeteria",,,Finfish
+3781,California,Alameda,2009-02-26T00:00:00Z,2009-03-01T00:00:00Z,2009-02-26T00:00:00Z,2009-02-26T00:00:00Z,16,0,0,Calicivirus,,,,norovirus,,,,Unspecified,,,,0,.,.,.,School,,,>1 commodity
+3782,California,Alameda,2009-05-29T00:00:00Z,2009-06-01T00:00:00Z,2009-05-29T00:00:00Z,2009-05-29T00:00:00Z,20,0,0,,,,,,,,,,,,,0,.,.,.,Restaurant (unknown type),,,>1 commodity
+3821,Missouri,Greene,2009-09-19T00:00:00Z,2009-10-07T00:00:00Z,2009-09-19T00:00:00Z,2009-09-20T00:00:00Z,135,0,0,,,,,,,,,,,,,0,.,.,.,"Fair, festival, other mobile services",Private Home,,Unknown
+3848,Arizona,Maricopa,2009-07-19T00:00:00Z,2009-08-13T00:00:00Z,,,6,1,0,Salmonella,,,,enterica,,,,Heidelberg,,,,1,.,.,.,Restaurant (sit-down),,,Unknown
+3868,Florida,Bay,2009-08-05T00:00:00Z,2009-08-11T00:00:00Z,2009-08-04T00:00:00Z,,20,1,0,Salmonella,,,,unknown,,,,,,,,1,.,.,.,Unknown,,,Unknown
+3869,Florida,Leon,2009-04-11T00:00:00Z,2009-04-18T00:00:00Z,2009-04-11T00:00:00Z,2009-04-12T00:00:00Z,27,,,,,,,,,,,,,,,0,.,.,.,Unknown,,,Unknown
+3875,Ohio,Lake,2009-09-30T00:00:00Z,2009-10-01T00:00:00Z,2009-09-29T00:00:00Z,2009-09-29T00:00:00Z,22,1,0,Salmonella,,,,enterica,,,,Enteritidis,,,,1,.,.,.,School,,,>1 commodity
+3899,California,San Diego,2009-12-16T00:00:00Z,2009-12-29T00:00:00Z,2009-12-16T00:00:00Z,2009-12-21T00:00:00Z,22,4,0,Salmonella,,,,enterica,,,,Heidelberg,,,,1,.,.,.,Religous location (church/temple),Restaurant (unknown type),"Workplace, not cafeteria",Unknown
+3915,Florida,Miami-Dade,2009-10-19T00:00:00Z,2009-10-20T00:00:00Z,2009-10-19T00:00:00Z,2009-10-19T00:00:00Z,41,0,0,,,,,,,,,,,,,0,.,.,.,School,,,Beef
+3918,Florida,Leon,2009-07-23T00:00:00Z,2009-07-23T00:00:00Z,2009-07-22T00:00:00Z,2009-07-22T00:00:00Z,8,0,0,Salmonella,,,,unknown,,,,,,,,1,.,.,.,Unknown,,,Unknown
+3936,Florida,Miami-Dade,2009-05-16T00:00:00Z,2009-05-17T00:00:00Z,2009-05-16T00:00:00Z,2009-05-16T00:00:00Z,9,,,,,,,,,,,,,,,0,.,.,.,Private Home,,,Finfish
+3961,Ohio,Fayette,2009-12-27T00:00:00Z,,2009-12-26T00:00:00Z,,20,,0,,,,,,,,,,,,,0,.,.,.,Unknown,,,Unknown
+3965,Rhode Island,Providence,2009-10-17T00:00:00Z,2009-10-30T00:00:00Z,2009-10-14T00:00:00Z,2009-10-15T00:00:00Z,36,2,0,Escherichia,,,,"coli, Shiga toxin-producing",,,,O157:H7,,,,1,.,.,.,Unknown,,,Unknown
+4019,California,Orange,2009-12-17T00:00:00Z,2009-12-18T00:00:00Z,2009-12-17T00:00:00Z,2009-12-17T00:00:00Z,23,0,0,Calicivirus,,,,norovirus,,,,Unspecified,,,,0,.,.,.,Prison,,,>1 commodity
+4023,California,Orange,2009-09-13T00:00:00Z,2009-09-16T00:00:00Z,2009-09-12T00:00:00Z,2009-09-12T00:00:00Z,7,0,0,Salmonella,,,,enterica,,,,Enteritidis,,,,0,.,.,.,Private Home,,,Unknown
+4078,Michigan,Wayne,2009-12-15T00:00:00Z,2009-12-17T00:00:00Z,2009-12-15T00:00:00Z,2009-12-15T00:00:00Z,37,0,0,,,,,,,,,,,,,0,.,.,.,"Workplace, not cafeteria",,,>1 commodity
+4082,Illinois,Lake,2009-08-16T00:00:00Z,2009-08-16T00:00:00Z,2009-08-15T00:00:00Z,2009-08-15T00:00:00Z,130,0,0,,,,,,,,,,,,,0,.,.,.,Banquet Facility (on-site),,,Beef
+4097,Florida,Broward,2009-08-15T00:00:00Z,2009-08-16T00:00:00Z,2009-08-15T00:00:00Z,2009-08-15T00:00:00Z,7,6,0,Salmonella,,,,unknown,,,,,,,,1,.,.,.,Picnic,,,Finfish
+4129,California,Orange,2009-12-13T00:00:00Z,2009-12-14T00:00:00Z,2009-12-12T00:00:00Z,2009-12-12T00:00:00Z,9,0,0,,,,,,,,,,,,,0,.,.,.,Private Home,,,Unknown
+4264,California,Orange,2009-12-28T00:00:00Z,2009-12-29T00:00:00Z,2009-12-27T00:00:00Z,2009-12-27T00:00:00Z,8,0,0,Calicivirus,,,,norovirus,,,,Unspecified,,,,0,.,.,.,Restaurant (sit-down),,,Unknown
+4274,Arizona,Maricopa,2009-08-01T00:00:00Z,2009-10-24T00:00:00Z,,,7,2,0,Salmonella,,,,enterica,,,,Newport,,,,1,.,.,.,Unknown,,,Vine
+4345,Wyoming,Albany,2009-09-08T00:00:00Z,2009-09-16T00:00:00Z,,,22,0,0,Calicivirus,,,,norovirus,,,,"Genogroup II (GII),not sequenced",,,,1,.,.,.,Other,,,>1 commodity
+4348,Wyoming,Laramie,2009-12-12T00:00:00Z,2009-12-13T00:00:00Z,2009-12-12T00:00:00Z,2009-12-12T00:00:00Z,25,0,0,Clostridium,,,,perfringens,,,,,,,,0,.,.,.,Other,,,Poultry
+4400,Idaho,,2009-03-26T00:00:00Z,2009-03-31T00:00:00Z,,,13,0,0,Calicivirus,,,,norovirus,,,,GII / undefined cluster by sequence,,,,1,.,.,.,Unknown,,,Unknown
+4401,Idaho,Ada,2009-05-30T00:00:00Z,2009-05-30T00:00:00Z,2009-05-29T00:00:00Z,2009-05-29T00:00:00Z,10,0,0,Calicivirus,,,,norovirus,,,,GII / undefined cluster by sequence,,,,1,.,.,.,Restaurant (fast-food),,,>1 commodity
+4430,Ohio,Montgomery,2009-01-05T00:00:00Z,2009-01-06T00:00:00Z,2009-01-03T00:00:00Z,2009-01-04T00:00:00Z,6,0,0,Calicivirus,,,,norovirus,,,,GII_4 Minerva (2006),,,,0,.,.,.,Restaurant (sit-down),,,Unknown
+4452,California,Orange,2009-05-21T00:00:00Z,2009-05-26T00:00:00Z,2009-05-21T00:00:00Z,2009-05-25T00:00:00Z,23,0,0,Calicivirus,,,,norovirus,,,,"Genogroup II (GII),not sequenced",,,,1,.,.,.,School,,,>1 commodity
+4477,Colorado,,2009-03-07T00:00:00Z,2009-03-24T00:00:00Z,,,43,10,0,Salmonella,,,,enterica,,,,Newport,,,,1,.,.,.,Religous location (church/temple),,,Vine
+4597,California,San Mateo,2009-12-05T00:00:00Z,2009-12-06T00:00:00Z,2009-12-05T00:00:00Z,2009-12-05T00:00:00Z,7,0,0,Salmonella,,,,enterica,,,,Enteritidis,,,,1,.,.,.,Private Home,,,>1 commodity
+4603,California,Los Angeles,2009-12-27T00:00:00Z,2009-12-30T00:00:00Z,2009-12-26T00:00:00Z,2009-12-26T00:00:00Z,34,0,0,Calicivirus,,,,norovirus,,,,Unspecified,,,,0,.,.,.,Restaurant (sit-down),,,Unknown
+4730,North Dakota,Grand Forks,2009-07-19T00:00:00Z,2009-07-19T00:00:00Z,,,12,0,0,,,,,,,,,,,,,0,.,.,.,Private Home,Banquet Facility (on-site),,Unknown
+4732,North Dakota,Morton,2009-08-23T00:00:00Z,2009-08-24T00:00:00Z,2009-08-22T00:00:00Z,2009-08-22T00:00:00Z,13,0,0,Calicivirus,,,,norovirus,,,,"Genogroup II (GII),not sequenced",,,,1,.,.,.,Restaurant (sit-down),,,Unknown
+4759,California,Orange,2009-12-06T00:00:00Z,2009-12-07T00:00:00Z,2009-12-05T00:00:00Z,2009-12-05T00:00:00Z,23,0,0,,,,,,,,,,,,,0,.,.,.,Banquet Facility (on-site),,,Unknown
+4954,California,,2009-08-15T00:00:00Z,2010-03-27T00:00:00Z,,2010-03-25T00:00:00Z,9,5,0,Salmonella,,,,enterica,,,,IIIa,,,,1,.,.,.,Other,,,Poultry
+5005,Massachusetts,Hampshire,2009-11-15T00:00:00Z,,,,27,0,0,,,,,,,,,,,,,0,.,.,.,School,,,Root
+5056,Wisconsin,Dane,2009-11-18T00:00:00Z,2010-01-09T00:00:00Z,2009-11-11T00:00:00Z,,11,,0,Salmonella,,,,enterica,,,,Heidelberg,,,,1,.,.,.,Restaurant (sit-down),,,Unknown
+5087,California,,2009-06-30T00:00:00Z,2009-08-09T00:00:00Z,2009-06-29T00:00:00Z,2009-08-07T00:00:00Z,15,1,0,Vibrio,,,,parahaemolyticus,,,,,,,,1,.,.,.,Restaurant (sit-down),,,Mollusk
+5217,California,Los Angeles,2009-08-17T00:00:00Z,2009-08-19T00:00:00Z,2009-08-16T00:00:00Z,2009-08-16T00:00:00Z,19,0,0,Salmonella,,,,enterica,,,,Typhimurium,,,,1,.,.,.,Religous location (church/temple),,,Unknown
+5232,California,Los Angeles,2009-07-27T00:00:00Z,2009-08-03T00:00:00Z,2009-07-24T00:00:00Z,2009-07-30T00:00:00Z,6,0,0,Salmonella,,,,enterica,,,,Typhimurium,,,,1,.,.,.,Restaurant (sit-down),,,Unknown
+5351,Virginia,Wise,2009-04-12T00:00:00Z,2009-05-04T00:00:00Z,2009-04-10T00:00:00Z,2009-04-28T00:00:00Z,8,5,0,Salmonella,,,,enterica,,,,Enteritidis,,,,1,.,.,.,Restaurant (fast-food),,,Unknown
+5789,Minnesota,Otter Tail,2009-12-13T00:00:00Z,2010-01-05T00:00:00Z,2009-12-12T00:00:00Z,2010-01-03T00:00:00Z,20,0,0,Calicivirus,,,,norovirus,,,,,,,,1,.,.,.,Restaurant (sit-down),,,Unknown
+5909,New Jersey,Mercer,2009-01-19T00:00:00Z,2009-01-20T00:00:00Z,2009-01-17T00:00:00Z,2009-01-18T00:00:00Z,9,0,0,Calicivirus,,,,norovirus,,,,,,,,1,.,.,.,Unknown,,,Unknown
+5910,New Jersey,,2009-03-28T00:00:00Z,2009-04-01T00:00:00Z,2009-03-28T00:00:00Z,2009-03-28T00:00:00Z,18,1,0,,,,,,,,,,,,,0,.,.,.,Restaurant (sit-down),,,>1 commodity
+5912,New Jersey,,2009-03-15T00:00:00Z,2009-03-17T00:00:00Z,2009-03-14T00:00:00Z,2009-03-14T00:00:00Z,27,,0,,,,,,,,,,,,,0,.,.,.,Unknown,,,Unknown
+5914,New Jersey,,2009-01-02T00:00:00Z,2009-01-07T00:00:00Z,2009-01-02T00:00:00Z,2009-01-07T00:00:00Z,9,,0,,,,,,,,,,,,,0,.,.,.,Unknown,,,Unknown
+6238,New Jersey,Essex,2009-11-08T00:00:00Z,2009-11-09T00:00:00Z,2009-11-07T00:00:00Z,2009-11-07T00:00:00Z,31,,0,Calicivirus,,,,norovirus,,,,,,,,1,.,.,.,Restaurant (sit-down),,,Unknown
+6240,New Jersey,Burlington,2009-07-26T00:00:00Z,2009-07-27T00:00:00Z,2009-07-26T00:00:00Z,2009-07-26T00:00:00Z,9,,0,,,,,,,,,,,,,0,.,.,.,Banquet Facility (on-site),,,Finfish
+6243,New Jersey,Monmouth,2009-03-29T00:00:00Z,2009-03-29T00:00:00Z,2009-03-28T00:00:00Z,2009-03-28T00:00:00Z,8,,0,,,,,,,,,,,,,0,.,.,.,Restaurant (sit-down),Private Home,,Unknown
+6385,New Jersey,Essex,2009-12-20T00:00:00Z,2010-01-02T00:00:00Z,2009-12-20T00:00:00Z,2009-12-31T00:00:00Z,39,5,0,Salmonella,,,,enterica,,,,Enteritidis,,,,1,.,.,.,Unknown,,,>1 commodity
+6387,New Jersey,Bergen,2009-04-30T00:00:00Z,2009-05-09T00:00:00Z,2009-04-28T00:00:00Z,2009-05-02T00:00:00Z,155,1,0,Calicivirus,,,,norovirus,,,,,,,,1,.,.,.,Restaurant (sit-down),Private Home,,>1 commodity
+6585,California,San Diego,2009-12-16T00:00:00Z,2009-12-17T00:00:00Z,2009-12-16T00:00:00Z,2009-12-16T00:00:00Z,9,0,0,Calicivirus,,,,norovirus,,,,"Genogroup II (GII),not sequenced",,,,0,.,.,.,"Workplace, not cafeteria",,,>1 commodity
+6875,CDC,,2009-04-23T00:00:00Z,2009-05-02T00:00:00Z,,,16,,0,Escherichia,,,,"coli, Shiga toxin-producing",,,,O157:H7,,,,1,.,.,.,Restaurant (fast-food),,,Leafy
+6876,CDC,,2009-04-01T00:00:00Z,2009-06-25T00:00:00Z,,,20,,0,Escherichia,,,,"coli, Shiga toxin-producing",,,,O157:H7,,,,1,.,.,.,Private Home,,,Beef
+6889,New Mexico,Bernalillo,2009-01-28T00:00:00Z,2009-02-02T00:00:00Z,,,26,0,0,,,,,,,,,,,,,0,.,.,.,Unknown,,,Unknown
+6890,CDC,,2009-06-14T00:00:00Z,2009-07-05T00:00:00Z,,,14,,0,Salmonella,,,,enterica,,,,Muenchen,,,,1,.,.,.,Private Home,,,Fruits-Nuts
+6921,CDC,,2009-03-16T00:00:00Z,2009-07-08T00:00:00Z,,,77,35,,Escherichia,,,,"coli, Shiga toxin-producing",,,,O157:H7,,,,1,.,.,.,Private Home,,,>1 commodity
+6942,Massachusetts,,2009-06-02T00:00:00Z,2010-03-17T00:00:00Z,,,19,4,0,Salmonella,,,,enterica,,,,Montevideo,,,,0,.,.,.,Unknown,,,Unknown
+6997,Ohio,Franklin,2009-11-30T00:00:00Z,2009-12-09T00:00:00Z,2009-11-26T00:00:00Z,2009-11-26T00:00:00Z,6,1,0,Salmonella,,,,enterica,,,,Enteritidis,,,,1,.,.,.,Religous location (church/temple),,,Unknown
+7075,CDC,,2009-02-02T00:00:00Z,2009-04-24T00:00:00Z,,,256,8,,Salmonella,,,,enterica,,,,Saintpaul,,,,1,.,.,.,Unknown,,,Sprout
+7078,CDC,,2009-02-10T00:00:00Z,2009-04-07T00:00:00Z,,,53,4,1,Salmonella,,,,enterica,,,,Carrau,,,,1,.,.,.,Private Home,,,Fruits-Nuts
+7085,CDC,,2009-09-03T00:00:00Z,2009-09-08T00:00:00Z,,,22,,,Escherichia,,,,"coli, Shiga toxin-producing",,,,O157:H7,,,,1,.,.,.,Restaurant (fast-food),,,Leafy
+7088,CDC,,2009-08-18T00:00:00Z,2009-11-02T00:00:00Z,,,32,19,2,Escherichia,,,,"coli, Shiga toxin-producing",,,,O157:H7,,,,1,.,.,.,Private Home,,,Beef
+7106,CDC,,2009-07-04T00:00:00Z,2010-02-18T00:00:00Z,,,272,52,0,Salmonella,,,,enterica,,,,Montevideo,,,,1,.,.,.,Private Home,Banquet Facility (on-site),,Vine
+7112,CDC,,2009-02-18T00:00:00Z,2009-04-27T00:00:00Z,,,25,,,Salmonella,,,,enterica,,,,Oranienburg,,,,1,.,.,.,Private Home,,,Sprout
+7113,CDC,,2009-03-08T00:00:00Z,2009-05-06T00:00:00Z,,,23,6,0,Escherichia,,,,"coli, Shiga toxin-producing",,,,O157:H7,,,,1,.,.,.,Private Home,,,Beef
+7119,CDC,,2009-05-22T00:00:00Z,2009-10-23T00:00:00Z,,,68,4,0,Salmonella,,,,enterica,,,,Newport,,,,1,.,.,.,Private Home,,,Beef
+7222,California,Orange,2009-08-02T00:00:00Z,2009-08-04T00:00:00Z,2009-08-01T00:00:00Z,2009-08-01T00:00:00Z,17,0,0,Calicivirus,,,,norovirus,,,,"Genogroup II (GII),not sequenced",,,,0,.,.,.,Restaurant (sit-down),,,Unknown
+7610,CDC,,2009-07-17T00:00:00Z,2009-09-16T00:00:00Z,,,145,1,,Salmonella,,,,enterica,,,,Typhimurium,,,,1,.,.,.,Unknown,,,Leafy
+7678,CDC,,2009-10-03T00:00:00Z,2009-12-14T00:00:00Z,2009-09-28T00:00:00Z,2009-11-14T00:00:00Z,25,9,1,Escherichia,,,,"coli, Shiga toxin-producing",,,,O157:H7,,,,0,.,.,.,Unknown,,,Beef
+8094,California,San Francisco,2009-12-11T00:00:00Z,2009-12-12T00:00:00Z,2009-12-10T00:00:00Z,2009-12-10T00:00:00Z,8,0,0,Calicivirus,,,,norovirus,,,,"Genogroup II (GII),not sequenced",,,,1,.,.,.,Restaurant (unknown type),,,Unknown
+8115,CDC,,2009-06-23T00:00:00Z,2009-11-20T00:00:00Z,,,8,3,0,Listeria,,,,monocytogenes,,,,,,,,1,.,.,.,Private Home,,,Dairy
+8908,Nebraska,,2009-02-01T00:00:00Z,,,,113,,,,,,,,,,,,,,,0,.,.,.,Unknown,,,Unknown
+10356,CDC,,2009-11-29T00:00:00Z,2010-04-21T00:00:00Z,,,35,,,Salmonella,,,,enterica,,,,Heidelberg,,,,1,.,.,.,Private Home,,,Poultry
