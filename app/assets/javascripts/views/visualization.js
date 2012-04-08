@@ -8,6 +8,7 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
 
   onShow: function() {
     this.drawMap();
+    this.colorMap();
     this.slider = $("#slider").slider();
     
     var fake_data = [4, 8, 15, 16, 23, 30]; //placeholder data
@@ -21,66 +22,73 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
   }, 
 
   drawMap: function() {
-    var data; 
     var path = d3.geo.path();
     var svg = d3.select("#chart").append("svg");
    
-    var counties = svg.append("g")
+    this.counties = svg.append("g")
       .attr("id", "counties")
-      .attr("class", "OrRd");
+      .attr("class", "Reds");
 
-    var states = svg.append("g")
+    this.states = svg.append("g")
       .attr("id", "states");
         
     //counties
-    d3.json('/api/counties', function(json) {
-      counties.selectAll("path")
-        .data(json.features)
-        .enter().append("path")
-        .attr("class", null)
-        .attr("d", path);
-    });
+    this.counties.selectAll("path")
+      .data(MapApp.counties.features)
+      .enter()
+      .append("path")
+      .attr("class", "bg-path-color")
+      .attr("id", function(d) { return "fips_" + d.id; }) 
+      .attr("d", path);
 
     //states
-    d3.json('/api/states', function(json) {
-      states.selectAll("path")
-        .data(json.features)
-        .enter().append("path")
-        .attr("d", path);
-    });
+    this.states.selectAll("path")
+      .data(MapApp.states.features)
+      .enter()
+      .append("path")
+      .attr("d", path);
+  },
 
-    //color counties with data
-    d3.json('/api/unemployments', $.proxy(function(json) {
+  colorMap: function() {
+    var data; 
+    var q_scale;
+    d3.json('/api/outbreaks', $.proxy(function(json) {
       data = json;
-      counties.selectAll("path")
-        .attr("class", quantize)
-        .on("mouseover", function(d){
-          d3.select(this).attr("class", "county-hover");
-          var mouse_pos = d3.mouse(this);
-          d3.select("#tooltip") //TODO: only show this if data
-            .style("left", mouse_pos[0] + "px")
-            .style("top", mouse_pos[1] + "px")
-						.style("visibility", "visible")
-	          .text("Test data: " + data[d.id]);
-        })
-        .on("mouseout", function(){
-          d3.select(this).attr("class", data ? quantize : null);
-          d3.select("#tooltip")
-            .style("visibility", "hidden")
-            .text("");
-        });
+      q_scale = d3.scale.quantile().domain([MapApp.outbreaks_min, MapApp.outbreaks_max]).range([1,2,3,4,5,6,7,8]);
 
-      //TODO: Figure out data format - data must be ordered same as county paths
-      //console.log(data);
-      this.drawLegend(d3.min(data), d3.max(data));
+      for (fips in data) {
+        this.counties.select("#fips_"+fips)
+          .attr("class", quantize)
+          .on("mouseover", function(d){
+            d3.select(this).attr("class", "county-hover");
+            var mouse_pos = d3.mouse(this);
+            d3.select(".tooltip") 
+              .style("left", mouse_pos[0] + "px")
+              .style("top", mouse_pos[1] + "px")
+              .style("visibility", "visible")
+              .html(
+                "<ul><li><p class='title'>(Etiology) Outbreak</p></li>" 
+                + "<ul><li><p class='date'>"+ Date.parse(data[d.id]["first_illness"]).toString("MMMM d, yyyy") + " - " + Date.parse(data[d.id]["last_illness"]).toString("MMMM d, yyyy") + "</p></li>" 
+                + "<li><span>Reporting County:</span><span>" + data[d.id]["reporting_county"] + " County"
+                + "</span></li><li><span>Illnesses:</span><span>" + data[d.id]["illnesses"]
+                + "</span></li><li><span>Hospitalizations:</span><span>" + data[d.id]["hospitalizations"]
+                + "</span></li><li><span>Commodity:</span><span>" + data[d.id]["commodity_group"] + "</span></li></ul>" 
+              );
+          })
+          .on("mouseout", function(){
+            d3.select(this).attr("class", data ? quantize : null);
+            d3.select(".tooltip")
+              .style("visibility", "hidden")
+              .text("");
+          });
+      }
+      //this.drawLegend(d3.min(d3.values(data)), d3.max(d3.values(data)));
     }, this));
 
     function quantize(d) {
-      //TODO: Rewrite this method so it makes sense for my data! Can't just bucket everything above a max into the top category; decide on discrete or continuous colormap
-      //console.log(~~(data[d.id]*9/12) + ", q" + Math.min(8, ~~(data[d.id] * 9 / 12)) + "-9");
-      //Double bitwise NOT to convert float to integer. Came with the d3 example code.
+      //Double bitwise "not" to convert float to integer. Came with the d3 example code.
       //See: http://rocha.la/JavaScript-bitwise-operators-in-practice for explanation
-      return "q" + Math.min(8, ~~(data[d.id] * 9 / 12)) + "-9"; //uses .q1-9 to .q8-9 in colorbrewer.css for color scale
+      return "q" + q_scale(~~(data[d.id]["adjusted_illnesses"])) + "-9";
     }
   },
 
@@ -94,19 +102,6 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
     var legend = svg.append("g")
       .attr("id", "legend");
 
-    //not sure whether to use gradient or discrete vals
-    var gradient = legend.append("svg:defs")
-      .append("svg:linearGradient")
-      .attr("id", "gradient");
-
-    gradient.append("stop")
-      .attr("offset", "0%")
-      .attr("stop-color", "rgb(254,232,200)"); //.q1-9, the lighest color on scale - see quantize()
-
-    gradient.append("stop")
-      .attr("offset", "100%")
-      .attr("stop-color", "rgb(127,0,0)"); //.q8-9, the darkest color on scale - see quantize()
-
     legend.append("rect")
       .attr("x", width - 225)
       .attr("y", height - 40)
@@ -117,7 +112,7 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
     //maps input values (domain) to output values (range)
     var x = d3.scale.linear()
       .domain([0, max])
-      .range([0, width-max_labelWidth]);
+      .range([0, width-125]);
     
     legend.selectAll(".rule")
       .data(x.ticks(2))

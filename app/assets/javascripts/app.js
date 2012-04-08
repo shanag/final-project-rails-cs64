@@ -7,7 +7,11 @@ MapApp = new Backbone.Marionette.Application();
 
 MapApp.addInitializer(function(options) {
   // initialize collections
+  this.outbreaks_min = options.outbreaks_min;
+  this.outbreaks_max = options.outbreaks_max;
   this.outbreaks = new Collections.Outbreaks(options.outbreaks);
+  this.counties = options.counties;
+  this.states = options.states;
 
   // ajax setup
   $.ajaxSetup({

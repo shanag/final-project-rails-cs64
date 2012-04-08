@@ -2,6 +2,10 @@
   :javascript
     $(function() {
       MapApp.start({
-        outbreaks: #{@outbreaks_json}
+        outbreaks_min: #{@outbreaks_min},
+        outbreaks_max: #{@outbreaks_max},
+        outbreaks: #{@outbreaks_json},
+        counties: #{@counties_json},
+        states: #{@states_json}
       });
     });
