@@ -9,8 +9,27 @@ module Map
     # api/outbreaks
     # api/outbreaks/346
     resource :outbreaks do
-      get nil, :rabl => 'outbreaks/index' do
-        @outbreaks = Outbreak.all
+      get nil do
+        outbreaks = Outbreak.where("first_illness BETWEEN ? AND ?", Date.new(2008, 1, 1), Date.new(2008, 3, 31))
+        outbreaks_by_fips = []
+
+        outbreaks_by_fips = outbreaks.inject({}) do |hsh, o|
+          unless o.reporting_county.nil?
+            fips = County.find_by_county(o.reporting_county).fips_code
+            hsh[fips] = {
+              :first_illness => o.first_illness.to_date,
+              :last_illness => o.last_illness.try(:to_date),
+              :adjusted_illnesses => o.adjusted_illnesses, 
+              :illnesses => o.illnesses,
+              :deaths => o.deaths,
+              :hospitalizations => o.hospitalizations,
+              :reporting_county => o.reporting_county,
+              :commodity_group => o.commodity_group
+            }
+          end
+          hsh
+        end
+        outbreaks_by_fips
       end
 
       segment '/:id' do
@@ -20,13 +39,6 @@ module Map
       end
     end
   
-    get :counties do
-      counties = Rails.root.join("lib/data/map/us-counties.json").read
-    end
-      
-    get :states do
-      states = Rails.root.join("lib/data/map/us-states.json").read
-    end
     
     get :unemployments do
       unemployments = Rails.root.join("lib/data/map/unemployment.json").read
