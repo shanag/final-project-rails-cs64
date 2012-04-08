@@ -11,13 +11,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120404203129) do
+ActiveRecord::Schema.define(:version => 20120408183120) do
 
   create_table "counties", :force => true do |t|
     t.string   "county"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
-    t.integer  "fips_code"
+    t.string   "fips_code"
     t.integer  "population_2008"
     t.integer  "population_2009"
   end
