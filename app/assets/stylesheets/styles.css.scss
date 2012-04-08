@@ -74,14 +74,52 @@ table {
   .county-hover {
    fill: #666; 
   }
- 
-  #tooltip {
+
+  .bg-path-color {
+    fill: #D9D9D9;
+  }
+
+  .tooltip {
+    visibility: hidden;
     position: absolute;
     z-index: 10;
     background-color: #FFF;
     font-size: 1em;
     padding: 1em;
     border: 1px solid #666;
+    opacity: 1;
+    max-width: 28%;
+    ul {
+      list-style: none;
+      margin: 0;
+      float: left;
+      width: 100%;
+      li {
+        width: 100%;
+        float: left;
+        p {
+          &.title {
+            font-weight: bold;
+            text-decoration: underline;
+          }
+          &.date {
+            margin-bottom: .5em;
+          }
+          margin: 0;
+        }
+        span:first-child {
+          float: left;
+          width: 47%;
+          margin-right: 3%;
+          font-weight: bold;
+          text-align: right;
+        }
+        span:last-child {
+          float: right;
+          width: 50%;
+        }
+      }
+    }
   }
   
   .bar-chart {

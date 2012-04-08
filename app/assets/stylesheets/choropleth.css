@@ -4,6 +4,16 @@
   height: 500px;
 }
 
+/*#counties path {*/
+  /*stroke: #DEDEDE;*/
+  /*stroke-width: .25px;*/
+/*}*/
+
+/*#states path {*/
+  /*fill: none;*/
+  /*stroke: #F1F1F1;*/
+  /*stroke-width: 1.5px;*/
+/*}*/
 #counties path {
   stroke: #fff;
   stroke-width: .25px;
