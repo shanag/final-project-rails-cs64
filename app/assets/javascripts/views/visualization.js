@@ -3,10 +3,9 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
   className: "viz",
 
   events: {
-    "change #min": "setSliderVals",
-    "change #max": "setSliderVals",
-    "minValueChanged #slider" : "setInputMin",
-    "maxValueChanged #slider" : "setInputMax"
+    "change #min": "setSliderMinVal",
+    "change #max": "setSliderMaxVal",
+    "valuesChanging #slider" : "setInputs",
   },
   
   template: function() {
@@ -66,16 +65,16 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
     }); 
   },
 
-  setSliderVals: function(e) {
-    this.slider.min($("#min").datepicker("getDate"));
-    this.slider.max($("#max").datepicker("getDate"));
-  },
- 
-  setInputMin: function(e) {
-    $("#min").datepicker("setDate", $("#slider").dateRangeSlider("min"));
+  setSliderMinVal: function(e) {
+    $("#slider").dateRangeSlider("min", $("#min").datepicker("getDate"));
   },
   
-  setInputMax: function(e) {
+  setSliderMaxVal: function(e) {
+    $("#slider").dateRangeSlider("max", $("#max").datepicker("getDate"));
+  },
+ 
+  setInputs: function(e) {
+    $("#min").datepicker("setDate", $("#slider").dateRangeSlider("min"));
     $("#max").datepicker("setDate", $("#slider").dateRangeSlider("max"));
   },
 
