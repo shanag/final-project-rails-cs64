@@ -8,6 +8,42 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
 
   onShow: function() {
     this.drawMap();
+    this.colorMap();
+    this.initializeSlider();
+
+    var fake_data = [4, 8, 15, 16, 23, 30]; //placeholder data
+    this.drawBarChart("food", fake_data);
+    
+    fake_data = [2, 77, 10, 6, 33, 30]; //placeholder data
+    this.drawBarChart("etiology", fake_data);
+    
+    fake_data = [5, 2, 15, 64, 43, 3]; //placeholder data
+    this.drawBarChart("location", fake_data);
+  },
+
+  initializeSlider: function() {
+    var min_date = $("#min");
+    var max_date = $("#max");
+    min_date.datepicker({
+      maxDate: new Date(2012,0,1),
+      minDate: new Date(2010,0,1),
+      dateFormat: "yy-mm-dd",
+      buttonImage: "/assets/calendar.png",
+      buttonImageOnly: true,
+      buttonText: "Choose a date",
+      showOn: "both"
+    }); 
+    
+    max_date.datepicker({
+      maxDate: new Date(2012,0,1),
+      minDate: new Date(2010,0,1),
+      dateFormat: "yy-mm-dd",
+      buttonImage: "/assets/calendar.png",
+      buttonImageOnly: true,
+      buttonText: "Choose a date",
+      showOn: "both"
+    }); 
+    
     this.slider = $("#slider").dateRangeSlider({
       bounds: {
         min: 1199163600000,
@@ -23,16 +59,7 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
       if (idx == 1) { $(elem).position().left = start + tick};
       $(elem).position().left = start + (tick*idx);
     }); 
-
-    var fake_data = [4, 8, 15, 16, 23, 30]; //placeholder data
-    this.drawBarChart("food", fake_data);
-    
-    fake_data = [2, 77, 10, 6, 33, 30]; //placeholder data
-    this.drawBarChart("etiology", fake_data);
-    
-    fake_data = [5, 2, 15, 64, 43, 3]; //placeholder data
-    this.drawBarChart("location", fake_data);
-  }, 
+  },
 
   drawMap: function() {
     var path = d3.geo.path();

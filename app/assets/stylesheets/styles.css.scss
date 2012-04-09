@@ -1,6 +1,5 @@
 @import "compass/css3/images";
 
-
 //padding for bootstrap nav
 body {
   padding-top: 25px;
@@ -71,13 +70,33 @@ table {
   .tools {
     font-size: .9em;
     margin: 0 auto; 
-    margin-top: 2em;
     margin-bottom: 1em;  
     width: 75%;
+    .input-date {
+      margin-bottom: 1em;
+      float:left;
+      label {
+        display: inline-block;
+        font-weight: bold;
+        margin: .5em 0 0 1em;
+      }
+      #min, #max {
+        width: 125px;
+        margin-left: .5em;
+        float: left;
+      }
+     img, label {
+        float: left;
+      }
+    }
+    .slider-container {
+      float: left;
+      width: 100%;
+    }
     ul.rule {
       list-style: none;
       margin: 0 0 5px 8px;
-      overflow: hidden;
+      float: left;
       li {
         float: left;
         padding-right: 1.5em;
@@ -96,7 +115,7 @@ table {
     .year-left {
       float: left;
     }
-    .year-right: {
+    .year-right {
       float: left;
     }
   }

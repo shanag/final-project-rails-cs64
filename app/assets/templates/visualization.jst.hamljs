@@ -1,5 +1,12 @@
 .tools
-  #slider
+  .input-date
+    %label{for: "min"}From:
+    %input{type: "text", name: "min", id: "min"}
+  .input-date
+    %label{for: "max"}To:
+    %input{type: "text", name: "max", id: "max"}
+  .slider-container
+    #slider
   %ul.rule
     %li Jan
     %li Feb
