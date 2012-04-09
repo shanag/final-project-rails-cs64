@@ -2,6 +2,13 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
 
   className: "viz",
 
+  events: {
+    "change #min": "setSliderVals",
+    "change #max": "setSliderVals",
+    "minValueChanged #slider" : "setInputMin",
+    "maxValueChanged #slider" : "setInputMax"
+  },
+  
   template: function() {
     return JST['visualization'];
   },
@@ -22,11 +29,9 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
   },
 
   initializeSlider: function() {
-    var min_date = $("#min");
-    var max_date = $("#max");
-    min_date.datepicker({
-      maxDate: new Date(2012,0,1),
-      minDate: new Date(2010,0,1),
+    $("#min").datepicker({
+      maxDate: new Date(2009,11,31),
+      minDate: new Date(2008,0,1),
       dateFormat: "yy-mm-dd",
       buttonImage: "/assets/calendar.png",
       buttonImageOnly: true,
@@ -34,9 +39,9 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
       showOn: "both"
     }); 
     
-    max_date.datepicker({
-      maxDate: new Date(2012,0,1),
-      minDate: new Date(2010,0,1),
+    $("#max").datepicker({
+      maxDate: new Date(2009,11,31),
+      minDate: new Date(2008,0,1),
       dateFormat: "yy-mm-dd",
       buttonImage: "/assets/calendar.png",
       buttonImageOnly: true,
@@ -59,6 +64,19 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
       if (idx == 1) { $(elem).position().left = start + tick};
       $(elem).position().left = start + (tick*idx);
     }); 
+  },
+
+  setSliderVals: function(e) {
+    this.slider.min($("#min").datepicker("getDate"));
+    this.slider.max($("#max").datepicker("getDate"));
+  },
+ 
+  setInputMin: function(e) {
+    $("#min").datepicker("setDate", $("#slider").dateRangeSlider("min"));
+  },
+  
+  setInputMax: function(e) {
+    $("#max").datepicker("setDate", $("#slider").dateRangeSlider("max"));
   },
 
   drawMap: function() {
