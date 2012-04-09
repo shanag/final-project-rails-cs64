@@ -10,7 +10,9 @@ module Map
     # api/outbreaks/346
     resource :outbreaks do
       get nil do
-        outbreaks = Outbreak.where("first_illness BETWEEN ? AND ?", Date.new(2008, 1, 1), Date.new(2008, 3, 31))
+        start_date = Date.new(2008, 1, 1)
+        end_date = Date.new(2009, 12, 31)
+        outbreaks = Outbreak.where("first_illness BETWEEN ? AND ?", start_date, end_date)
         outbreaks_by_fips = []
 
         outbreaks_by_fips = outbreaks.inject({}) do |hsh, o|
@@ -19,6 +21,7 @@ module Map
             hsh[fips] = {
               :first_illness => o.first_illness.to_date,
               :last_illness => o.last_illness.try(:to_date),
+              :duration => (o.last_illness && o.first_illness ? (o.last_illness.to_date - o.first_illness.to_date).to_i: "unknown"),
               :adjusted_illnesses => o.adjusted_illnesses, 
               :illnesses => o.illnesses,
               :deaths => o.deaths,
