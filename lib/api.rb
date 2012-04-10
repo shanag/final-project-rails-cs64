@@ -31,7 +31,8 @@ module Map
               :reporting_county => o.reporting_county,
               :commodity_group => o.commodity_group,
               :consumption_locations => o.locations.map(&:location),
-              :foods => o.foods.map(&:food)
+              :foods => o.foods.map(&:food),
+              :etiology_genus => o.genus
             }
           end
           hsh

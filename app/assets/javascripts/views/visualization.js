@@ -112,19 +112,35 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
     var q_scale;
     var start_date = $("#min").datepicker("getDate");
     var end_date = $("#max").datepicker("getDate");
-    var commodities = [5, 2, 15, 64, 43]; //placeholder data
-    var locations = [5, 2, 15, 64, 43]; //placeholder data
-    var etiologies = [5, 2, 15, 64, 43]; //placeholder data
+    var commodities = {};
+    var locations = {};
+    var etiologies = {};
     
     q_scale = d3.scale.quantile().domain([MapApp.outbreaks_min, MapApp.outbreaks_max]).range([1,2,3,4,5,6,7,8]);
+    
     for (fips in data) {
       var total_adjusted_illnesses = 0;
       _.each(data[fips], function(outbreak) {
         if (Date.parse(outbreak["first_illness"]) >= Date.parse(start_date) && Date.parse(outbreak["last_illness"]) <= Date.parse(end_date)) {
+          //total illnesses
           total_adjusted_illnesses += parseFloat(outbreak["adjusted_illnesses"]); 
-          console.log("Fips: " + fips + " total ill: " + total_adjusted_illnesses);
-          //addHover(fips, outbreak);
-        } 
+          
+          //add commodity
+          (outbreak["commodity_group"] in commodities) ? commodities[outbreak["commodity_group"]] += 1 : commodities[outbreak["commodity_group"]] = 1;
+          
+          //add etiology genus
+          (outbreak["etiology_genus"] in etiologies) ? etiologies[outbreak["etiology_genus"]] += 1 : etiologies[outbreak["etiology_genus"]] = 1;
+
+          //add where eaten locations
+          _.each(outbreak["consumption_locations"], function(loc) { 
+            (loc in locations) ? locations[loc] += 1 : locations[loc] = 1;
+          });
+          
+          //add hover
+          this.addHover(fips, outbreak);
+        }
+
+        //color counties
         this.counties.select("#fips_"+fips)
           .attr("class", function() { 
             if (total_adjusted_illnesses > 0) {
@@ -135,38 +151,40 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
           });
       }, this);
     }
-    
+   
     this.redrawBarChart("food", commodities);
-    this.redrawBarChart("etiology", locations);
-    this.redrawBarChart("location", etiologies);
+    this.redrawBarChart("etiology", etiologies);
+    this.redrawBarChart("location", locations);
   },
 
   addHover: function(fips, outbreak) {
     this.counties.select("#fips_"+fips)
       .on("mouseover", function(d){
-        d3.select(this).attr("class", "county-hover");
+        d3.select(this).classed("county-hover", true);
         var mouse_pos = d3.mouse(this);
-        var first_illness = Date.parse(data[d.id]["first_illness"]);
-        var last_illness = Date.parse(data[d.id]["last_illness"]);
+        var first_illness = Date.parse(outbreak["first_illness"]);
+        var last_illness = Date.parse(outbreak["last_illness"]);
         d3.select(".tooltip") 
           .style("left", mouse_pos[0] + "px")
           .style("top", mouse_pos[1] + "px")
           .style("visibility", "visible")
+          .append("ul")
           .html(
-            "<ul><li><p class='title'>(Etiology) Outbreak</p></li>" 
+            "<li><p class='title'>(Etiology) Outbreak</p></li>" 
             + "<ul><li><p class='date'>"+ first_illness.toString("MMMM d, yyyy") + " - " + last_illness.toString("MMMM d, yyyy") + "</p></li>"
-            + "<li><span>Duration:</span><span>" + data[d.id]["duration"] + " days" 
-            + "</span></li><li><span>Reporting County:</span><span>" + data[d.id]["reporting_county"] + " County"
-            + "</span></li><li><span>Illnesses:</span><span>" + data[d.id]["illnesses"]
-            + "</span></li><li><span>Hospitalizations:</span><span>" + data[d.id]["hospitalizations"]
-            + "</span></li><li><span>Commodity:</span><span>" + data[d.id]["commodity_group"] + "</span></li></ul>" 
+            + "<li><span>Duration:</span><span>" + outbreak["duration"] + " days" 
+            + "</span></li><li><span>Reporting County:</span><span>" + outbreak["reporting_county"] + " County"
+            + "</span></li><li><span>Illnesses:</span><span>" + outbreak["illnesses"]
+            + "</span></li><li><span>Hospitalizations:</span><span>" + outbreak["hospitalizations"]
+            + "</span></li><li><span>Commodity:</span><span>" + outbreak["commodity_group"] + "</span></li>" 
           );
       })
       .on("mouseout", function(){
-        d3.select(this).attr("class", data ? quantize : null);
+        d3.select(this).classed("county-hover", false);
         d3.select(".tooltip")
           .style("visibility", "hidden")
-          .text("");
+          .selectAll("ul")
+          .remove();
       });
   },
 
@@ -225,6 +243,7 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
     var label_container = d3.select("#" + chart_type)
       .select("svg")
       .append("g")
+      .attr("class", "label-container")
       .attr("transform", "translate("+ (max_labelWidth-5) +", 0)"); //-5 for padding
     
     label_container.selectAll("text")
@@ -239,14 +258,26 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
   },
 
   //only updates the values that need to be updated for each chart
- redrawBarChart: function(chart_type, data) {
-    var labels = ["label1 is a very long label", "label2", "label3", "label4", "label5"];
+  redrawBarChart: function(chart_type, items) {
+    //sort items to find top 5
+    var sortable = [];  
+    for (var key in items) {
+      sortable.push([key, items[key]])
+    }
+    sortable.sort(function(a, b) { return b[1] - a[1]} );
+
+    //set vars
+    var labels = _.first(_.map(sortable, function(arr) {return arr[0];}), 5);
+    var data = _.first(_.map(sortable, function(arr) {return arr[1];}), 5); 
     var max_labelWidth = 125; 
     var width = d3.select("#" + chart_type).style("width").replace("px", "");
     var height = 150;
     var title_height = d3.select("#" + chart_type + " h4").style("height").replace("px", "");
     var rect_height = (height-title_height)/data.length;
   
+    console.log("data " + data);
+    console.log("labels " + labels);
+    //define bar chart container (in markup)
     var chart_container = d3.select("#" + chart_type)
       .select("svg")
       .select("g")
@@ -277,12 +308,18 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
     //draw labels
     var label_container = d3.select("#" + chart_type)
       .select("svg")
-      .select("g")
-      .attr("transform", "translate("+ (max_labelWidth-5) +", 0)"); //-5 for padding
-    
+      .select(".label-container");
+
+    label_container.selectAll("text")
+      .remove(); //remove and re-append below
+
     label_container.selectAll("text")
       .data(labels)
+      .enter()
+      .append("text")
+      .attr("class", "data-label")
       .text(function(d) { return d; })
+      .style("font-size", "11")
       .attr("x", function(d, i) { return 0 - this.getComputedTextLength(); })
       .attr("y", function(d, i) { return (i * rect_height) + rect_height/2; });
   }
