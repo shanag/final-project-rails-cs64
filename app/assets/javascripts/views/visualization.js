@@ -117,52 +117,59 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
     var etiologies = [5, 2, 15, 64, 43]; //placeholder data
     
     q_scale = d3.scale.quantile().domain([MapApp.outbreaks_min, MapApp.outbreaks_max]).range([1,2,3,4,5,6,7,8]);
-
     for (fips in data) {
-      if (Date.parse(data[fips]["first_illness"]) >= Date.parse(start_date) && Date.parse(data[fips]["last_illness"]) <= Date.parse(end_date)) {
+      var total_adjusted_illnesses = 0;
+      _.each(data[fips], function(outbreak) {
+        if (Date.parse(outbreak["first_illness"]) >= Date.parse(start_date) && Date.parse(outbreak["last_illness"]) <= Date.parse(end_date)) {
+          total_adjusted_illnesses += parseFloat(outbreak["adjusted_illnesses"]); 
+          console.log("Fips: " + fips + " total ill: " + total_adjusted_illnesses);
+          //addHover(fips, outbreak);
+        } 
         this.counties.select("#fips_"+fips)
-          .attr("class", quantize)
-          .on("mouseover", function(d){
-            d3.select(this).attr("class", "county-hover");
-            var mouse_pos = d3.mouse(this);
-            var first_illness = Date.parse(data[d.id]["first_illness"]);
-            var last_illness = Date.parse(data[d.id]["last_illness"]);
-            d3.select(".tooltip") 
-              .style("left", mouse_pos[0] + "px")
-              .style("top", mouse_pos[1] + "px")
-              .style("visibility", "visible")
-              .html(
-                "<ul><li><p class='title'>(Etiology) Outbreak</p></li>" 
-                + "<ul><li><p class='date'>"+ first_illness.toString("MMMM d, yyyy") + " - " + last_illness.toString("MMMM d, yyyy") + "</p></li>"
-                + "<li><span>Duration:</span><span>" + data[d.id]["duration"] + " days" 
-                + "</span></li><li><span>Reporting County:</span><span>" + data[d.id]["reporting_county"] + " County"
-                + "</span></li><li><span>Illnesses:</span><span>" + data[d.id]["illnesses"]
-                + "</span></li><li><span>Hospitalizations:</span><span>" + data[d.id]["hospitalizations"]
-                + "</span></li><li><span>Commodity:</span><span>" + data[d.id]["commodity_group"] + "</span></li></ul>" 
-              );
-          })
-          .on("mouseout", function(){
-            d3.select(this).attr("class", data ? quantize : null);
-            d3.select(".tooltip")
-              .style("visibility", "hidden")
-              .text("");
+          .attr("class", function() { 
+            if (total_adjusted_illnesses > 0) {
+              return "q" + q_scale(~~total_adjusted_illnesses) + "-9";
+            } else {
+              return "bg-path-color";
+            }
           });
-      } else {
-        this.counties.select("#fips_"+fips)
-          .attr("class", "bg-path-color") 
-      }
+      }, this);
     }
     
     this.redrawBarChart("food", commodities);
     this.redrawBarChart("etiology", locations);
     this.redrawBarChart("location", etiologies);
-    
-    function quantize(d) {
-      //Double bitwise "not" to convert float to integer. Came with the d3 example code.
-      //See: http://rocha.la/JavaScript-bitwise-operators-in-practice for explanation
-      return "q" + q_scale(~~(data[d.id]["adjusted_illnesses"])) + "-9";
-    }
   },
+
+  addHover: function(fips, outbreak) {
+    this.counties.select("#fips_"+fips)
+      .on("mouseover", function(d){
+        d3.select(this).attr("class", "county-hover");
+        var mouse_pos = d3.mouse(this);
+        var first_illness = Date.parse(data[d.id]["first_illness"]);
+        var last_illness = Date.parse(data[d.id]["last_illness"]);
+        d3.select(".tooltip") 
+          .style("left", mouse_pos[0] + "px")
+          .style("top", mouse_pos[1] + "px")
+          .style("visibility", "visible")
+          .html(
+            "<ul><li><p class='title'>(Etiology) Outbreak</p></li>" 
+            + "<ul><li><p class='date'>"+ first_illness.toString("MMMM d, yyyy") + " - " + last_illness.toString("MMMM d, yyyy") + "</p></li>"
+            + "<li><span>Duration:</span><span>" + data[d.id]["duration"] + " days" 
+            + "</span></li><li><span>Reporting County:</span><span>" + data[d.id]["reporting_county"] + " County"
+            + "</span></li><li><span>Illnesses:</span><span>" + data[d.id]["illnesses"]
+            + "</span></li><li><span>Hospitalizations:</span><span>" + data[d.id]["hospitalizations"]
+            + "</span></li><li><span>Commodity:</span><span>" + data[d.id]["commodity_group"] + "</span></li></ul>" 
+          );
+      })
+      .on("mouseout", function(){
+        d3.select(this).attr("class", data ? quantize : null);
+        d3.select(".tooltip")
+          .style("visibility", "hidden")
+          .text("");
+      });
+  },
+
 
   drawBarChart: function(chart_type, data) {
     var labels = ["label1 is a very long label", "label2", "label3", "label4", "label5"];
