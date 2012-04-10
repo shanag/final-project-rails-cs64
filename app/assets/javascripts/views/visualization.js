@@ -18,14 +18,17 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
 
   onShow: function() {
     this.drawMap();
+    this.drawBarChart("food", [1, 1, 1, 1, 1]); //placeholder data to initialize svg elements
+    this.drawBarChart("etiology", [1, 1, 1, 1, 1]);
+    this.drawBarChart("location", [1, 1, 1, 1, 1]);
     this.initializeSlider();
     this.colorMap(); 
   },
 
   initializeSlider: function() {
     $("#min").datepicker({
-      maxDate: new Date(2009,11,31),
-      minDate: new Date(2008,0,1),
+      maxDate: new Date(2009,11,31),//--hard coded dates
+      minDate: new Date(2008,0,1),//--hard coded dates
       dateFormat: "yy-mm-dd",
       buttonImage: "/assets/calendar.png",
       buttonImageOnly: true,
@@ -34,8 +37,8 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
     }); 
     
     $("#max").datepicker({
-      maxDate: new Date(2009,11,31),
-      minDate: new Date(2008,0,1),
+      maxDate: new Date(2009,11,31),//--hard coded dates
+      minDate: new Date(2008,0,1),//--hard coded dates
       dateFormat: "yy-mm-dd",
       buttonImage: "/assets/calendar.png",
       buttonImageOnly: true,
@@ -45,8 +48,8 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
     
     this.slider = $("#slider").dateRangeSlider({
       bounds: {
-        min: 1199163600000,
-        max: 1262235600000
+        min: 1199163600000, // January 1, 2008 --hard coded dates
+        max: 1262235600000 // December 31, 2009 --hard coded dates
       },
       arrows: false,
       valueLabels: "show"
@@ -109,9 +112,9 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
     var q_scale;
     var start_date = $("#min").datepicker("getDate");
     var end_date = $("#max").datepicker("getDate");
-    var commodities = [5, 2, 15, 64, 43, 3]; //placeholder data
-    var locations = [5, 2, 15, 64, 43, 3]; //placeholder data
-    var etiologies = [5, 2, 15, 64, 43, 3]; //placeholder data
+    var commodities = [5, 2, 15, 64, 43]; //placeholder data
+    var locations = [5, 2, 15, 64, 43]; //placeholder data
+    var etiologies = [5, 2, 15, 64, 43]; //placeholder data
     
     q_scale = d3.scale.quantile().domain([MapApp.outbreaks_min, MapApp.outbreaks_max]).range([1,2,3,4,5,6,7,8]);
 
@@ -150,9 +153,9 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
       }
     }
     
-    this.drawBarChart("food", commodities);
-    this.drawBarChart("etiology", locations);
-    this.drawBarChart("location", etiologies);
+    this.redrawBarChart("food", commodities);
+    this.redrawBarChart("etiology", locations);
+    this.redrawBarChart("location", etiologies);
     
     function quantize(d) {
       //Double bitwise "not" to convert float to integer. Came with the d3 example code.
@@ -161,9 +164,8 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
     }
   },
 
-
   drawBarChart: function(chart_type, data) {
-    var labels = ["label1 is a very long label", "label2", "label3", "label4", "label5", "label6"];
+    var labels = ["label1 is a very long label", "label2", "label3", "label4", "label5"];
     var max_labelWidth = 125; 
     var width = d3.select("#" + chart_type).style("width").replace("px", "");
     var height = 150;
@@ -178,7 +180,6 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
       .append("g")
       .attr("transform", "translate("+ max_labelWidth +", 0)")
       .attr("width", function() { width - max_labelWidth});
-   
     
     //maps input values (domain) to output values (range) for this particular chart
     var x = d3.scale.linear()
@@ -228,6 +229,54 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
       .style("font-size", "11")
       .attr("x", function(d, i) { return 0 - this.getComputedTextLength(); })
       .attr("y", function(d, i) { return (i * rect_height) + rect_height/2; });
+  },
 
+  //only updates the values that need to be updated for each chart
+ redrawBarChart: function(chart_type, data) {
+    var labels = ["label1 is a very long label", "label2", "label3", "label4", "label5"];
+    var max_labelWidth = 125; 
+    var width = d3.select("#" + chart_type).style("width").replace("px", "");
+    var height = 150;
+    var title_height = d3.select("#" + chart_type + " h4").style("height").replace("px", "");
+    var rect_height = (height-title_height)/data.length;
+  
+    var chart_container = d3.select("#" + chart_type)
+      .select("svg")
+      .select("g")
+      .attr("transform", "translate("+ max_labelWidth +", 0)")
+      .attr("width", function() { width - max_labelWidth});
+    
+    //maps input values (domain) to output values (range) for this particular chart
+    var x = d3.scale.linear()
+      .domain([0, d3.max(data)])//need max values for each measure: food, etiologies, locations
+      .range([0, width-max_labelWidth]);
+    
+    //draw bars
+    chart_container.selectAll("rect")
+      .data(data)
+      .attr("y", function(d, i) { return i * rect_height; })
+      .attr("width", x)
+      .attr("height", rect_height);
+    
+    //draw values
+    chart_container.selectAll("text")
+      .data(data)
+      .text(function(d) { return d; })
+      .attr("x", x)
+      .attr("y", function(d, i) { return (i * rect_height) + rect_height/2; })
+      .attr("dx", -3) //padding
+      .attr("dy", ".35em"); //vertical-align
+
+    //draw labels
+    var label_container = d3.select("#" + chart_type)
+      .select("svg")
+      .select("g")
+      .attr("transform", "translate("+ (max_labelWidth-5) +", 0)"); //-5 for padding
+    
+    label_container.selectAll("text")
+      .data(labels)
+      .text(function(d) { return d; })
+      .attr("x", function(d, i) { return 0 - this.getComputedTextLength(); })
+      .attr("y", function(d, i) { return (i * rect_height) + rect_height/2; });
   }
 });
