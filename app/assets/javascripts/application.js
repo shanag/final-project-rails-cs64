@@ -28,6 +28,8 @@
 //= require collections/outbreaks
 //= require_tree ../templates
 //= require views/header
-//= require views/visualization
+//= require views/legend
+//= require views/barchart
+//= require views/map
 //= require routers/map_router
 //

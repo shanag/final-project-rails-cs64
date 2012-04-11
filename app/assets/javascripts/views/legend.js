@@ -1,5 +1,4 @@
-//TODO
-//Views.Legend = Backbone.Marionette.ItemView.extend({
+Views.Legend = Backbone.Marionette.ItemView.extend({
 
 //onRender: function(min, max) {
   ////legend
@@ -32,7 +31,7 @@
     //.attr("text-anchor", "middle")
     //.text(String);
 //}
-//});
+});
 
 
 
