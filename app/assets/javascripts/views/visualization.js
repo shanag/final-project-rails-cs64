@@ -120,6 +120,7 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
     
     for (fips in data) {
       var total_adjusted_illnesses = 0;
+      //for each fips, filter outbreaks by selected time range
       _.each(data[fips], function(outbreak) {
         if (Date.parse(outbreak["first_illness"]) >= Date.parse(start_date) && Date.parse(outbreak["last_illness"]) <= Date.parse(end_date)) {
           //total illnesses
@@ -135,21 +136,21 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
           _.each(outbreak["consumption_locations"], function(loc) { 
             (loc in locations) ? locations[loc] += 1 : locations[loc] = 1;
           });
-          
-          //add hover
-          this.addHover(fips, outbreak);
         }
-
-        //color counties
-        this.counties.select("#fips_"+fips)
-          .attr("class", function() { 
-            if (total_adjusted_illnesses > 0) {
-              return "q" + q_scale(~~total_adjusted_illnesses) + "-9";
-            } else {
-              return "bg-path-color";
-            }
-          });
       }, this);
+
+      //color county
+      this.counties.select("#fips_"+fips)
+        .attr("class", function() { 
+          if (total_adjusted_illnesses > 0) {
+            return "q" + q_scale(~~total_adjusted_illnesses) + "-9";
+          } else {
+            return "bg-path-color";
+          }
+        }); 
+      
+      //add hover to this county
+      this.addHover(fips, data[fips]);
     }
    
     this.redrawBarChart("food", commodities);
@@ -157,27 +158,31 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
     this.redrawBarChart("location", locations);
   },
 
-  addHover: function(fips, outbreak) {
+  addHover: function(fips, outbreaks) {
     this.counties.select("#fips_"+fips)
       .on("mouseover", function(d){
         d3.select(this).classed("county-hover", true);
         var mouse_pos = d3.mouse(this);
-        var first_illness = Date.parse(outbreak["first_illness"]);
-        var last_illness = Date.parse(outbreak["last_illness"]);
-        d3.select(".tooltip") 
+        var tooltip = d3.select(".tooltip") 
           .style("left", mouse_pos[0] + "px")
           .style("top", mouse_pos[1] + "px")
-          .style("visibility", "visible")
+          .style("visibility", "visible");
+
+        tooltip.selectAll("ul")
+          .data(outbreaks)
+          .enter()
           .append("ul")
-          .html(
-            "<li><p class='title'>(Etiology) Outbreak</p></li>" 
-            + "<ul><li><p class='date'>"+ first_illness.toString("MMMM d, yyyy") + " - " + last_illness.toString("MMMM d, yyyy") + "</p></li>"
-            + "<li><span>Duration:</span><span>" + outbreak["duration"] + " days" 
-            + "</span></li><li><span>Reporting County:</span><span>" + outbreak["reporting_county"] + " County"
-            + "</span></li><li><span>Illnesses:</span><span>" + outbreak["illnesses"]
-            + "</span></li><li><span>Hospitalizations:</span><span>" + outbreak["hospitalizations"]
-            + "</span></li><li><span>Commodity:</span><span>" + outbreak["commodity_group"] + "</span></li>" 
-          );
+          .html(function(d){
+            var first_illness = d["first_illness"] ? Date.parse(d["first_illness"]).toString("MMMM d, yyyy") : "unknown"; 
+            var last_illness = d["last_illness"] ? Date.parse(d["last_illness"]).toString("MMMM d, yyyy") : "unknown";
+            return "<li><p class='title'>Outbreak - " + d["etiology_genus"] + "</p></li>" 
+              + "<ul><li><p class='date'>"+ first_illness + " - " + last_illness + "</p></li>"
+              + "<li><span>Duration:</span><span>" + d["duration"] + " days" 
+              + "</span></li><li><span>Reporting County:</span><span>" + d["reporting_county"] + " County"
+              + "</span></li><li><span>Illnesses:</span><span>" + d["illnesses"]
+              + "</span></li><li><span>Hospitalizations:</span><span>" + d["hospitalizations"]
+              + "</span></li><li><span>Commodity:</span><span>" + d["commodity_group"] + "</span></li>"; 
+          });
       })
       .on("mouseout", function(){
         d3.select(this).classed("county-hover", false);
@@ -275,8 +280,6 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
     var title_height = d3.select("#" + chart_type + " h4").style("height").replace("px", "");
     var rect_height = (height-title_height)/data.length;
   
-    console.log("data " + data);
-    console.log("labels " + labels);
     //define bar chart container (in markup)
     var chart_container = d3.select("#" + chart_type)
       .select("svg")
@@ -286,7 +289,8 @@ Views.Visualization = Backbone.Marionette.ItemView.extend({
     
     //maps input values (domain) to output values (range) for this particular chart
     var x = d3.scale.linear()
-      .domain([0, d3.max(data)])//need max values for each measure: food, etiologies, locations
+      //.domain([0, d3.max("MapApp." + chart_type + "_max")])//max value for each measure: food, etiologies, locations
+      .domain([0, 560])
       .range([0, width-max_labelWidth]);
     
     //draw bars
