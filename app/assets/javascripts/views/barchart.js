@@ -1,33 +1,35 @@
 Views.Barchart = Backbone.Marionette.ItemView.extend({
 
+  initialize: function(options) {
+    this.max_labelWidth = 125;
+    this.height = 125;
+    this.labels = ["label1 is a very long label", "label2", "label3", "label4", "label5"];
+  },
+  
   template: function() {
     return JST['barchart'];  
   },
  
   drawBarChart: function(chart_type, data) {
-    var labels = ["label1 is a very long label", "label2", "label3", "label4", "label5"];
-    var max_labelWidth = 125; 
     var width = d3.select("#" + chart_type).style("width").replace("px", "");
-    var height = 150;
-    var title_height = d3.select("#" + chart_type + " h4").style("height").replace("px", "");
-    var rect_height = (height-title_height)/data.length;
+    var rect_height = (this.height*1.0)/data.length;
   
-    var chart_container = d3.select("#" + chart_type)
+    this.chart_container = d3.select("#" + chart_type)
       .append("svg")
       .attr("class", "chart")
       .attr("width", width)
-      .attr("height", height)
+      .attr("height", rect_height * data.length + 10)//10 for stroke
       .append("g")
-      .attr("transform", "translate("+ max_labelWidth +", 0)")
-      .attr("width", function() { width - max_labelWidth});
+      .attr("transform", "translate("+ this.max_labelWidth +", 0)")
+      .attr("width", function() { width - this.max_labelWidth});
     
     //maps input values (domain) to output values (range) for this particular chart
     var x = d3.scale.linear()
       .domain([0, d3.max(data)])
-      .range([0, width-max_labelWidth]);
+      .range([0, width-this.max_labelWidth]);
     
     //draw bars
-    chart_container.selectAll("rect")
+    this.chart_container.selectAll("rect")
       .data(data)
       .enter()
       .append("rect")
@@ -41,35 +43,25 @@ Views.Barchart = Backbone.Marionette.ItemView.extend({
       .attr("height", rect_height);
     
     //draw values
-    chart_container.selectAll("text")
+    this.chart_container.selectAll("text")
       .data(data)
       .enter()
       .append("text")
       .text(function(d) { return d; })
       .attr("x", x)
       .attr("y", function(d, i) { return (i * rect_height) + rect_height/2; })
-      .attr("dx", -3) //padding
+      .attr("dx", 20) //padding
       .attr("dy", ".35em") //vertical-align
-      .style("font-size", "9")
+      .style("font-size", "10")
       .style("fill", "#333333")
       .attr("text-anchor", "end");
 
     //draw labels
-    var label_container = d3.select("#" + chart_type)
+    this.label_container = d3.select("#" + chart_type)
       .select("svg")
       .append("g")
       .attr("class", "label-container")
-      .attr("transform", "translate("+ (max_labelWidth-5) +", 0)"); //-5 for padding
-    
-    label_container.selectAll("text")
-      .data(labels)
-      .enter()
-      .append("text")
-      .attr("class", "data-label")
-      .text(function(d) { return d; })
-      .style("font-size", "11")
-      .attr("x", function(d, i) { return 0 - this.getComputedTextLength(); })
-      .attr("y", function(d, i) { return (i * rect_height) + rect_height/2; });
+      .attr("transform", "translate("+ (this.max_labelWidth-5) +", 0)"); //-5 for padding
   },
 
   //only updates the values that need to be updated for each chart
@@ -82,60 +74,42 @@ Views.Barchart = Backbone.Marionette.ItemView.extend({
     sortable.sort(function(a, b) { return b[1] - a[1]} );
 
     //set vars
-    var labels = _.first(_.map(sortable, function(arr) {return arr[0];}), 5);
+    this.labels = _.first(_.map(sortable, function(arr) {return arr[0];}), 5);
     var data = _.first(_.map(sortable, function(arr) {return arr[1];}), 5); 
-    var max_labelWidth = 125; 
     var width = d3.select("#" + chart_type).style("width").replace("px", "");
-    var height = 150;
-    var title_height = d3.select("#" + chart_type + " h4").style("height").replace("px", "");
-    var rect_height = (height-title_height)/data.length;
+    var rect_height = this.height/data.length;
   
-    //define bar chart container (in markup)
-    var chart_container = d3.select("#" + chart_type)
-      .select("svg")
-      .select("g")
-      .attr("transform", "translate("+ max_labelWidth +", 0)")
-      .attr("width", function() { width - max_labelWidth});
-    
     //maps input values (domain) to output values (range) for this particular chart
     var x = d3.scale.linear()
       //.domain([0, d3.max("MapApp." + chart_type + "_max")])//max value for each measure: food, etiologies, locations
       .domain([0, 560])
-      .range([0, width-max_labelWidth]);
+      .range([0, width-this.max_labelWidth]);
     
-    //draw bars
-    chart_container.selectAll("rect")
+    //draw bars with values
+    this.chart_container.selectAll("rect")
       .data(data)
-      .attr("y", function(d, i) { return i * rect_height; })
-      .attr("width", x)
-      .attr("height", rect_height);
+      .attr("width", x);
     
     //draw values
-    chart_container.selectAll("text")
+    this.chart_container.selectAll("text")
       .data(data)
       .text(function(d) { return d; })
       .attr("x", x)
-      .attr("y", function(d, i) { return (i * rect_height) + rect_height/2; })
-      .attr("dx", 15) //padding
-      .attr("dy", ".35em"); //vertical-align
+      .attr("y", function(d, i) { return (i * rect_height) + rect_height/2; });
 
     //draw labels
-    var label_container = d3.select("#" + chart_type)
-      .select("svg")
-      .select(".label-container");
+    this.label_container.selectAll("text")
+      .remove(); //remove old and append new below
 
-    label_container.selectAll("text")
-      .remove(); //remove and re-append below
-
-    label_container.selectAll("text")
-      .data(labels)
+    this.label_container.selectAll("text")
+      .data(this.labels)
       .enter()
       .append("text")
       .attr("class", "data-label")
       .text(function(d) { return d; })
-      .style("font-size", "11")
+      .style("font-size", "12")
       .attr("x", function(d, i) { return 0 - this.getComputedTextLength(); })
-      .attr("y", function(d, i) { return (i * rect_height) + rect_height/2; });
+      .attr("y", function(d, i) { return (i * rect_height) + rect_height/2 + 3; });
   }
 
 });

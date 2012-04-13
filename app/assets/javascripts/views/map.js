@@ -149,15 +149,21 @@ Views.Map = Backbone.Marionette.ItemView.extend({
       this.counties.select("#fips_"+fips)
         .attr("class", function() { 
           if (total_adjusted_illnesses > 0) {
-            return "q" + q_scale(log_scale(total_adjusted_illnesses)) + "-9";
+            return "selected q" + q_scale(log_scale(total_adjusted_illnesses)) + "-9";
           } else {
+            d3.select(this).classed("selected", false);
             return "bg-path-color";
           }
         }); 
-      
-      //add hover to this county
-      this.addHover(fips, data[fips]);
+     
     }
+    
+    var self = this;
+    this.counties.selectAll('.selected')
+      .each(function(d) {
+        //add mouse events to each county
+        self.addInteraction(d.id, data[d.id]);
+      })
    
     this.foodChart.redrawBarChart("food", commodities);
     this.etiologyChart.redrawBarChart("etiology", etiologies);
@@ -165,7 +171,7 @@ Views.Map = Backbone.Marionette.ItemView.extend({
   },
 
   //add hover to filtered counties
-  addHover: function(fips, outbreaks) {
+  addInteraction: function(fips, outbreaks) {
     //d3.select("body")
       //.on("click", function() {
         //if (d3.event.target.tagName !== "path") { //events bubble, so make sure it wasn't a path
@@ -173,21 +179,28 @@ Views.Map = Backbone.Marionette.ItemView.extend({
         //}
       //});
     this.counties.select("#fips_"+fips)
-      //.on("click", function(d) {
-        //if (d3.select(".tooltip").classed("active") == true ) {
-          //hideTooltip();
-          ////d3.select("#chart svg g").selectAll("path").on("mouseover", function(d) { showTooltip(this); });
-          ////d3.select("#chart svg g").selectAll("path").on("mouseout", function(d) { hideTooltip(); });
-          //d3.select(".tooltip").classed("active", false);
-        //} else {
-          //showTooltip(this);
-          ////d3.select("#chart svg g").selectAll("path").on("mouseover", null);
-          ////d3.select("#chart svg g").selectAll("path").on("mouseout", null);
-          //d3.select(".tooltip").classed("active", true);
-        //}
-      //})
-      .on("mouseover", function(d) { showTooltip(this); })
-      .on("mouseout", function(d) { hideTooltip(); });
+      .on("click", function(d) {
+        if (d3.select(".tooltip").classed("active") == true ) { //and event target is active path (need to add active to path)
+          hideTooltip();
+          d3.select(".selected").on("mouseover", function(d) { showTooltip(this); });
+          d3.select(".selected").on("mouseout", function(d) { hideTooltip(); });
+          d3.select(".tooltip").classed("active", false);
+        } else {
+          showTooltip(this);
+          d3.select(".selected").on("mouseover", null);
+          d3.select(this).on("mouseout", null);
+          d3.select(".tooltip").classed("active", true);
+        }
+      })
+      .on("mouseover", function(d) {
+        if (d3.select(".tooltip").classed("active") == false) {
+          showTooltip(this); 
+        }})
+      .on("mouseout", function(d) { 
+        if (d3.select(".tooltip").classed("active") == false) {
+          hideTooltip();
+        }
+      });
 
     function showTooltip(target) {
       d3.select(target).classed("county-hover", true);
@@ -205,7 +218,7 @@ Views.Map = Backbone.Marionette.ItemView.extend({
           var last_illness = d["last_illness"] ? Date.parse(d["last_illness"]).toString("MMMM d, yyyy") : "unknown";
           return "<li><p class='title'>Outbreak - " + d["etiology_genus"] + "</p></li>" 
             + "<ul><li><p class='date'>"+ first_illness + " - " + last_illness + "</p></li>"
-            + "<li><span>Duration:</span><span>" + d["duration"] + " days" 
+            + "<li><span>Duration:</span><span>" + d["duration"] + " day(s)" 
             + "</span></li><li><span>Reporting County:</span><span>" + d["reporting_county"] + " County"
             + "</span></li><li><span>Illnesses:</span><span>" + d["illnesses"]
             + "</span></li><li><span>Hospitalizations:</span><span>" + d["hospitalizations"]
@@ -214,10 +227,6 @@ Views.Map = Backbone.Marionette.ItemView.extend({
 
       tooltip.style("left", function() {
           var tooltip_width = tooltip.style("width").replace("px", "");
-          console.log("Mouse pos: " + mouse_pos[0]);
-          console.log("Width: " + width);
-          console.log("Tooltip width: " + tooltip_width);
-          console.log("Tooltip should be at: " + (mouse_pos[0] - tooltip_width));
           if ((width - tooltip_width) <= mouse_pos[0]) { 
             return ((mouse_pos[0] - tooltip_width) + "px");
           } else {
