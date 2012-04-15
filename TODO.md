@@ -1,14 +1,16 @@
 ##TODO List
 
 Needed
-+ Use log scale for derived color-encoded value (in d3) 
-+ Add click event for tooltip
-+ Make sure tooltip looks ok on edges of svg, or add "swipe" to list outbreaks
++ Make sure tooltip height looks ok on bottom edge of svg
++ Replace null vals with "Unknown"
++ Add color legend
++ Add scale for bar charts
 + Add other vals (serotype, foods, etc) to tooltip
-+ Fix "Reporting County" text wrapping
++ Fix tooltip label text wrapping
 
 Nice to Have
-+ All data, change slider scale, model scope, and api response
++ Add alternate linear scale color mapping
++ Add more years to slider 
 + Browser testing
 + Mouse click for bar to filter colored counties on map
 
