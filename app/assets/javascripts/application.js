@@ -15,7 +15,6 @@
 //= require underscore
 //= require backbone
 //= require backbone.extension
-//= require backbone.authtokenadapter
 //= require backbone.marionette
 //= require marionette.extension
 //= require date
