@@ -23,7 +23,7 @@ module Map
             hsh[fips] << {
               :first_illness => o.first_illness.to_date,
               :last_illness => o.last_illness.try(:to_date),
-              :duration => (o.last_illness && o.first_illness ? (o.last_illness.to_date - o.first_illness.to_date).to_i: "unknown"),
+              :duration => (o.last_illness && o.first_illness ? (o.last_illness.to_date - o.first_illness.to_date + 1).to_i: "unknown"),
               :adjusted_illnesses => o.adjusted_illnesses, 
               :illnesses => o.illnesses,
               :deaths => o.deaths,
