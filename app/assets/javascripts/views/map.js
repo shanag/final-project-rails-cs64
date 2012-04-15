@@ -172,12 +172,15 @@ Views.Map = Backbone.Marionette.ItemView.extend({
 
   //add hover to filtered counties
   addInteraction: function(fips, outbreaks) {
-    //d3.select("body")
-      //.on("click", function() {
-        //if (d3.event.target.tagName !== "path") { //events bubble, so make sure it wasn't a path
-          //hideTooltip(); 
-        //}
-      //});
+    d3.select("body")
+      .on("click", function() {
+        if (d3.event.target.tagName !== "path" && d3.event.target.tagName !== "A") { //events bubble, so make sure it wasn't a path
+          hideTooltip(); 
+          d3.select(".selected").on("mouseover", function(d) { showTooltip(d3.event.target); });
+          d3.select(".selected").on("mouseout", function(d) { hideTooltip(); });
+          d3.select(".tooltip").classed("active", false);
+        }
+      });
     this.counties.select("#fips_"+fips)
       .on("click", function(d) {
         if (d3.select(".tooltip").classed("active") == true ) { //and event target is active path (need to add active to path)
@@ -209,22 +212,51 @@ Views.Map = Backbone.Marionette.ItemView.extend({
       var mouse_pos = d3.mouse(target);
       var tooltip = d3.select(".tooltip"); 
 
-      tooltip.selectAll("ul")
+      //tooltip content
+      tooltip.select("ul").selectAll("li")
         .data(outbreaks)
         .enter()
-        .append("ul")
-        .html(function(d){
+        .append("li")
+        .html(function(d, i){
           var first_illness = d["first_illness"] ? Date.parse(d["first_illness"]).toString("MMMM d, yyyy") : "unknown"; 
           var last_illness = d["last_illness"] ? Date.parse(d["last_illness"]).toString("MMMM d, yyyy") : "unknown";
-          return "<li><p class='title'>Outbreak - " + d["etiology_genus"] + "</p></li>" 
-            + "<ul><li><p class='date'>"+ first_illness + " - " + last_illness + "</p></li>"
-            + "<li><span>Duration:</span><span>" + d["duration"] + " day(s)" 
-            + "</span></li><li><span>Reporting County:</span><span>" + d["reporting_county"] + " County"
-            + "</span></li><li><span>Illnesses:</span><span>" + d["illnesses"]
-            + "</span></li><li><span>Hospitalizations:</span><span>" + d["hospitalizations"]
-            + "</span></li><li><span>Commodity:</span><span>" + d["commodity_group"] + "</span></li>"; 
+          return "<div><p><p class='title'>Outbreak " + (i + 1) + " of " + outbreaks.length 
+            + "<p><p class='date'>"+ first_illness + " - " + last_illness + "</p></p>"
+            + "<p><span>Genus:</span><span>" + d["etiology_genus"] + "</span></p></p>" 
+            + "<p><span>Duration:</span><span>" + d["duration"] + " day(s)" 
+            + "</span></p><p><span>County:</span><span>" + d["reporting_county"] + " County"
+            + "</span></p><p><span>Illnesses:</span><span>" + d["illnesses"]
+            + "</span></p><p><span>Hospitalizations:</span><span>" + d["hospitapzations"]
+            + "</span></p><p><span>Commodity:</span><span>" + d["commodity_group"] + "</span></p>";
         });
 
+      //next and prev buttons
+      list_items = $(".tooltip").find("li");
+      $(".tooltip").find("li").hide().end().find("li:first-child").show();
+      
+      if (list_items.length > 1) {
+        list_items.not("li:first-child").each(function(){
+          if ($(this).find(".prev").length == 0) {
+            $(this).append("<a class='prev'>&lt; Prev </a>");
+          }});
+        list_items.not("li:last-child").each(function(){
+          if ($(this).find(".next").length == 0) {
+            $(this).append("<a class='next'> Next &gt;</a></div>");
+          }});
+        
+        $(".tooltip .prev").click(function(e) {
+          $(e).stopPropagation;
+          curr_li = $(e.currentTarget).closest("li").hide();
+          curr_li.prev().show();
+        }); 
+        $(".tooltip .next").click(function(e) {
+          $(e).stopPropagation;
+          curr_li = $(e.currentTarget).closest("li").hide();
+          curr_li.next().show();
+        }); 
+      }
+     
+      //tooltip position
       tooltip.style("left", function() {
           var tooltip_width = tooltip.style("width").replace("px", "");
           if ((width - tooltip_width) <= mouse_pos[0]) { 
@@ -242,13 +274,15 @@ Views.Map = Backbone.Marionette.ItemView.extend({
           }
         })
         .style("visibility", "visible");
-    }
     
+    }
+
+
     function hideTooltip() {
       d3.select("#chart svg g").selectAll("path").classed("county-hover", false);
       d3.select(".tooltip")
         .style("visibility", "hidden")
-        .selectAll("ul")
+        .selectAll("li")
         .remove();
     }
   }

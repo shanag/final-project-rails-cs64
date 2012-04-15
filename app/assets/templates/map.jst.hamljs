@@ -38,6 +38,7 @@
     2009
 #chart.map
   .tooltip
+    %ul
 #food.bar-chart
   %h4 Food vehicle
 #etiology.bar-chart

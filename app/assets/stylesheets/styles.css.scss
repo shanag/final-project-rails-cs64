@@ -137,7 +137,7 @@ table {
     padding: 1em;
     border: 1px solid #666;
     opacity: 1;
-    max-width: 30%;
+    min-width: 225px;
     ul {
       list-style: none;
       margin: 0;
@@ -146,6 +146,19 @@ table {
       li {
         width: 100%;
         float: left;
+        a {
+          font-weight: bold;
+          cursor: hand;
+          cursor: pointer;
+          width: 50%;
+          &.next {
+            float: right;
+            text-align: right;
+          }
+          &.prev {
+            float: left;
+          }
+        }
         p {
           &.title {
             font-weight: bold;
