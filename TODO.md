@@ -1,8 +1,6 @@
 ##TODO List
 
 Needed
-+ Make sure tooltip height looks ok on bottom edge of svg
-+ Replace null vals with "Unknown"
 + Add color legend
 + Add scale for bar charts
 + Add other vals (serotype, foods, etc) to tooltip
