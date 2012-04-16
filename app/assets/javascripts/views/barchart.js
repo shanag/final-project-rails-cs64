@@ -1,7 +1,7 @@
 Views.Barchart = Backbone.Marionette.ItemView.extend({
 
   initialize: function(options) {
-    this.max_labelWidth = 125;
+    this.max_labelWidth = 150; //hard-coded
     this.height = 125;
     this.labels = ["label1 is a very long label", "label2", "label3", "label4", "label5"];
   },
@@ -21,7 +21,7 @@ Views.Barchart = Backbone.Marionette.ItemView.extend({
       .attr("height", rect_height * data.length + 10)//10 for stroke
       .append("g")
       .attr("transform", "translate("+ this.max_labelWidth +", 0)")
-      .attr("width", function() { width - this.max_labelWidth});
+      .attr("width", width );
     
     //maps input values (domain) to output values (range) for this particular chart
     var x = d3.scale.linear()
@@ -81,9 +81,8 @@ Views.Barchart = Backbone.Marionette.ItemView.extend({
   
     //maps input values (domain) to output values (range) for this particular chart
     var x = d3.scale.linear()
-      //.domain([0, d3.max("MapApp." + chart_type + "_max")])//max value for each measure: food, etiologies, locations
-      .domain([0, 560])
-      .range([0, width-this.max_labelWidth]);
+      .domain([0, 600]) //hard-coded; need to provide max val for all data from server, not just this barchart instance
+      .range([0, width-this.max_labelWidth-15]); //15 for the numbers at end
     
     //draw bars with values
     this.chart_container.selectAll("rect")
