@@ -138,10 +138,10 @@ table {
     z-index: 10;
     background-color: #FFF;
     font-size: 1em;
-    padding: 1em;
+    padding: .5em 1em 1em;
     border: 1px solid #666;
     opacity: 1;
-    min-width: 225px;
+    width: 250px;
     ul {
       list-style: none;
       margin: 0;
@@ -163,26 +163,45 @@ table {
             float: left;
           }
         }
-        p {
-          &.title {
+        .info {
+          overflow: hidden;
+          width: 100%;
+          div {
+            overflow: hidden;
+            width: 100%;
+          }
+          p {
+            width: 100%;
+            &.title {
+              font-weight: bold;
+              text-decoration: underline;
+            }
+            &.date {
+              margin-bottom: .5em;
+            }
+            &.county {
+              color: blue; 
+            }
+            margin: 0;
+          }
+          span:first-child {
+            float: left;
+            width: 47%;
+            margin-right: 3%;
             font-weight: bold;
-            text-decoration: underline;
+            text-align: right;
           }
-          &.date {
-            margin-bottom: .5em;
+          span:last-child {
+            float: right;
+            width: 50%;
           }
-          margin: 0;
-        }
-        span:first-child {
-          float: left;
-          width: 47%;
-          margin-right: 3%;
-          font-weight: bold;
-          text-align: right;
-        }
-        span:last-child {
-          float: right;
-          width: 50%;
+
+          div ul.inner-list {
+            float: left;
+            width: 43%;
+            margin-left: 7%;
+            list-style: disc;
+          }
         }
       }
     }

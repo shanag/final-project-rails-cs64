@@ -220,28 +220,44 @@ Views.Map = Backbone.Marionette.ItemView.extend({
         .html(function(d, i){
           var first_illness = d["first_illness"] ? Date.parse(d["first_illness"]).toString("MMMM d, yyyy") : "unknown"; 
           var last_illness = d["last_illness"] ? Date.parse(d["last_illness"]).toString("MMMM d, yyyy") : "unknown";
-          return "<div><p><p class='title'>Outbreak " + (i + 1) + " of " + outbreaks.length 
-            + "<p><p class='date'>"+ first_illness + " - " + last_illness + "</p></p>"
-            + "<p><span>Genus:</span><span>" + d["etiology_genus"] + "</span></p></p>" 
-            + "<p><span>Duration:</span><span>" + d["duration"] + " day(s)" 
-            + "</span></p><p><span>County:</span><span>" + d["reporting_county"] + " County"
-            + "</span></p><p><span>Illnesses:</span><span>" + d["illnesses"]
-            + "</span></p><p><span>Hospitalizations:</span><span>" + d["hospitapzations"]
-            + "</span></p><p><span>Commodity:</span><span>" + d["commodity_group"] + "</span></p>";
+          var food_list = ""; 
+          _.each(d['foods'], function(food) {
+            food_list += "<li>" + food + "</li>"; 
+          });
+          var location_list = ""; 
+          _.each(d['consumption_locations'], function(loc) {
+            location_list += "<li>" + loc + "</li>"; 
+          });
+          return "<div class='info'>" 
+            + "<p class='title'>Outbreak " + (i + 1) + " of " + outbreaks.length + "</p>"
+            + "<p class='county'>" + d["county"] + " County</p>"
+            + "<p class='date'>"+ first_illness + " - " + last_illness + "</p>"
+            + "<div><span>Primary Genus:</span><span>" + d["etiology_genus"] + "</span></div>" 
+            + "<div><span>Primary Serotype:</span><span>" + d["etiology_serotype"] + "</span></div>" 
+            + "<div><span>Duration:</span><span>" + d["duration"] + " day(s)" + "</span></div>"
+            + "<div><span>Reporting County:</span><span>" + d["reporting_county"] + " County" + "</span></div>"
+            + "<div><span>Illnesses:</span><span>" + d["illnesses"] + "</span></div>"
+            + "<div><span>Illnesses/100,000:</span><span>" + parseFloat(d["adjusted_illnesses"]).toFixed(2) + "</span></div>"
+            + "<div><span>Hospitalizations:</span><span>" + d["hospitalizations"] + "</span></div>"
+            + "<div><span>Deaths:</span><span>" + d["deaths"] + "</span></div>"
+            + "<div><span>Commodity:</span><span>" + d["commodity_group"] + "</span></div>"
+            + "<div><span>Food Vehicles:</span><ul class='inner-list'>" + food_list + "</ul></div>"
+            + "<div><span>Locations:</span><ul class='inner-list'>" + location_list + "</ul></div>"
+            + "</div>";
         });
 
       //next and prev buttons
-      list_items = $(".tooltip").find("li");
-      $(".tooltip").find("li").hide().end().find("li:first-child").show();
+      list_items = $(".tooltip>ul>li");
+      list_items.not("li:first-child").hide();
       
       if (list_items.length > 1) {
         list_items.not("li:first-child").each(function(){
           if ($(this).find(".prev").length == 0) {
-            $(this).append("<a class='prev'>&lt; Prev </a>");
+            $(this).prepend("<a class='prev'>&lt; Prev </a>");
           }});
         list_items.not("li:last-child").each(function(){
           if ($(this).find(".next").length == 0) {
-            $(this).append("<a class='next'> Next &gt;</a></div>");
+            $(this).prepend("<a class='next'> Next &gt;</a></div>");
           }});
         
         $(".tooltip .prev").click(function(e) {
@@ -258,19 +274,21 @@ Views.Map = Backbone.Marionette.ItemView.extend({
      
       //tooltip position
       tooltip.style("left", function() {
-          var tooltip_width = tooltip.style("width").replace("px", "");
-          if ((width - tooltip_width) <= mouse_pos[0]) { 
-            return ((mouse_pos[0] - tooltip_width) + "px");
+          var tooltip_width = parseFloat(tooltip.style("width").replace("px", ""));
+          tooltip_width = tooltip_width + 2; //add 2px for border
+          if (width - mouse_pos[0] <= tooltip_width) { 
+            return ((mouse_pos[0] - tooltip_width - 35) + "px");
           } else {
-            return mouse_pos[0] + "px";
+            return (mouse_pos[0] + 15) + "px";
           }
         })
         .style("top", function() {
-          var tooltip_height = tooltip.style("height").replace("px", "");
-          if (height - tooltip_height <= mouse_pos[1]) {
-            return ((height - tooltip_height - 25) + "px");
+          var tooltip_height = parseFloat(tooltip.style("height").replace("px", ""));
+          tooltip_height = tooltip_height + 2; //add 2px for border
+          if (height - mouse_pos[1] <= tooltip_height) {
+            return ((height - tooltip_height - 75) + "px");
           } else {
-            return mouse_pos[1] + "px";
+            return (mouse_pos[1] - 15) + "px";
           }
         })
         .style("visibility", "visible");

@@ -28,11 +28,14 @@ module Map
               :illnesses => o.illnesses,
               :deaths => o.deaths,
               :hospitalizations => o.hospitalizations,
-              :reporting_county => o.reporting_county,
-              :commodity_group => o.commodity_group,
+              :county => county.county ? county.county : "unknown", #TODO: change col name 
+              :reporting_county => o.reporting_county ? o.reporting_county : "unknown",
+              :commodity_group => o.commodity_group ? o.commodity_group : "unknown",
               :consumption_locations => o.locations.map(&:location),
               :foods => o.foods.map(&:food),
-              :etiology_genus => o.genus
+              :etiology_genus => o.genus ? o.genus : "unknown",
+              :etiology_serotype => o.serotype ? o.serotype : "unknown"
+
             }
           end
           hsh
