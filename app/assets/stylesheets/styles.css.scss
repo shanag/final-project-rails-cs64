@@ -124,7 +124,8 @@ table {
   }
   
   .county-hover {
-   fill: #666; 
+   stroke: yellow !important;
+   stroke-width: 3px !important;
   }
 
   .bg-path-color {
