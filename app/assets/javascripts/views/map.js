@@ -4,12 +4,15 @@ Views.Map = Backbone.Marionette.ItemView.extend({
 
   initialize: function(options) {
     this.data = options.data;
+    this.range = [1, 2, 3, 4, 5, 6, 7];
   },
   
   events: {
     "change #min": "setSliderMinVal",
     "change #max": "setSliderMaxVal",
-    "valuesChanging #slider" : "setInputs"
+    "valuesChanging #slider" : "setInputs",
+    "change #linear-radio" : "colorMap",
+    "change #log-radio" : "colorMap"
   },
   
   template: function() {
@@ -20,11 +23,15 @@ Views.Map = Backbone.Marionette.ItemView.extend({
     this.foodChart = new Views.Barchart({el: "#food"});
     this.etiologyChart = new Views.Barchart({el: "#etiology"});
     this.locationChart = new Views.Barchart({el: "#location"});
-    this.legend = new Views.Legend();
+    this.linear_scale = d3.scale.quantize().domain([MapApp.outbreaks_min, 500]).range(this.range);
+    this.log_scale = d3.scale.log().domain([MapApp.outbreaks_min, MapApp.outbreaks_max]).range([0, 100]);
+    this.q_scale = d3.scale.quantile().domain([this.log_scale(MapApp.outbreaks_min), this.log_scale(MapApp.outbreaks_max)]).range(this.range);
+    this.legend = new Views.Legend({range: this.range, linear_scale: this.linear_scale, log_scale: this.log_scale, q_scale: this.q_scale});
   },
   
   onShow: function() {
     this.drawMap();
+    this.addChild(this.legend);
     
     this.foodChart.drawBarChart("food", [1, 1, 1, 1, 1]); //placeholder data to initialize svg elements
     this.etiologyChart.drawBarChart("etiology", [1, 1, 1, 1, 1]);
@@ -109,14 +116,15 @@ Views.Map = Backbone.Marionette.ItemView.extend({
 
   //color filtered counties
   colorMap: function() {
+    var selected_scale = this.$el.find("input:checked").val();
+    this.legend.drawLegend(selected_scale);
+
     var data = this.data;
-    var q_scale;
     var start_date = $("#min").datepicker("getDate");
     var end_date = $("#max").datepicker("getDate");
     var commodities = {};
     var locations = {};
     var etiologies = {};
-    
     
     for (fips in data) {
       var total_adjusted_illnesses = 0;
@@ -139,23 +147,21 @@ Views.Map = Backbone.Marionette.ItemView.extend({
         }
       }, this);
 
-      //log scale
-      log_scale = d3.scale.log().domain([MapApp.outbreaks_min, MapApp.outbreaks_max]).range([0, 100]);
-      
-      //quantile scale
-      q_scale = d3.scale.quantile().domain([log_scale(MapApp.outbreaks_min), log_scale(MapApp.outbreaks_max)]).range([1,2,3,4,5,6,7,8]);
-      
       //color county
+      var linear_scale = d3.scale.quantize().domain([MapApp.outbreaks_min, 500]).range(this.range); //everything over 500 in top bucket
+      var log_scale = d3.scale.log().domain([MapApp.outbreaks_min, MapApp.outbreaks_max]).range([0, 100]); //aggregated outbreaks which exceed the max will be in the top quantile
+      var q_scale = d3.scale.quantile().domain([this.log_scale(MapApp.outbreaks_min), this.log_scale(MapApp.outbreaks_max)]).range(this.range);
       this.counties.select("#fips_"+fips)
         .attr("class", function() { 
-          if (total_adjusted_illnesses > 0) {
+          if (total_adjusted_illnesses > 0 && selected_scale == "log") {
             return "selected q" + q_scale(log_scale(total_adjusted_illnesses)) + "-9";
+          } else if (total_adjusted_illnesses > 0 && selected_scale == "linear") {
+            return "selected q" + linear_scale(total_adjusted_illnesses) + "-9"; 
           } else {
             d3.select(this).classed("selected", false);
             return "bg-path-color";
           }
         }); 
-     
     }
     
     var self = this;

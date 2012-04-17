@@ -39,6 +39,16 @@
 #chart.map
   .tooltip
     %ul
+  .scale-buttons
+    .control-group
+      %label.control-label Number of Illnesses 
+      .controls
+        %label.radio
+          %input{type:"radio", name:"optionsRadios", id:"linear-radio", value:"log", checked:"checked"} 
+          Log scale 
+        %label.radio
+          %input{type:"radio", name:"optionsRadios", id:"log-radio", value:"linear"} 
+          Linear scale
 #food.bar-chart
   %h4 Food vehicle
 #etiology.bar-chart

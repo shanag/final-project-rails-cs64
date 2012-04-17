@@ -1,13 +1,9 @@
 ##TODO List
 
 Needed
-+ Add color legend
-+ Add scale for bar charts
-+ Add other vals (serotype, foods, etc) to tooltip
-+ Fix tooltip label text wrapping
++ Fix labels on legend; note squashing in upper buckets
 
 Nice to Have
-+ Add alternate linear scale color mapping
 + Add more years to slider 
 + Browser testing
 + Mouse click for bar to filter colored counties on map

@@ -68,6 +68,7 @@ table {
   .map {
     float: left;
     position: relative;
+    height: 600px;
   }
 
   .tools {
@@ -225,3 +226,11 @@ table {
   }
 }
 
+.scale-buttons {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  button {
+    margin-right: 1em;
+  }
+}
