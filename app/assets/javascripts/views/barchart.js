@@ -1,9 +1,9 @@
 Views.Barchart = Backbone.Marionette.ItemView.extend({
 
   initialize: function(options) {
-    this.max_labelWidth = 150; //hard-coded
+    this.max_labelWidth = 150; //hard-coded, should truncate/wrap/precalc label lengths
     this.height = 125;
-    this.labels = ["label1 is a very long label", "label2", "label3", "label4", "label5"];
+    this.labels = ["label1 is a very long label", "label2", "label3", "label4", "label5"]; //testing & svg setup
   },
   
   template: function() {
@@ -18,7 +18,7 @@ Views.Barchart = Backbone.Marionette.ItemView.extend({
       .append("svg")
       .attr("class", "chart")
       .attr("width", width)
-      .attr("height", rect_height * data.length + 10)//10 for stroke
+      .attr("height", rect_height * data.length + 10)//10 extra for stroke
       .append("g")
       .attr("transform", "translate("+ this.max_labelWidth +", 0)")
       .attr("width", width );
@@ -81,7 +81,7 @@ Views.Barchart = Backbone.Marionette.ItemView.extend({
   
     //maps input values (domain) to output values (range) for this particular chart
     var x = d3.scale.linear()
-      .domain([0, 600]) //hard-coded; need to provide max val for all data from server, not just this barchart instance
+      .domain([0, 600]) //hard-coded; should provide max val for all data from server, not just this barchart
       .range([0, width-this.max_labelWidth-15]); //15 for the numbers at end
     
     //draw bars with values
@@ -110,5 +110,4 @@ Views.Barchart = Backbone.Marionette.ItemView.extend({
       .attr("x", function(d, i) { return 0 - this.getComputedTextLength(); })
       .attr("y", function(d, i) { return (i * rect_height) + rect_height/2 + 3; });
   }
-
 });

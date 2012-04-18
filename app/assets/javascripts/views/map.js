@@ -147,7 +147,7 @@ Views.Map = Backbone.Marionette.ItemView.extend({
         }
       }, this);
 
-      //color county
+      //color county - unfortunate dup scale code, context problem 
       var linear_scale = d3.scale.quantize().domain([MapApp.outbreaks_min, 500]).range(this.range); //everything over 500 in top bucket
       var log_scale = d3.scale.log().domain([MapApp.outbreaks_min, MapApp.outbreaks_max]).range([0, 100]); //aggregated outbreaks which exceed the max will be in the top quantile
       var q_scale = d3.scale.quantile().domain([this.log_scale(MapApp.outbreaks_min), this.log_scale(MapApp.outbreaks_max)]).range(this.range);
@@ -170,13 +170,14 @@ Views.Map = Backbone.Marionette.ItemView.extend({
         //add mouse events to each county
         self.addInteraction(d.id, data[d.id]);
       })
-   
+  
+    //draw new bar charts
     this.foodChart.redrawBarChart("food", commodities);
     this.etiologyChart.redrawBarChart("etiology", etiologies);
     this.locationChart.redrawBarChart("location", locations);
   },
 
-  //add hover to filtered counties
+  //add hover and click to filtered counties
   addInteraction: function(fips, outbreaks) {
     d3.select("body")
       .on("click", function() {
@@ -211,6 +212,7 @@ Views.Map = Backbone.Marionette.ItemView.extend({
         }
       });
 
+    //show the tooltip
     function showTooltip(target) {
       d3.select(target).classed("county-hover", true);
       var height = parseInt(d3.select("#chart").style("height").replace("px", ""));
@@ -301,7 +303,7 @@ Views.Map = Backbone.Marionette.ItemView.extend({
     
     }
 
-
+    //hide tooltip
     function hideTooltip() {
       d3.select("#chart svg g").selectAll("path").classed("county-hover", false);
       d3.select(".tooltip")

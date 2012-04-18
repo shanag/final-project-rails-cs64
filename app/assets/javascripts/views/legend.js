@@ -7,12 +7,15 @@ Views.Legend = Backbone.Marionette.ItemView.extend({
     this.q_scale = options.q_scale;
     this.q_ticks = this.q_scale.quantiles();
     this.q_ticks.push(0);
-    this.q_ticks.sort(function(a, b){ return (a-b) }); //sort in ascending order;
+    this.q_ticks.sort(function(a, b){ return (a-b) }); //sort ascending;
     var interval = (MapApp.outbreaks_min + 500) / this.range.length;
     this.linear_ticks = [];
     for (i in this.range) {
       this.linear_ticks.push(MapApp.outbreaks_min + (i * interval));
     }
+    this.space = 5;
+    this.rect_width = 35;
+    this.legend_height = 50;
   },
   
   template: function() {
@@ -22,26 +25,20 @@ Views.Legend = Backbone.Marionette.ItemView.extend({
   onRender: function() {
     //setup legend
     var svg = d3.select("#chart svg");
-    var width = svg.style("width").replace("px", "");
-    var height = svg.style("height").replace("px", "");
-    var legend_height = 50;
-    var space = 5;
-    var rect_width = 35;
     var range = this.range;
-    var legend_width = (rect_width + space) * range.length; 
+    var legend_width = (this.rect_width + this.space) * range.length; 
 
     this.legend = svg.append("g")
       .attr("id", "legend");
-     
   },
 
   drawLegend: function(selected_scale) {
-    var space = 5;
-    var rect_width = 35;
+    var space = this.space; //duplicated because of context problem
+    var rect_width = this.rect_width;
     var svg = d3.select("#chart svg");
     var width = svg.style("width").replace("px", "");
     var height = svg.style("height").replace("px", "");
-    var legend_height = 50;
+    var legend_height = this.legend_height;
     var legend_width = (rect_width + space) * this.range.length; 
     var range = [];
     var label_ticks = [];
