@@ -163,6 +163,10 @@ Views.Map = Backbone.Marionette.ItemView.extend({
           } else if (total_adjusted_illnesses > 0 && selected_scale == "linear") {
             return "selected q" + linear_scale(total_adjusted_illnesses) + "-9"; 
           } else {
+            //unbind any previously bound events
+            d3.select(this).on("click", null);
+            d3.select(this).on("mouseover", null);
+            d3.select(this).on("mouseout", null);
             d3.select(this).classed("selected", false);
             return "bg-path-color";
           }
