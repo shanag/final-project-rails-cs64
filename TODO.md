@@ -1,7 +1,8 @@
 ##TODO List
 
 Needed
-+ Fix labels on legend; note squashing in upper buckets
++ Fix labels on legend
++ Add x-axis label to barcharts
 
 Nice to Have
 + Add more years to slider 
