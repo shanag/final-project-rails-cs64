@@ -120,8 +120,8 @@ Views.Map = Backbone.Marionette.ItemView.extend({
     this.legend.drawLegend(selected_scale);
 
     var data = this.data;
-    var start_date = $("#min").datepicker("getDate");
-    var end_date = $("#max").datepicker("getDate");
+    var start_date = Date.parse($("#min").datepicker("getDate"));
+    var end_date = Date.parse($("#max").datepicker("getDate"));
     var commodities = {};
     var locations = {};
     var etiologies = {};
@@ -130,7 +130,12 @@ Views.Map = Backbone.Marionette.ItemView.extend({
       var total_adjusted_illnesses = 0;
       //for each fips, filter outbreaks by selected time range
       _.each(data[fips], function(outbreak) {
-        if (Date.parse(outbreak["first_illness"]) >= Date.parse(start_date) && Date.parse(outbreak["last_illness"]) <= Date.parse(end_date)) {
+        var outbreak_start = Date.parse(outbreak["first_illness"]);
+        var outbreak_end = Date.parse(outbreak["last_illness"]);
+        if ((outbreak_start >= start_date && outbreak_end <= end_date) ||
+          (outbreak_start >= start_date && outbreak_start <= end_date) || 
+          (outbreak_start <= start_date && outbreak_end >= start_date) || 
+          (outbreak_start <= start_date && outbreak_end >= end_date)) { 
           //total illnesses
           total_adjusted_illnesses += parseFloat(outbreak["adjusted_illnesses"]); 
           
