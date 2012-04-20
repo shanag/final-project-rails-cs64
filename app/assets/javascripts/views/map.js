@@ -23,10 +23,7 @@ Views.Map = Backbone.Marionette.ItemView.extend({
     this.foodChart = new Views.Barchart({el: "#food"});
     this.etiologyChart = new Views.Barchart({el: "#etiology"});
     this.locationChart = new Views.Barchart({el: "#location"});
-    this.linear_scale = d3.scale.quantize().domain([MapApp.outbreaks_min, 500]).range(this.range);
-    this.log_scale = d3.scale.log().domain([MapApp.outbreaks_min, MapApp.outbreaks_max]).range([0, 100]);
-    this.q_scale = d3.scale.quantile().domain([this.log_scale(MapApp.outbreaks_min), this.log_scale(MapApp.outbreaks_max)]).range(this.range);
-    this.legend = new Views.Legend({range: this.range, linear_scale: this.linear_scale, log_scale: this.log_scale, q_scale: this.q_scale});
+    this.legend = new Views.Legend({range: this.range});
   },
   
   onShow: function() {
@@ -155,7 +152,7 @@ Views.Map = Backbone.Marionette.ItemView.extend({
       //color county - unfortunate dup scale code, context problem 
       var linear_scale = d3.scale.quantize().domain([MapApp.outbreaks_min, 500]).range(this.range); //everything over 500 in top bucket
       var log_scale = d3.scale.log().domain([MapApp.outbreaks_min, MapApp.outbreaks_max]).range([0, 100]); //aggregated outbreaks which exceed the max will be in the top quantile
-      var q_scale = d3.scale.quantile().domain([this.log_scale(MapApp.outbreaks_min), this.log_scale(MapApp.outbreaks_max)]).range(this.range);
+      var q_scale = d3.scale.quantile().domain([log_scale(MapApp.outbreaks_min), log_scale(MapApp.outbreaks_max)]).range(this.range);
       this.counties.select("#fips_"+fips)
         .attr("class", function() { 
           if (total_adjusted_illnesses > 0 && selected_scale == "log") {
@@ -199,7 +196,7 @@ Views.Map = Backbone.Marionette.ItemView.extend({
       });
     this.counties.select("#fips_"+fips)
       .on("click", function(d) {
-        if (d3.select(".tooltip").classed("active") == true ) { //and event target is active path (need to add active to path)
+        if (d3.select(".tooltip").classed("active") == true ) {
           hideTooltip();
           d3.select(".selected").on("mouseover", function(d) { showTooltip(this); });
           d3.select(".selected").on("mouseout", function(d) { hideTooltip(); });

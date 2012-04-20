@@ -50,7 +50,7 @@ Views.Barchart = Backbone.Marionette.ItemView.extend({
       .text(function(d) { return d; })
       .attr("x", x)
       .attr("y", function(d, i) { return (i * rect_height) + rect_height/2; })
-      .attr("dx", 20 + "px") //padding
+      .attr("dx", 20) //padding
       .attr("dy", ".35em") //vertical-align
       .style("font-size", "11px")
       .style("fill", "#333333")
@@ -96,7 +96,7 @@ Views.Barchart = Backbone.Marionette.ItemView.extend({
       .attr("x", function(d) {
         if ($.browser.mozilla == true) { //nasty hack for firefox
           return x(d) + 20;
-        } else { return x; }
+        } else { return x(d); }
       })
       .attr("y", function(d, i) { return (i * rect_height) + rect_height/2; });
 

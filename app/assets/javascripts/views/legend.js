@@ -2,17 +2,20 @@ Views.Legend = Backbone.Marionette.ItemView.extend({
 
   initialize: function(options) {
     this.range = options.range;
-    this.linear_scale = options.linear_scale;
-    this.log_scale = options.log_scale;
-    this.q_scale = options.q_scale;
+    this.linear_scale = d3.scale.quantize().domain([MapApp.outbreaks_min, 500]).range(this.range);
+    this.log_scale = d3.scale.log().domain([MapApp.outbreaks_min, MapApp.outbreaks_max]).range([0, 100]);
+    this.q_scale = d3.scale.quantile().domain([this.log_scale(MapApp.outbreaks_min), this.log_scale(MapApp.outbreaks_max)]).range(this.range);
+    //ticks for log scale
     this.q_ticks = this.q_scale.quantiles();
     this.q_ticks.push(0);
     this.q_ticks.sort(function(a, b){ return (a-b) }); //sort ascending;
+    //ticks for linear scale
     var interval = (MapApp.outbreaks_min + 500) / this.range.length;
     this.linear_ticks = [];
     for (i in this.range) {
       this.linear_ticks.push(MapApp.outbreaks_min + (i * interval));
     }
+    //misc
     this.space = 5;
     this.rect_width = 35;
     this.legend_height = 50;
@@ -33,13 +36,12 @@ Views.Legend = Backbone.Marionette.ItemView.extend({
   },
 
   drawLegend: function(selected_scale) {
-    var space = this.space; //duplicated because of context problem
     var rect_width = this.rect_width;
     var svg = d3.select("#chart svg");
     var width = svg.style("width").replace("px", "");
     var height = svg.style("height").replace("px", "");
     var legend_height = this.legend_height;
-    var legend_width = (rect_width + space) * this.range.length; 
+    var legend_width = (rect_width + this.space) * this.range.length; 
     var range = [];
     var label_ticks = [];
     var log_scale = this.log_scale;
