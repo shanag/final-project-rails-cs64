@@ -1,10 +1,10 @@
 ## Foodborne Illness Outbreaks in the United States, 2008-2009
 
-This is my final project for a Harvard University SEAS course, Visualization CS-171/64 (Spring 2012). The main goal of this project is to examine foodborne illness outbreak characteristics for the years 2008-2009 in the US. To accomplish this, a choropleth map is used to show outbreak location and severity (derived from num illnesses/day/1000 people) with temporal filtering.
+This is my final project for a Harvard University SEAS course, Visualization CS-171/64 (Spring 2012). The main goal of this project is to examine US foodborne illness outbreaks during 2008-2009. To accomplish this, a choropleth map is used to show outbreak location and severity (derived from num illnesses/100,000 people) with temporal filtering.
 
-The original project scope included foodborne illness in the US from 1998-2009. However, after the project start date the CDC provided additional data regarding the reporting counties within each state, and the dates of first/last illness onset for outbreaks involving > 5 people. The project scope was revised to focus on the more granular outbreak data for the years 2008-2009.
+The original project scope included outbreaks from 1998-2009. However, after the project start date the CDC provided additional data regarding the reporting counties within each state, and the dates of first/last illness onset for outbreaks involving > 5 people. The project scope was revised to focus on the more granular outbreak data for the years 2008-2009.
 
-This project uses: Ruby on Rails, PostgreSQL, Backbone.js, d3.js, jQuery UI, and the "Bootstrap, from Twitter" visual framework".
+This project uses Ruby on Rails, PostgreSQL, Backbone.js, d3.js, jQuery UI, and the "Bootstrap, from Twitter" visual framework.
 
 ## Getting Started
 To set up this project, you will need to have git, Ruby 1.9 (and RubyGems) and the "bundler" gem installed.
