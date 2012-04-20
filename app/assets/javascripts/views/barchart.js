@@ -50,9 +50,9 @@ Views.Barchart = Backbone.Marionette.ItemView.extend({
       .text(function(d) { return d; })
       .attr("x", x)
       .attr("y", function(d, i) { return (i * rect_height) + rect_height/2; })
-      .attr("dx", 20) //padding
+      .attr("dx", 20 + "px") //padding
       .attr("dy", ".35em") //vertical-align
-      .style("font-size", "10")
+      .style("font-size", "11px")
       .style("fill", "#333333")
       .attr("text-anchor", "end");
 
@@ -93,7 +93,11 @@ Views.Barchart = Backbone.Marionette.ItemView.extend({
     this.chart_container.selectAll("text")
       .data(data)
       .text(function(d) { return d; })
-      .attr("x", x)
+      .attr("x", function(d) {
+        if ($.browser.mozilla == true) { //nasty hack for firefox
+          return x(d) + 20;
+        } else { return x; }
+      })
       .attr("y", function(d, i) { return (i * rect_height) + rect_height/2; });
 
     //draw labels
@@ -106,7 +110,7 @@ Views.Barchart = Backbone.Marionette.ItemView.extend({
       .append("text")
       .attr("class", "data-label")
       .text(function(d) { return d; })
-      .style("font-size", "12")
+      .style("font-size", "12px")
       .attr("x", function(d, i) { return 0 - this.getComputedTextLength(); })
       .attr("y", function(d, i) { return (i * rect_height) + rect_height/2 + 3; });
   }

@@ -1,12 +1,10 @@
 ##TODO List
 
-Needed
-+ Fix labels on legend
-+ Add x-axis label to barcharts
+Needed:
+DONE
 
-Nice to Have
+Nice to Have:
 + Add more years to slider 
-+ Browser testing
++ Browser testing: only tested Chrome, Safari, Firefox
 + Mouse click for bar to filter colored counties on map
-
 
