@@ -50,7 +50,7 @@
           %input{type:"radio", name:"optionsRadios", id:"log-radio", value:"linear"} 
           Linear scale
 #food.bar-chart
-  %h4 Food vehicle*
+  %h4 Food commodity*
 #etiology.bar-chart
   %h4 Etiology*
 #location.bar-chart
