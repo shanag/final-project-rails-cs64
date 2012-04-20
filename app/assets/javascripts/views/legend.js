@@ -86,6 +86,9 @@ Views.Legend = Backbone.Marionette.ItemView.extend({
         } else {
           text = d.toFixed(1);
         }
+        if (text > 100) {
+          text = ~~text;
+        }
         if (i == range.length-1) {
           return ">" + text;
         } else {
