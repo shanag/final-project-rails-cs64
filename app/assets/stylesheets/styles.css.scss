@@ -245,3 +245,19 @@ table {
     margin-right: 1em;
   }
 }
+
+sup {
+  font-size: .6em;
+  color: #999;
+}
+
+.citation {
+  font-style: italic;
+  font-size: .9em;
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  sup {
+    font-size: 1em;
+  }
+}

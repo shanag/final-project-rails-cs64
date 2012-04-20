@@ -1,3 +1,4 @@
 .page-header
   %h2 Foodborne Illness Outbreaks in the US, 2008-2009 &nbsp; 
     %small Data: Center for Disease Control (CDC)
+    %sup &dagger;

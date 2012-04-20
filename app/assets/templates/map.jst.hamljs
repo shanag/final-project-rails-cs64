@@ -56,3 +56,6 @@
 #location.bar-chart
   %h4 Location of Consumption*
 .note *Top five categories are shown. Bars represent number of outbreaks.
+%span.citation 
+  %sup &dagger;
+  Data courtesy of K. Walsh, Center for Disease Control, March 2012.
