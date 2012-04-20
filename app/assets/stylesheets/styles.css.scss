@@ -214,6 +214,9 @@ table {
     height: 150px;
     margin: .5em;
     border-bottom: 1px solid #CCC;
+    h4 {
+      margin-bottom: .5em;
+    }
     h3 {
       text-align: center;
     }
@@ -223,6 +226,14 @@ table {
         fill: steelblue;
       }
     }
+  }
+  .note {
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    width: 25%;
+    font-style: italic;
+    font-size: .9em;
   }
 }
 

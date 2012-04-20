@@ -50,8 +50,9 @@
           %input{type:"radio", name:"optionsRadios", id:"log-radio", value:"linear"} 
           Linear scale
 #food.bar-chart
-  %h4 Food vehicle
+  %h4 Food vehicle*
 #etiology.bar-chart
-  %h4 Etiology
+  %h4 Etiology*
 #location.bar-chart
-  %h4 Location of Consumption
+  %h4 Location of Consumption*
+.note *Top five categories are shown. Bars represent number of outbreaks.
