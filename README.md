@@ -1,37 +1,37 @@
-## Project Title
-### Foodborne Illness Outbreaks in the United States, 2008-2009
+## Foodborne Illness Outbreaks in the United States, 2008-2009
+
+This is my final project for a Harvard University SEAS course, Visualization CS-171/64 (Spring 2012). The main goal of this project is to examine foodborne illness outbreak characteristics for the years 2008-2009 in the US. To accomplish this, a choropleth map is used to show outbreak location and severity (derived from num illnesses/day/1000 people) with temporal filtering.
+
+The original project scope included foodborne illness in the US from 1998-2009. However, after the project start date the CDC provided additional data regarding the reporting counties within each state, and the dates of first/last illness onset for outbreaks involving > 5 people. The project scope was revised to focus on the more granular outbreak data for the years 2008-2009.
+
+This project uses: Ruby on Rails, PostgreSQL, Backbone.js, d3.js, jQuery UI, and the "Bootstrap, from Twitter" visual framework".
 
 ## Getting Started
-To set up the project, you will need to have git, Ruby 1.9 (and RubyGems) and the "bundler" gem installed.
+To set up this project, you will need to have git, Ruby 1.9 (and RubyGems) and the "bundler" gem installed.
 
 Then, do the following basic setup:
 
 `git clone git@github.com:shanag/final-project-rails-cs64.git`
+
 `bundle install`
+
 `rake db:create db:migrate`
 
 Run the rake tasks to load the data (be patient, it takes a while):
 
 `rake load_cdc_data`
+
 `rake load_geo_census_data`
+
 `rake calculate_severity`
 
 Start the server:
 
 `rails s thin`
 
-Finally, go to http://localhost:3000. Or, you can skip all this and just check out the Heroku app: http://floating-ocean-1736.herokuapp.com
+Finally, go to http://localhost:3000. 
 
-## About this Project 
-This is my final project for a Harvard University SEAS course, Visualization CS-171/64 (Spring 2012). The main goal of this project is to examine foodborne illness outbreak characteristics for the years 2008-2009 in the US. To accomplish this, a choropleth map is used to show outbreak location and severity (derived from num illnesses/day/1000 people) with temporal filtering.
-
-This project also displays the following data for outbreaks within the selected time range:
-+ most common locations
-+ most common etiologies
-+ most common food vehicles
-+ number of illnesses for each outbreak 
-
-The original project scope included foodborne illness in the US from 1998-2009. However, after the project start date the CDC provided additional data regarding the reporting counties within each state, and the dates of first/last illness onset for outbreaks involving > 5 people. The project scope was revised to focus on the more granular outbreak data for the years 2008-2009.
+Or, you can skip all this and just check out the Heroku app: http://floating-ocean-1736.herokuapp.com
 
 ## Data Sources
 The data for this visualization includes:
