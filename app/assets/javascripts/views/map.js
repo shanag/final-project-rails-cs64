@@ -124,15 +124,17 @@ Views.Map = Backbone.Marionette.ItemView.extend({
     var etiologies = {};
     
     for (fips in data) {
+      var selected_outbreaks = [];
       var total_adjusted_illnesses = 0;
       //for each fips, filter outbreaks by selected time range
       _.each(data[fips], function(outbreak) {
-        var outbreak_start = Date.parse(outbreak["first_illness"]);
-        var outbreak_end = Date.parse(outbreak["last_illness"]);
-        if ((outbreak_start >= start_date && outbreak_end <= end_date) ||
-          (outbreak_start >= start_date && outbreak_start <= end_date) || 
-          (outbreak_start <= start_date && outbreak_end >= start_date) || 
-          (outbreak_start <= start_date && outbreak_end >= end_date)) { 
+        var outbreak_start = Date.parse(outbreak["first_illness"]);//catch nulls
+        var outbreak_end = Date.parse(outbreak["last_illness"]); 
+        if ((outbreak_start >= start_date && outbreak_end <= end_date && outbreak_end !== null) ||
+          (outbreak_start >= start_date && outbreak_start <= end_date && outbreak_end !== null) || 
+          (outbreak_start <= start_date && outbreak_end >= start_date && outbreak_end !== null) || 
+          (outbreak_start <= start_date && outbreak_end >= end_date && outbreak_end !== null) ||
+           outbreak_start >= start_date && outbreak_start <= end_date && outbreak_end == null) { 
           //total illnesses
           total_adjusted_illnesses += parseFloat(outbreak["adjusted_illnesses"]); 
           
@@ -146,6 +148,9 @@ Views.Map = Backbone.Marionette.ItemView.extend({
           _.each(outbreak["consumption_locations"], function(loc) { 
             (loc in locations) ? locations[loc] += 1 : locations[loc] = 1;
           });
+
+          //add to list of selected outbreaks
+          selected_outbreaks.push(outbreak);
         }
       }, this);
 
@@ -153,7 +158,13 @@ Views.Map = Backbone.Marionette.ItemView.extend({
       var linear_scale = d3.scale.quantize().domain([MapApp.outbreaks_min, 500]).range(this.range); //everything over 500 in top bucket
       var log_scale = d3.scale.log().domain([MapApp.outbreaks_min, MapApp.outbreaks_max]).range([0, 100]); //aggregated outbreaks which exceed the max will be in the top quantile
       var q_scale = d3.scale.quantile().domain([log_scale(MapApp.outbreaks_min), log_scale(MapApp.outbreaks_max)]).range(this.range);
+      var that = this;
       this.counties.select("#fips_"+fips)
+        .each(function(d) {
+          if (total_adjusted_illnesses > 0) {
+            that.addInteraction(fips, selected_outbreaks);
+          }
+        })
         .attr("class", function() { 
           if (total_adjusted_illnesses > 0 && selected_scale == "log") {
             return "selected q" + q_scale(log_scale(total_adjusted_illnesses)) + "-9";
@@ -170,12 +181,6 @@ Views.Map = Backbone.Marionette.ItemView.extend({
         }); 
     }
     
-    var self = this;
-    this.counties.selectAll('.selected')
-      .each(function(d) {
-        //add mouse events to each county
-        self.addInteraction(d.id, data[d.id]);
-      })
   
     //draw new bar charts
     this.foodChart.redrawBarChart("food", commodities);

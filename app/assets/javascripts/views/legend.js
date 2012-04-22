@@ -105,7 +105,7 @@ Views.Legend = Backbone.Marionette.ItemView.extend({
     
     //draw title
     this.legend.append("text")
-      .text("Number of Illnesses per 100,000 people*")
+      .text("Number of Illnesses per 100,000 people")
       .style("font-weight", "bold")
       .style("font-size", "12")
       .attr("x", function() { return width - legend_width})
