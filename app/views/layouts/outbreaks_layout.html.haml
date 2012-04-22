@@ -8,17 +8,8 @@
     = csrf_meta_tags
     %meta{'http-equiv' => 'X-UA-Compatible', :content => 'chrome=1'}
   %body
-    .navbar.navbar-fixed-top
-      .navbar-inner
-        .container
-          %a.brand Visualizations
-          %ul.nav
-            %li 
-              %a{:href => '/'} Map
-            %li
-              %a{:href => '/outbreaks'} Data
+    = render 'layouts/nav'
     .container-main
-      #header
       #main= yield 
       #footer
 

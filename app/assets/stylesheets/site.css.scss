@@ -1,0 +1,55 @@
+.page {
+  margin-top: 3em;
+  .page-header {
+    margin-top: 0;
+  }
+}
+
+.section {
+  float: left;
+  margin-bottom: 2em;
+}
+
+.sidebar {
+  p {
+    font-size: .9em;
+  }
+}
+
+.img {
+  float: right;
+  img {
+    margin: 0 0 1em 1em;
+  }
+  &.draft {
+    float: left;
+    margin: 1em 0 1em 0;
+  }
+}
+
+.colors {
+  width: 100%;
+  float: left;
+  margin: 1em 0 2em;
+  div {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 10px;
+  }
+  .q0-9{background-color:rgb(255,245,240)}
+  .q1-9{background-color:rgb(254,224,210)}
+  .q2-9{background-color:rgb(252,187,161)}
+  .q3-9{background-color:rgb(252,146,114)}
+  .q4-9{background-color:rgb(251,106,74)}
+  .q5-9{background-color:rgb(239,59,44)}
+  .q6-9{background-color:rgb(203,24,29)}
+  .q7-9{background-color:rgb(165,15,21)}
+  .q8-9{background-color:rgb(103,0,13)}
+
+  .food-hue {background-color: #666}
+  .location-hue {background-color: #333}
+  .etiology-hue {background-color: #000}
+
+  .hover {background-color: yellow}
+}

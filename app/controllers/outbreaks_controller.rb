@@ -1,7 +1,7 @@
 class OutbreaksController < ApplicationController
   inherit_resources
 
-  layout "data_layout"
+  layout "outbreaks_layout"
 
   protected
 

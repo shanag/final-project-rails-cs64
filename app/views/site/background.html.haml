@@ -1,0 +1,308 @@
+.row-fluid.page
+  .span2
+    %ul.nav.nav-list
+      %li.nav-header Topics
+      %li.active
+        %a{:href=>"#goals"}
+          %i.icon-white.icon-home
+          Goals
+      %li
+        %a{:href=>"#tools"}
+          %i.icon-book
+          Tools
+      %li
+        %a{:href=>"#data"}
+          %i.icon-pencil
+          Data
+      %li
+        %a{:href=>"#challenges"}
+          %i.icon-user
+          Challenges
+      %li
+        %a{:href=>"#design"}
+          %i.icon-cog
+          Design
+      %li
+        %a{:href=>"#final"}
+          %i.icon-cog
+          Final Design
+      %li
+        %a{:href=>"#analysis"}
+          %i.icon-cog
+          Analysis
+      %li
+        %a{:href=>"#future"}
+          %i.icon-cog
+          Future
+      %li.nav-header Other links
+      %li
+        %a{:href=>"#process"}
+          %i.icon-cog
+          Process Book
+      %li
+        %a{:href=>"#source"}
+          %i.icon-cog
+          Source Code
+      %li.divider
+  .span8
+    .page-header
+      %h2 The Project
+    %br 
+    %p I chose this topic because I wanted to learn more about what foods most commonly cause illness outbreaks, how outbreaks spread geographically over time, and what patterns (locations of consumption, etiologies) are associated with outbreaks in the United States.
+    .upcoming#goals
+    %br
+    %br
+
+
+    %h2 Goals
+    %p The main goal of this project is to examine foodborne illness outbreak characteristics for 2008-2009 in the US. To accomplish this, a choropleth map is used to show outbreak location and severity (as num illnesses/100,000 people) with temporal filtering.
+    %p This project also shows:
+    %ul
+      %li where and how foodborne illnesses have occurred in the United States during 2009-2009
+      %li if there are any interesting outbreak patterns for different etiologies or geographic areas
+    %p The original project scope included foodborne illness in the US from 1998-2009. However, after the project start date the CDC provided additional data regarding the reporting counties within each state, and the dates of first/last illness onset for outbreaks involving &gt; 5 people. The project scope was revised to focus on the more granular outbreak data for the years 2008-2009.
+    .upcoming#tools
+    %br
+    %br
+
+
+    %h2 Tools
+    
+    %h4 Primary tools:
+    %ul
+      %li 
+        %a{:href => "http://mbostock.github.com/d3/"}d3.js
+        for the map and bar charts
+      %li Ruby on Rails web application
+      %li 
+        %a{:href => "http://www.heroku.com"}Heroku server
+      %li PostgreSQL database
+      %li 
+        %a{:href => "http://www.git-scm.com"}git
+    
+    %h4 Other tools/libraries:
+    %ul
+      %li 
+        %a{:href => "http://twitter.github.com/bootstrap/"}“Bootstrap, from Twitter”
+        framework for navigation and styles
+      %li 
+        %a{:href => "http://documentcloud.github.com/backbone/"}Backbone.js
+        to organize javascript and manipulate json data on the client (browser)
+      %li 
+        %a{:href => "http://www.jqueryui.com"}jQuery UI
+        for visualization controls such as the slider and datepickers
+      %li 
+        Google Refine for cleaning and reconciling some of the data
+    .upcoming#data
+    %br
+    %br
+
+
+    %h2 Data
+    %h4 Foodborne Illness Outbreak Data
+    %p The foodborne outbreak data comes from two separate databases at the Center for Disease Control (CDC): 
+    %ul 
+      %li EFORS (Electronic Foodborne Outbreak Reporting System) database, and 
+      %li NORS (National Outbreak Reporting) database
+    
+    %h4 FIPS County Codes
+    %p The FIPS county code is a five-digit Federal Information Processing Standard (FIPS) code which uniquely identifies counties in the US. The first two digits are the FIPS state code and the last three are the county code within the state or possession. 
+    %p 
+      In this project, the FIPS county codes are used to tag svg paths and their corresponding data points. This data was downloaded from the 
+      %a{:href => "http://www.nrcs.usda.gov/wps/portal/nrcs/detail/national/technical/nra/nri/?&cid=nrcs143_013697"}USDA website
+      as an .xls file. This file was converted to csv, parsed with Ruby, and saved in the database.
+    
+    %h4 Intercensal Population Data
+    %p 
+      The 
+      %a{:href => "http://www.census.gov/popest/data/intercensal/county/county2010.html"} US Census Bureau data
+      includes Intercensal Estimates of Population for Counties in the United States and Puerto Rico. This data is used to calculate the rate of disease incidence (foodborne illness outbreak cases) for use on the choropleth (areal) map.
+
+    %h4 Additional Resources
+    %p 
+      A very informative 
+      %a{:href=> "http://www.who.int/foodsafety/publications/foodborne_disease/Section_4.pdf"}World Health Organization (WHO) publication
+      provided information about the domain topic, and guidelines for using outbreak data:
+    .upcoming#challenges
+    %br
+    %br
+
+    %h2 Challenges
+    %p When I first started this project, I thought I would be able to download a simple spreadsheet from the CDC website. However, when my request for more data was approved, I found myself with 8 or more spreadsheets that needed to be merged. And, as I started working, I realized that I also had to gather population data and FIPS codes. All in all, I spent at least half my time on this project cleaning and gathering data.
+    %h4 Issues with the CDC data:
+    %ul
+      %li 
+        %strong Multiple values are allowed for a single variable.
+        For example, if two foods were reported for a single outbreak, these foods are captured as two records within the Foods Table rather than as two variables, as would be seen within a flat database. To deal with the many-to-many relationships, the data was loaded into multiple database tables.
+      %li 
+        %strong The implicated food variable (in the Implicated Foods table) is a free-text field.
+        This characteristic means that similar or identical foods may be entered in different ways.  For example “ground beef” could be entered as “beef”, “hamburger”, “taco meat” or “lasagna”, to name just a few of the possibilities. 
+      %li 
+        %strong The Where Eaten categories in the EFORS and NORS databases use different text for the same category names.
+        To solve this problem, Google Refine text facets were used to change the column names, and to cluster categories where appropriate so that the same text was used for both spreadsheets.
+
+    %h4 Issues with other data:
+    %ul 
+      %li
+        %strong Incomplete data. 
+        The FIPS county codes from the USDA were not complete, and at least 50 counties had to be individually looked up
+      %li 
+        %strong Different naming conventions for counties.
+        The counties referenced by the CDC outbreaks, the FIPS county names, and the US Census Bureau population estimates all used different conventions for naming counties. This reconciliation was done by hand: there were approximately a dozen issues between the CDC and FIPS data, and about 100 Census records that needed to be edited.
+    .upcoming#design
+    %br
+    %br
+
+    %h2 Design
+
+    %h3 Initial Design
+    .section
+      .img= image_tag "/assets/design_draft_3_29.jpg"
+      %p My initial design for this visualization features a choropleth map. The map shows foodborne illness outbreaks at the county-level. The color of the county represents the number of illnesses for all outbreaks during the selected month.
+      %p Note: I considered doing a spot map instead, but I was worried about occlusion in the New England area.
+      %p A temporal slider is provided to filter the outbreaks shown by month and year. Three linked bar charts show summary information for all the selected outbreaks, e.g. the etiologies, locations of consumption, and food commodities. 
+      %p The user can mouseover a county to see information about the outbreaks for the selected month. 
+    %br
+
+    %h3 Getting Started
+    .section
+      %p When the back end was set up and the data had been loaded into the database, I starting creating the visualization. I used the d3 choropleth map example to get started with d3.js. I rendered the map (with the US unemployment data that was provided) on the page, drew some svg barcharts with dummy data, and added a jQuery slider. I tried to get placeholders for all the major elements on the page so that I could figure out the layout for the code and the design.
+      .img.draft
+        %img{:src => "/assets/first_draft.png", :width => 650, :height => 359}
+    %br
+
+    %h3 Colors
+    %br
+    %h4 Map
+    %p The d3.js library includes a colorbrewer.css file, which contains quantitative colormaps. I used the colorbrewer single-hue “Reds” colormap for the map colors. I chose a quantitative colormap so that the luminance would correspond to the magnitude (severity) of the outbreaks. I originally tried making the legend a continuous colormap, but I later realized that I needed to use discrete colors to highlight the differences between the encoded values.
+    .colors.Reds
+      .q1-9
+      .q2-9
+      .q3-9
+      .q4-9
+      .q5-9
+      .q6-9
+      .q7-9
+      .q8-9
+    %h4 Accent    
+    %p When a user hovers the mouse over a county, the county is outlined in yellow. Yellow is used because it is easy to see, and it is color-blind friendly. A thin border is used so that it doesn’t obscure the color of the county.
+    .colors
+      .hover
+    %h4 Bar Charts
+    %p For the bar charts, slider, and navigational elements, I chose a neutral gray/black color scheme that would not distract the eye from the mapped outbreak data. I decided to use three different colors for the bar charts, since they encode three different nominal values.
+    .colors
+      .food-hue
+      .etiology-hue
+      .location-hue
+    %br
+
+    %h3 Design Challenges
+    %p While developing this visualization, I faced the following challenges:
+    %p
+      %strong What statistic should be visually encoded with color on the map
+    %p I wanted to show outbreak severity, so the “number of illnesses” was the most relevant outbreak data attribute. I didn’t want to just encode the actual number of illnesses with color, because differences in population size must be taken into consideration to display data accurately on a choropleth map. 
+    %p 
+      %strong Solution: 
+      I decided to calculate each outbreak’s number of illnesses/100,000 people and encode this value with color. To accomplish this, I had to find intercensal county population estimates for the years 2008-2009. The “first illness onset” date for each outbreak was used to determine the census year for the population estimate.
+    %br
+
+    %p
+      %strong How to filter the map by time period
+    %p The primary filtering tool for this visualization is a slider. I experimented with a few different types of sliders, but decided to use a range slider. I considered creating a slider with discrete values, but I wasn’t sure how to handle outbreaks that overlapped months/days. I also realized that it would be difficult for a user to accurately move the slider to select a specific day.  
+    %p 
+      %strong Solution: 
+      I implemented a date range slider. When one of the slider handles is moved, the counties that have outbreaks during the selected time period are filled with a color that represents the aggregated number of illnesses/100,000 people. 
+    %br 
+
+    %p 
+      %strong How to show multiple outbreaks on mouseover
+    %p I originally designed the visualization to show outbreak details on mouseover. I also thought that I could display all the outbreaks in a list format on mouseover. However, I quickly realized that there could be 25+ outbreaks per county for the selected time range, and that the details wouldn’t all fit on the screen at the same time. 
+    %p 
+      %strong Solution: 
+      I added a mouse click handler so that the user can click a county to toggle the display of outbreak details. I also added “next” and “previous” buttons to the outbreak detail tooltip so that the user can see details for each outbreak.
+    %br 
+
+    %p 
+      %strong How to classify the “color” statistic into groups, so I could use a discrete colormap
+    %p This was the most difficult challenge that I faced. I know that to use a discrete colormap (provided by colorbrewer.css), the data (num illnesses/100,000 people) needed to be classified into groups to associate the values with colors.
+    %p To classify the data for a choropleth map, some possible approaches are:
+    %ul
+      %li Jenks Natural Breaks Optimization. Sort the data from lowest value to highest, and look for large gaps, or “natural breaks”.
+      %li Quantiles. This method classifies data into a certain number of categories with an equal number of units in each category. 
+      %li Equal Intervals. This method sets the value ranges in each category equal in size. The entire range of data values (max - min) is divided equally into however many categories have been chosen.
+
+    %p As a first step, the statistical package R was used as a tool to look at the distribution of num illnesses/100,000 people, by generating a stem-and-leaf plot and a histogram. 
+    %p The data distribution approximates a Poisson distribution.
+    %p 
+      %strong Solution: 
+      I decided to use two different scales (a log scale, and a linear scale) because the distribution is skewed to the right, and the majority of the outbreaks had &lt; 500 illnesses/100,000 people. I provided radio buttons to toggle between the log and linear scales.
+
+    %p 
+      %strong The Log Scale
+    %p For each input value (the aggregated number of illnesses/100,000 population for the selected time range): I calculated the log value, mapped it to a scale from 0-100, and calculated the quantile. I mapped each quantile to a discrete color in a single-hue colormap with eight colors that was provided by the d3 colorbrewer.css file.
+    %p Note: the scales are based on the minimum and maximum values for individual outbreaks, so when a time range is selected the number of illnesses for all of a county’s outbreaks during that time are aggregated. As a result, any aggregated values that exceed the max possible for an individual outbreak are bucketed in the top quantile. This has the effect of creating two scales.
+
+    %p
+      %strong The Linear Scale
+    %p For each input value (the aggregated number of illnesses/100,000 population for the selected time range): I mapped the value to a scale from 0-100, and used the quantize scale to output the correct “bucket” (equal interval scale). I mapped each output value to a discrete color in a single-hue colormap that was provided by the d3 colorbrewer.css file. To construct this scale, I used 500 as the max value for the input domain, so that I would be able to show differences between outbreaks in the largest distribution cluster. As a result, all the outbreaks with &gt; 500 illnesses/100,000 people have the highest saturated color on the scale. This also has the effect of creating two scales, but I thought it would be a more effective way to visually show outbreak severity.
+    .upcoming#final
+    %br
+    %br
+
+    %h2 Final design
+    %p The visualization features a choropleth map which shows the number of illnesses per county (color encoding of county tile) for a given month. A time range slider (and linked inputs) are provided to filter the outbreaks shown. Linked bar charts show summary information for the top five etiologies, locations of consumption, and food commodities for the selected time range.
+
+    %h4 Interactivity
+    %ul 
+      %li Slider/Inputs to change date by day interval, and to trigger a refresh of the map/linked bar charts.
+      %li Mouse hover over county tile to see info about outbreak(s) for a county during that month
+      %li Mouse click a county tile to keep outbreak tooltip displayed; “previous” and “next buttons to view each outbreak for that county
+      %li Radio buttons to toggle between the log and linear scales
+    %br
+    .img
+      %img{:src =>"/assets/interactivity_diagram.png", :width => 650, :height => 402}
+    .upcoming#analysis
+    %br
+    %br
+
+    %h2 Analysis
+    %h4 Map
+    %ul
+      %li Cook County, MN had a large number of outbreaks (25) throughout 2008-09
+      %li Wisconsin had a lot of outbreaks in adjacent counties throughout 2008-09
+      %li Wyoming also has a pattern of outbreaks in adjacent counties throughout 2008-09
+      %li Montana and Mississippi had no outbreaks during this two year period
+      %li In the midwest, there are more outbreaks throughout the North-Central region than in the Central region
+      %li Alaska had no data, and I suspect the data was either missing or incomplete
+
+    %h4 Bar Charts
+    %ul
+      %li The most common etiology genus for 2008-2009 is Calcivirus (aka Norwalk-like viruses). News reports indicate this is a highly contagious virus that spreads rapidly, and which is often responsible for cruise-ship outbreaks
+      %li The second most common etiology genus is either Salmonella or “Unknown”, which means that the etiology could not be determined
+      %li The most common location of consumption for 2008-2009 is “Restaurant (sit-down)”
+      %li The most common food commodities are “unknown” and “&gt;1 commodity”. For 2008-09, it is not clear which food commodities were associated with many of the outbreaks
+
+    %h4 Other
+    %ul 
+      %li The scale is really important, and the type of scale can completely change the usefulness of the visualization. I found the log scale to be more usable than the linear scale.
+      %li The screen size limits the amount of data that can be shown in a usable way, e.g the amount of screen space for the slider limited the number of days that could be represented
+    .upcoming#future
+    %br
+    %br
+
+    %h2 Future
+    %p There are several changes I would make to the data and the design if I had more time to work on this project:
+    %ul 
+      %li More data. I would liked to have used all of the data that I got from the CDC for the period 1998-2009. I did not have time to clean all the data, research missing dates/information, or figure out how to implement the date range slider for the full decade. I would also have liked to add population estimates and state names to the tooltips.
+      %li Refactor code. I hard-coded some values into the visualization, e.g. start and end dates for the slider, max value for the linear scale, and a few other minor offsets and widths/heights. With more time I would refactor where possible, so that the code was more flexible (and efficient).
+      %li Statistical analysis. I would also have liked to spend more time looking at the distribution, and learning to do more statistical analysis. However, it took me so long to clean and organize the data that I had to spend my remaining time coding the visualization.
+      %li Better tools. If I had more time, I would re-implement this application as a Sinatra app (a lightweight version of Rails). I ended up using Rails because it was faster for me, since I have less experience with Sinatra. However, for this project it is a little bit of overkill.
+      %li Tests. This application is not test-driven, and I think it would have been useful to write some unit or integration tests to make sure the javascript was working properly. From my experience, I know that testing Javascript can be tricky and time-consuming (to set up test tools and get tests passing), so I decided to pass on it for this project. 
+      %li Mobile version. I would fix the site so that it works on iPad if I had more time. Currently there are some issues with the slider, datepickers, and a few styles.
+
+  .span2.sidebar
+    %p
+      .pic-me=image_tag "/assets/shana_small_funky.jpg"
+    %h4 About Me
+    %p I'm a web developer, foodie, former violist, travel lover, and lifelong student.
+
